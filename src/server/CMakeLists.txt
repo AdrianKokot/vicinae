@@ -1172,7 +1172,6 @@ set(VICINAE_QML_FILES
 	src/ui/qml/list/ThemeItemDelegate.qml
 	src/ui/qml/views/GenericGridView.qml
 	src/ui/qml/views/GridCell.qml
-	src/ui/qml/views/GridCell.qml
 	src/ui/qml/views/EmptyView.qml
 	src/ui/qml/views/EmojiGridView.qml
 	src/ui/qml/controls/ViciButton.qml
