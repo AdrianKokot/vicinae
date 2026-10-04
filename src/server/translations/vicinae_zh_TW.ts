@@ -4,7 +4,7 @@
 <context>
     <name>AboutSettingsPage</name>
     <message>
-        <location filename="../src/qml/qml/AboutSettingsPage.qml" line="+57"/>
+        <location filename="../src/ui/qml/settings/AboutSettingsPage.qml" line="+61"/>
         <source>Version %1 - Commit %2
 (%3)</source>
         <translation>版本 %1 - 提交 %2
@@ -24,12 +24,12 @@
 <context>
     <name>ActionListPanel</name>
     <message>
-        <location filename="../src/qml/qml/ActionListPanel.qml" line="+113"/>
+        <location filename="../src/ui/qml/actions/ActionListPanel.qml" line="+116"/>
         <source>No matching actions</source>
         <translation>沒有匹配的操作</translation>
     </message>
     <message>
-        <location line="+135"/>
+        <location line="+136"/>
         <source>Filter actions...</source>
         <translation>篩選操作…</translation>
     </message>
@@ -37,7 +37,7 @@
 <context>
     <name>AdvancedSettingsPage</name>
     <message>
-        <location filename="../src/qml/qml/AdvancedSettingsPage.qml" line="+29"/>
+        <location filename="../src/ui/qml/settings/AdvancedSettingsPage.qml" line="+35"/>
         <source>Input &amp; Navigation</source>
         <translation>輸入與導航</translation>
     </message>
@@ -127,7 +127,7 @@
         <translation>系統</translation>
     </message>
     <message>
-        <location line="+9"/>
+        <location line="+8"/>
         <source>Input server</source>
         <translation>輸入伺服器</translation>
     </message>
@@ -135,6 +135,16 @@
         <location line="+1"/>
         <source>Whether to spawn the input server at startup. This needs to be enabled in order to support snippets, paste to active window, and other features that require input monitoring or injection.</source>
         <translation>是否在啟動時執行輸入伺服器。片段展開、貼上到活動視窗及其他需要監聽或注入輸入的功能必須啟用此項。</translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>Tray icon</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Show the Vicinae icon in the system tray. You may need to restart Vicinae.</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+10"/>
@@ -178,7 +188,7 @@
 <context>
     <name>AliasFormView</name>
     <message>
-        <location filename="../src/qml/qml/AliasFormView.qml" line="+15"/>
+        <location filename="../src/ui/qml/views/AliasFormView.qml" line="+16"/>
         <source>Alias</source>
         <translation>別名</translation>
     </message>
@@ -191,12 +201,12 @@
 <context>
     <name>AliasFormViewHost</name>
     <message>
-        <location filename="../src/qml/alias-form-view-host.cpp" line="+28"/>
+        <location filename="../src/builtins/root/alias-form-view-host.cpp" line="+27"/>
         <source>Set alias - %1</source>
         <translation>設定別名 - %1</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+6"/>
         <source>Submit</source>
         <translation>提交</translation>
     </message>
@@ -214,8 +224,8 @@
 <context>
     <name>AppRootItem</name>
     <message>
-        <location filename="../src/root-search/apps/app-root-provider.cpp" line="+22"/>
-        <location line="+29"/>
+        <location filename="../src/root-search/apps/app-root-provider.cpp" line="+18"/>
+        <location line="+24"/>
         <source>Application</source>
         <translation>應用程式</translation>
     </message>
@@ -263,7 +273,7 @@
 <context>
     <name>AppRootProvider</name>
     <message>
-        <location line="+75"/>
+        <location line="+89"/>
         <source>Applications</source>
         <translation>應用程式</translation>
     </message>
@@ -271,8 +281,8 @@
 <context>
     <name>AppSelectorModel</name>
     <message>
-        <location filename="../src/qml/app-selector-model.cpp" line="+20"/>
-        <location line="+65"/>
+        <location filename="../src/ui/views/app-selector-model.cpp" line="+18"/>
+        <location line="+49"/>
         <source>%1 (Default)</source>
         <translation>%1（預設）</translation>
     </message>
@@ -280,7 +290,7 @@
 <context>
     <name>AppearanceSettingsPage</name>
     <message>
-        <location filename="../src/qml/qml/AppearanceSettingsPage.qml" line="+29"/>
+        <location filename="../src/ui/qml/settings/AppearanceSettingsPage.qml" line="+35"/>
         <location line="+7"/>
         <source>Theme</source>
         <translation>主題</translation>
@@ -349,6 +359,16 @@
         <location line="+1"/>
         <source>Show only the search bar at root; expand when a query is entered.</source>
         <translation>在根頁面僅顯示搜尋欄，輸入查詢後展開。</translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Floating status bar</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Let the status bar float over the content, which stays slightly visible under it. Disable to keep the content strictly above the status bar.</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+9"/>
@@ -427,14 +447,55 @@
     </message>
 </context>
 <context>
+    <name>AppleShortcutRootItem</name>
+    <message>
+        <location filename="../src/root-search/apple-shortcuts/apple-shortcut-root-provider.cpp" line="+66"/>
+        <location line="+3"/>
+        <source>Apple Shortcut</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>AppleShortcutRootProvider</name>
+    <message>
+        <location line="+30"/>
+        <source>Could not load Apple Shortcuts</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+14"/>
+        <source>Apple Shortcuts</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>AppleShortcuts</name>
+    <message>
+        <location filename="../src/services/apple-shortcuts/apple-shortcuts.mm" line="+36"/>
+        <source>Allow Vicinae to control Shortcuts Events in System Settings &gt; Privacy &amp; Security &gt; Automation.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+31"/>
+        <location line="+40"/>
+        <source>Shortcuts Events is unavailable.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-30"/>
+        <source>Could not read Apple Shortcuts.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>AvailableFallbackSection</name>
     <message>
-        <location filename="../src/qml/manage-fallback-model.hpp" line="+49"/>
+        <location filename="../src/builtins/vicinae/manage-fallback-model.hpp" line="+49"/>
         <source>Available</source>
         <translation>可用</translation>
     </message>
     <message>
-        <location filename="../src/qml/manage-fallback-model.cpp" line="+50"/>
+        <location filename="../src/builtins/vicinae/manage-fallback-model.cpp" line="+50"/>
         <source>Enable fallback</source>
         <translation>啟用後備項</translation>
     </message>
@@ -442,7 +503,7 @@
 <context>
     <name>BringToWorkspaceAction</name>
     <message>
-        <location filename="../src/actions/wm/window-actions.hpp" line="+72"/>
+        <location filename="../src/actions/window-actions.hpp" line="+72"/>
         <source>Bring to current workspace</source>
         <translation>移到當前工作區</translation>
     </message>
@@ -450,12 +511,12 @@
 <context>
     <name>BrowseAppsSection</name>
     <message>
-        <location filename="../src/qml/browse-apps-model.hpp" line="+32"/>
+        <location filename="../src/builtins/system/browse-apps-model.hpp" line="+32"/>
         <source>Applications ({count})</source>
         <translation>應用程式（{count}）</translation>
     </message>
     <message>
-        <location filename="../src/qml/browse-apps-model.cpp" line="+21"/>
+        <location filename="../src/builtins/system/browse-apps-model.cpp" line="+19"/>
         <source>Hidden</source>
         <translation>已隱藏</translation>
     </message>
@@ -478,7 +539,7 @@
 <context>
     <name>BrowseAppsViewHost</name>
     <message>
-        <location filename="../src/qml/browse-apps-view-host.cpp" line="+12"/>
+        <location filename="../src/builtins/system/browse-apps-view-host.cpp" line="+13"/>
         <source>Search apps...</source>
         <translation>搜尋應用程式…</translation>
     </message>
@@ -486,7 +547,7 @@
 <context>
     <name>BrowseFontsCommand</name>
     <message>
-        <location filename="../src/extensions/font/browse-fonts-command.hpp" line="+8"/>
+        <location filename="../src/builtins/font/browse-fonts-command.hpp" line="+8"/>
         <source>Search Fonts</source>
         <translation>搜尋字型</translation>
     </message>
@@ -494,7 +555,7 @@
 <context>
     <name>BrowserExtension</name>
     <message>
-        <location filename="../src/extensions/browser/browser-extension.hpp" line="+12"/>
+        <location filename="../src/builtins/browser/browser-extension.hpp" line="+12"/>
         <source>Browser Extension</source>
         <translation>瀏覽器擴充套件</translation>
     </message>
@@ -517,12 +578,7 @@
         <translation>轉換為快捷方式</translation>
     </message>
     <message>
-        <location line="+4"/>
-        <source>Convert tab to shortcut</source>
-        <translation>將標籤頁轉換為快捷方式</translation>
-    </message>
-    <message>
-        <location line="+5"/>
+        <location line="+3"/>
         <source>Close tab</source>
         <translation>關閉標籤頁</translation>
     </message>
@@ -550,7 +606,7 @@
 <context>
     <name>BrowserTabProvider</name>
     <message>
-        <location filename="../src/root-search/browser-tabs/browser-tabs-provider.hpp" line="+70"/>
+        <location filename="../src/root-search/browser-tabs/browser-tabs-provider.hpp" line="+69"/>
         <source>Browser Tabs</source>
         <translation>瀏覽器標籤頁</translation>
     </message>
@@ -571,17 +627,17 @@
 <context>
     <name>BrowserTabsSection</name>
     <message>
-        <location filename="../src/qml/browser-tabs-model.hpp" line="+17"/>
+        <location filename="../src/builtins/browser/browser-tabs-model.hpp" line="+22"/>
         <source>Tabs ({count})</source>
         <translation>標籤頁（{count}）</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+0"/>
         <source>Playing Media ({count})</source>
         <translation>正在播放媒體（{count}）</translation>
     </message>
     <message>
-        <location filename="../src/qml/browser-tabs-model.cpp" line="+15"/>
+        <location filename="../src/builtins/browser/browser-tabs-model.cpp" line="+13"/>
         <source>Muted</source>
         <translation>已靜音</translation>
     </message>
@@ -594,7 +650,7 @@
 <context>
     <name>BrowserTabsViewHost</name>
     <message>
-        <location filename="../src/qml/browser-tabs-view-host.cpp" line="+11"/>
+        <location filename="../src/builtins/browser/browser-tabs-view-host.cpp" line="+12"/>
         <source>Search, focus and close tabs</source>
         <translation>搜尋、聚焦和關閉標籤頁</translation>
     </message>
@@ -602,12 +658,12 @@
 <context>
     <name>BuiltinIconsSection</name>
     <message>
-        <location filename="../src/qml/builtin-icons-model.hpp" line="+20"/>
+        <location filename="../src/builtins/vicinae/builtin-icons-model.hpp" line="+20"/>
         <source>Icons ({count})</source>
         <translation>圖示（{count}）</translation>
     </message>
     <message>
-        <location filename="../src/qml/builtin-icons-model.cpp" line="+15"/>
+        <location filename="../src/builtins/vicinae/builtin-icons-model.cpp" line="+15"/>
         <source>Copy Icon Name</source>
         <translation>複製圖示名稱</translation>
     </message>
@@ -615,7 +671,7 @@
 <context>
     <name>BuiltinIconsViewHost</name>
     <message>
-        <location filename="../src/qml/builtin-icons-view-host.cpp" line="+10"/>
+        <location filename="../src/builtins/vicinae/builtin-icons-view-host.cpp" line="+10"/>
         <source>Search icons...</source>
         <translation>搜尋圖示…</translation>
     </message>
@@ -623,7 +679,7 @@
 <context>
     <name>CalcHistoryListView</name>
     <message>
-        <location filename="../src/qml/qml/CalcHistoryListView.qml" line="+12"/>
+        <location filename="../src/ui/qml/views/CalcHistoryListView.qml" line="+13"/>
         <source>No results</source>
         <translation>無結果</translation>
     </message>
@@ -631,7 +687,7 @@
 <context>
     <name>CalcHistorySection</name>
     <message>
-        <location filename="../src/qml/calc-history-model.cpp" line="+41"/>
+        <location filename="../src/builtins/calculator/calc-history-model.cpp" line="+39"/>
         <source>Copy answer</source>
         <translation>複製答案</translation>
     </message>
@@ -649,7 +705,7 @@
 <context>
     <name>CalcHistoryViewHost</name>
     <message>
-        <location filename="../src/qml/calc-history-view-host.cpp" line="+83"/>
+        <location filename="../src/builtins/calculator/calc-history-view-host.cpp" line="+92"/>
         <source>Search past calculations...</source>
         <translation>搜尋歷史計算…</translation>
     </message>
@@ -657,15 +713,20 @@
 <context>
     <name>CalcLiveSection</name>
     <message>
-        <location filename="../src/qml/calc-history-view-host.hpp" line="+27"/>
+        <location filename="../src/builtins/calculator/calc-history-view-host.hpp" line="+28"/>
         <source>Calculator</source>
         <translation>計算器</translation>
+    </message>
+    <message>
+        <location filename="../src/builtins/calculator/calc-history-view-host.cpp" line="-14"/>
+        <source>Copy unformatted answer</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>CalculatorExtension</name>
     <message>
-        <location filename="../src/extensions/calculator/calculator-extension.hpp" line="+73"/>
+        <location filename="../src/builtins/calculator/calculator-extension.hpp" line="+94"/>
         <source>Calculator</source>
         <translation>計算器</translation>
     </message>
@@ -674,31 +735,11 @@
         <source>Do maths, convert units or search past calculations...</source>
         <translation>進行計算、單位換算或搜尋歷史計算…</translation>
     </message>
-    <message>
-        <location line="+21"/>
-        <source>Calculator Backend</source>
-        <translation>計算器後端</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Which backend to use to perform calculations</source>
-        <translation>用於執行計算的後端</translation>
-    </message>
-    <message>
-        <location line="+5"/>
-        <source>Refresh rates on startup</source>
-        <translation>啟動時重新整理匯率</translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>Whether exchange rates should be refreshed every time the vicinae server is started. If the current backend does not support it, this is ignored.</source>
-        <translation>每次啟動 Vicinae 伺服器時是否重新整理匯率。如果當前後端不支援，此設定將被忽略。</translation>
-    </message>
 </context>
 <context>
     <name>CalculatorHistoryCommand</name>
     <message>
-        <location line="-86"/>
+        <location line="-77"/>
         <source>Calculator history</source>
         <translation>計算歷史</translation>
     </message>
@@ -739,20 +780,20 @@
 <context>
     <name>CalculatorResultDelegate</name>
     <message>
-        <location filename="../src/qml/qml/CalculatorResultDelegate.qml" line="+40"/>
-        <source>Question</source>
-        <translation>問題</translation>
+        <location filename="../src/ui/qml/list/CalculatorResultDelegate.qml" line="+61"/>
+        <source>Expression</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+57"/>
-        <source>Answer</source>
-        <translation>答案</translation>
+        <location line="+59"/>
+        <source>Result</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>CalculatorService</name>
     <message>
-        <location filename="../src/services/calculator-service/calculator-service.cpp" line="+119"/>
+        <location filename="../src/services/calculator-service/calculator-service.cpp" line="+125"/>
         <source>Pinned</source>
         <translation>已固定</translation>
     </message>
@@ -783,17 +824,9 @@
     </message>
 </context>
 <context>
-    <name>CategoryFilterAccessory</name>
-    <message>
-        <location filename="../src/qml/qml/CategoryFilterAccessory.qml" line="+8"/>
-        <source>All</source>
-        <translation>全部</translation>
-    </message>
-</context>
-<context>
     <name>ChangeEmojiSkinToneAction</name>
     <message>
-        <location filename="../src/qml/emoji-grid-model.cpp" line="+99"/>
+        <location filename="../src/builtins/vicinae/emoji-grid-model.cpp" line="+102"/>
         <source>%1 skin tone</source>
         <translation>%1 膚色</translation>
     </message>
@@ -801,7 +834,7 @@
 <context>
     <name>ClearClipboardHistoryCommand</name>
     <message>
-        <location filename="../src/extensions/clipboard/clipboard-extension.cpp" line="+35"/>
+        <location filename="../src/builtins/clipboard/clipboard-extension.cpp" line="+37"/>
         <source>Clear Clipboard History</source>
         <translation>清除剪貼簿歷史</translation>
     </message>
@@ -811,7 +844,7 @@
         <translation>清除剪貼簿歷史</translation>
     </message>
     <message>
-        <location line="+9"/>
+        <location line="+11"/>
         <source>Are you sure?</source>
         <translation>確定嗎？</translation>
     </message>
@@ -834,7 +867,7 @@
 <context>
     <name>ClipboardClearCommand</name>
     <message>
-        <location line="-39"/>
+        <location line="-43"/>
         <source>Clear Current Clipboard Data</source>
         <translation>清除當前剪貼簿資料</translation>
     </message>
@@ -844,7 +877,7 @@
         <translation>清除剪貼簿當前內容</translation>
     </message>
     <message>
-        <location line="+10"/>
+        <location line="+12"/>
         <source>Failed to clear clipboard</source>
         <translation>清除剪貼簿失敗</translation>
     </message>
@@ -857,7 +890,7 @@
 <context>
     <name>ClipboardExtension</name>
     <message>
-        <location filename="../src/extensions/clipboard/clipboard-extension.hpp" line="+13"/>
+        <location filename="../src/builtins/clipboard/clipboard-extension.hpp" line="+13"/>
         <source>Clipboard</source>
         <translation>剪貼簿</translation>
     </message>
@@ -866,89 +899,11 @@
         <source>System clipboard integration</source>
         <translation>系統剪貼簿整合</translation>
     </message>
-    <message>
-        <location filename="../src/extensions/clipboard/clipboard-extension.cpp" line="+55"/>
-        <source>Erase on startup</source>
-        <translation>啟動時清除</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Erase clipboard history every time the vicinae server is started</source>
-        <translation>每次啟動 Vicinae 伺服器時清除剪貼簿歷史</translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>Clipboard monitoring</source>
-        <translation>剪貼簿監控</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Whether clipboard activity is recorded in the history. Every clipboard action performed while this is turned off will not be recorded.</source>
-        <translation>是否將剪貼簿活動記錄到歷史中。關閉期間的所有剪貼簿操作都不會被記錄。</translation>
-    </message>
-    <message>
-        <location line="+9"/>
-        <source>Ignore Passwords</source>
-        <translation>忽略密碼</translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>Ignore selections that can be identified as a password. This relies on the application providing an explicit hint that the selection is a password. While most password managers and private browser windows do, some might not implement this properly.</source>
-        <translation>忽略可識別為密碼的選中內容。此功能依賴應用明確標記該內容為密碼。大多數密碼管理器和瀏覽器隱私視窗會提供此標記，但部分應用可能未正確實現。</translation>
-    </message>
-</context>
-<context>
-    <name>ClipboardFilterAccessory</name>
-    <message>
-        <location filename="../src/qml/qml/ClipboardFilterAccessory.qml" line="+8"/>
-        <source>All</source>
-        <translation>全部</translation>
-    </message>
-    <message>
-        <location line="+0"/>
-        <source>Text</source>
-        <translation>文本</translation>
-    </message>
-    <message>
-        <location line="+0"/>
-        <source>Images</source>
-        <translation>圖片</translation>
-    </message>
-    <message>
-        <location line="+0"/>
-        <source>Links</source>
-        <translation>連結</translation>
-    </message>
-    <message>
-        <location line="+0"/>
-        <source>Files</source>
-        <translation>檔案</translation>
-    </message>
 </context>
 <context>
     <name>ClipboardHistoryCommand</name>
     <message>
-        <location filename="../src/extensions/clipboard/clipboard-history-command.cpp" line="+16"/>
-        <source>Paste</source>
-        <translation>貼上</translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>Copy</source>
-        <translation>複製</translation>
-    </message>
-    <message>
-        <location line="+5"/>
-        <source>Default Action</source>
-        <translation>預設操作</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>The default action to perform on pressing return. Paste is only available if your environment supports it.</source>
-        <translation>按回車鍵時執行的預設操作。僅噹噹前環境支援時才能貼上。</translation>
-    </message>
-    <message>
-        <location filename="../src/extensions/clipboard/clipboard-history-command.hpp" line="+11"/>
+        <location filename="../src/builtins/clipboard/clipboard-history-command.hpp" line="+12"/>
         <source>Clipboard History</source>
         <translation>剪貼簿歷史</translation>
     </message>
@@ -961,7 +916,7 @@
 <context>
     <name>ClipboardHistorySection</name>
     <message>
-        <location filename="../src/qml/clipboard-history-model.cpp" line="+58"/>
+        <location filename="../src/builtins/clipboard/history/clipboard-history-model.cpp" line="+73"/>
         <source>Open Settings</source>
         <translation>開啟設定</translation>
     </message>
@@ -969,7 +924,7 @@
 <context>
     <name>ClipboardHistoryView</name>
     <message>
-        <location filename="../src/qml/qml/ClipboardHistoryView.qml" line="+187"/>
+        <location filename="../src/ui/qml/views/ClipboardHistoryView.qml" line="+205"/>
         <source>Type</source>
         <translation>型別</translation>
     </message>
@@ -984,7 +939,7 @@
         <translation>複製時間</translation>
     </message>
     <message>
-        <location line="+52"/>
+        <location line="+47"/>
         <source>Preview not available for this content type</source>
         <translation>無法預覽此型別的內容</translation>
     </message>
@@ -992,12 +947,37 @@
 <context>
     <name>ClipboardHistoryViewHost</name>
     <message>
-        <location filename="../src/qml/clipboard-history-view-host.hpp" line="+84"/>
+        <location filename="../src/builtins/clipboard/history/clipboard-history-view-host.hpp" line="+95"/>
         <source>Loading...</source>
         <translation>正在載入…</translation>
     </message>
     <message>
-        <location filename="../src/qml/clipboard-history-view-host.cpp" line="+101"/>
+        <location filename="../src/builtins/clipboard/history/clipboard-history-view-host.cpp" line="+74"/>
+        <source>All</source>
+        <translation type="unfinished">全部</translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Text</source>
+        <translation type="unfinished">文本</translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Images</source>
+        <translation type="unfinished">圖片</translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Links</source>
+        <translation type="unfinished">連結</translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Files</source>
+        <translation type="unfinished">檔案</translation>
+    </message>
+    <message>
+        <location line="+34"/>
         <source>Browse clipboard history...</source>
         <translation>瀏覽剪貼簿歷史…</translation>
     </message>
@@ -1007,7 +987,7 @@
         <translation>剪貼簿監控不可用</translation>
     </message>
     <message>
-        <location line="+67"/>
+        <location line="+70"/>
         <source>Pause clipboard</source>
         <translation>暫停剪貼簿監控</translation>
     </message>
@@ -1024,7 +1004,7 @@
         </translation>
     </message>
     <message>
-        <location line="+27"/>
+        <location line="+28"/>
         <source>Decryption failed</source>
         <translation>解密失敗</translation>
     </message>
@@ -1057,7 +1037,7 @@
 <context>
     <name>ClipboardService</name>
     <message>
-        <location filename="../src/services/clipboard/clipboard-service.cpp" line="+316"/>
+        <location filename="../src/services/clipboard/clipboard-service.cpp" line="+451"/>
         <source>Image (%1x%2)</source>
         <translation>圖片（%1x%2）</translation>
     </message>
@@ -1075,7 +1055,7 @@
 <context>
     <name>CloseWindowAction</name>
     <message>
-        <location filename="../src/actions/wm/window-actions.hpp" line="-37"/>
+        <location filename="../src/actions/window-actions.hpp" line="-37"/>
         <source>Close window</source>
         <translation>關閉視窗</translation>
     </message>
@@ -1083,12 +1063,12 @@
 <context>
     <name>CommandLineSection</name>
     <message>
-        <location filename="../src/qml/system-run-model.hpp" line="+19"/>
+        <location filename="../src/builtins/system/system-run-model.hpp" line="+48"/>
         <source>Execute query</source>
         <translation>執行查詢</translation>
     </message>
     <message>
-        <location filename="../src/qml/system-run-model.cpp" line="+44"/>
+        <location filename="../src/builtins/system/system-run-model.cpp" line="+38"/>
         <source>Open in %1 (hold)</source>
         <translation>在 %1 中開啟（保持視窗）</translation>
     </message>
@@ -1101,7 +1081,7 @@
 <context>
     <name>CommandListView</name>
     <message>
-        <location filename="../src/qml/qml/CommandListView.qml" line="+12"/>
+        <location filename="../src/ui/qml/views/CommandListView.qml" line="+13"/>
         <source>No results</source>
         <translation>無結果</translation>
     </message>
@@ -1110,13 +1090,13 @@
     <name>CommandRootItem</name>
     <message>
         <location filename="../src/root-search/extensions/extension-root-provider.cpp" line="+28"/>
-        <location line="+48"/>
+        <location line="+49"/>
         <source>Command</source>
         <translation>命令</translation>
     </message>
     <message>
-        <location line="-43"/>
-        <location line="+27"/>
+        <location line="-44"/>
+        <location line="+28"/>
         <source>Open command</source>
         <translation>開啟命令</translation>
     </message>
@@ -1134,20 +1114,28 @@
 <context>
     <name>CompletionPopup</name>
     <message>
-        <location filename="../src/qml/qml/CompletionPopup.qml" line="+11"/>
+        <location filename="../src/ui/qml/controls/CompletionPopup.qml" line="+15"/>
         <source>Filter...</source>
         <translation>篩選…</translation>
     </message>
 </context>
 <context>
+    <name>ConfigGlobalShortcuts</name>
+    <message>
+        <location filename="../src/services/global-shortcuts/config-global-shortcuts.cpp" line="+25"/>
+        <source>Toggle Vicinae</source>
+        <translation type="unfinished">顯示或隱藏 Vicinae</translation>
+    </message>
+</context>
+<context>
     <name>CopyCalculatorAnswerAction</name>
     <message>
-        <location filename="../src/actions/calculator/calculator-actions.hpp" line="+29"/>
+        <location filename="../src/actions/calculator-actions.hpp" line="+29"/>
         <source>Answer copied to clipboard</source>
         <translation>答案已複製到剪貼簿</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+3"/>
         <source>Failed to copy answer</source>
         <translation>複製答案失敗</translation>
     </message>
@@ -1165,7 +1153,7 @@
         <translation>答案已複製到剪貼簿</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+3"/>
         <source>Failed to copy answer</source>
         <translation>複製答案失敗</translation>
     </message>
@@ -1178,7 +1166,7 @@
 <context>
     <name>CopyClipboardSelection</name>
     <message>
-        <location filename="../src/extensions/clipboard/history/clipboard-history-actions.hpp" line="+29"/>
+        <location filename="../src/builtins/clipboard/history/clipboard-history-actions.hpp" line="+29"/>
         <source>Selection copied to clipboard</source>
         <translation>選中內容已複製到剪貼簿</translation>
     </message>
@@ -1196,7 +1184,7 @@
 <context>
     <name>CopyItemDeeplink</name>
     <message>
-        <location filename="../src/actions/root-search/root-search-actions.hpp" line="+75"/>
+        <location filename="../src/actions/root-search-actions.hpp" line="+99"/>
         <source>Deeplink copied in clipboard</source>
         <translation>深層連結已複製到剪貼簿</translation>
     </message>
@@ -1209,7 +1197,7 @@
 <context>
     <name>CopyShortcutAction</name>
     <message>
-        <location filename="../src/actions/shortcut/shortcut-actions.hpp" line="+230"/>
+        <location filename="../src/actions/shortcut-actions.hpp" line="+269"/>
         <source>Copied to clipboard</source>
         <translation>已複製到剪貼簿</translation>
     </message>
@@ -1222,12 +1210,12 @@
 <context>
     <name>CopyToClipboardAction</name>
     <message>
-        <location filename="../src/clipboard-actions.hpp" line="+23"/>
+        <location filename="../src/actions/clipboard-actions.hpp" line="+21"/>
         <source>Copied to clipboard</source>
         <translation>已複製到剪貼簿</translation>
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+5"/>
         <source>Copy to clipboard</source>
         <translation>複製到剪貼簿</translation>
     </message>
@@ -1235,7 +1223,7 @@
 <context>
     <name>CreateExtensionCommand</name>
     <message>
-        <location filename="../src/extensions/developer/developer-extension.hpp" line="+10"/>
+        <location filename="../src/builtins/developer/developer-extension.hpp" line="+10"/>
         <source>Create Extension</source>
         <translation>建立擴充套件</translation>
     </message>
@@ -1243,7 +1231,7 @@
 <context>
     <name>CreateExtensionFormView</name>
     <message>
-        <location filename="../src/qml/qml/CreateExtensionFormView.qml" line="+15"/>
+        <location filename="../src/ui/qml/views/CreateExtensionFormView.qml" line="+16"/>
         <source>Author</source>
         <translation>作者</translation>
     </message>
@@ -1269,12 +1257,12 @@
     </message>
     <message>
         <location line="+8"/>
-        <location line="+42"/>
+        <location line="+43"/>
         <source>Description</source>
         <translation>描述</translation>
     </message>
     <message>
-        <location line="-36"/>
+        <location line="-37"/>
         <source>An extension that does super cool things</source>
         <translation>一個能完成超酷功能的擴充套件</translation>
     </message>
@@ -1284,7 +1272,7 @@
         <translation>位置</translation>
     </message>
     <message>
-        <location line="+15"/>
+        <location line="+16"/>
         <source>Command Title</source>
         <translation>命令標題</translation>
     </message>
@@ -1307,7 +1295,7 @@
 <context>
     <name>CreateExtensionSuccessViewHost</name>
     <message>
-        <location filename="../src/qml/create-extension-success-view-host.cpp" line="+7"/>
+        <location filename="../src/builtins/developer/create-extension-success-view-host.cpp" line="+8"/>
         <source>
 # Extension successfully created
 
@@ -1316,28 +1304,14 @@ Your new extension %1 has been succesfully created at `%2`.
 For commands from this extension to be picked up by Vicinae, you need to run your extension in development mode at least once:
 
 ```bash
-cd %2
+cd &apos;%2&apos;
 npm install
 npm run dev
 ```
 
 You can learn more about extension development in the [Vicinae documentation](https://docs.vicinae.com/).
 </source>
-        <translation>
-# 擴充套件建立成功
-
-新擴充套件 %1 已成功創建於 `%2`。
-
-要讓 Vicinae 識別此擴充套件中的命令，需要至少以開發模式執行一次：
-
-```bash
-cd %2
-npm install
-npm run dev
-```
-
-有關擴充套件開發的更多資訊，請參閱 [Vicinae 文件](https://docs.vicinae.com/)。
-</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+37"/>
@@ -1348,12 +1322,12 @@ npm run dev
 <context>
     <name>CreateExtensionViewHost</name>
     <message>
-        <location filename="../src/qml/create-extension-view-host.cpp" line="+44"/>
+        <location filename="../src/builtins/developer/create-extension-view-host.cpp" line="+37"/>
         <source>Create extension</source>
         <translation>建立擴充套件</translation>
     </message>
     <message>
-        <location line="+18"/>
+        <location line="+19"/>
         <location line="+4"/>
         <location line="+19"/>
         <location line="+5"/>
@@ -1387,9 +1361,17 @@ npm run dev
     </message>
 </context>
 <context>
+    <name>CreateShortcutAction</name>
+    <message>
+        <location filename="../src/actions/shortcut-actions.hpp" line="-53"/>
+        <source>Create shortcut</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>CreateShortcutCommand</name>
     <message>
-        <location filename="../src/extensions/shortcut/create-shortcut-command.hpp" line="+10"/>
+        <location filename="../src/builtins/shortcut/shortcut-extension.hpp" line="+13"/>
         <source>Create Shortcut</source>
         <translation>建立快捷方式</translation>
     </message>
@@ -1397,7 +1379,7 @@ npm run dev
 <context>
     <name>CreateShortcutFromActiveBrowserTabCommand</name>
     <message>
-        <location filename="../src/extensions/browser/browser-extension.cpp" line="+44"/>
+        <location filename="../src/builtins/browser/browser-extension.cpp" line="+44"/>
         <source>Create Shortcut from Active Tab</source>
         <translation>從當前標籤頁建立快捷方式</translation>
     </message>
@@ -1415,7 +1397,7 @@ npm run dev
 <context>
     <name>CreateSnippetCommand</name>
     <message>
-        <location filename="../src/extensions/snippet/create-snippet-command.hpp" line="+10"/>
+        <location filename="../src/builtins/snippet/create-snippet-command.hpp" line="+10"/>
         <source>Create Snippet</source>
         <translation>建立片段</translation>
     </message>
@@ -1423,17 +1405,22 @@ npm run dev
 <context>
     <name>DMenuSection</name>
     <message>
-        <location filename="../src/qml/dmenu-model.cpp" line="+93"/>
+        <location filename="../src/ui/views/dmenu-model.cpp" line="+96"/>
         <source>Select entry</source>
         <translation>選擇條目</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+0"/>
+        <source>Select entry (index)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+14"/>
         <source>Pass search text</source>
         <translation>傳遞搜尋文本</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+4"/>
         <source>Select and copy entry</source>
         <translation>選擇並複製條目</translation>
     </message>
@@ -1441,7 +1428,7 @@ npm run dev
 <context>
     <name>DMenuView</name>
     <message>
-        <location filename="../src/qml/qml/DMenuView.qml" line="+79"/>
+        <location filename="../src/ui/qml/views/DMenuView.qml" line="+81"/>
         <source>Name</source>
         <translation>名稱</translation>
     </message>
@@ -1459,7 +1446,7 @@ npm run dev
 <context>
     <name>DMenuViewHost</name>
     <message>
-        <location filename="../src/qml/dmenu-view-host.cpp" line="+34"/>
+        <location filename="../src/ui/views/dmenu-view-host.cpp" line="+36"/>
         <source>Search entries...</source>
         <translation>搜尋條目…</translation>
     </message>
@@ -1477,7 +1464,7 @@ npm run dev
 <context>
     <name>DetailListView</name>
     <message>
-        <location filename="../src/qml/qml/DetailListView.qml" line="+32"/>
+        <location filename="../src/ui/qml/views/DetailListView.qml" line="+32"/>
         <source>No results</source>
         <translation>無結果</translation>
     </message>
@@ -1485,7 +1472,7 @@ npm run dev
 <context>
     <name>DeveloperExtension</name>
     <message>
-        <location filename="../src/extensions/developer/developer-extension.hpp" line="+10"/>
+        <location filename="../src/builtins/developer/developer-extension.hpp" line="+12"/>
         <source>Developer</source>
         <translation>開發者</translation>
     </message>
@@ -1493,7 +1480,7 @@ npm run dev
 <context>
     <name>DisableApplication</name>
     <message>
-        <location filename="../src/actions/root-search/root-search-actions.hpp" line="+8"/>
+        <location filename="../src/actions/root-search-actions.hpp" line="+8"/>
         <source>Disable item</source>
         <translation>停用專案</translation>
     </message>
@@ -1501,7 +1488,7 @@ npm run dev
 <context>
     <name>DisableItemAction</name>
     <message>
-        <location filename="../src/actions/root-search/root-search-actions.cpp" line="+88"/>
+        <location filename="../src/actions/root-search-actions.cpp" line="+111"/>
         <source>Are you sure?</source>
         <translation>確定嗎？</translation>
     </message>
@@ -1542,15 +1529,28 @@ npm run dev
 <context>
     <name>DuplicateShortcutAction</name>
     <message>
-        <location filename="../src/actions/shortcut/shortcut-actions.hpp" line="-50"/>
+        <location filename="../src/actions/shortcut-actions.hpp" line="-26"/>
         <source>Duplicate link</source>
         <translation>建立連結副本</translation>
     </message>
 </context>
 <context>
+    <name>EditAppleShortcutAction</name>
+    <message>
+        <location filename="../src/root-search/apple-shortcuts/apple-shortcut-root-provider.cpp" line="-75"/>
+        <source>Edit in Shortcuts</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Failed to open shortcut</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>EditClipboardKeywordsAction</name>
     <message>
-        <location filename="../src/extensions/clipboard/history/clipboard-history-actions.hpp" line="+49"/>
+        <location filename="../src/builtins/clipboard/history/clipboard-history-actions.hpp" line="+50"/>
         <source>Additional keywords that will be used to index this selection.</source>
         <translation>用於索引此選中項的其他關鍵詞。</translation>
     </message>
@@ -1563,7 +1563,7 @@ npm run dev
 <context>
     <name>EditEmojiKeywordsAction</name>
     <message>
-        <location filename="../src/qml/emoji-grid-model.cpp" line="+35"/>
+        <location filename="../src/builtins/vicinae/emoji-grid-model.cpp" line="+35"/>
         <source>Additional keywords that will be used to index this glyph</source>
         <translation>用於索引此字元的其他關鍵詞</translation>
     </message>
@@ -1576,7 +1576,7 @@ npm run dev
 <context>
     <name>EditKeywordsFormView</name>
     <message>
-        <location filename="../src/qml/qml/EditKeywordsFormView.qml" line="+19"/>
+        <location filename="../src/ui/qml/views/EditKeywordsFormView.qml" line="+20"/>
         <source>Keywords</source>
         <translation>關鍵詞</translation>
     </message>
@@ -1584,7 +1584,7 @@ npm run dev
 <context>
     <name>EditKeywordsViewHost</name>
     <message>
-        <location filename="../src/qml/edit-keywords-view-host.cpp" line="+26"/>
+        <location filename="../src/ui/views/edit-keywords-view-host.cpp" line="+26"/>
         <source>Submit</source>
         <translation>提交</translation>
     </message>
@@ -1602,28 +1602,20 @@ npm run dev
 <context>
     <name>EditShortcutAction</name>
     <message>
-        <location filename="../src/actions/shortcut/shortcut-actions.hpp" line="-41"/>
+        <location filename="../src/actions/shortcut-actions.hpp" line="-41"/>
         <source>Edit shortcut</source>
         <translation>編輯快捷方式</translation>
     </message>
 </context>
 <context>
-    <name>EmojiCategoryFilterAccessory</name>
-    <message>
-        <location filename="../src/qml/qml/EmojiCategoryFilterAccessory.qml" line="+8"/>
-        <source>All</source>
-        <translation>全部</translation>
-    </message>
-</context>
-<context>
     <name>EmojiGridModel</name>
     <message>
-        <location filename="../src/qml/emoji-grid-model.hpp" line="+58"/>
+        <location filename="../src/builtins/vicinae/emoji-grid-model.hpp" line="+68"/>
         <source>Search for emojis and symbols...</source>
         <translation>搜尋表情符號和符號…</translation>
     </message>
     <message>
-        <location filename="../src/qml/emoji-grid-model.cpp" line="+241"/>
+        <location filename="../src/builtins/vicinae/emoji-grid-model.cpp" line="+262"/>
         <source>Pinned</source>
         <translation>已固定</translation>
     </message>
@@ -1636,7 +1628,7 @@ npm run dev
 <context>
     <name>EmojiGridViewHost</name>
     <message>
-        <location filename="../src/qml/emoji-grid-view-host.hpp" line="+40"/>
+        <location filename="../src/builtins/vicinae/emoji-grid-view-host.hpp" line="+60"/>
         <source>All</source>
         <translation>全部</translation>
     </message>
@@ -1644,7 +1636,7 @@ npm run dev
 <context>
     <name>EmptyView</name>
     <message>
-        <location filename="../src/qml/qml/EmptyView.qml" line="+7"/>
+        <location filename="../src/ui/qml/views/EmptyView.qml" line="+9"/>
         <source>No results</source>
         <translation>無結果</translation>
     </message>
@@ -1652,12 +1644,12 @@ npm run dev
 <context>
     <name>EnabledFallbackSection</name>
     <message>
-        <location filename="../src/qml/manage-fallback-model.hpp" line="-19"/>
+        <location filename="../src/builtins/vicinae/manage-fallback-model.hpp" line="-19"/>
         <source>Enabled</source>
         <translation>已啟用</translation>
     </message>
     <message>
-        <location filename="../src/qml/manage-fallback-model.cpp" line="-22"/>
+        <location filename="../src/builtins/vicinae/manage-fallback-model.cpp" line="-22"/>
         <source>Disable fallback</source>
         <translation>停用後備項</translation>
     </message>
@@ -1683,7 +1675,7 @@ npm run dev
 <context>
     <name>ExtensionBoilerplateGenerator</name>
     <message>
-        <location filename="../src/services/extension-boilerplate-generator/extension-boilerplate-generator.cpp" line="+24"/>
+        <location filename="../src/services/extension-boilerplate-generator/extension-boilerplate-generator.cpp" line="+32"/>
         <source>Simple List</source>
         <translation>簡單列表</translation>
     </message>
@@ -1711,7 +1703,7 @@ npm run dev
 <context>
     <name>ExtensionErrorViewHost</name>
     <message>
-        <location filename="../src/qml/extension-error-view-host.cpp" line="+6"/>
+        <location filename="../src/extension/views/extension-error-view-host.cpp" line="+7"/>
         <source># Extension crashed 💥!
 
 This extension threw an uncaught exception and crashed as a result.
@@ -1735,7 +1727,7 @@ Find the full stacktrace below. You can also directly copy it from the action me
 <context>
     <name>ExtensionFormModel</name>
     <message>
-        <location filename="../src/qml/extension-form-model.cpp" line="+200"/>
+        <location filename="../src/extension/views/extension-form-model.cpp" line="+229"/>
         <source>One or more fields have errors</source>
         <translation>一個或多個欄位有錯誤</translation>
     </message>
@@ -1743,12 +1735,12 @@ Find the full stacktrace below. You can also directly copy it from the action me
 <context>
     <name>ExtensionGridModel</name>
     <message>
-        <location filename="../src/qml/extension-grid-model.cpp" line="+186"/>
+        <location filename="../src/extension/views/extension-grid-model.cpp" line="+233"/>
         <source>Search...</source>
         <translation>搜尋…</translation>
     </message>
     <message>
-        <location line="+52"/>
+        <location line="+5"/>
         <source>No results</source>
         <translation>無結果</translation>
     </message>
@@ -1756,7 +1748,7 @@ Find the full stacktrace below. You can also directly copy it from the action me
 <context>
     <name>ExtensionGridView</name>
     <message>
-        <location filename="../src/qml/qml/ExtensionGridView.qml" line="+9"/>
+        <location filename="../src/ui/qml/views/ExtensionGridView.qml" line="+11"/>
         <source>No results</source>
         <translation>無結果</translation>
     </message>
@@ -1764,7 +1756,7 @@ Find the full stacktrace below. You can also directly copy it from the action me
 <context>
     <name>ExtensionListModel</name>
     <message>
-        <location filename="../src/qml/extension-list-model.cpp" line="+189"/>
+        <location filename="../src/extension/views/extension-list-model.cpp" line="+197"/>
         <source>Search...</source>
         <translation>搜尋…</translation>
     </message>
@@ -1777,7 +1769,7 @@ Find the full stacktrace below. You can also directly copy it from the action me
 <context>
     <name>ExtensionSettingsPage</name>
     <message>
-        <location filename="../src/qml/qml/ExtensionSettingsPage.qml" line="+94"/>
+        <location filename="../src/ui/qml/settings/ExtensionSettingsPage.qml" line="+115"/>
         <source>Description</source>
         <translation>描述</translation>
     </message>
@@ -1792,7 +1784,7 @@ Find the full stacktrace below. You can also directly copy it from the action me
         <translation>命令</translation>
     </message>
     <message>
-        <location line="+105"/>
+        <location line="+118"/>
         <source>Shortcut</source>
         <translation>快捷方式</translation>
     </message>
@@ -1801,11 +1793,21 @@ Find the full stacktrace below. You can also directly copy it from the action me
         <source>Add Alias</source>
         <translation>新增別名</translation>
     </message>
+    <message>
+        <location line="+96"/>
+        <source>Nothing to configure</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>Commands and preferences will show up here once available.</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>ExtensionView</name>
     <message>
-        <location filename="../src/qml/qml/ExtensionView.qml" line="+99"/>
+        <location filename="../src/ui/qml/views/ExtensionView.qml" line="+114"/>
         <source>No results</source>
         <translation>無結果</translation>
     </message>
@@ -1813,7 +1815,7 @@ Find the full stacktrace below. You can also directly copy it from the action me
 <context>
     <name>FileExtension</name>
     <message>
-        <location filename="../src/extensions/file/file-extension.hpp" line="+65"/>
+        <location filename="../src/builtins/file/file-extension.hpp" line="+105"/>
         <source>System files</source>
         <translation>系統檔案</translation>
     </message>
@@ -1822,41 +1824,11 @@ Find the full stacktrace below. You can also directly copy it from the action me
         <source>Integrate with system files</source>
         <translation>與系統檔案整合</translation>
     </message>
-    <message>
-        <location line="+24"/>
-        <source>Enabled</source>
-        <translation>已啟用</translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>Whether to run the file indexer in the background. When turned off, the indexer process is stopped entirely and file search becomes unavailable until it is turned back on.</source>
-        <translation>是否在後臺執行檔案索引器。關閉後索引器程序將完全停止，重新啟用前無法搜尋檔案。</translation>
-    </message>
-    <message>
-        <location line="+5"/>
-        <source>Search paths</source>
-        <translation>搜尋路徑</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Directories that Vicinae will search</source>
-        <translation>Vicinae 要搜尋的目錄</translation>
-    </message>
-    <message>
-        <location line="+4"/>
-        <source>Excluded search paths</source>
-        <translation>排除的搜尋路徑</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Directories to exclude from file indexing</source>
-        <translation>不納入檔案索引的目錄</translation>
-    </message>
 </context>
 <context>
     <name>FilePreview</name>
     <message>
-        <location filename="../src/qml/qml/FilePreview.qml" line="+42"/>
+        <location filename="../src/ui/qml/detail/FilePreview.qml" line="+37"/>
         <source>Preview not available for this file type</source>
         <translation>無法預覽此檔案型別</translation>
     </message>
@@ -1864,7 +1836,7 @@ Find the full stacktrace below. You can also directly copy it from the action me
 <context>
     <name>FocusWindowAction</name>
     <message>
-        <location filename="../src/actions/wm/window-actions.hpp" line="-17"/>
+        <location filename="../src/actions/window-actions.hpp" line="-17"/>
         <source>Focus window</source>
         <translation>聚焦視窗</translation>
     </message>
@@ -1872,7 +1844,7 @@ Find the full stacktrace below. You can also directly copy it from the action me
 <context>
     <name>FontBrowserViewHost</name>
     <message>
-        <location filename="../src/qml/font-browser-view-host.hpp" line="+38"/>
+        <location filename="../src/builtins/font/font-browser-view-host.hpp" line="+55"/>
         <source>All</source>
         <translation>全部</translation>
     </message>
@@ -1880,7 +1852,7 @@ Find the full stacktrace below. You can also directly copy it from the action me
 <context>
     <name>FontExtension</name>
     <message>
-        <location filename="../src/extensions/font/font-extension.hpp" line="+9"/>
+        <location filename="../src/builtins/font/font-extension.hpp" line="+9"/>
         <source>Font</source>
         <translation>字型</translation>
     </message>
@@ -1888,17 +1860,17 @@ Find the full stacktrace below. You can also directly copy it from the action me
 <context>
     <name>FontGridModel</name>
     <message>
-        <location filename="../src/qml/font-grid-model.hpp" line="+47"/>
+        <location filename="../src/builtins/font/font-grid-model.hpp" line="+53"/>
         <source>Search fonts...</source>
         <translation>搜尋字型…</translation>
     </message>
     <message>
-        <location filename="../src/qml/font-grid-model.cpp" line="+133"/>
+        <location filename="../src/builtins/font/font-grid-model.cpp" line="+152"/>
         <source>All Fonts (%1)</source>
         <translation>所有字型（%1）</translation>
     </message>
     <message>
-        <location line="+16"/>
+        <location line="+15"/>
         <source>Results (%1)</source>
         <translation>結果（%1）</translation>
     </message>
@@ -1906,7 +1878,7 @@ Find the full stacktrace below. You can also directly copy it from the action me
 <context>
     <name>Footer</name>
     <message>
-        <location filename="../src/qml/qml/Footer.qml" line="+60"/>
+        <location filename="../src/ui/qml/launcher/Footer.qml" line="+62"/>
         <source>Actions</source>
         <translation>操作</translation>
     </message>
@@ -1914,7 +1886,7 @@ Find the full stacktrace below. You can also directly copy it from the action me
 <context>
     <name>ForceQuitAppAction</name>
     <message>
-        <location filename="../src/actions/app/app-actions.cpp" line="+95"/>
+        <location filename="../src/actions/app-actions.cpp" line="+96"/>
         <source>Force Quit Application</source>
         <translation>強制退出應用程式</translation>
     </message>
@@ -1932,7 +1904,7 @@ Find the full stacktrace below. You can also directly copy it from the action me
 <context>
     <name>ForgetTelemetryCommand</name>
     <message>
-        <location filename="../src/extensions/vicinae/vicinae-extension.cpp" line="+210"/>
+        <location filename="../src/builtins/vicinae/vicinae-extension.cpp" line="+175"/>
         <source>Forget Past Vicinae Telemetry</source>
         <translation>清除以往的 Vicinae 遙測關聯</translation>
     </message>
@@ -1960,12 +1932,17 @@ Find the full stacktrace below. You can also directly copy it from the action me
 <context>
     <name>FormAppSelector</name>
     <message>
-        <location filename="../src/qml/qml/FormAppSelector.qml" line="+50"/>
+        <location filename="../src/ui/qml/form/FormAppSelector.qml" line="+50"/>
         <source>All applications</source>
         <translation>所有應用程式</translation>
     </message>
     <message>
-        <location line="+70"/>
+        <location line="+63"/>
+        <source>Remove</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-98"/>
         <source>+ Restrict to app…</source>
         <translation>+ 限定到應用…</translation>
     </message>
@@ -1973,7 +1950,7 @@ Find the full stacktrace below. You can also directly copy it from the action me
 <context>
     <name>FormFilePicker</name>
     <message>
-        <location filename="../src/qml/qml/FormFilePicker.qml" line="+84"/>
+        <location filename="../src/ui/qml/form/FormFilePicker.qml" line="+91"/>
         <source>Select files</source>
         <translation>選擇檔案</translation>
     </message>
@@ -1988,17 +1965,25 @@ Find the full stacktrace below. You can also directly copy it from the action me
         <translation>選擇目錄</translation>
     </message>
     <message>
-        <location line="+46"/>
+        <location line="-73"/>
+        <location line="+119"/>
         <source>No directory selected</source>
         <translation>未選擇目錄</translation>
     </message>
     <message>
-        <location line="+0"/>
+        <location line="-119"/>
+        <location line="+119"/>
         <source>No file selected</source>
         <translation>未選擇檔案</translation>
     </message>
     <message>
-        <location line="+115"/>
+        <location line="+13"/>
+        <location line="+124"/>
+        <source>Remove</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+31"/>
         <source>+ Add folder…</source>
         <translation>+ 新增資料夾…</translation>
     </message>
@@ -2009,42 +1994,61 @@ Find the full stacktrace below. You can also directly copy it from the action me
     </message>
 </context>
 <context>
+    <name>FormPasswordInput</name>
+    <message>
+        <location filename="../src/ui/qml/form/FormPasswordInput.qml" line="+98"/>
+        <source>Hide password</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Show password</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>GeneralSettingsModel</name>
     <message>
-        <location filename="../src/qml/general-settings-model.cpp" line="+176"/>
-        <location line="+11"/>
+        <location filename="../src/ui/settings/general-settings-model.cpp" line="+202"/>
+        <location line="+12"/>
+        <source>Automatic</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-10"/>
+        <location line="+15"/>
         <source>None</source>
         <translation>無</translation>
     </message>
     <message>
-        <location line="-10"/>
-        <location line="+10"/>
+        <location line="-14"/>
+        <location line="+14"/>
         <source>Blurred</source>
         <translation>模糊</translation>
     </message>
     <message>
-        <location line="-8"/>
-        <location line="+8"/>
+        <location line="-12"/>
+        <location line="+12"/>
         <source>Liquid Glass</source>
         <translation>液態玻璃</translation>
     </message>
     <message>
-        <location line="-7"/>
+        <location line="-11"/>
         <source>Window material</source>
         <translation>視窗材質</translation>
     </message>
     <message>
-        <location line="+23"/>
+        <location line="+27"/>
         <source>Themes</source>
         <translation>主題</translation>
     </message>
     <message>
-        <location line="+18"/>
+        <location line="+17"/>
         <source>Fonts</source>
         <translation>字型</translation>
     </message>
     <message>
-        <location line="+19"/>
+        <location line="+17"/>
         <source>Icon Themes</source>
         <translation>圖示主題</translation>
     </message>
@@ -2079,7 +2083,7 @@ Find the full stacktrace below. You can also directly copy it from the action me
 <context>
     <name>GeneralSettingsPage</name>
     <message>
-        <location filename="../src/qml/qml/GeneralSettingsPage.qml" line="+29"/>
+        <location filename="../src/ui/qml/settings/GeneralSettingsPage.qml" line="+35"/>
         <source>Behavior</source>
         <translation>行為</translation>
     </message>
@@ -2099,7 +2103,7 @@ Find the full stacktrace below. You can also directly copy it from the action me
         <translation>失去焦點時關閉</translation>
     </message>
     <message>
-        <location line="+8"/>
+        <location line="+10"/>
         <source>Close on Escape</source>
         <translation>按 Escape 鍵關閉</translation>
     </message>
@@ -2148,7 +2152,7 @@ Find the full stacktrace below. You can also directly copy it from the action me
 <context>
     <name>GenericGridView</name>
     <message>
-        <location filename="../src/qml/qml/GenericGridView.qml" line="+33"/>
+        <location filename="../src/ui/qml/views/GenericGridView.qml" line="+29"/>
         <source>No results</source>
         <translation>無結果</translation>
     </message>
@@ -2156,27 +2160,9 @@ Find the full stacktrace below. You can also directly copy it from the action me
 <context>
     <name>GenericListView</name>
     <message>
-        <location filename="../src/qml/qml/GenericListView.qml" line="+25"/>
+        <location filename="../src/ui/qml/views/GenericListView.qml" line="+26"/>
         <source>No results</source>
         <translation>無結果</translation>
-    </message>
-</context>
-<context>
-    <name>GlobalShortcutService</name>
-    <message>
-        <location filename="../src/services/global-shortcuts/global-shortcut-service.cpp" line="+43"/>
-        <source>Toggle Vicinae</source>
-        <translation>顯示或隱藏 Vicinae</translation>
-    </message>
-    <message>
-        <location line="+84"/>
-        <source>the launcher hotkey</source>
-        <translation>啟動器快捷鍵</translation>
-    </message>
-    <message>
-        <location line="+11"/>
-        <source>another command</source>
-        <translation>其他命令</translation>
     </message>
 </context>
 <context>
@@ -2190,7 +2176,7 @@ Find the full stacktrace below. You can also directly copy it from the action me
 <context>
     <name>HibernateCommand</name>
     <message>
-        <location filename="../src/extensions/power-management/power-management-extension.cpp" line="+127"/>
+        <location filename="../src/builtins/power-management/power-management-extension.cpp" line="+124"/>
         <source>Hibernate System</source>
         <translation>休眠系統</translation>
     </message>
@@ -2213,7 +2199,7 @@ Find the full stacktrace below. You can also directly copy it from the action me
 <context>
     <name>IconBrowserCommand</name>
     <message>
-        <location filename="../src/extensions/vicinae/vicinae-extension.cpp" line="+25"/>
+        <location filename="../src/builtins/vicinae/vicinae-extension.cpp" line="+26"/>
         <source>Search Builtin Icons</source>
         <translation>搜尋內建圖示</translation>
     </message>
@@ -2226,7 +2212,7 @@ Find the full stacktrace below. You can also directly copy it from the action me
 <context>
     <name>ImageViewer</name>
     <message>
-        <location filename="../src/qml/qml/ImageViewer.qml" line="+159"/>
+        <location filename="../src/ui/qml/detail/ImageViewer.qml" line="+161"/>
         <source>%1 / %2</source>
         <translation>%1 / %2</translation>
     </message>
@@ -2234,7 +2220,7 @@ Find the full stacktrace below. You can also directly copy it from the action me
 <context>
     <name>InspectLocalStorage</name>
     <message>
-        <location filename="../src/extensions/vicinae/vicinae-extension.cpp" line="+12"/>
+        <location filename="../src/builtins/vicinae/vicinae-extension.cpp" line="+13"/>
         <source>Inspect Local Storage</source>
         <translation>檢視本地儲存</translation>
     </message>
@@ -2245,9 +2231,37 @@ Find the full stacktrace below. You can also directly copy it from the action me
     </message>
 </context>
 <context>
+    <name>InstallExtensionAction</name>
+    <message>
+        <location filename="../src/actions/extension-actions.cpp" line="+15"/>
+        <source>Downloading extension...</source>
+        <translation type="unfinished">正在下載擴充套件…</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Failed to download extension</source>
+        <translation type="unfinished">下載擴充套件失敗</translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Failed to extract extension archive</source>
+        <translation type="unfinished">解壓擴充套件包失敗</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Extension installed</source>
+        <translation type="unfinished">擴充套件已安裝</translation>
+    </message>
+    <message>
+        <location filename="../src/actions/extension-actions.hpp" line="+28"/>
+        <source>Install extension</source>
+        <translation type="unfinished">安裝擴充套件</translation>
+    </message>
+</context>
+<context>
     <name>InstallUpdateAction</name>
     <message>
-        <location filename="../src/services/update/update-service.cpp" line="+188"/>
+        <location filename="../src/services/update/update-service.cpp" line="+190"/>
         <source>Install Update</source>
         <translation>安裝更新</translation>
     </message>
@@ -2260,17 +2274,17 @@ Find the full stacktrace below. You can also directly copy it from the action me
 <context>
     <name>InstalledExtensionsSection</name>
     <message>
-        <location filename="../src/qml/installed-extensions-model.hpp" line="+18"/>
+        <location filename="../src/builtins/vicinae/installed-extensions-model.hpp" line="+18"/>
         <source>Installed Extensions ({count})</source>
         <translation>已安裝的擴充套件（{count}）</translation>
     </message>
     <message>
-        <location filename="../src/qml/installed-extensions-model.cpp" line="+36"/>
+        <location filename="../src/builtins/vicinae/installed-extensions-model.cpp" line="+38"/>
         <source>Local</source>
         <translation>本地</translation>
     </message>
     <message>
-        <location line="+14"/>
+        <location line="+16"/>
         <source>Copy</source>
         <translation>複製</translation>
     </message>
@@ -2298,7 +2312,7 @@ Find the full stacktrace below. You can also directly copy it from the action me
 <context>
     <name>InstalledExtensionsViewHost</name>
     <message>
-        <location filename="../src/qml/installed-extensions-view-host.cpp" line="+12"/>
+        <location filename="../src/builtins/vicinae/installed-extensions-view-host.cpp" line="+12"/>
         <source>Search extensions...</source>
         <translation>搜尋擴充套件…</translation>
     </message>
@@ -2306,16 +2320,58 @@ Find the full stacktrace below. You can also directly copy it from the action me
 <context>
     <name>InternalExtension</name>
     <message>
-        <location filename="../src/extensions/internal/internal-extension.hpp" line="+32"/>
+        <location filename="../src/builtins/internal/internal-extension.hpp" line="+12"/>
         <location line="+1"/>
         <source>Internal Commands</source>
         <translation>內部命令</translation>
     </message>
 </context>
 <context>
+    <name>KdeSettingsRootItem</name>
+    <message>
+        <location filename="../src/root-search/kde-settings/kde-settings-root-provider.cpp" line="+13"/>
+        <location line="+9"/>
+        <source>KDE Settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Name</source>
+        <translation type="unfinished">名稱</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Where</source>
+        <translation type="unfinished">位置</translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Open in System Settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Copy Module ID</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>KdeSettingsRootProvider</name>
+    <message>
+        <location line="+17"/>
+        <source>KDE Settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Modules of the KDE System Settings application.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>KeyboardBridge</name>
     <message>
-        <location filename="../src/qml/keyboard-bridge.hpp" line="+51"/>
+        <location filename="../src/ui/bridges/keyboard-bridge.hpp" line="+60"/>
         <source>Modifier required</source>
         <translation>需要修飾鍵</translation>
     </message>
@@ -2323,27 +2379,32 @@ Find the full stacktrace below. You can also directly copy it from the action me
 <context>
     <name>LauncherWindow</name>
     <message>
-        <location filename="../src/qml/qml/LauncherWindow.qml" line="+29"/>
+        <location filename="../src/ui/qml/launcher/LauncherWindow.qml" line="+46"/>
         <source>Vicinae Launcher</source>
         <translation>Vicinae 啟動器</translation>
     </message>
     <message>
-        <location filename="../src/qml/launcher-window.cpp" line="+571"/>
+        <location filename="../src/ui/windows/launcher-window.cpp" line="+872"/>
         <source>Open Settings</source>
         <translation>開啟設定</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+4"/>
         <source>Keyboard Shortcuts</source>
         <translation>鍵盤快捷鍵</translation>
     </message>
     <message>
-        <location line="+13"/>
+        <location line="+5"/>
+        <source>Extension Store</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
         <source>Documentation</source>
         <translation>文件</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+3"/>
         <location line="+5"/>
         <source>Opened in browser</source>
         <translation>已在瀏覽器中開啟</translation>
@@ -2354,7 +2415,7 @@ Find the full stacktrace below. You can also directly copy it from the action me
         <translation>報告問題</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+4"/>
         <source>About Vicinae</source>
         <translation>關於 Vicinae</translation>
     </message>
@@ -2362,12 +2423,12 @@ Find the full stacktrace below. You can also directly copy it from the action me
 <context>
     <name>LocalStorageItemSection</name>
     <message>
-        <location filename="../src/qml/local-storage-model.hpp" line="+19"/>
+        <location filename="../src/builtins/vicinae/local-storage-model.hpp" line="+19"/>
         <source>Items ({count})</source>
         <translation>專案（{count}）</translation>
     </message>
     <message>
-        <location filename="../src/qml/local-storage-model.cpp" line="+31"/>
+        <location filename="../src/builtins/vicinae/local-storage-model.cpp" line="+31"/>
         <source>Show value</source>
         <translation>顯示值</translation>
     </message>
@@ -2375,7 +2436,7 @@ Find the full stacktrace below. You can also directly copy it from the action me
 <context>
     <name>LocalStorageItemViewHost</name>
     <message>
-        <location filename="../src/qml/local-storage-view-host.cpp" line="+23"/>
+        <location filename="../src/builtins/vicinae/local-storage-view-host.cpp" line="+23"/>
         <source>Search items...</source>
         <translation>搜尋專案…</translation>
     </message>
@@ -2383,12 +2444,12 @@ Find the full stacktrace below. You can also directly copy it from the action me
 <context>
     <name>LocalStorageNamespaceSection</name>
     <message>
-        <location filename="../src/qml/local-storage-model.hpp" line="-11"/>
+        <location filename="../src/builtins/vicinae/local-storage-model.hpp" line="-11"/>
         <source>Namespaces ({count})</source>
         <translation>名稱空間（{count}）</translation>
     </message>
     <message>
-        <location filename="../src/qml/local-storage-model.cpp" line="-16"/>
+        <location filename="../src/builtins/vicinae/local-storage-model.cpp" line="-16"/>
         <source>Browse namespace</source>
         <translation>瀏覽名稱空間</translation>
     </message>
@@ -2396,7 +2457,7 @@ Find the full stacktrace below. You can also directly copy it from the action me
 <context>
     <name>LocalStorageViewHost</name>
     <message>
-        <location filename="../src/qml/local-storage-view-host.cpp" line="-15"/>
+        <location filename="../src/builtins/vicinae/local-storage-view-host.cpp" line="-15"/>
         <source>Search namespaces...</source>
         <translation>搜尋名稱空間…</translation>
     </message>
@@ -2404,7 +2465,7 @@ Find the full stacktrace below. You can also directly copy it from the action me
 <context>
     <name>LockCommand</name>
     <message>
-        <location filename="../src/extensions/power-management/power-management-extension.cpp" line="-48"/>
+        <location filename="../src/builtins/power-management/power-management-extension.cpp" line="-48"/>
         <source>Lock Session</source>
         <translation>鎖定會話</translation>
     </message>
@@ -2450,15 +2511,21 @@ Find the full stacktrace below. You can also directly copy it from the action me
 <context>
     <name>MacOSGlobalShortcutBackend</name>
     <message>
-        <location filename="../src/services/global-shortcuts/macos-global-shortcut-backend.cpp" line="+238"/>
+        <location filename="../src/services/global-shortcuts/macos-global-shortcut-backend.cpp" line="+166"/>
+        <location line="+44"/>
         <source>unsupported or invalid trigger</source>
         <translation>不支援或無效的觸發鍵</translation>
+    </message>
+    <message>
+        <location line="-36"/>
+        <source>failed to register hot key (%1)</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>MacSettingsRootItem</name>
     <message>
-        <location filename="../src/root-search/macos-settings/macos-settings-root-provider.mm" line="+132"/>
+        <location filename="../src/root-search/macos-settings/macos-settings-root-provider.mm" line="+140"/>
         <location line="+9"/>
         <source>System Settings</source>
         <translation>系統設定</translation>
@@ -2484,7 +2551,7 @@ Find the full stacktrace below. You can also directly copy it from the action me
         <translation>位置</translation>
     </message>
     <message>
-        <location line="+13"/>
+        <location line="+12"/>
         <source>Open %1 Settings</source>
         <translation>開啟“%1”設定</translation>
     </message>
@@ -2502,15 +2569,23 @@ Find the full stacktrace below. You can also directly copy it from the action me
 <context>
     <name>MacSettingsRootProvider</name>
     <message>
-        <location line="+13"/>
+        <location line="+14"/>
         <source>System Settings</source>
         <translation>系統設定</translation>
     </message>
 </context>
 <context>
+    <name>MacosScreenshotProvider</name>
+    <message>
+        <location filename="../src/services/screenshots/macos/macos-screenshot-provider.mm" line="+99"/>
+        <source>Spotlight is unavailable. Showing screenshots and recordings from the screenshot folder.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>MacosUpdateInstaller</name>
     <message>
-        <location filename="../src/services/update/macos-update-installer.mm" line="+208"/>
+        <location filename="../src/services/update/macos-update-installer.mm" line="+207"/>
         <source>This installation cannot update itself</source>
         <translation>此安裝無法自行更新</translation>
     </message>
@@ -2566,7 +2641,7 @@ Find the full stacktrace below. You can also directly copy it from the action me
 <context>
     <name>ManageFallbackCommand</name>
     <message>
-        <location filename="../src/extensions/vicinae/configure-fallback-command.hpp" line="+11"/>
+        <location filename="../src/builtins/vicinae/configure-fallback-command.hpp" line="+11"/>
         <source>Configure Fallback Commands</source>
         <translation>配置後備命令</translation>
     </message>
@@ -2579,7 +2654,7 @@ Find the full stacktrace below. You can also directly copy it from the action me
 <context>
     <name>ManageFallbackViewHost</name>
     <message>
-        <location filename="../src/qml/manage-fallback-view-host.cpp" line="+12"/>
+        <location filename="../src/builtins/vicinae/manage-fallback-view-host.cpp" line="+12"/>
         <source>Search commands...</source>
         <translation>搜尋命令…</translation>
     </message>
@@ -2587,7 +2662,7 @@ Find the full stacktrace below. You can also directly copy it from the action me
 <context>
     <name>ManageShortcutsCommand</name>
     <message>
-        <location filename="../src/extensions/shortcut/manage-shortcuts-command.hpp" line="+9"/>
+        <location filename="../src/builtins/shortcut/shortcut-extension.hpp" line="+13"/>
         <source>Manage Shortcuts</source>
         <translation>管理快捷方式</translation>
     </message>
@@ -2595,7 +2670,7 @@ Find the full stacktrace below. You can also directly copy it from the action me
 <context>
     <name>ManageShortcutsSection</name>
     <message>
-        <location filename="../src/qml/manage-shortcuts-model.hpp" line="+17"/>
+        <location filename="../src/builtins/shortcut/manage-shortcuts-model.hpp" line="+17"/>
         <source>Shortcuts ({count})</source>
         <translation>快捷方式（{count}）</translation>
     </message>
@@ -2603,7 +2678,7 @@ Find the full stacktrace below. You can also directly copy it from the action me
 <context>
     <name>ManageShortcutsViewHost</name>
     <message>
-        <location filename="../src/qml/manage-shortcuts-view-host.cpp" line="+28"/>
+        <location filename="../src/builtins/shortcut/manage-shortcuts-view-host.cpp" line="+26"/>
         <source>Search shortcuts...</source>
         <translation>搜尋快捷方式…</translation>
     </message>
@@ -2618,7 +2693,12 @@ Find the full stacktrace below. You can also directly copy it from the action me
         <translation>應用程式</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+2"/>
+        <source>%1 (Default)</source>
+        <translation type="unfinished">%1（預設）</translation>
+    </message>
+    <message>
+        <location line="+6"/>
         <source>Opened</source>
         <translation>開啟次數</translation>
     </message>
@@ -2641,7 +2721,7 @@ Find the full stacktrace below. You can also directly copy it from the action me
 <context>
     <name>ManageSnippetsCommand</name>
     <message>
-        <location filename="../src/extensions/snippet/manage-snippets-command.hpp" line="+10"/>
+        <location filename="../src/builtins/snippet/manage-snippets-command.hpp" line="+10"/>
         <source>Manage Snippets</source>
         <translation>管理片段</translation>
     </message>
@@ -2649,17 +2729,17 @@ Find the full stacktrace below. You can also directly copy it from the action me
 <context>
     <name>ManageSnippetsSection</name>
     <message>
-        <location filename="../src/qml/manage-snippets-model.hpp" line="+18"/>
+        <location filename="../src/builtins/snippet/manage-snippets-model.hpp" line="+18"/>
         <source>Snippets ({count})</source>
         <translation>片段（{count}）</translation>
     </message>
     <message>
-        <location filename="../src/qml/manage-snippets-model.cpp" line="+32"/>
+        <location filename="../src/builtins/snippet/manage-snippets-model.cpp" line="+33"/>
         <source>Copy to clipboard</source>
         <translation>複製到剪貼簿</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+4"/>
         <source>Copied to clipboard</source>
         <translation>已複製到剪貼簿</translation>
     </message>
@@ -2692,7 +2772,7 @@ Find the full stacktrace below. You can also directly copy it from the action me
 <context>
     <name>ManageSnippetsViewHost</name>
     <message>
-        <location filename="../src/qml/manage-snippets-view-host.hpp" line="+54"/>
+        <location filename="../src/builtins/snippet/manage-snippets-view-host.cpp" line="+12"/>
         <source>No snippets</source>
         <translation>沒有片段</translation>
     </message>
@@ -2702,7 +2782,7 @@ Find the full stacktrace below. You can also directly copy it from the action me
         <translation>建立一個片段即可開始</translation>
     </message>
     <message>
-        <location filename="../src/qml/manage-snippets-view-host.cpp" line="+28"/>
+        <location line="+19"/>
         <source>Search for snippets...</source>
         <translation>搜尋片段…</translation>
     </message>
@@ -2742,7 +2822,7 @@ Find the full stacktrace below. You can also directly copy it from the action me
         <translation>應用程式</translation>
     </message>
     <message>
-        <location line="+68"/>
+        <location line="+69"/>
         <source>Create snippet</source>
         <translation>建立片段</translation>
     </message>
@@ -2750,7 +2830,7 @@ Find the full stacktrace below. You can also directly copy it from the action me
 <context>
     <name>MarkItemAsFavorite</name>
     <message>
-        <location filename="../src/actions/root-search/root-search-actions.cpp" line="-60"/>
+        <location filename="../src/actions/root-search-actions.cpp" line="-80"/>
         <source>Mark as favorite</source>
         <translation>標為收藏</translation>
     </message>
@@ -2758,7 +2838,7 @@ Find the full stacktrace below. You can also directly copy it from the action me
 <context>
     <name>MarkdownShowcase</name>
     <message>
-        <location filename="../src/extensions/internal/markdown-showcase-command.hpp" line="+172"/>
+        <location filename="../src/builtins/internal/markdown-showcase-command.hpp" line="+171"/>
         <source>Markdown Showcase</source>
         <translation>Markdown 功能展示</translation>
     </message>
@@ -2769,9 +2849,17 @@ Find the full stacktrace below. You can also directly copy it from the action me
     </message>
 </context>
 <context>
+    <name>MarkdownShowcaseView</name>
+    <message>
+        <location line="-160"/>
+        <source>Close</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>MarkdownView</name>
     <message>
-        <location filename="../src/qml/qml/markdown/MarkdownView.qml" line="+265"/>
+        <location filename="../src/ui/qml/markdown/MarkdownView.qml" line="+272"/>
         <source>Copy</source>
         <translation>複製</translation>
     </message>
@@ -2784,7 +2872,7 @@ Find the full stacktrace below. You can also directly copy it from the action me
 <context>
     <name>MdCallout</name>
     <message>
-        <location filename="../src/qml/qml/markdown/MdCallout.qml" line="+35"/>
+        <location filename="../src/ui/qml/markdown/MdCallout.qml" line="+36"/>
         <source>Caution</source>
         <translation>危險</translation>
     </message>
@@ -2812,7 +2900,7 @@ Find the full stacktrace below. You can also directly copy it from the action me
 <context>
     <name>MdCodeBlock</name>
     <message>
-        <location filename="../src/qml/qml/markdown/MdCodeBlock.qml" line="+58"/>
+        <location filename="../src/ui/qml/markdown/MdCodeBlock.qml" line="+59"/>
         <source>Copied!</source>
         <translation>已複製！</translation>
     </message>
@@ -2823,9 +2911,48 @@ Find the full stacktrace below. You can also directly copy it from the action me
     </message>
 </context>
 <context>
+    <name>MediaExtension</name>
+    <message>
+        <location filename="../src/builtins/media/media-extension.hpp" line="+330"/>
+        <source>Media</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Control media playback and system audio</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>MenuBarMenuSection</name>
+    <message>
+        <location filename="../src/builtins/vicinae/menu-bar-search-view-host.hpp" line="+38"/>
+        <source>Results ({count} items)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+28"/>
+        <source>Run Menu Item</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Open in Menu Bar</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>MenuBarSearchViewHost</name>
+    <message>
+        <location line="+22"/>
+        <source>Filter by menu item title...</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>MissingPreferenceView</name>
     <message>
-        <location filename="../src/qml/qml/MissingPreferenceView.qml" line="+28"/>
+        <location filename="../src/ui/qml/views/MissingPreferenceView.qml" line="+30"/>
         <source>Welcome to %1</source>
         <translation>歡迎使用 %1</translation>
     </message>
@@ -2834,24 +2961,50 @@ Find the full stacktrace below. You can also directly copy it from the action me
         <source>Before you can use this command, you need to fill in the required preference fields below.</source>
         <translation>使用此命令前，需要填寫以下必填偏好設定。</translation>
     </message>
+    <message>
+        <location line="+130"/>
+        <source>Select an app…</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+19"/>
+        <source>Add app…</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>MissingPreferenceViewHost</name>
     <message>
-        <location filename="../src/qml/missing-preference-view-host.cpp" line="+202"/>
+        <location filename="../src/extension/views/missing-preference-view-host.cpp" line="+215"/>
         <source>Save preferences</source>
         <translation>儲存偏好設定</translation>
     </message>
     <message>
-        <location line="+9"/>
+        <location line="+10"/>
         <source>Please fill in all required fields</source>
         <translation>請填寫所有必填欄位</translation>
     </message>
 </context>
 <context>
+    <name>MoveFavoriteDownAction</name>
+    <message>
+        <location filename="../src/actions/root-search-actions.cpp" line="+53"/>
+        <source>Move down in favorites</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>MoveFavoriteUpAction</name>
+    <message>
+        <location line="-9"/>
+        <source>Move up in favorites</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>NavigationController</name>
     <message>
-        <location filename="../src/navigation-controller.cpp" line="+654"/>
+        <location filename="../src/navigation-controller.cpp" line="+669"/>
         <source>Extension manager is not running</source>
         <translation>擴充套件管理器未執行</translation>
     </message>
@@ -2875,6 +3028,91 @@ Find the full stacktrace below. You can also directly copy it from the action me
     </message>
 </context>
 <context>
+    <name>NextTrackCommand</name>
+    <message>
+        <location filename="../src/builtins/media/media-extension.hpp" line="-219"/>
+        <location line="+26"/>
+        <source>Next Track</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-25"/>
+        <source>Skip to the next track</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>player</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>%1 cannot skip to the next track</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Failed to skip to the next track</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>NowPlayingCommand</name>
+    <message>
+        <location line="+46"/>
+        <source>Now Playing</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Browse and control running media players</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>NowPlayingViewHost</name>
+    <message>
+        <location filename="../src/builtins/media/now-playing-view-host.hpp" line="+27"/>
+        <source>Search players...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>Players</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>Playing</source>
+        <translation type="unfinished">正在播放</translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Paused</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+12"/>
+        <source>Pause</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Play</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Next Track</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Previous Track</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>NullUpdateInstaller</name>
     <message>
         <location filename="../src/services/update/null-update-installer.hpp" line="+14"/>
@@ -2885,7 +3123,12 @@ Find the full stacktrace below. You can also directly copy it from the action me
 <context>
     <name>OAuthOverlayView</name>
     <message>
-        <location filename="../src/qml/qml/OAuthOverlayView.qml" line="+91"/>
+        <location filename="../src/ui/qml/views/OAuthOverlayView.qml" line="+29"/>
+        <source>Back</source>
+        <translation type="unfinished">返回</translation>
+    </message>
+    <message>
+        <location line="+65"/>
         <source>Continue with %1</source>
         <translation>使用 %1 繼續</translation>
     </message>
@@ -2905,7 +3148,7 @@ Back to command in an instant...</source>
 <context>
     <name>OAuthTokenStoreCommand</name>
     <message>
-        <location filename="../src/extensions/vicinae/vicinae-extension.cpp" line="-31"/>
+        <location filename="../src/builtins/vicinae/vicinae-extension.cpp" line="-33"/>
         <source>Manage OAuth Token Sets</source>
         <translation>管理 OAuth 令牌組</translation>
     </message>
@@ -2918,12 +3161,12 @@ Back to command in an instant...</source>
 <context>
     <name>OAuthTokenStoreSection</name>
     <message>
-        <location filename="../src/qml/oauth-token-store-model.hpp" line="+17"/>
+        <location filename="../src/builtins/vicinae/oauth-token-store-model.hpp" line="+17"/>
         <source>OAuth Token Sets ({count})</source>
         <translation>OAuth 令牌組（{count}）</translation>
     </message>
     <message>
-        <location filename="../src/qml/oauth-token-store-model.cpp" line="+20"/>
+        <location filename="../src/builtins/vicinae/oauth-token-store-model.cpp" line="+21"/>
         <source>Expired</source>
         <translation>已過期</translation>
     </message>
@@ -2986,7 +3229,7 @@ Back to command in an instant...</source>
 <context>
     <name>OAuthTokenStoreViewHost</name>
     <message>
-        <location filename="../src/qml/oauth-token-store-view-host.cpp" line="+12"/>
+        <location filename="../src/builtins/vicinae/oauth-token-store-view-host.cpp" line="+12"/>
         <source>Search token sets...</source>
         <translation>搜尋令牌組…</translation>
     </message>
@@ -2994,7 +3237,7 @@ Back to command in an instant...</source>
 <context>
     <name>OnboardingWindow</name>
     <message>
-        <location filename="../src/qml/qml/OnboardingWindow.qml" line="+39"/>
+        <location filename="../src/ui/qml/onboarding/OnboardingWindow.qml" line="+41"/>
         <source>Grant Access</source>
         <translation>授予訪問許可權</translation>
     </message>
@@ -3005,7 +3248,7 @@ Back to command in an instant...</source>
     </message>
     <message>
         <location line="+16"/>
-        <location line="+39"/>
+        <location line="+40"/>
         <source>Welcome to Vicinae</source>
         <translation>歡迎使用 Vicinae</translation>
     </message>
@@ -3015,7 +3258,7 @@ Back to command in an instant...</source>
         <translation>來完成初始設定吧，只需一分鐘。</translation>
     </message>
     <message>
-        <location line="+17"/>
+        <location line="+20"/>
         <source>Permissions</source>
         <translation>許可權</translation>
     </message>
@@ -3056,16 +3299,16 @@ Back to command in an instant...</source>
     </message>
     <message>
         <location line="+11"/>
-        <source>Accessibility is required: global shortcuts, paste, and snippet expansion cannot work without it.</source>
-        <translation>必須授予輔助功能許可權，否則全域性快捷鍵、貼上和片段展開將無法使用。</translation>
-    </message>
-    <message>
-        <location line="+0"/>
         <source>Full disk access needs to be explicitly enabled if you want file search to cover all your files.</source>
         <translation>若要搜尋所有檔案，需要明確啟用完全磁碟訪問許可權。</translation>
     </message>
     <message>
-        <location line="+18"/>
+        <location line="+0"/>
+        <source>Without accessibility access, paste, snippet expansion, and window management are unavailable.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+19"/>
         <source>Make it your own</source>
         <translation>按你的喜好設定</translation>
     </message>
@@ -3095,7 +3338,17 @@ Back to command in an instant...</source>
         <translation>可在任意位置開啟啟動器。</translation>
     </message>
     <message>
-        <location line="+16"/>
+        <location line="+0"/>
+        <source>Bind a key to &quot;vicinae toggle&quot;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+18"/>
+        <source>Open Docs</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
         <source>Launch at login</source>
         <translation>登入時啟動</translation>
     </message>
@@ -3115,6 +3368,11 @@ Back to command in an instant...</source>
         <translation>Vicinae 已在執行。使用以下快捷鍵開啟啟動器：</translation>
     </message>
     <message>
+        <location line="+0"/>
+        <source>Vicinae is running. Bind a key to &quot;vicinae toggle&quot; to open it from anywhere.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location line="+17"/>
         <source>Vicinae is open source software.</source>
         <translation>Vicinae 是開源軟體。</translation>
@@ -3130,7 +3388,7 @@ Back to command in an instant...</source>
         <translation>返回</translation>
     </message>
     <message>
-        <location line="+44"/>
+        <location line="+39"/>
         <source>Finish</source>
         <translation>完成</translation>
     </message>
@@ -3141,22 +3399,9 @@ Back to command in an instant...</source>
     </message>
 </context>
 <context>
-    <name>OpenAboutCommand</name>
-    <message>
-        <location filename="../src/extensions/vicinae/open-about-command.hpp" line="+13"/>
-        <source>About</source>
-        <translation>關於</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Open the &quot;About&quot; tab of the vicinae settings.</source>
-        <translation>開啟 Vicinae 設定中的“關於”標籤頁。</translation>
-    </message>
-</context>
-<context>
     <name>OpenAppAction</name>
     <message>
-        <location filename="../src/actions/app/app-actions.cpp" line="-56"/>
+        <location filename="../src/actions/app-actions.cpp" line="-56"/>
         <source>Failed to start app</source>
         <translation>啟動應用失敗</translation>
     </message>
@@ -3177,7 +3422,7 @@ Back to command in an instant...</source>
 <context>
     <name>OpenBuiltinCommandAction</name>
     <message>
-        <location filename="../src/command-actions.hpp" line="+17"/>
+        <location filename="../src/actions/command-actions.hpp" line="+17"/>
         <source>Open command</source>
         <translation>開啟命令</translation>
     </message>
@@ -3185,7 +3430,7 @@ Back to command in an instant...</source>
 <context>
     <name>OpenCalculatorHistoryAction</name>
     <message>
-        <location filename="../src/actions/calculator/calculator-actions.hpp" line="+9"/>
+        <location filename="../src/actions/calculator-actions.hpp" line="+9"/>
         <source>Open Calculator History</source>
         <translation>開啟計算器歷史記錄</translation>
     </message>
@@ -3193,7 +3438,7 @@ Back to command in an instant...</source>
 <context>
     <name>OpenCompletedShortcutAction</name>
     <message>
-        <location filename="../src/actions/shortcut/shortcut-actions.hpp" line="-32"/>
+        <location filename="../src/actions/shortcut-actions.hpp" line="-32"/>
         <source>Open shortcut</source>
         <translation>開啟快捷方式</translation>
     </message>
@@ -3201,7 +3446,7 @@ Back to command in an instant...</source>
 <context>
     <name>OpenCompletedShortcutWithAction</name>
     <message>
-        <location line="+85"/>
+        <location line="+114"/>
         <source>Open with...</source>
         <translation>開啟方式…</translation>
     </message>
@@ -3225,7 +3470,7 @@ Back to command in an instant...</source>
 <context>
     <name>OpenDefaultVicinaeConfig</name>
     <message>
-        <location filename="../src/extensions/vicinae/vicinae-extension.cpp" line="-157"/>
+        <location filename="../src/builtins/vicinae/vicinae-extension.cpp" line="-117"/>
         <source>Open Default Config File</source>
         <translation>開啟預設配置檔案</translation>
     </message>
@@ -3248,7 +3493,7 @@ Back to command in an instant...</source>
 <context>
     <name>OpenDiscordCommand</name>
     <message>
-        <location line="-66"/>
+        <location line="-85"/>
         <source>Join the Discord Server</source>
         <translation>加入 Discord 伺服器</translation>
     </message>
@@ -3259,22 +3504,9 @@ Back to command in an instant...</source>
     </message>
 </context>
 <context>
-    <name>OpenDocumentationCommand</name>
-    <message>
-        <location line="-16"/>
-        <source>Open Online Documentation</source>
-        <translation>開啟線上文件</translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>Navigate to the official vicinae documentation website.</source>
-        <translation>前往 Vicinae 官方文件網站。</translation>
-    </message>
-</context>
-<context>
     <name>OpenFileAction</name>
     <message>
-        <location filename="../src/actions/files/file-actions.hpp" line="+18"/>
+        <location filename="../src/actions/file-actions.hpp" line="+18"/>
         <source>Open with %1</source>
         <translation>使用 %1 開啟</translation>
     </message>
@@ -3282,12 +3514,12 @@ Back to command in an instant...</source>
 <context>
     <name>OpenInBrowserAction</name>
     <message>
-        <location filename="../src/actions/app/app-actions.hpp" line="+105"/>
+        <location filename="../src/actions/app-actions.hpp" line="+117"/>
         <source>Open in browser</source>
         <translation>在瀏覽器中開啟</translation>
     </message>
     <message>
-        <location filename="../src/actions/app/app-actions.cpp" line="+95"/>
+        <location filename="../src/actions/app-actions.cpp" line="+160"/>
         <source>Failed to open in browser</source>
         <translation>無法在瀏覽器中開啟</translation>
     </message>
@@ -3300,12 +3532,12 @@ Back to command in an instant...</source>
 <context>
     <name>OpenInTerminalAction</name>
     <message>
-        <location filename="../src/actions/app/app-actions.hpp" line="-62"/>
+        <location filename="../src/actions/app-actions.hpp" line="-74"/>
         <source>Open in %1</source>
         <translation>在 %1 中開啟</translation>
     </message>
     <message>
-        <location filename="../src/actions/app/app-actions.cpp" line="-85"/>
+        <location filename="../src/actions/app-actions.cpp" line="-150"/>
         <source>Failed to start app</source>
         <translation>啟動應用失敗</translation>
     </message>
@@ -3313,33 +3545,20 @@ Back to command in an instant...</source>
 <context>
     <name>OpenItemPreferencesAction</name>
     <message>
-        <location filename="../src/actions/root-search/root-search-actions.hpp" line="-28"/>
+        <location filename="../src/actions/root-search-actions.hpp" line="-28"/>
         <source>Open Preferences</source>
         <translation>開啟偏好設定</translation>
     </message>
 </context>
 <context>
-    <name>OpenKeybindSettingsCommand</name>
-    <message>
-        <location filename="../src/extensions/vicinae/vicinae-extension.cpp" line="+156"/>
-        <source>Open Vicinae Keybind Settings</source>
-        <translation>開啟 Vicinae 快捷鍵設定</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Open the vicinae keybind settings window</source>
-        <translation>開啟 Vicinae 快捷鍵設定視窗</translation>
-    </message>
-</context>
-<context>
     <name>OpenRawProgramAction</name>
     <message>
-        <location filename="../src/actions/app/app-actions.hpp" line="+25"/>
+        <location filename="../src/actions/app-actions.hpp" line="+25"/>
         <source>Execute program</source>
         <translation>執行程式</translation>
     </message>
     <message>
-        <location filename="../src/actions/app/app-actions.cpp" line="+35"/>
+        <location filename="../src/actions/app-actions.cpp" line="+35"/>
         <source>Failed to start app</source>
         <translation>啟動應用失敗</translation>
     </message>
@@ -3347,7 +3566,7 @@ Back to command in an instant...</source>
 <context>
     <name>OpenSettingsCommand</name>
     <message>
-        <location filename="../src/extensions/vicinae/vicinae-extension.cpp" line="-40"/>
+        <location filename="../src/builtins/vicinae/vicinae-extension.cpp" line="+100"/>
         <source>Open Vicinae Settings</source>
         <translation>開啟 Vicinae 設定</translation>
     </message>
@@ -3360,7 +3579,7 @@ Back to command in an instant...</source>
 <context>
     <name>OpenSettingsPaneAction</name>
     <message>
-        <location filename="../src/root-search/macos-settings/macos-settings-root-provider.mm" line="-135"/>
+        <location filename="../src/root-search/macos-settings/macos-settings-root-provider.mm" line="-143"/>
         <source>Failed to open System Settings</source>
         <translation>開啟系統設定失敗</translation>
     </message>
@@ -3368,12 +3587,17 @@ Back to command in an instant...</source>
 <context>
     <name>OpenShortcutAction</name>
     <message>
-        <location filename="../src/actions/shortcut/shortcut-actions.hpp" line="-128"/>
+        <location filename="../src/actions/shortcut-actions.hpp" line="-161"/>
+        <source>No default app to open %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
         <source>No app with id %1</source>
         <translation>沒有 ID 為 %1 的應用</translation>
     </message>
     <message>
-        <location line="+9"/>
+        <location line="+12"/>
         <location line="+7"/>
         <source>Open shortcut</source>
         <translation>開啟快捷方式</translation>
@@ -3390,7 +3614,7 @@ Back to command in an instant...</source>
 <context>
     <name>OpenVicinaeConfig</name>
     <message>
-        <location filename="../src/extensions/vicinae/vicinae-extension.cpp" line="-81"/>
+        <location filename="../src/builtins/vicinae/vicinae-extension.cpp" line="-76"/>
         <source>Open Config File</source>
         <translation>開啟配置檔案</translation>
     </message>
@@ -3398,6 +3622,16 @@ Back to command in an instant...</source>
         <location line="+1"/>
         <source>Open the main vicinae configuration file</source>
         <translation>開啟 Vicinae 主配置檔案</translation>
+    </message>
+    <message>
+        <location line="+17"/>
+        <source>Show Log File</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Open the Vicinae log file in your file browser</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -3411,20 +3645,38 @@ Back to command in an instant...</source>
 <context>
     <name>OpenWithAction</name>
     <message>
-        <location filename="../src/actions/app/app-actions.cpp" line="+54"/>
+        <location filename="../src/actions/app-actions.cpp" line="+119"/>
         <source>Open with...</source>
         <translation>開啟方式…</translation>
     </message>
 </context>
 <context>
+    <name>PasteLastScreenshotCommand</name>
+    <message>
+        <location filename="../src/builtins/screenshots/screenshots-extension.hpp" line="+30"/>
+        <source>Paste Last Screenshot</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Paste the most recent saved screenshot into the active app.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>PasteToFocusedWindowAction</name>
     <message>
-        <location filename="../src/clipboard-actions.hpp" line="+11"/>
+        <location filename="../src/actions/clipboard-actions.hpp" line="+16"/>
+        <source>Paste to %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
         <source>Paste to active window</source>
         <translation>貼上到當前視窗</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+9"/>
         <source>Copy to focused window</source>
         <translation>複製到當前視窗</translation>
     </message>
@@ -3432,7 +3684,7 @@ Back to command in an instant...</source>
 <context>
     <name>PinCalculatorHistoryRecordAction</name>
     <message>
-        <location filename="../src/actions/calculator/calculator-actions.hpp" line="+28"/>
+        <location filename="../src/actions/calculator-actions.hpp" line="+28"/>
         <source>Entry pinned</source>
         <translation>已固定條目</translation>
     </message>
@@ -3445,7 +3697,7 @@ Back to command in an instant...</source>
 <context>
     <name>PinClipboardAction</name>
     <message>
-        <location filename="../src/extensions/clipboard/history/clipboard-history-actions.hpp" line="-26"/>
+        <location filename="../src/builtins/clipboard/history/clipboard-history-actions.hpp" line="-27"/>
         <source>Selection pinned</source>
         <translation>已固定所選內容</translation>
     </message>
@@ -3473,7 +3725,7 @@ Back to command in an instant...</source>
 <context>
     <name>PinEmojiAction</name>
     <message>
-        <location filename="../src/qml/emoji-grid-model.cpp" line="-322"/>
+        <location filename="../src/builtins/vicinae/emoji-grid-model.cpp" line="-345"/>
         <source>Pin emoji</source>
         <translation>固定表情符號</translation>
     </message>
@@ -3481,7 +3733,7 @@ Back to command in an instant...</source>
 <context>
     <name>PinWindowAction</name>
     <message>
-        <location filename="../src/actions/wm/window-actions.hpp" line="+37"/>
+        <location filename="../src/actions/window-actions.hpp" line="+37"/>
         <source>Unpin from all workspaces</source>
         <translation>從所有工作區取消固定</translation>
     </message>
@@ -3492,24 +3744,42 @@ Back to command in an instant...</source>
     </message>
 </context>
 <context>
-    <name>PowerManagementCommand</name>
+    <name>PlayPauseCommand</name>
     <message>
-        <location filename="../src/extensions/power-management/power-management-extension.cpp" line="-283"/>
-        <source>Ask for confirmation</source>
-        <translation>要求確認</translation>
-    </message>
-    <message>
-        <location line="+7"/>
-        <source>Custom program</source>
-        <translation>自定義程式</translation>
+        <location filename="../src/builtins/media/media-extension.hpp" line="-100"/>
+        <source>Play / Pause</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Custom POSIX shell command to run instead of the default implementation</source>
-        <translation>代替預設實現執行的自定義 POSIX shell 命令</translation>
+        <source>Toggle playback of the active media player</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+27"/>
+        <location line="+5"/>
+        <source>player</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Failed to toggle playback</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Paused</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Playing %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>PowerManagementCommand</name>
+    <message>
+        <location filename="../src/builtins/power-management/power-management-extension.cpp" line="-248"/>
         <source>Failed to execute custom program %1</source>
         <translation>執行自定義程式 %1 失敗</translation>
     </message>
@@ -3527,7 +3797,7 @@ Back to command in an instant...</source>
 <context>
     <name>PowerManagementExtension</name>
     <message>
-        <location filename="../src/extensions/power-management/power-management-extension.hpp" line="+8"/>
+        <location filename="../src/builtins/power-management/power-management-extension.hpp" line="+8"/>
         <source>Power Management</source>
         <translation>電源管理</translation>
     </message>
@@ -3540,7 +3810,7 @@ Back to command in an instant...</source>
 <context>
     <name>PowerOffCommand</name>
     <message>
-        <location filename="../src/extensions/power-management/power-management-extension.cpp" line="+137"/>
+        <location filename="../src/builtins/power-management/power-management-extension.cpp" line="+137"/>
         <source>Power Off System</source>
         <translation>關閉系統</translation>
     </message>
@@ -3561,22 +3831,421 @@ Back to command in an instant...</source>
     </message>
 </context>
 <context>
+    <name>PreferenceSchema</name>
+    <message>
+        <location filename="../src/services/app-service/app-preferences.hpp" line="+34"/>
+        <source>Default action</source>
+        <translation type="unfinished">預設操作</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Action to perform when the return key is pressed. Always default to &apos;launch&apos; if the app has no open window.</source>
+        <translation type="unfinished">按回車時執行的操作。如果應用沒有開啟的視窗，則始終預設為“啟動”。</translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Focus window</source>
+        <translation type="unfinished">聚焦視窗</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Launch app</source>
+        <translation type="unfinished">啟動應用</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Launch Prefix</source>
+        <translation type="unfinished">啟動字首</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Custom app launcher to use. Affects applications as well as their sub-actions.</source>
+        <translation type="unfinished">要使用的自定義應用啟動器，會影響應用及其子操作。</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <location line="+9"/>
+        <location line="+6"/>
+        <source>Application directories</source>
+        <translation type="unfinished">應用目錄</translation>
+    </message>
+    <message>
+        <location line="-14"/>
+        <source>Directories applications are sourced from. The list cannot be modified directly. In order to do so, you need to append additonal paths to the &lt;b&gt;XDG_DATA_DIRS&lt;/b&gt; environment variables.</source>
+        <translation type="unfinished">用於查詢應用的目錄。此列表無法直接修改；如需新增目錄，請將其他路徑追加到 &lt;b&gt;XDG_DATA_DIRS&lt;/b&gt; 環境變數。</translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Directories applications are sourced from.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Directories applications are sourced from. System directories are always scanned and cannot be removed.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/builtins/clipboard/clipboard-preferences.hpp" line="+62"/>
+        <source>Clipboard monitoring</source>
+        <translation type="unfinished">剪貼簿監控</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Whether new clipboard selections are appended to the history</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Ignore Passwords</source>
+        <translation type="unfinished">忽略密碼</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Ignore selections that can be identified as a password. May not work with all apps.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Preserve tagged</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Never evict or mass delete selections that have been explicitly tagged (pinned, custom keyword)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Excluded apps</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Never add selections copied from these apps to the history</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Eviction threshold</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Automatically delete selections older than this threshold</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Never</source>
+        <translation type="unfinished">從未</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>15 minutes</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>1 hour</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>1 day</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>1 week</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>1 month</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>1 year</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Erase on startup</source>
+        <translation type="unfinished">啟動時清除</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Erase clipboard history every time the vicinae server is started</source>
+        <translation type="unfinished">每次啟動 Vicinae 伺服器時清除剪貼簿歷史</translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <location filename="../src/builtins/system/system-run-model.hpp" line="-21"/>
+        <location filename="../src/builtins/vicinae/emoji-preferences.hpp" line="+27"/>
+        <source>Default Action</source>
+        <translation type="unfinished">預設操作</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <location filename="../src/builtins/vicinae/emoji-preferences.hpp" line="+1"/>
+        <source>The default action to perform on pressing return. Paste is only available if your environment supports it.</source>
+        <translation type="unfinished">按回車鍵時執行的預設操作。僅噹噹前環境支援時才能貼上。</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <location filename="../src/builtins/vicinae/emoji-preferences.hpp" line="+6"/>
+        <source>Paste</source>
+        <translation type="unfinished">貼上</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <location filename="../src/builtins/vicinae/emoji-preferences.hpp" line="+2"/>
+        <source>Copy</source>
+        <translation type="unfinished">複製</translation>
+    </message>
+    <message>
+        <location filename="../src/builtins/power-management/power-management-extension.cpp" line="-201"/>
+        <source>Ask for confirmation</source>
+        <translation type="unfinished">要求確認</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Custom program</source>
+        <translation type="unfinished">自定義程式</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Custom shell command to run instead of the default implementation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/builtins/system/browse-apps-preferences.hpp" line="+11"/>
+        <source>Sort alphabetically</source>
+        <translation type="unfinished">按字母排序</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Show hidden apps</source>
+        <translation type="unfinished">顯示隱藏應用</translation>
+    </message>
+    <message>
+        <location filename="../src/builtins/system/system-run-model.hpp" line="+1"/>
+        <source>The default action to run on pressing return</source>
+        <translation type="unfinished">按回車時執行的預設操作</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Run in terminal</source>
+        <translation type="unfinished">在終端中執行</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Run in terminal (hold)</source>
+        <translation type="unfinished">在終端中執行（保持視窗）</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Run directly</source>
+        <translation type="unfinished">直接執行</translation>
+    </message>
+    <message>
+        <location filename="../src/builtins/vicinae/emoji-preferences.hpp" line="+5"/>
+        <source>Skin tone</source>
+        <translation type="unfinished">膚色</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Skin tone to use for relevant emojis.</source>
+        <translation type="unfinished">為適用的表情選擇膚色。</translation>
+    </message>
+    <message>
+        <location filename="../src/builtins/calculator/calculator-extension.hpp" line="+11"/>
+        <source>Calculator Backend</source>
+        <translation type="unfinished">計算器後端</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Which backend to use to perform calculations</source>
+        <translation type="unfinished">用於執行計算的後端</translation>
+    </message>
+    <message>
+        <location filename="../src/builtins/file/file-extension.hpp" line="-44"/>
+        <source>Enabled</source>
+        <translation type="unfinished">已啟用</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Whether to run the file indexer in the background. When turned off, the indexer process is stopped entirely and file search becomes unavailable until it is turned back on.</source>
+        <translation type="unfinished">是否在後臺執行檔案索引器。關閉後索引器程序將完全停止，重新啟用前無法搜尋檔案。</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Search paths</source>
+        <translation type="unfinished">搜尋路徑</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Directories that Vicinae will search</source>
+        <translation type="unfinished">Vicinae 要搜尋的目錄</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Excluded search paths</source>
+        <translation type="unfinished">排除的搜尋路徑</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Directories to exclude from file indexing</source>
+        <translation type="unfinished">不納入檔案索引的目錄</translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Search backend</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Automatic uses Everything when it is running and falls back to Windows Search otherwise.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Automatic</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Windows Search</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Everything</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Everything instance</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Name of the Everything instance to connect to. Leave empty for the default instance, the Everything 1.5 alpha runs as &quot;1.5a&quot;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/builtins/snippet/snippet-extension.hpp" line="+23"/>
+        <source>Expansion</source>
+        <translation type="unfinished">展開</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Enable automatic snippet expansion when triggers are typed</source>
+        <translation type="unfinished">輸入觸發詞時自動展開片段</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Undo</source>
+        <translation type="unfinished">撤銷</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Press backspace immediately after expansion to undo and restore the trigger text</source>
+        <translation type="unfinished">展開後立即按退格鍵可撤銷並恢復觸發文本</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Keyboard layout</source>
+        <translation type="unfinished">鍵盤佈局</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>XKB layout used for trigger detection (e.g. &quot;us&quot;, &quot;fr&quot;). Leave empty for system default.</source>
+        <translation type="unfinished">用於檢測觸發詞的 XKB 佈局（如“us”“fr”）。留空則使用系統預設值。</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Pre-paste delay (ms)</source>
+        <translation type="unfinished">貼上前延遲（ms）</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Delay between setting clipboard and injecting paste shortcut. Increase if expansions paste empty on slow compositors.</source>
+        <translation type="unfinished">設定剪貼簿與注入貼上快捷鍵之間的延遲。如果在較慢的合成器上展開後貼上為空，請增大此值。</translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Key injection delay (ms)</source>
+        <translation type="unfinished">按鍵注入延遲（ms）</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Delay between injected key events. Increase if expansions produce missing or garbled characters on slow compositors.</source>
+        <translation type="unfinished">注入按鍵事件之間的延遲。如果在較慢的合成器上展開時缺字或亂碼，請增大此值。</translation>
+    </message>
+    <message>
+        <location filename="../src/builtins/vicinae/store-intro-preferences.hpp" line="+10"/>
+        <source>Always show intro</source>
+        <translation type="unfinished">始終顯示介紹</translation>
+    </message>
+    <message>
+        <location filename="../src/root-search/scripts/script-root-provider.hpp" line="+135"/>
+        <source>Custom directories</source>
+        <translation type="unfinished">自定義目錄</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Additional list of directories to source scripts from. These directories always take precedence over the default system ones</source>
+        <translation type="unfinished">用於載入指令碼的其他目錄。這些目錄始終優先於系統預設目錄</translation>
+    </message>
+</context>
+<context>
     <name>PreviewFontAction</name>
     <message>
-        <location filename="../src/qml/font-grid-model.cpp" line="-105"/>
+        <location filename="../src/builtins/font/font-grid-model.cpp" line="-123"/>
         <source>Preview font</source>
         <translation>預覽字型</translation>
     </message>
 </context>
 <context>
+    <name>PreviousTrackCommand</name>
+    <message>
+        <location filename="../src/builtins/media/media-extension.hpp" line="+43"/>
+        <location line="+26"/>
+        <source>Previous Track</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-25"/>
+        <source>Skip to the previous track</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>player</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>%1 cannot skip to the previous track</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Failed to skip to the previous track</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>ProgramsSection</name>
     <message>
-        <location filename="../src/qml/system-run-model.hpp" line="+21"/>
+        <location filename="../src/builtins/system/system-run-model.hpp" line="+35"/>
         <source>Programs (%1)</source>
         <translation>程式（%1）</translation>
     </message>
     <message>
-        <location filename="../src/qml/system-run-model.cpp" line="+52"/>
+        <location filename="../src/builtins/system/system-run-model.cpp" line="+52"/>
         <source>Open in %1 (hold)</source>
         <translation>在 %1 中開啟（保持視窗）</translation>
     </message>
@@ -3594,7 +4263,7 @@ Back to command in an instant...</source>
 <context>
     <name>ProviderSearchSection</name>
     <message>
-        <location filename="../src/qml/provider-search-model.hpp" line="+11"/>
+        <location filename="../src/builtins/root/provider-search-model.hpp" line="+11"/>
         <source>Results ({count})</source>
         <translation>結果（{count}）</translation>
     </message>
@@ -3602,33 +4271,15 @@ Back to command in an instant...</source>
 <context>
     <name>ProviderSearchViewHost</name>
     <message>
-        <location filename="../src/qml/provider-search-view-host.cpp" line="+15"/>
+        <location filename="../src/builtins/root/provider-search-view-host.cpp" line="+15"/>
         <source>Search %1</source>
         <translation>搜尋 %1</translation>
     </message>
 </context>
 <context>
-    <name>PruneMemoryCommand</name>
-    <message>
-        <location filename="../src/extensions/vicinae/vicinae-extension.cpp" line="+56"/>
-        <source>Prune Vicinae Memory Usage</source>
-        <translation>清理 Vicinae 記憶體佔用</translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>Try pruning vicinae&apos;s memory usage by clearing pixmap cache and calling malloc_trim(). Mostly provided for internal testing.</source>
-        <translation>嘗試清除畫素圖快取並呼叫 malloc_trim() 來降低 Vicinae 的記憶體佔用。主要用於內部測試。</translation>
-    </message>
-    <message>
-        <location line="+12"/>
-        <source>Pruned 🥊</source>
-        <translation>已清理 🥊</translation>
-    </message>
-</context>
-<context>
     <name>PutCalculatorAnswerInSearchBar</name>
     <message>
-        <location filename="../src/actions/calculator/calculator-actions.hpp" line="-20"/>
+        <location filename="../src/actions/calculator-actions.hpp" line="-20"/>
         <source>Put answer in search bar</source>
         <translation>將答案放入搜尋欄</translation>
     </message>
@@ -3636,7 +4287,7 @@ Back to command in an instant...</source>
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../src/utils/utils.cpp" line="+50"/>
+        <location filename="../src/utils/utils.cpp" line="+48"/>
         <source>in the future</source>
         <translation>未來</translation>
     </message>
@@ -3684,7 +4335,7 @@ Back to command in an instant...</source>
 <context>
     <name>QuitAppAction</name>
     <message>
-        <location filename="../src/actions/app/app-actions.cpp" line="-43"/>
+        <location filename="../src/actions/app-actions.cpp" line="-108"/>
         <source>Quit Application</source>
         <translation>退出應用</translation>
     </message>
@@ -3702,7 +4353,7 @@ Back to command in an instant...</source>
 <context>
     <name>RaycastCompatExtension</name>
     <message>
-        <location filename="../src/extensions/raycast/raycast-compat-extension.hpp" line="+15"/>
+        <location filename="../src/builtins/raycast/raycast-compat-extension.hpp" line="+15"/>
         <source>Raycast compatibility features</source>
         <translation>Raycast 相容功能</translation>
     </message>
@@ -3710,17 +4361,12 @@ Back to command in an instant...</source>
 <context>
     <name>RaycastStoreCommand</name>
     <message>
-        <location filename="../src/extensions/raycast/raycast-store-command.hpp" line="+13"/>
+        <location filename="../src/builtins/raycast/raycast-store-command.hpp" line="+15"/>
         <source>Install compatible extensions from the Raycast store</source>
         <translation>從 Raycast Store 安裝相容擴充套件</translation>
     </message>
     <message>
-        <location line="+9"/>
-        <source>Always show intro</source>
-        <translation>始終顯示介紹</translation>
-    </message>
-    <message>
-        <location line="+11"/>
+        <location line="+14"/>
         <source>
 # Welcome to the Raycast Extension Store
 
@@ -3763,7 +4409,7 @@ Vicinae 也有自己的 [Extension Store](vicinae://launch/core/store)。
 <context>
     <name>RaycastStoreDetailHost</name>
     <message>
-        <location filename="../src/qml/raycast-store-detail-host.cpp" line="+43"/>
+        <location filename="../src/builtins/raycast/raycast-store-detail-host.cpp" line="+41"/>
         <source>Failed to load extension</source>
         <translation>載入擴充套件失敗</translation>
     </message>
@@ -3803,32 +4449,12 @@ Vicinae 也有自己的 [Extension Store](vicinae://launch/core/store)。
         <translation>沒有相容性資料——此擴充套件可能可用，也可能不可用。</translation>
     </message>
     <message>
-        <location line="+83"/>
-        <source>Install extension</source>
-        <translation>安裝擴充套件</translation>
+        <location line="+75"/>
+        <source>Extension Store</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+7"/>
-        <source>Downloading extension...</source>
-        <translation>正在下載擴充套件…</translation>
-    </message>
-    <message>
-        <location line="+7"/>
-        <source>Failed to download extension</source>
-        <translation>下載擴充套件失敗</translation>
-    </message>
-    <message>
-        <location line="+7"/>
-        <source>Failed to extract extension archive</source>
-        <translation>解壓擴充套件包失敗</translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>Extension installed</source>
-        <translation>擴充套件已安裝</translation>
-    </message>
-    <message>
-        <location line="+14"/>
+        <location line="+17"/>
         <source>Report issue</source>
         <translation>報告問題</translation>
     </message>
@@ -3836,7 +4462,7 @@ Vicinae 也有自己的 [Extension Store](vicinae://launch/core/store)。
 <context>
     <name>RaycastStoreSection</name>
     <message>
-        <location filename="../src/qml/raycast-store-model.cpp" line="+45"/>
+        <location filename="../src/builtins/raycast/raycast-store-model.cpp" line="+46"/>
         <source>Show details</source>
         <translation>顯示詳情</translation>
     </message>
@@ -3844,7 +4470,7 @@ Vicinae 也有自己的 [Extension Store](vicinae://launch/core/store)。
 <context>
     <name>RaycastStoreViewHost</name>
     <message>
-        <location filename="../src/qml/raycast-store-view-host.cpp" line="+37"/>
+        <location filename="../src/builtins/raycast/raycast-store-view-host.cpp" line="+36"/>
         <source>Browse Raycast extensions</source>
         <translation>瀏覽 Raycast 擴充套件</translation>
     </message>
@@ -3872,7 +4498,7 @@ Vicinae 也有自己的 [Extension Store](vicinae://launch/core/store)。
 <context>
     <name>RebootCommand</name>
     <message>
-        <location filename="../src/extensions/power-management/power-management-extension.cpp" line="-72"/>
+        <location filename="../src/builtins/power-management/power-management-extension.cpp" line="+125"/>
         <source>Reboot System</source>
         <translation>重啟系統</translation>
     </message>
@@ -3895,7 +4521,7 @@ Vicinae 也有自己的 [Extension Store](vicinae://launch/core/store)。
 <context>
     <name>RebuildFileIndexCommand</name>
     <message>
-        <location filename="../src/extensions/file/file-extension.hpp" line="-72"/>
+        <location filename="../src/builtins/file/file-extension.hpp" line="-62"/>
         <source>Rebuild File Index</source>
         <translation>重建檔案索引</translation>
     </message>
@@ -3905,7 +4531,7 @@ Vicinae 也有自己的 [Extension Store](vicinae://launch/core/store)。
         <translation>完全重建檔案索引。如果檔案搜尋結果明顯過時，可手動執行此操作。</translation>
     </message>
     <message>
-        <location line="+13"/>
+        <location line="+11"/>
         <source>Are you sure?</source>
         <translation>確定嗎？</translation>
     </message>
@@ -3928,7 +4554,7 @@ Vicinae 也有自己的 [Extension Store](vicinae://launch/core/store)。
 <context>
     <name>RefreshAppsCommand</name>
     <message>
-        <location filename="../src/extensions/vicinae/refresh-apps-command.hpp" line="+12"/>
+        <location filename="../src/builtins/vicinae/refresh-apps-command.hpp" line="+12"/>
         <source>Refresh Apps</source>
         <translation>重新整理應用</translation>
     </message>
@@ -3938,7 +4564,7 @@ Vicinae 也有自己的 [Extension Store](vicinae://launch/core/store)。
         <translation>強制重新整理應用程式資料庫。資料庫通常會在發生變化時自動更新，但此操作可用於處理某些特殊情況。</translation>
     </message>
     <message>
-        <location filename="../src/extensions/vicinae/refresh-apps-command.cpp" line="+15"/>
+        <location filename="../src/builtins/vicinae/refresh-apps-command.cpp" line="+15"/>
         <source>Apps successfully refreshed</source>
         <translation>應用重新整理成功</translation>
     </message>
@@ -3951,7 +4577,7 @@ Vicinae 也有自己的 [Extension Store](vicinae://launch/core/store)。
 <context>
     <name>ReloadScriptDirectoriesCommand</name>
     <message>
-        <location filename="../src/extensions/vicinae/vicinae-extension.cpp" line="+29"/>
+        <location filename="../src/builtins/vicinae/vicinae-extension.cpp" line="+76"/>
         <source>Reload Script Directories</source>
         <translation>重新載入指令碼目錄</translation>
     </message>
@@ -3969,7 +4595,7 @@ Vicinae 也有自己的 [Extension Store](vicinae://launch/core/store)。
 <context>
     <name>RemoveAllCalculatorHistoryRecordsAction</name>
     <message>
-        <location filename="../src/actions/calculator/calculator-actions.hpp" line="+97"/>
+        <location filename="../src/actions/calculator-actions.hpp" line="+76"/>
         <source>Delete all entries</source>
         <translation>刪除所有條目</translation>
     </message>
@@ -3977,7 +4603,7 @@ Vicinae 也有自己的 [Extension Store](vicinae://launch/core/store)。
 <context>
     <name>RemoveAllSelectionsAction</name>
     <message>
-        <location filename="../src/extensions/clipboard/history/clipboard-history-actions.hpp" line="+27"/>
+        <location filename="../src/builtins/clipboard/history/clipboard-history-actions.hpp" line="+28"/>
         <source>Are you sure?</source>
         <translation>確定嗎？</translation>
     </message>
@@ -4010,7 +4636,7 @@ Vicinae 也有自己的 [Extension Store](vicinae://launch/core/store)。
 <context>
     <name>RemoveCalculatorHistoryRecordAction</name>
     <message>
-        <location filename="../src/actions/calculator/calculator-actions.hpp" line="-43"/>
+        <location filename="../src/actions/calculator-actions.hpp" line="-22"/>
         <source>Entry removed</source>
         <translation>已移除條目</translation>
     </message>
@@ -4028,7 +4654,7 @@ Vicinae 也有自己的 [Extension Store](vicinae://launch/core/store)。
 <context>
     <name>RemoveSelectionAction</name>
     <message>
-        <location filename="../src/extensions/clipboard/history/clipboard-history-actions.hpp" line="-70"/>
+        <location filename="../src/builtins/clipboard/history/clipboard-history-actions.hpp" line="-71"/>
         <source>Entry removed</source>
         <translation>已移除條目</translation>
     </message>
@@ -4046,7 +4672,7 @@ Vicinae 也有自己的 [Extension Store](vicinae://launch/core/store)。
 <context>
     <name>RemoveShortcutAction</name>
     <message>
-        <location filename="../src/actions/shortcut/shortcut-actions.hpp" line="+33"/>
+        <location filename="../src/actions/shortcut-actions.hpp" line="+33"/>
         <source>Removed link</source>
         <translation>已移除連結</translation>
     </message>
@@ -4064,7 +4690,7 @@ Vicinae 也有自己的 [Extension Store](vicinae://launch/core/store)。
 <context>
     <name>ReportVicinaeBugCommand</name>
     <message>
-        <location filename="../src/extensions/vicinae/report-bug-command.hpp" line="+10"/>
+        <location filename="../src/builtins/vicinae/report-bug-command.hpp" line="+10"/>
         <source>Report a Vicinae Bug</source>
         <translation>報告 Vicinae 錯誤</translation>
     </message>
@@ -4082,7 +4708,7 @@ Vicinae 也有自己的 [Extension Store](vicinae://launch/core/store)。
 <context>
     <name>ResetEmojiRankingAction</name>
     <message>
-        <location filename="../src/qml/emoji-grid-model.cpp" line="+21"/>
+        <location filename="../src/builtins/vicinae/emoji-grid-model.cpp" line="+21"/>
         <source>Reset ranking</source>
         <translation>重置排序</translation>
     </message>
@@ -4090,7 +4716,7 @@ Vicinae 也有自己的 [Extension Store](vicinae://launch/core/store)。
 <context>
     <name>ResetEmojiSkinToneAction</name>
     <message>
-        <location line="+32"/>
+        <location line="+34"/>
         <source>Reset to preference</source>
         <translation>重置為偏好設定</translation>
     </message>
@@ -4098,7 +4724,7 @@ Vicinae 也有自己的 [Extension Store](vicinae://launch/core/store)。
 <context>
     <name>ResetItemRanking</name>
     <message>
-        <location filename="../src/actions/root-search/root-search-actions.cpp" line="-25"/>
+        <location filename="../src/actions/root-search-actions.cpp" line="-69"/>
         <source>Ranking was successfully reset</source>
         <translation>已成功重置排序</translation>
     </message>
@@ -4131,7 +4757,7 @@ Vicinae 也有自己的 [Extension Store](vicinae://launch/core/store)。
 <context>
     <name>RevealFileInFolderAction</name>
     <message>
-        <location filename="../src/utils/file-list-item.hpp" line="+26"/>
+        <location filename="../src/utils/file-list-item.hpp" line="+31"/>
         <source>Show in file browser</source>
         <translation>在檔案瀏覽器中顯示</translation>
     </message>
@@ -4144,15 +4770,20 @@ Vicinae 也有自己的 [Extension Store](vicinae://launch/core/store)。
 <context>
     <name>RootCalculatorSection</name>
     <message>
-        <location filename="../src/qml/root-search-sources.hpp" line="+79"/>
+        <location filename="../src/builtins/root/root-search-sources.hpp" line="+89"/>
         <source>Calculator</source>
         <translation>計算器</translation>
+    </message>
+    <message>
+        <location filename="../src/builtins/root/root-search-sources.cpp" line="+175"/>
+        <source>Copy unformatted answer</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>RootFallbackSection</name>
     <message>
-        <location filename="../src/qml/root-search-sources.cpp" line="+407"/>
+        <location line="+259"/>
         <source>Use &quot;%1&quot; with...</source>
         <translation>用“%1”開啟…</translation>
     </message>
@@ -4160,7 +4791,7 @@ Vicinae 也有自己的 [Extension Store](vicinae://launch/core/store)。
 <context>
     <name>RootFavoritesSection</name>
     <message>
-        <location filename="../src/qml/root-search-sources.hpp" line="+67"/>
+        <location filename="../src/builtins/root/root-search-sources.hpp" line="+67"/>
         <source>Favorites</source>
         <translation>收藏</translation>
     </message>
@@ -4168,7 +4799,7 @@ Vicinae 也有自己的 [Extension Store](vicinae://launch/core/store)。
 <context>
     <name>RootFilesSection</name>
     <message>
-        <location line="+50"/>
+        <location line="+52"/>
         <source>Files</source>
         <translation>檔案</translation>
     </message>
@@ -4176,12 +4807,12 @@ Vicinae 也有自己的 [Extension Store](vicinae://launch/core/store)。
 <context>
     <name>RootLinkSection</name>
     <message>
-        <location line="-137"/>
+        <location line="-141"/>
         <source>Link</source>
         <translation>連結</translation>
     </message>
     <message>
-        <location filename="../src/qml/root-search-sources.cpp" line="-295"/>
+        <location filename="../src/builtins/root/root-search-sources.cpp" line="-311"/>
         <source>Open in %1</source>
         <translation>在 %1 中開啟</translation>
     </message>
@@ -4189,7 +4820,7 @@ Vicinae 也有自己的 [Extension Store](vicinae://launch/core/store)。
 <context>
     <name>RootNewsSection</name>
     <message>
-        <location filename="../src/qml/root-search-sources.hpp" line="+64"/>
+        <location filename="../src/builtins/root/root-search-sources.hpp" line="+66"/>
         <source>What&apos;s New</source>
         <translation>新功能</translation>
     </message>
@@ -4197,7 +4828,7 @@ Vicinae 也有自己的 [Extension Store](vicinae://launch/core/store)。
 <context>
     <name>RootResultsSection</name>
     <message>
-        <location filename="../src/qml/root-search-sources.cpp" line="+199"/>
+        <location filename="../src/builtins/root/root-search-sources.cpp" line="+204"/>
         <source>Suggestions</source>
         <translation>建議</translation>
     </message>
@@ -4210,7 +4841,7 @@ Vicinae 也有自己的 [Extension Store](vicinae://launch/core/store)。
 <context>
     <name>RootSearchActionGenerator</name>
     <message>
-        <location filename="../src/actions/root-search/root-search-actions.hpp" line="+55"/>
+        <location filename="../src/actions/root-search-actions.hpp" line="+71"/>
         <source>Copy ID</source>
         <translation>複製 ID</translation>
     </message>
@@ -4218,7 +4849,7 @@ Vicinae 也有自己的 [Extension Store](vicinae://launch/core/store)。
 <context>
     <name>RootShortcutItem</name>
     <message>
-        <location filename="../src/root-search/shortcuts/shortcut-root-provider.cpp" line="+67"/>
+        <location filename="../src/root-search/shortcuts/shortcut-root-provider.cpp" line="+70"/>
         <location line="+11"/>
         <source>Shortcut</source>
         <translation>快捷方式</translation>
@@ -4227,13 +4858,13 @@ Vicinae 也有自己的 [Extension Store](vicinae://launch/core/store)。
 <context>
     <name>RootUpdateSection</name>
     <message>
-        <location filename="../src/qml/root-search-sources.hpp" line="-21"/>
-        <location filename="../src/qml/root-search-sources.cpp" line="-125"/>
+        <location filename="../src/builtins/root/root-search-sources.hpp" line="-21"/>
+        <location filename="../src/builtins/root/root-search-sources.cpp" line="-124"/>
         <source>Update</source>
         <translation>更新</translation>
     </message>
     <message>
-        <location filename="../src/qml/root-search-sources.cpp" line="-14"/>
+        <location filename="../src/builtins/root/root-search-sources.cpp" line="-13"/>
         <source>Vicinae %1 is available</source>
         <translation>Vicinae %1 已釋出</translation>
     </message>
@@ -4243,7 +4874,7 @@ Vicinae 也有自己的 [Extension Store](vicinae://launch/core/store)。
         <translation>當前版本：%1</translation>
     </message>
     <message>
-        <location line="+27"/>
+        <location line="+26"/>
         <source>View Release Notes</source>
         <translation>檢視發行說明</translation>
     </message>
@@ -4251,15 +4882,274 @@ Vicinae 也有自己的 [Extension Store](vicinae://launch/core/store)。
 <context>
     <name>RootViewHost</name>
     <message>
-        <location filename="../src/qml/root-view-host.hpp" line="+15"/>
+        <location filename="../src/builtins/root/root-view-host.hpp" line="+15"/>
         <source>Search for anything...</source>
         <translation>搜尋任何內容…</translation>
     </message>
 </context>
 <context>
+    <name>RunAppleShortcutAction</name>
+    <message>
+        <location filename="../src/root-search/apple-shortcuts/apple-shortcut-root-provider.cpp" line="-29"/>
+        <source>Run Shortcut</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Failed to start shortcut</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>RunExecutableAction</name>
+    <message>
+        <location filename="../src/utils/file-list-item.hpp" line="+50"/>
+        <source>Run executable</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+12"/>
+        <source>Failed to give executable permission</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Failed to start executable</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>ScreenshotActions</name>
+    <message>
+        <location filename="../src/builtins/screenshots/screenshot-actions.cpp" line="+15"/>
+        <source>Refresh</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>Cannot paste</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Allow Accessibility access to paste into other apps.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Could not read recording</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Could not read screenshot</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>The file may have been moved or deleted.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Could not paste recording</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Could not paste screenshot</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Recording copied</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Screenshot copied</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Could not copy recording</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Could not copy screenshot</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+12"/>
+        <source>No saved screenshots found</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Take a screenshot and save it to a file first.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+12"/>
+        <source>Refreshing...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Could not refresh all screenshots and recordings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Refreshed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>Paste Recording</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Paste Screenshot</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Copy Recording</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Copy Screenshot</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Open Recording</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Open Screenshot</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Could not open file</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Show in Finder</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Show in File Browser</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Could not show file in file browser</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Copy File Path</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Move to Trash</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>File moved to Trash</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Could not move file to Trash</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>ScreenshotGridModel</name>
+    <message>
+        <location filename="../src/builtins/screenshots/screenshot-grid-model.cpp" line="+80"/>
+        <source>Today</source>
+        <translation type="unfinished">今天</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Yesterday</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Older</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>Search Results</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>ScreenshotGridSource</name>
+    <message>
+        <location line="-79"/>
+        <source>Screen Recording</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Recording · %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>ScreenshotsExtension</name>
+    <message>
+        <location filename="../src/builtins/screenshots/screenshots-extension.hpp" line="+17"/>
+        <source>Screenshots</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Search and share saved screenshots and screen recordings.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>ScreenshotsView</name>
+    <message>
+        <location filename="../src/ui/qml/views/ScreenshotsView.qml" line="+10"/>
+        <source>No screenshots or recordings found</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Save a screenshot or screen recording to a file, or try another search.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>ScreenshotsViewHost</name>
+    <message>
+        <location filename="../src/builtins/screenshots/screenshots-view-host.cpp" line="+13"/>
+        <source>Search screenshots and recordings...</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>ScriptExecutorViewHost</name>
     <message>
-        <location filename="../src/qml/script-executor-view-host.cpp" line="+76"/>
+        <location filename="../src/script/script-executor-view-host.cpp" line="+79"/>
         <source>Script execution failed: %1</source>
         <translation>指令碼執行失敗：%1</translation>
     </message>
@@ -4298,13 +5188,13 @@ Vicinae 也有自己的 [Extension Store](vicinae://launch/core/store)。
 <context>
     <name>ScriptRootItem</name>
     <message>
-        <location filename="../src/root-search/scripts/script-root-provider.hpp" line="+27"/>
-        <location line="+86"/>
+        <location filename="../src/root-search/scripts/script-root-provider.hpp" line="-110"/>
+        <location line="+87"/>
         <source>Script</source>
         <translation>指令碼</translation>
     </message>
     <message>
-        <location line="-43"/>
+        <location line="-44"/>
         <source>Mode</source>
         <translation>模式</translation>
     </message>
@@ -4332,25 +5222,15 @@ Vicinae 也有自己的 [Extension Store](vicinae://launch/core/store)。
 <context>
     <name>ScriptRootProvider</name>
     <message>
-        <location line="+47"/>
+        <location line="+63"/>
         <source>Script Commands</source>
         <translation>指令碼命令</translation>
-    </message>
-    <message>
-        <location line="+7"/>
-        <source>Custom directories</source>
-        <translation>自定義目錄</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Additional list of directories to source scripts from. These directories always take precedence over the default system ones</source>
-        <translation>用於載入指令碼的其他目錄。這些目錄始終優先於系統預設目錄</translation>
     </message>
 </context>
 <context>
     <name>SearchBrowserTabsCommand</name>
     <message>
-        <location filename="../src/extensions/browser/browser-extension.cpp" line="+15"/>
+        <location filename="../src/builtins/browser/browser-extension.cpp" line="+15"/>
         <source>Search Browser Tabs</source>
         <translation>搜尋瀏覽器標籤頁</translation>
     </message>
@@ -4363,7 +5243,7 @@ Vicinae 也有自己的 [Extension Store](vicinae://launch/core/store)。
 <context>
     <name>SearchEmojiCommand</name>
     <message>
-        <location filename="../src/extensions/vicinae/search-emoji-command.hpp" line="+15"/>
+        <location filename="../src/builtins/vicinae/search-emoji-command.hpp" line="+16"/>
         <source>Search Emojis &amp; Symbols</source>
         <translation>搜尋表情與符號</translation>
     </message>
@@ -4372,41 +5252,11 @@ Vicinae 也有自己的 [Extension Store](vicinae://launch/core/store)。
         <source>Search for any emoji or symbol</source>
         <translation>搜尋任意表情或符號</translation>
     </message>
-    <message>
-        <location line="+13"/>
-        <source>Paste</source>
-        <translation>貼上</translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>Copy</source>
-        <translation>複製</translation>
-    </message>
-    <message>
-        <location line="+5"/>
-        <source>Default Action</source>
-        <translation>預設操作</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>The default action to perform on pressing return. Paste is only available if your environment supports it.</source>
-        <translation>按回車鍵時執行的預設操作。僅噹噹前環境支援時才能貼上。</translation>
-    </message>
-    <message>
-        <location line="+21"/>
-        <source>Skin tone</source>
-        <translation>膚色</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Skin tone to use for relevant emojis.</source>
-        <translation>為適用的表情選擇膚色。</translation>
-    </message>
 </context>
 <context>
     <name>SearchEmojiGridSource</name>
     <message>
-        <location filename="../src/qml/emoji-grid-model.hpp" line="-22"/>
+        <location filename="../src/builtins/vicinae/emoji-grid-model.hpp" line="-20"/>
         <source>Results (%1)</source>
         <translation>結果（%1）</translation>
     </message>
@@ -4414,7 +5264,7 @@ Vicinae 也有自己的 [Extension Store](vicinae://launch/core/store)。
 <context>
     <name>SearchFilesCommand</name>
     <message>
-        <location filename="../src/extensions/file/file-extension.hpp" line="-38"/>
+        <location filename="../src/builtins/file/file-extension.hpp" line="-34"/>
         <source>Search Files</source>
         <translation>搜尋檔案</translation>
     </message>
@@ -4427,7 +5277,7 @@ Vicinae 也有自己的 [Extension Store](vicinae://launch/core/store)。
 <context>
     <name>SearchFilesView</name>
     <message>
-        <location filename="../src/qml/qml/SearchFilesView.qml" line="+37"/>
+        <location filename="../src/ui/qml/views/SearchFilesView.qml" line="+37"/>
         <source>Name</source>
         <translation>名稱</translation>
     </message>
@@ -4450,25 +5300,30 @@ Vicinae 也有自己的 [Extension Store](vicinae://launch/core/store)。
 <context>
     <name>SearchFilesViewHost</name>
     <message>
-        <location filename="../src/qml/search-files-view-host.cpp" line="+59"/>
+        <location filename="../src/builtins/file/search-files-view-host.cpp" line="+55"/>
         <source>Search for files...</source>
         <translation>搜尋檔案…</translation>
     </message>
     <message>
-        <location line="+30"/>
+        <location line="+31"/>
         <location line="+4"/>
         <source>Direct file path</source>
         <translation>直接輸入檔案路徑</translation>
     </message>
     <message>
-        <location line="+18"/>
+        <location line="+38"/>
         <source>Recently Accessed</source>
         <translation>最近訪問</translation>
     </message>
     <message>
-        <location line="+30"/>
+        <location line="+43"/>
         <source>Results</source>
         <translation>結果</translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Recently Modified</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+40"/>
@@ -4517,25 +5372,154 @@ Vicinae 也有自己的 [Extension Store](vicinae://launch/core/store)。
     </message>
 </context>
 <context>
+    <name>SearchMenuBarCommand</name>
+    <message>
+        <location filename="../src/builtins/vicinae/search-menu-bar-command.hpp" line="+11"/>
+        <source>Search Menu Bar Items</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Search and run menu bar items of the frontmost application</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>SearchScreenshotsCommand</name>
+    <message>
+        <location filename="../src/builtins/screenshots/screenshots-extension.hpp" line="-38"/>
+        <source>Search Screenshots</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Search and share saved screenshots and screen recordings.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>SearchTrayCommand</name>
+    <message>
+        <location filename="../src/builtins/vicinae/search-tray-command.hpp" line="+10"/>
+        <source>Search Tray</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Browse system tray items and trigger their menu actions</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>SearchTrayViewHost</name>
+    <message>
+        <location filename="../src/builtins/vicinae/search-tray-view-host.hpp" line="+122"/>
+        <source>Search tray items...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>Attention</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Browse Menu</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Activate</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+15"/>
+        <source>Secondary Activate</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>SetAppFont</name>
     <message>
-        <location filename="../src/qml/font-grid-model.cpp" line="-15"/>
+        <location filename="../src/builtins/font/font-grid-model.cpp" line="-15"/>
         <source>Set as vicinae font</source>
         <translation>設為 Vicinae 字型</translation>
     </message>
 </context>
 <context>
+    <name>SetDefaultBrowser</name>
+    <message>
+        <location filename="../src/builtins/system/system-extension.hpp" line="+117"/>
+        <source>Set Default Browser</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Change the default system web browser</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>SetDefaultBrowserViewHost</name>
+    <message>
+        <location filename="../src/builtins/system/set-default-browser-view-host.hpp" line="+22"/>
+        <source>Select a web browser...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Available web browsers</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+21"/>
+        <source>Set as default browser</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Default browser changed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Failed to set default browser</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>SetDefaultTerminal</name>
+    <message>
+        <location filename="../src/builtins/system/system-extension.hpp" line="-11"/>
+        <source>Set Default Terminal</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Change the default system terminal</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>SetRootItemAliasAction</name>
     <message>
-        <location filename="../src/actions/root-search/root-search-actions.hpp" line="-18"/>
+        <location filename="../src/actions/root-search-actions.hpp" line="-34"/>
         <source>Set alias</source>
         <translation>設定別名</translation>
     </message>
 </context>
 <context>
+    <name>SetRootItemShortcutAction</name>
+    <message>
+        <location filename="../src/actions/root-search-actions.cpp" line="+103"/>
+        <source>Set Global Shortcut</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>SetThemeAction</name>
     <message>
-        <location filename="../src/actions/theme/theme-actions.cpp" line="+11"/>
+        <location filename="../src/actions/theme-actions.cpp" line="+11"/>
         <source>Theme successfully updated</source>
         <translation>主題已更新</translation>
     </message>
@@ -4548,7 +5532,7 @@ Vicinae 也有自己的 [Extension Store](vicinae://launch/core/store)。
 <context>
     <name>SetThemeCommand</name>
     <message>
-        <location filename="../src/extensions/theme/set-theme-command.hpp" line="+9"/>
+        <location filename="../src/builtins/theme/set-theme-command.hpp" line="+9"/>
         <source>Set Theme</source>
         <translation>設定主題</translation>
     </message>
@@ -4556,7 +5540,7 @@ Vicinae 也有自己的 [Extension Store](vicinae://launch/core/store)。
 <context>
     <name>SetVolumeCommand</name>
     <message>
-        <location filename="../src/extensions/system/system-extension.hpp" line="+213"/>
+        <location filename="../src/builtins/media/media-extension.hpp" line="+113"/>
         <source>Set Volume to %1%</source>
         <translation>將音量設為 %1%</translation>
     </message>
@@ -4574,12 +5558,12 @@ Vicinae 也有自己的 [Extension Store](vicinae://launch/core/store)。
 <context>
     <name>SetWallpaperAction</name>
     <message>
-        <location filename="../src/utils/file-list-item.hpp" line="+17"/>
+        <location filename="../src/utils/file-list-item.hpp" line="-55"/>
         <source>Set as wallpaper</source>
         <translation>設為桌布</translation>
     </message>
     <message>
-        <location line="+11"/>
+        <location line="+12"/>
         <source>Wallpaper set</source>
         <translation>桌布已設定</translation>
     </message>
@@ -4590,9 +5574,22 @@ Vicinae 也有自己的 [Extension Store](vicinae://launch/core/store)。
     </message>
 </context>
 <context>
+    <name>SettingsPreferenceForm</name>
+    <message>
+        <location filename="../src/ui/qml/settings/SettingsPreferenceForm.qml" line="+161"/>
+        <source>Select an app…</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+45"/>
+        <source>Add app…</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>SettingsSidebar</name>
     <message>
-        <location filename="../src/qml/qml/SettingsSidebar.qml" line="+99"/>
+        <location filename="../src/ui/qml/settings/SettingsSidebar.qml" line="+126"/>
         <source>Search...</source>
         <translation>搜尋…</translation>
     </message>
@@ -4600,7 +5597,7 @@ Vicinae 也有自己的 [Extension Store](vicinae://launch/core/store)。
 <context>
     <name>SettingsSidebarModel</name>
     <message>
-        <location filename="../src/qml/settings-sidebar-model.cpp" line="+90"/>
+        <location filename="../src/ui/settings/settings-sidebar-model.cpp" line="+90"/>
         <source>General</source>
         <translation>通用</translation>
     </message>
@@ -4628,37 +5625,37 @@ Vicinae 也有自己的 [Extension Store](vicinae://launch/core/store)。
 <context>
     <name>SettingsWindow</name>
     <message>
-        <location filename="../src/qml/qml/SettingsWindow.qml" line="+10"/>
+        <location filename="../src/ui/qml/settings/SettingsWindow.qml" line="+13"/>
         <source>General</source>
         <translation>通用</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+4"/>
         <source>Appearance</source>
         <translation>外觀</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+4"/>
         <source>Keybindings</source>
         <translation>快捷鍵</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+4"/>
         <source>Advanced</source>
         <translation>高階</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+4"/>
         <source>About</source>
         <translation>關於</translation>
     </message>
     <message>
-        <location line="+19"/>
+        <location line="+27"/>
         <source>Vicinae Settings</source>
         <translation>Vicinae 設定</translation>
     </message>
     <message>
-        <location line="+88"/>
+        <location line="+199"/>
         <source>Imported from Raycast</source>
         <translation>從 Raycast 匯入</translation>
     </message>
@@ -4676,7 +5673,7 @@ Vicinae 也有自己的 [Extension Store](vicinae://launch/core/store)。
 <context>
     <name>ShortcutExtension</name>
     <message>
-        <location filename="../src/extensions/shortcut/shortcut-extension.hpp" line="+11"/>
+        <location filename="../src/builtins/shortcut/shortcut-extension.hpp" line="+11"/>
         <source>Manage Shortcuts</source>
         <translation>管理快捷方式</translation>
     </message>
@@ -4684,7 +5681,7 @@ Vicinae 也有自己的 [Extension Store](vicinae://launch/core/store)。
 <context>
     <name>ShortcutField</name>
     <message>
-        <location filename="../src/qml/qml/ShortcutField.qml" line="+14"/>
+        <location filename="../src/ui/qml/form/ShortcutField.qml" line="+16"/>
         <source>Record shortcut</source>
         <translation>錄製快捷鍵</translation>
     </message>
@@ -4692,7 +5689,7 @@ Vicinae 也有自己的 [Extension Store](vicinae://launch/core/store)。
 <context>
     <name>ShortcutFormView</name>
     <message>
-        <location filename="../src/qml/qml/ShortcutFormView.qml" line="+14"/>
+        <location filename="../src/ui/qml/views/ShortcutFormView.qml" line="+15"/>
         <source>Name</source>
         <translation>名稱</translation>
     </message>
@@ -4707,7 +5704,7 @@ Vicinae 也有自己的 [Extension Store](vicinae://launch/core/store)。
         <translation>由指定應用開啟的 URL。可使用 {argument} 等佔位符使其動態變化。</translation>
     </message>
     <message>
-        <location line="+22"/>
+        <location line="+23"/>
         <source>Open with</source>
         <translation>開啟方式</translation>
     </message>
@@ -4720,7 +5717,7 @@ Vicinae 也有自己的 [Extension Store](vicinae://launch/core/store)。
 <context>
     <name>ShortcutFormViewHost</name>
     <message>
-        <location filename="../src/qml/shortcut-form-view-host.cpp" line="+47"/>
+        <location filename="../src/builtins/shortcut/shortcut-form-view-host.cpp" line="+46"/>
         <source>Submit</source>
         <translation>提交</translation>
     </message>
@@ -4730,7 +5727,7 @@ Vicinae 也有自己的 [Extension Store](vicinae://launch/core/store)。
         <translation>%1 的副本</translation>
     </message>
     <message>
-        <location line="+67"/>
+        <location line="+45"/>
         <source>Edit &quot;%1&quot;</source>
         <translation>編輯“%1”</translation>
     </message>
@@ -4740,14 +5737,14 @@ Vicinae 也有自己的 [Extension Store](vicinae://launch/core/store)。
         <translation>建立“%1”副本</translation>
     </message>
     <message>
-        <location line="+11"/>
-        <location line="+131"/>
-        <location line="+50"/>
+        <location line="+9"/>
+        <location line="+109"/>
+        <location line="+43"/>
         <source>Default</source>
         <translation>預設</translation>
     </message>
     <message>
-        <location line="-157"/>
+        <location line="-136"/>
         <source>Selected Text</source>
         <translation>所選文本</translation>
     </message>
@@ -4762,7 +5759,7 @@ Vicinae 也有自己的 [Extension Store](vicinae://launch/core/store)。
         <translation>引數</translation>
     </message>
     <message>
-        <location line="+35"/>
+        <location line="+25"/>
         <location line="+5"/>
         <location line="+5"/>
         <source>Required</source>
@@ -4774,7 +5771,7 @@ Vicinae 也有自己的 [Extension Store](vicinae://launch/core/store)。
         <translation>驗證失敗</translation>
     </message>
     <message>
-        <location line="+19"/>
+        <location line="+12"/>
         <source>Failed to update shortcut</source>
         <translation>更新快捷方式失敗</translation>
     </message>
@@ -4795,18 +5792,26 @@ Vicinae 也有自己的 [Extension Store](vicinae://launch/core/store)。
     </message>
 </context>
 <context>
-    <name>ShortcutRecorderField</name>
+    <name>ShortcutRecorderCapture</name>
     <message>
-        <location filename="../src/qml/qml/ShortcutRecorderField.qml" line="+24"/>
-        <location line="+22"/>
-        <location line="+62"/>
+        <location filename="../src/ui/qml/form/ShortcutRecorderCapture.qml" line="+28"/>
+        <location line="+14"/>
+        <location line="+81"/>
         <source>Recording...</source>
-        <translation>錄製中…</translation>
+        <translation type="unfinished">錄製中…</translation>
     </message>
     <message>
-        <location line="+14"/>
+        <location line="+30"/>
         <source>Keybind updated</source>
-        <translation>快捷鍵已更新</translation>
+        <translation type="unfinished">快捷鍵已更新</translation>
+    </message>
+</context>
+<context>
+    <name>ShortcutRecorderPanel</name>
+    <message>
+        <location filename="../src/ui/qml/actions/ShortcutRecorderPanel.qml" line="+108"/>
+        <source>Press Backspace to remove the current shortcut</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -4820,7 +5825,7 @@ Vicinae 也有自己的 [Extension Store](vicinae://launch/core/store)。
 <context>
     <name>ShortcutsSettingsPage</name>
     <message>
-        <location filename="../src/qml/qml/ShortcutsSettingsPage.qml" line="+55"/>
+        <location filename="../src/ui/qml/settings/ShortcutsSettingsPage.qml" line="+61"/>
         <source>Keybindings</source>
         <translation>快捷鍵</translation>
     </message>
@@ -4846,7 +5851,7 @@ Vicinae 也有自己的 [Extension Store](vicinae://launch/core/store)。
 <context>
     <name>SleepCommand</name>
     <message>
-        <location filename="../src/extensions/power-management/power-management-extension.cpp" line="+94"/>
+        <location filename="../src/builtins/power-management/power-management-extension.cpp" line="+94"/>
         <source>Put System to Sleep</source>
         <translation>使系統進入睡眠</translation>
     </message>
@@ -4898,57 +5903,7 @@ Vicinae 也有自己的 [Extension Store](vicinae://launch/core/store)。
 <context>
     <name>SnippetExtension</name>
     <message>
-        <location filename="../src/extensions/snippet/snippet-extension.cpp" line="+38"/>
-        <source>Expansion</source>
-        <translation>展開</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Enable automatic snippet expansion when triggers are typed</source>
-        <translation>輸入觸發詞時自動展開片段</translation>
-    </message>
-    <message>
-        <location line="+7"/>
-        <source>Undo</source>
-        <translation>撤銷</translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>Press backspace immediately after expansion to undo and restore the trigger text</source>
-        <translation>展開後立即按退格鍵可撤銷並恢復觸發文本</translation>
-    </message>
-    <message>
-        <location line="+9"/>
-        <source>Keyboard layout</source>
-        <translation>鍵盤佈局</translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>XKB layout used for trigger detection (e.g. &quot;us&quot;, &quot;fr&quot;). Leave empty for system default.</source>
-        <translation>用於檢測觸發詞的 XKB 佈局（如“us”“fr”）。留空則使用系統預設值。</translation>
-    </message>
-    <message>
-        <location line="+8"/>
-        <source>Pre-paste delay (ms)</source>
-        <translation>貼上前延遲（ms）</translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>Delay between setting clipboard and injecting paste shortcut. Increase if expansions paste empty on slow compositors.</source>
-        <translation>設定剪貼簿與注入貼上快捷鍵之間的延遲。如果在較慢的合成器上展開後貼上為空，請增大此值。</translation>
-    </message>
-    <message>
-        <location line="+9"/>
-        <source>Key injection delay (ms)</source>
-        <translation>按鍵注入延遲（ms）</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Delay between injected key events. Increase if expansions produce missing or garbled characters on slow compositors.</source>
-        <translation>注入按鍵事件之間的延遲。如果在較慢的合成器上展開時缺字或亂碼，請增大此值。</translation>
-    </message>
-    <message>
-        <location filename="../src/extensions/snippet/snippet-extension.hpp" line="+11"/>
+        <location filename="../src/builtins/snippet/snippet-extension.hpp" line="+11"/>
         <source>Snippets</source>
         <translation>片段</translation>
     </message>
@@ -4961,7 +5916,7 @@ Vicinae 也有自己的 [Extension Store](vicinae://launch/core/store)。
 <context>
     <name>SnippetFormView</name>
     <message>
-        <location filename="../src/qml/qml/SnippetFormView.qml" line="+15"/>
+        <location filename="../src/ui/qml/views/SnippetFormView.qml" line="+16"/>
         <source>Title</source>
         <translation>標題</translation>
     </message>
@@ -4981,7 +5936,7 @@ Vicinae 也有自己的 [Extension Store](vicinae://launch/core/store)。
         <translation>可使用 {dynamic placeholders} 建立動態內容：&lt;a href=&quot;https://docs.vicinae.com/snippets&quot;&gt;瞭解詳情&lt;/a&gt;。</translation>
     </message>
     <message>
-        <location line="+16"/>
+        <location line="+17"/>
         <source>Keyword</source>
         <translation>關鍵詞</translation>
     </message>
@@ -5019,7 +5974,7 @@ Vicinae 也有自己的 [Extension Store](vicinae://launch/core/store)。
 <context>
     <name>SnippetFormViewHost</name>
     <message>
-        <location filename="../src/qml/snippet-form-view-host.cpp" line="+49"/>
+        <location filename="../src/builtins/snippet/snippet-form-view-host.cpp" line="+33"/>
         <source>Submit</source>
         <translation>提交</translation>
     </message>
@@ -5089,7 +6044,12 @@ Vicinae 也有自己的 [Extension Store](vicinae://launch/core/store)。
         <translation>引數</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+8"/>
+        <source>PowerShell Command</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
         <source>Shell Command</source>
         <translation>Shell 命令</translation>
     </message>
@@ -5097,7 +6057,7 @@ Vicinae 也有自己的 [Extension Store](vicinae://launch/core/store)。
 <context>
     <name>SoftRebootCommand</name>
     <message>
-        <location filename="../src/extensions/power-management/power-management-extension.cpp" line="-99"/>
+        <location filename="../src/builtins/power-management/power-management-extension.cpp" line="-99"/>
         <source>Soft Reboot System</source>
         <translation>軟重啟系統</translation>
     </message>
@@ -5120,7 +6080,7 @@ Vicinae 也有自己的 [Extension Store](vicinae://launch/core/store)。
 <context>
     <name>SponsorVicinaeCommand</name>
     <message>
-        <location filename="../src/extensions/vicinae/vicinae-extension.cpp" line="-121"/>
+        <location filename="../src/builtins/vicinae/vicinae-extension.cpp" line="-118"/>
         <source>Donate to Vicinae</source>
         <translation>贊助 Vicinae</translation>
     </message>
@@ -5133,12 +6093,12 @@ Vicinae 也有自己的 [Extension Store](vicinae://launch/core/store)。
 <context>
     <name>StoreDetailView</name>
     <message>
-        <location filename="../src/qml/qml/StoreDetailView.qml" line="+196"/>
+        <location filename="../src/ui/qml/views/StoreDetailView.qml" line="+208"/>
         <source>Installed</source>
         <translation>已安裝</translation>
     </message>
     <message>
-        <location line="+166"/>
+        <location line="+171"/>
         <source>Description</source>
         <translation>描述</translation>
     </message>
@@ -5148,7 +6108,7 @@ Vicinae 也有自己的 [Extension Store](vicinae://launch/core/store)。
         <translation>命令</translation>
     </message>
     <message>
-        <location line="+74"/>
+        <location line="+78"/>
         <source>Open README</source>
         <translation>開啟 README</translation>
     </message>
@@ -5163,12 +6123,12 @@ Vicinae 也有自己的 [Extension Store](vicinae://launch/core/store)。
         <translation>貢獻者</translation>
     </message>
     <message>
-        <location line="+29"/>
+        <location line="+31"/>
         <source>Categories</source>
         <translation>分類</translation>
     </message>
     <message>
-        <location line="+19"/>
+        <location line="+20"/>
         <source>Source Code</source>
         <translation>原始碼</translation>
     </message>
@@ -5181,7 +6141,7 @@ Vicinae 也有自己的 [Extension Store](vicinae://launch/core/store)。
 <context>
     <name>SuspendCommand</name>
     <message>
-        <location filename="../src/extensions/power-management/power-management-extension.cpp" line="+36"/>
+        <location filename="../src/builtins/power-management/power-management-extension.cpp" line="+36"/>
         <source>Suspend System</source>
         <translation>掛起系統</translation>
     </message>
@@ -5204,7 +6164,7 @@ Vicinae 也有自己的 [Extension Store](vicinae://launch/core/store)。
 <context>
     <name>SwitchWindowsCommand</name>
     <message>
-        <location filename="../src/extensions/wm/switch-windows-command.hpp" line="+10"/>
+        <location filename="../src/builtins/wm/wm-extension.cpp" line="+89"/>
         <source>Switch Windows</source>
         <translation>切換視窗</translation>
     </message>
@@ -5212,12 +6172,12 @@ Vicinae 也有自己的 [Extension Store](vicinae://launch/core/store)。
 <context>
     <name>SwitchWindowsSection</name>
     <message>
-        <location filename="../src/qml/switch-windows-model.hpp" line="+28"/>
+        <location filename="../src/builtins/wm/switch-windows-model.hpp" line="+28"/>
         <source>Open Windows</source>
         <translation>開啟的視窗</translation>
     </message>
     <message>
-        <location filename="../src/qml/switch-windows-model.cpp" line="+19"/>
+        <location filename="../src/builtins/wm/switch-windows-model.cpp" line="+19"/>
         <source>WS %1</source>
         <translation>工作區 %1</translation>
     </message>
@@ -5230,15 +6190,76 @@ Vicinae 也有自己的 [Extension Store](vicinae://launch/core/store)。
 <context>
     <name>SwitchWindowsViewHost</name>
     <message>
-        <location filename="../src/qml/switch-windows-view-host.cpp" line="+12"/>
+        <location filename="../src/builtins/wm/switch-windows-view-host.cpp" line="+12"/>
         <source>Search open window...</source>
         <translation>搜尋已開啟的視窗…</translation>
     </message>
 </context>
 <context>
+    <name>SwitchWorkspacesCommand</name>
+    <message>
+        <location filename="../src/builtins/wm/wm-extension.cpp" line="+11"/>
+        <source>Switch Desktops</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Switch Workspaces</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>SwitchWorkspacesSection</name>
+    <message>
+        <location filename="../src/builtins/wm/switch-workspaces-model.hpp" line="+47"/>
+        <source>%1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message numerus="yes">
+        <location line="+3"/>
+        <source>%n window(s)</source>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+        </translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>empty</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+22"/>
+        <source>Switch to desktop</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Switch to workspace</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>SwitchWorkspacesViewHost</name>
+    <message>
+        <location filename="../src/builtins/wm/switch-workspaces-view-host.hpp" line="+16"/>
+        <source>Open Workspaces</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/builtins/wm/switch-workspaces-view-host.cpp" line="+13"/>
+        <source>Search desktops...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Search workspaces...</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>SystemBrowseApps</name>
     <message>
-        <location filename="../src/extensions/system/system-extension.hpp" line="-123"/>
+        <location filename="../src/builtins/system/system-extension.hpp" line="-17"/>
         <source>Browse Apps</source>
         <translation>瀏覽應用</translation>
     </message>
@@ -5247,21 +6268,11 @@ Vicinae 也有自己的 [Extension Store](vicinae://launch/core/store)。
         <source>Browse all applications that are installed on the system</source>
         <translation>瀏覽系統中已安裝的所有應用</translation>
     </message>
-    <message>
-        <location line="+8"/>
-        <source>Show hidden apps</source>
-        <translation>顯示隱藏應用</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Sort alphabetically</source>
-        <translation>按字母排序</translation>
-    </message>
 </context>
 <context>
     <name>SystemExtension</name>
     <message>
-        <location line="+149"/>
+        <location line="+39"/>
         <source>System</source>
         <translation>系統</translation>
     </message>
@@ -5274,7 +6285,7 @@ Vicinae 也有自己的 [Extension Store](vicinae://launch/core/store)。
 <context>
     <name>SystemRunCommand</name>
     <message>
-        <location line="-239"/>
+        <location line="-105"/>
         <source>Run Terminal Program</source>
         <translation>在終端中執行程式</translation>
     </message>
@@ -5289,32 +6300,7 @@ Vicinae 也有自己的 [Extension Store](vicinae://launch/core/store)。
         <translation>命令</translation>
     </message>
     <message>
-        <location line="+5"/>
-        <source>Run in terminal</source>
-        <translation>在終端中執行</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Run in terminal (hold)</source>
-        <translation>在終端中執行（保持視窗）</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Run directly</source>
-        <translation>直接執行</translation>
-    </message>
-    <message>
-        <location line="+4"/>
-        <source>Default Action</source>
-        <translation>預設操作</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>The default action to run on pressing return</source>
-        <translation>按回車時執行的預設操作</translation>
-    </message>
-    <message>
-        <location line="+29"/>
+        <location line="+26"/>
         <source>Not a valid executable</source>
         <translation>不是有效的執行檔</translation>
     </message>
@@ -5322,7 +6308,7 @@ Vicinae 也有自己的 [Extension Store](vicinae://launch/core/store)。
 <context>
     <name>SystemRunViewHost</name>
     <message>
-        <location filename="../src/qml/system-run-view-host.cpp" line="+20"/>
+        <location filename="../src/builtins/system/system-run-view-host.cpp" line="+19"/>
         <source>Search for a program to execute...</source>
         <translation>搜尋要執行的程式…</translation>
     </message>
@@ -5330,7 +6316,7 @@ Vicinae 也有自己的 [Extension Store](vicinae://launch/core/store)。
 <context>
     <name>ThemeExtension</name>
     <message>
-        <location filename="../src/extensions/theme/theme-extension.hpp" line="+9"/>
+        <location filename="../src/builtins/theme/theme-extension.hpp" line="+9"/>
         <source>Theme</source>
         <translation>主題</translation>
     </message>
@@ -5338,7 +6324,7 @@ Vicinae 也有自己的 [Extension Store](vicinae://launch/core/store)。
 <context>
     <name>ThemeSection</name>
     <message>
-        <location filename="../src/qml/theme-list-model.cpp" line="+22"/>
+        <location filename="../src/builtins/theme/theme-list-model.cpp" line="+22"/>
         <source>Default theme description</source>
         <translation>預設主題說明</translation>
     </message>
@@ -5361,12 +6347,12 @@ Vicinae 也有自己的 [Extension Store](vicinae://launch/core/store)。
 <context>
     <name>ThemeViewHost</name>
     <message>
-        <location filename="../src/qml/theme-view-host.cpp" line="+22"/>
+        <location filename="../src/builtins/theme/theme-view-host.cpp" line="+22"/>
         <source>Search for a theme...</source>
         <translation>搜尋主題…</translation>
     </message>
     <message>
-        <location line="+51"/>
+        <location line="+53"/>
         <source>Current Theme</source>
         <translation>當前主題</translation>
     </message>
@@ -5377,9 +6363,45 @@ Vicinae 也有自己的 [Extension Store](vicinae://launch/core/store)。
     </message>
 </context>
 <context>
+    <name>ToggleFloatingWindowCommand</name>
+    <message>
+        <location filename="../src/builtins/wm/wm-extension.cpp" line="-54"/>
+        <source>Toggle Floating</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>Active window is not on the current workspace</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>No window to toggle</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>ToggleFullscreenWindowCommand</name>
+    <message>
+        <location line="-44"/>
+        <source>Toggle Fullscreen</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>Active window is not on the current workspace</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>No window to fullscreen</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>ToggleItemAsFavorite</name>
     <message>
-        <location filename="../src/actions/root-search/root-search-actions.cpp" line="+17"/>
+        <location filename="../src/actions/root-search-actions.cpp" line="-86"/>
         <source>Remove from favorites</source>
         <translation>取消收藏</translation>
     </message>
@@ -5412,7 +6434,7 @@ Vicinae 也有自己的 [Extension Store](vicinae://launch/core/store)。
 <context>
     <name>ToggleMuteCommand</name>
     <message>
-        <location filename="../src/extensions/system/system-extension.hpp" line="+163"/>
+        <location filename="../src/builtins/media/media-extension.hpp" line="+11"/>
         <source>Toggle Mute</source>
         <translation>切換靜音</translation>
     </message>
@@ -5433,30 +6455,126 @@ Vicinae 也有自己的 [Extension Store](vicinae://launch/core/store)。
     </message>
 </context>
 <context>
-    <name>UIPlayground</name>
+    <name>ToggleOverviewCommand</name>
     <message>
-        <location filename="../src/extensions/internal/internal-extension.hpp" line="-15"/>
-        <source>UI Showcase</source>
-        <translation>UI 展示</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Showcase of vicinae UI elements</source>
-        <translation>展示 Vicinae UI 元素</translation>
+        <location filename="../src/builtins/wm/wm-extension.cpp" line="+34"/>
+        <source>Toggle Overview</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
-    <name>UIShowcase</name>
+    <name>TrayMenuViewHost</name>
     <message>
-        <location filename="../src/qml/qml/UIShowcase.qml" line="+26"/>
-        <source>Buttons</source>
-        <translation>按鈕</translation>
+        <location filename="../src/builtins/vicinae/search-tray-view-host.hpp" line="-122"/>
+        <source>Search menu...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+36"/>
+        <source>Trigger</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>TrayService</name>
+    <message>
+        <location filename="../src/services/tray/tray-service.cpp" line="+10"/>
+        <source>Toggle Vicinae</source>
+        <translation type="unfinished">顯示或隱藏 Vicinae</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>About Vicinae</source>
+        <translation type="unfinished">關於 Vicinae</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Check for Updates…</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Update Available: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Settings…</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Preferences…</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Sponsor Vicinae</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Join the Discord</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Follow on X</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Quit Vicinae</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>UninstallAppAction</name>
+    <message>
+        <location filename="../src/actions/app-actions.cpp" line="+20"/>
+        <source>Uninstall Application</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Failed to uninstall %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Uninstalled %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Failed to quit %1</source>
+        <translation type="unfinished">退出 %1 失敗</translation>
+    </message>
+    <message>
+        <location line="+15"/>
+        <source>%1 did not quit, uninstall cancelled</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+12"/>
+        <source>%1 is running. It will be quit and moved to the trash.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>The application will be moved to the trash.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Uninstall %1?</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>UninstallExtensionAction</name>
     <message>
-        <location filename="../src/actions/extension/extension-actions.cpp" line="+11"/>
+        <location filename="../src/actions/extension-actions.cpp" line="+10"/>
         <source>Are you sure?</source>
         <translation>確定嗎？</translation>
     </message>
@@ -5481,7 +6599,7 @@ Vicinae 也有自己的 [Extension Store](vicinae://launch/core/store)。
         <translation>解除安裝擴充套件失敗</translation>
     </message>
     <message>
-        <location filename="../src/actions/extension/extension-actions.hpp" line="+14"/>
+        <location filename="../src/actions/extension-actions.hpp" line="+10"/>
         <source>Uninstall Extension</source>
         <translation>解除安裝擴充套件</translation>
     </message>
@@ -5489,7 +6607,7 @@ Vicinae 也有自己的 [Extension Store](vicinae://launch/core/store)。
 <context>
     <name>UnpinCalculatorHistoryRecordAction</name>
     <message>
-        <location filename="../src/actions/calculator/calculator-actions.hpp" line="-23"/>
+        <location filename="../src/actions/calculator-actions.hpp" line="-23"/>
         <source>Entry unpinned</source>
         <translation>已取消固定條目</translation>
     </message>
@@ -5502,7 +6620,7 @@ Vicinae 也有自己的 [Extension Store](vicinae://launch/core/store)。
 <context>
     <name>UnpinEmojiAction</name>
     <message>
-        <location filename="../src/qml/emoji-grid-model.cpp" line="-43"/>
+        <location filename="../src/builtins/vicinae/emoji-grid-model.cpp" line="-45"/>
         <source>Unpin emoji</source>
         <translation>取消固定表情符號</translation>
     </message>
@@ -5510,7 +6628,7 @@ Vicinae 也有自己的 [Extension Store](vicinae://launch/core/store)。
 <context>
     <name>UpdateService</name>
     <message>
-        <location filename="../src/services/update/update-service.cpp" line="-167"/>
+        <location filename="../src/services/update/update-service.cpp" line="-169"/>
         <source>Update installed</source>
         <translation>更新已安裝</translation>
     </message>
@@ -5520,7 +6638,7 @@ Vicinae 也有自己的 [Extension Store](vicinae://launch/core/store)。
         <translation>正在重啟…</translation>
     </message>
     <message>
-        <location line="+88"/>
+        <location line="+90"/>
         <source>Downloading Vicinae %1…</source>
         <translation>正在下載 Vicinae %1…</translation>
     </message>
@@ -5543,7 +6661,7 @@ Vicinae 也有自己的 [Extension Store](vicinae://launch/core/store)。
 <context>
     <name>VicinaeExtension</name>
     <message>
-        <location filename="../src/extensions/vicinae/vicinae-extension.hpp" line="+11"/>
+        <location filename="../src/builtins/vicinae/vicinae-extension.hpp" line="+11"/>
         <source>General vicinae-related commands.</source>
         <translation>Vicinae 通用命令。</translation>
     </message>
@@ -5551,12 +6669,17 @@ Vicinae 也有自己的 [Extension Store](vicinae://launch/core/store)。
 <context>
     <name>VicinaeHotkeyGlobalShortcutBackend</name>
     <message>
-        <location filename="../src/services/global-shortcuts/vicinae-hotkey-global-shortcut-backend.cpp" line="+48"/>
+        <location filename="../src/services/global-shortcuts/vicinae-hotkey-global-shortcut-backend.cpp" line="+79"/>
+        <source>Compositor does not support global hotkeys</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
         <source>Unsupported trigger key</source>
         <translation>不支援的觸發鍵</translation>
     </message>
     <message>
-        <location line="+20"/>
+        <location line="+17"/>
         <source>Hotkey binding was lost</source>
         <translation>熱鍵繫結已丟失</translation>
     </message>
@@ -5564,7 +6687,7 @@ Vicinae 也有自己的 [Extension Store](vicinae://launch/core/store)。
 <context>
     <name>VicinaeListInstalledExtensionsCommand</name>
     <message>
-        <location filename="../src/extensions/vicinae/list-installed-extensions-command.hpp" line="+11"/>
+        <location filename="../src/builtins/vicinae/list-installed-extensions-command.hpp" line="+11"/>
         <source>Show Installed Extensions</source>
         <translation>顯示已安裝的擴充套件</translation>
     </message>
@@ -5577,17 +6700,12 @@ Vicinae 也有自己的 [Extension Store](vicinae://launch/core/store)。
 <context>
     <name>VicinaeStoreCommand</name>
     <message>
-        <location filename="../src/extensions/vicinae/vicinae-store-command.hpp" line="+13"/>
+        <location filename="../src/builtins/vicinae/vicinae-store-command.hpp" line="+15"/>
         <source>Install extensions from the Vicinae store</source>
         <translation>從 Vicinae Store 安裝擴充套件</translation>
     </message>
     <message>
-        <location line="+9"/>
-        <source>Always show intro</source>
-        <translation>始終顯示介紹</translation>
-    </message>
-    <message>
-        <location line="+10"/>
+        <location line="+13"/>
         <source>
 # Welcome to the vicinae extension store
 
@@ -5616,7 +6734,7 @@ Vicinae Store 收錄了由社群開發並經核心貢獻者批准的擴充套件
 <context>
     <name>VicinaeStoreDetailHost</name>
     <message>
-        <location filename="../src/qml/vicinae-store-detail-host.cpp" line="+38"/>
+        <location filename="../src/builtins/vicinae/vicinae-store-detail-host.cpp" line="+36"/>
         <source>Failed to load extension</source>
         <translation>載入擴充套件失敗</translation>
     </message>
@@ -5641,32 +6759,12 @@ Vicinae Store 收錄了由社群開發並經核心貢獻者批准的擴充套件
         <translation>Extension Store - %1</translation>
     </message>
     <message>
-        <location line="+81"/>
-        <source>Install extension</source>
-        <translation>安裝擴充套件</translation>
+        <location line="+73"/>
+        <source>Extension Store</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+7"/>
-        <source>Downloading extension...</source>
-        <translation>正在下載擴充套件…</translation>
-    </message>
-    <message>
-        <location line="+7"/>
-        <source>Failed to download extension</source>
-        <translation>下載擴充套件失敗</translation>
-    </message>
-    <message>
-        <location line="+7"/>
-        <source>Failed to extract extension archive</source>
-        <translation>解壓擴充套件包失敗</translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>Extension installed</source>
-        <translation>擴充套件已安裝</translation>
-    </message>
-    <message>
-        <location line="+14"/>
+        <location line="+17"/>
         <source>Report issue</source>
         <translation>報告問題</translation>
     </message>
@@ -5674,7 +6772,7 @@ Vicinae Store 收錄了由社群開發並經核心貢獻者批准的擴充套件
 <context>
     <name>VicinaeStoreSection</name>
     <message>
-        <location filename="../src/qml/vicinae-store-model.cpp" line="+41"/>
+        <location filename="../src/builtins/vicinae/vicinae-store-model.cpp" line="+42"/>
         <source>Show details</source>
         <translation>顯示詳情</translation>
     </message>
@@ -5682,7 +6780,7 @@ Vicinae Store 收錄了由社群開發並經核心貢獻者批准的擴充套件
 <context>
     <name>VicinaeStoreViewHost</name>
     <message>
-        <location filename="../src/qml/vicinae-store-view-host.cpp" line="+27"/>
+        <location filename="../src/builtins/vicinae/vicinae-store-view-host.cpp" line="+26"/>
         <source>Browse Vicinae extensions</source>
         <translation>瀏覽 Vicinae 擴充套件</translation>
     </message>
@@ -5696,11 +6794,16 @@ Vicinae Store 收錄了由社群開發並經核心貢獻者批准的擴充套件
         <source>Extensions</source>
         <translation>擴充套件</translation>
     </message>
+    <message>
+        <location line="+3"/>
+        <source>Extension Store</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>VolumeDownCommand</name>
     <message>
-        <location filename="../src/extensions/system/system-extension.hpp" line="-74"/>
+        <location filename="../src/builtins/media/media-extension.hpp" line="-74"/>
         <source>Turn Volume Down</source>
         <translation>調低音量</translation>
     </message>
@@ -5788,7 +6891,7 @@ Vicinae Store 收錄了由社群開發並經核心貢獻者批准的擴充套件
 <context>
     <name>WinControlPanelRootProvider</name>
     <message>
-        <location line="+49"/>
+        <location line="+51"/>
         <source>Control Panel</source>
         <translation>控制面板</translation>
     </message>
@@ -5801,7 +6904,7 @@ Vicinae Store 收錄了由社群開發並經核心貢獻者批准的擴充套件
 <context>
     <name>WinControlPanelTaskRootItem</name>
     <message>
-        <location line="-40"/>
+        <location line="-41"/>
         <location line="+11"/>
         <source>Control Panel</source>
         <translation>控制面板</translation>
@@ -6420,7 +7523,7 @@ Vicinae Store 收錄了由社群開發並經核心貢獻者批准的擴充套件
 <context>
     <name>WinSettingsRootProvider</name>
     <message>
-        <location line="+12"/>
+        <location line="+13"/>
         <source>Windows Settings</source>
         <translation>Windows 設定</translation>
     </message>
@@ -6433,7 +7536,7 @@ Vicinae Store 收錄了由社群開發並經核心貢獻者批准的擴充套件
 <context>
     <name>WindowManagementExtension</name>
     <message>
-        <location filename="../src/extensions/wm/wm-extension.hpp" line="+12"/>
+        <location filename="../src/builtins/wm/wm-extension.cpp" line="+56"/>
         <source>Window Management</source>
         <translation>視窗管理</translation>
     </message>
@@ -6441,32 +7544,12 @@ Vicinae Store 收錄了由社群開發並經核心貢獻者批准的擴充套件
 <context>
     <name>WindowsAppDatabase</name>
     <message>
-        <location filename="../src/services/app-service/windows/win-app-database.cpp" line="+993"/>
-        <source>Focus window</source>
-        <translation>聚焦視窗</translation>
-    </message>
-    <message>
-        <location line="+0"/>
-        <source>Launch app</source>
-        <translation>啟動應用</translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>Default action</source>
-        <translation>預設操作</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Action to perform when the return key is pressed. Always default to &apos;launch&apos; if the app has no open window.</source>
-        <translation>按回車時執行的操作。如果應用沒有開啟的視窗，則始終預設為“啟動”。</translation>
-    </message>
-    <message>
-        <location line="+15"/>
+        <location filename="../src/services/app-service/windows/win-app-database.cpp" line="+1107"/>
         <source>File Explorer</source>
         <translation>檔案資源管理器</translation>
     </message>
     <message>
-        <location line="+19"/>
+        <location line="+20"/>
         <source>Terminal</source>
         <translation>終端</translation>
     </message>
@@ -6479,7 +7562,7 @@ Vicinae Store 收錄了由社群開發並經核心貢獻者批准的擴充套件
 <context>
     <name>WindowsApplication</name>
     <message>
-        <location filename="../src/services/app-service/windows/win-app.hpp" line="+70"/>
+        <location filename="../src/services/app-service/windows/win-app.hpp" line="+71"/>
         <source>%1: Run as Administrator</source>
         <translation>%1：以管理員身份執行</translation>
     </message>
@@ -6492,25 +7575,73 @@ Vicinae Store 收錄了由社群開發並經核心貢獻者批准的擴充套件
 <context>
     <name>WindowsGlobalShortcutBackend</name>
     <message>
-        <location filename="../src/services/global-shortcuts/windows-global-shortcut-backend.cpp" line="+215"/>
+        <location filename="../src/services/global-shortcuts/windows-global-shortcut-backend.cpp" line="+302"/>
         <source>unsupported or invalid trigger</source>
         <translation>不支援或無效的觸發鍵</translation>
     </message>
+</context>
+<context>
+    <name>WindowsUpdateInstaller</name>
+    <message>
+        <location filename="../src/services/update/windows-update-installer.cpp" line="+184"/>
+        <source>This installation cannot update itself</source>
+        <translation type="unfinished">此安裝無法自行更新</translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>The update is not signed</source>
+        <translation type="unfinished"></translation>
+    </message>
     <message>
         <location line="+9"/>
-        <source>already registered by another application</source>
-        <translation>已被其他應用註冊</translation>
+        <source>Update signature verification failed (0x%1)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Update is signed by %1, expected %2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Verifying update…</source>
+        <translation type="unfinished">正在驗證更新…</translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>Update has no version information</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Update version mismatch: expected %1, found %2</source>
+        <translation type="unfinished">更新版本不匹配：應為 %1，實際為 %2</translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Starting installer…</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>Failed to start the installer</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>X11GlobalShortcutBackend</name>
     <message>
-        <location filename="../src/services/global-shortcuts/x11-global-shortcut-backend.cpp" line="+122"/>
+        <location filename="../src/services/global-shortcuts/x11-global-shortcut-backend.cpp" line="+147"/>
         <source>This shortcut is already in use by another application</source>
         <translation>此快捷鍵已被其他應用佔用</translation>
     </message>
     <message>
-        <location line="+17"/>
+        <location line="+15"/>
+        <source>Modifier-only shortcuts are not supported</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
         <source>Unsupported trigger key</source>
         <translation>不支援的觸發鍵</translation>
     </message>
@@ -6523,52 +7654,9 @@ Vicinae Store 收錄了由社群開發並經核心貢獻者批准的擴充套件
 <context>
     <name>X11Workspace</name>
     <message>
-        <location filename="../src/services/window-manager/x11/x11-window-manager.cpp" line="+426"/>
+        <location filename="../src/services/window-manager/x11/x11-window-manager.cpp" line="+424"/>
         <source>Desktop %1</source>
         <translation>桌面 %1</translation>
-    </message>
-</context>
-<context>
-    <name>XdgAppDatabase</name>
-    <message>
-        <location filename="../src/services/app-service/xdg/xdg-app-database.cpp" line="+564"/>
-        <source>Focus window</source>
-        <translation>聚焦視窗</translation>
-    </message>
-    <message>
-        <location line="+0"/>
-        <source>Launch app</source>
-        <translation>啟動應用</translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>Default action</source>
-        <translation>預設操作</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Action to perform when the return key is pressed. Always default to &apos;launch&apos; if the app has no open window.</source>
-        <translation>按回車時執行的操作。如果應用沒有開啟的視窗，則始終預設為“啟動”。</translation>
-    </message>
-    <message>
-        <location line="+4"/>
-        <source>Launch Prefix</source>
-        <translation>啟動字首</translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>Custom app launcher to use. Affects applications as well as their sub-actions.</source>
-        <translation>要使用的自定義應用啟動器，會影響應用及其子操作。</translation>
-    </message>
-    <message>
-        <location line="+8"/>
-        <source>Application directories</source>
-        <translation>應用目錄</translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>Directories applications are sourced from. The list cannot be modified directly. In order to do so, you need to append additonal paths to the &lt;b&gt;XDG_DATA_DIRS&lt;/b&gt; environment variables.</source>
-        <translation>用於查詢應用的目錄。此列表無法直接修改；如需新增目錄，請將其他路徑追加到 &lt;b&gt;XDG_DATA_DIRS&lt;/b&gt; 環境變數。</translation>
     </message>
 </context>
 <context>
@@ -6585,9 +7673,32 @@ Vicinae Store 收錄了由社群開發並經核心貢獻者批准的擴充套件
     </message>
 </context>
 <context>
+    <name>XxHotkeyGlobalShortcutBackend</name>
+    <message>
+        <location filename="../src/services/global-shortcuts/xx-hotkey-global-shortcut-backend.cpp" line="+108"/>
+        <source>Unsupported trigger key</source>
+        <translation type="unfinished">不支援的觸發鍵</translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Compositor does not support global hotkeys</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Hotkey binding was lost</source>
+        <translation type="unfinished">熱鍵繫結已丟失</translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Compositor denied the bind. Try another key combination.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>browser-extension</name>
     <message>
-        <location filename="../src/extensions/browser/browser-extension.cpp" line="-58"/>
+        <location filename="../src/builtins/browser/browser-extension.cpp" line="-58"/>
         <source>No browser connected</source>
         <translation>未連線瀏覽器</translation>
     </message>
@@ -6605,7 +7716,7 @@ Vicinae Store 收錄了由社群開發並經核心貢獻者批准的擴充套件
 <context>
     <name>clipboard-history-view-host</name>
     <message>
-        <location filename="../src/qml/clipboard-history-view-host.cpp" line="-207"/>
+        <location filename="../src/builtins/clipboard/history/clipboard-history-view-host.cpp" line="-216"/>
         <source>Text</source>
         <translation>文本</translation>
     </message>
@@ -6633,7 +7744,7 @@ Vicinae Store 收錄了由社群開發並經核心貢獻者批准的擴充套件
 <context>
     <name>emoji-categories</name>
     <message>
-        <location filename="../src/qml/emoji-grid-model.cpp" line="-52"/>
+        <location filename="../src/builtins/vicinae/emoji-grid-model.cpp" line="-52"/>
         <source>Smileys &amp; Emotion</source>
         <translation>笑臉與情感</translation>
     </message>
@@ -6726,7 +7837,7 @@ Vicinae Store 收錄了由社群開發並經核心貢獻者批准的擴充套件
 <context>
     <name>emoji-grid-model</name>
     <message>
-        <location line="+129"/>
+        <location line="+131"/>
         <source>Copy</source>
         <translation>複製</translation>
     </message>
@@ -6754,7 +7865,7 @@ Vicinae Store 收錄了由社群開發並經核心貢獻者批准的擴充套件
 <context>
     <name>file-list-item</name>
     <message>
-        <location filename="../src/utils/file-list-item.hpp" line="+35"/>
+        <location filename="../src/utils/file-list-item.hpp" line="+100"/>
         <source>Copy file</source>
         <translation>複製檔案</translation>
     </message>
@@ -6777,7 +7888,7 @@ Vicinae Store 收錄了由社群開發並經核心貢獻者批准的擴充套件
 <context>
     <name>font-categories</name>
     <message>
-        <location filename="../src/font-service.cpp" line="+127"/>
+        <location filename="../src/services/font-service/font-service.cpp" line="+142"/>
         <source>Latin</source>
         <translation>拉丁文</translation>
     </message>
@@ -6945,7 +8056,7 @@ Vicinae Store 收錄了由社群開發並經核心貢獻者批准的擴充套件
 <context>
     <name>font-grid-model</name>
     <message>
-        <location filename="../src/qml/font-grid-model.cpp" line="+26"/>
+        <location filename="../src/builtins/font/font-grid-model.cpp" line="+26"/>
         <source>Copy font family</source>
         <translation>複製字型族</translation>
     </message>
@@ -7136,7 +8247,7 @@ Vicinae Store 收錄了由社群開發並經核心貢獻者批准的擴充套件
 <context>
     <name>macos-update-installer</name>
     <message>
-        <location filename="../src/services/update/macos-update-installer.mm" line="-184"/>
+        <location filename="../src/services/update/macos-update-installer.mm" line="-183"/>
         <source>Update image contains more than one app</source>
         <translation>更新映像包含多個應用</translation>
     </message>
@@ -7156,7 +8267,7 @@ Vicinae Store 收錄了由社群開發並經核心貢獻者批准的擴充套件
         <translation>無法讀取更新的程式碼簽名</translation>
     </message>
     <message>
-        <location line="+12"/>
+        <location line="+11"/>
         <source>Failed to build the signature requirement</source>
         <translation>無法構建簽名要求</translation>
     </message>
@@ -7177,9 +8288,32 @@ Vicinae Store 收錄了由社群開發並經核心貢獻者批准的擴充套件
     </message>
 </context>
 <context>
+    <name>media-extension</name>
+    <message>
+        <location filename="../src/builtins/media/media-extension.hpp" line="-200"/>
+        <source>%1 — %2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+35"/>
+        <source>No media player is running</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>No media player matches &quot;%1&quot;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+131"/>
+        <source>Volume %1%</source>
+        <translation type="unfinished">音量 %1%</translation>
+    </message>
+</context>
+<context>
     <name>shortcut-conflict</name>
     <message>
-        <location filename="../src/qml/shortcut-conflict.cpp" line="+10"/>
+        <location filename="../src/ui/settings/shortcut-conflict.cpp" line="+10"/>
         <source>Modifier required</source>
         <translation>需要修飾鍵</translation>
     </message>
@@ -7188,14 +8322,6 @@ Vicinae Store 收錄了由社群開發並經核心貢獻者批准的擴充套件
         <location line="+5"/>
         <source>Already bound to &quot;%1&quot;</source>
         <translation>已繫結到“%1”</translation>
-    </message>
-</context>
-<context>
-    <name>system-extension</name>
-    <message>
-        <location filename="../src/extensions/system/system-extension.hpp" line="-34"/>
-        <source>Volume %1%</source>
-        <translation>音量 %1%</translation>
     </message>
 </context>
 <context>

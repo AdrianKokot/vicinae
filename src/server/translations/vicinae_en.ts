@@ -4,7 +4,7 @@
 <context>
     <name>ClipboardHistoryViewHost</name>
     <message numerus="yes">
-        <location filename="../src/qml/clipboard-history-view-host.cpp" line="+184"/>
+        <location filename="../../../../src/server/src/builtins/clipboard/history/clipboard-history-view-host.cpp" line="+194"/>
         <source>%n Items</source>
         <translation>
             <numerusform>%n Item</numerusform>
@@ -15,7 +15,7 @@
 <context>
     <name>QObject</name>
     <message numerus="yes">
-        <location filename="../src/utils/utils.cpp" line="+58"/>
+        <location filename="../../../../src/server/src/utils/utils.cpp" line="+56"/>
         <source>%n year(s) ago</source>
         <translation>
             <numerusform>%n year ago</numerusform>
@@ -52,6 +52,17 @@
         <translation>
             <numerusform>%n minute ago</numerusform>
             <numerusform>%n minutes ago</numerusform>
+        </translation>
+    </message>
+</context>
+<context>
+    <name>SwitchWorkspacesSection</name>
+    <message numerus="yes">
+        <location filename="../../../../src/server/src/builtins/wm/switch-workspaces-model.hpp" line="+50"/>
+        <source>%n window(s)</source>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+            <numerusform></numerusform>
         </translation>
     </message>
 </context>

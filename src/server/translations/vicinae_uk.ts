@@ -1,21 +1,22 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
 <TS version="2.1" language="uk">
 <context>
     <name>AboutSettingsPage</name>
     <message>
-        <location filename="../src/qml/qml/AboutSettingsPage.qml" line="+59" />
+        <location filename="../src/ui/qml/settings/AboutSettingsPage.qml" line="+61"/>
         <source>Version %1 - Commit %2
 (%3)</source>
         <translation>Версія %1 - Коміт %2
 (%3)</translation>
     </message>
     <message>
-        <location line="+24" />
+        <location line="+24"/>
         <source>Documentation</source>
         <translation>Документація</translation>
     </message>
     <message>
-        <location line="+10" />
+        <location line="+10"/>
         <source>Report a Bug</source>
         <translation>Повідомити про помилку</translation>
     </message>
@@ -23,12 +24,12 @@
 <context>
     <name>ActionListPanel</name>
     <message>
-        <location filename="../src/qml/qml/ActionListPanel.qml" line="+113" />
+        <location filename="../src/ui/qml/actions/ActionListPanel.qml" line="+116"/>
         <source>No matching actions</source>
         <translation>Нема відповідних дій</translation>
     </message>
     <message>
-        <location line="+135" />
+        <location line="+136"/>
         <source>Filter actions...</source>
         <translation>Фільтрувати дії...</translation>
     </message>
@@ -36,117 +37,127 @@
 <context>
     <name>AdvancedSettingsPage</name>
     <message>
-        <location filename="../src/qml/qml/AdvancedSettingsPage.qml" line="+33" />
+        <location filename="../src/ui/qml/settings/AdvancedSettingsPage.qml" line="+35"/>
         <source>Input &amp; Navigation</source>
         <translation>Введення та навігація</translation>
     </message>
     <message>
-        <location line="+7" />
+        <location line="+7"/>
         <source>Pop on backspace</source>
         <translation>Назад по Backspace</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Pop back in navigation on backspace when no input is present.</source>
         <translation>Повертатися на крок назад по клавіші Backspace, коли поле вводу порожнє.</translation>
     </message>
     <message>
-        <location line="+8" />
+        <location line="+8"/>
         <source>Activate on single click</source>
         <translation>Активувати одним кліком</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Activate items with a single click instead of requiring a double click.</source>
         <translation>Відкривати елементи одним кліком замість подвійного.</translation>
     </message>
     <message>
-        <location line="+8" />
+        <location line="+8"/>
         <source>Wrap navigation</source>
         <translation>Циклічна навігація</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Wrap around to the opposite end when moving past the first or last item.</source>
         <translation>Переходить до протилежного кінця при переміщенні за перший або останній елемент.</translation>
     </message>
     <message>
-        <location line="+8" />
+        <location line="+8"/>
         <source>IME handling</source>
         <translation>Обробка IME</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Include IME Preedit strings as part of search queries.</source>
         <translation>Включати рядки попереднього введення (preedit) IME в пошукові запити.</translation>
     </message>
     <message>
-        <location line="+8" />
+        <location line="+8"/>
         <source>Keybinding Scheme</source>
         <translation>Схема клавіатурних скорочень</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Default uses the standard macOS keys (arrows, Ctrl+N/P); Vim uses Ctrl+J/K and Ctrl+H/L; Emacs uses Ctrl+N/P and Ctrl+Opt+B/F for navigation, plus Emacs editing in the search bar.</source>
         <translation>За замовчуванням використовуються стандартні клавіші macOS (стрілки, Ctrl+N/P); Vim — Ctrl+J/K і Ctrl+H/L; Emacs — Ctrl+N/P і Ctrl+Alt+B/F для навігації, а також редагування в стилі Emacs у рядку пошуку.</translation>
     </message>
     <message>
-        <location line="+0" />
+        <location line="+0"/>
         <source>Default and Vim use Ctrl+J/K and Ctrl+H/L; Emacs uses Ctrl+N/P and Ctrl+Alt+B/F for navigation, plus Emacs editing in the search bar.</source>
         <translation>За замовчуванням і у Vim використовуються Ctrl+J/K і Ctrl+H/L; у Emacs — Ctrl+N/P і Ctrl+Alt+B/F для навігації, а також редагування в стилі Emacs у рядку пошуку.</translation>
     </message>
     <message>
-        <location line="+12" />
+        <location line="+12"/>
         <source>Search</source>
         <translation>Пошук</translation>
     </message>
     <message>
-        <location line="+7" />
+        <location line="+7"/>
         <source>Root file search</source>
         <translation>Пошук файлів на кореневому рівні</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Files are searched asynchronously, so if enabled you should expect a slight delay for file search results to show up.</source>
         <translation>Файли шукаються асинхронно, тому після увімкнення можлива невелика затримка перед появою результатів пошуку файлів.</translation>
     </message>
     <message>
-        <location line="+8" />
+        <location line="+8"/>
         <source>Favicon Fetching</source>
         <translation>Завантаження favicon</translation>
     </message>
     <message>
-        <location line="+1" />
-        <source>The favicon provider used to load favicons where needed. Select 'None' to turn off favicon loading.</source>
+        <location line="+1"/>
+        <source>The favicon provider used to load favicons where needed. Select &apos;None&apos; to turn off favicon loading.</source>
         <translation>Постачальник favicon, який використовується для їх завантаження за потреби. Виберіть «None», щоб вимкнути завантаження favicon.</translation>
     </message>
     <message>
-        <location line="+12" />
+        <location line="+12"/>
         <source>System</source>
         <translation>Система</translation>
     </message>
     <message>
-        <location line="+9" />
+        <location line="+8"/>
         <source>Input server</source>
         <translation>Сервер введення</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Whether to spawn the input server at startup. This needs to be enabled in order to support snippets, paste to active window, and other features that require input monitoring or injection.</source>
         <translation>Запускати сервер введення при запуску. Це необхідно для роботи плагінів, вставки в активне вікно та інших функцій, які потребують моніторингу або перехоплення введення.</translation>
     </message>
     <message>
-        <location line="+10" />
+        <location line="+8"/>
+        <source>Tray icon</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Show the Vicinae icon in the system tray. You may need to restart Vicinae.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
         <source>Security</source>
         <translation>Безпека</translation>
     </message>
     <message>
-        <location line="+7" />
+        <location line="+7"/>
         <source>Encrypt sensitive data</source>
         <translation>Шифрувати конфіденційні дані</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Encrypt sensitive data at rest, such as clipboard history and internal databases (OAuth tokens, extension local storage, API keys). Note that some components, such as on-disk clipboard history, may not be retroactively affected when toggling this option. Turning on this option may ask you to unlock your keychain. Requires a restart in order to apply.</source>
         <translation>Шифрувати конфіденційні дані, які зберігаються, наприклад, історію буфера обміну та внутрішні бази даних (OAuth-токені, локальне сховище розширень, API-ключі). Зверніть увагу, що деякі компоненти, такі як історія буфера обміну на диску, можуть не бути залучені при перемиканні цієї опції. При включенні може знадобитися розблокувати ваш набір ключів. Для застосування потрібен перезапуск.</translation>
     </message>
@@ -154,22 +165,22 @@
 <context>
     <name>AlertWidget</name>
     <message>
-        <location filename="../src/ui/alert/alert.hpp" line="+15" />
+        <location filename="../src/ui/alert/alert.hpp" line="+15"/>
         <source>Are you sure?</source>
         <translation>Ви впевнені?</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>This action cannot be undone</source>
         <translation>Цю дію неможливо скасувати</translation>
     </message>
     <message>
-        <location line="+2" />
+        <location line="+2"/>
         <source>Confirm</source>
         <translation>Підтвердити</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Cancel</source>
         <translation>Скасувати</translation>
     </message>
@@ -177,12 +188,12 @@
 <context>
     <name>AliasFormView</name>
     <message>
-        <location filename="../src/qml/qml/AliasFormView.qml" line="+15" />
+        <location filename="../src/ui/qml/views/AliasFormView.qml" line="+16"/>
         <source>Alias</source>
         <translation>Аліас</translation>
     </message>
     <message>
-        <location line="+2" />
+        <location line="+2"/>
         <source>Additional words to index this item against</source>
         <translation>Додаткові слова для індексації цього елемента</translation>
     </message>
@@ -190,22 +201,22 @@
 <context>
     <name>AliasFormViewHost</name>
     <message>
-        <location filename="../src/qml/alias-form-view-host.cpp" line="+28" />
+        <location filename="../src/builtins/root/alias-form-view-host.cpp" line="+27"/>
         <source>Set alias - %1</source>
         <translation>Задати аліас - %1</translation>
     </message>
     <message>
-        <location line="+6" />
+        <location line="+6"/>
         <source>Submit</source>
         <translation>Надіслати</translation>
     </message>
     <message>
-        <location line="+13" />
+        <location line="+13"/>
         <source>Alias modified</source>
         <translation>Аліас змінено</translation>
     </message>
     <message>
-        <location line="+3" />
+        <location line="+3"/>
         <source>Failed to modify alias</source>
         <translation>Не вдалося змінити аліас</translation>
     </message>
@@ -213,48 +224,48 @@
 <context>
     <name>AppRootItem</name>
     <message>
-        <location filename="../src/root-search/apps/app-root-provider.cpp" line="+18" />
-        <location line="+28" />
+        <location filename="../src/root-search/apps/app-root-provider.cpp" line="+18"/>
+        <location line="+24"/>
         <source>Application</source>
         <translation>Додаток</translation>
     </message>
     <message>
-        <location line="-9" />
+        <location line="-9"/>
         <source>Name</source>
         <translation>Назва</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Where</source>
         <translation>Розташування</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Opens in terminal</source>
         <translation>Відкривається в терміналі</translation>
     </message>
     <message>
-        <location line="+0" />
+        <location line="+0"/>
         <source>Yes</source>
         <translation>Так</translation>
     </message>
     <message>
-        <location line="+0" />
+        <location line="+0"/>
         <source>No</source>
         <translation>Ні</translation>
     </message>
     <message>
-        <location line="+20" />
+        <location line="+20"/>
         <source>Open Application</source>
         <translation>Відкрити програму</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Copy App ID</source>
         <translation>Копіювати ID програми</translation>
     </message>
     <message>
-        <location line="+2" />
+        <location line="+2"/>
         <source>Copy App Location</source>
         <translation>Копіювати шлях програми</translation>
     </message>
@@ -262,7 +273,7 @@
 <context>
     <name>AppRootProvider</name>
     <message>
-        <location line="+77" />
+        <location line="+89"/>
         <source>Applications</source>
         <translation>Додатки</translation>
     </message>
@@ -270,8 +281,8 @@
 <context>
     <name>AppSelectorModel</name>
     <message>
-        <location filename="../src/qml/app-selector-model.cpp" line="+17" />
-        <location line="+44" />
+        <location filename="../src/ui/views/app-selector-model.cpp" line="+18"/>
+        <location line="+49"/>
         <source>%1 (Default)</source>
         <translation>%1 (За замовчуванням)</translation>
     </message>
@@ -279,161 +290,212 @@
 <context>
     <name>AppearanceSettingsPage</name>
     <message>
-        <location filename="../src/qml/qml/AppearanceSettingsPage.qml" line="+33" />
-        <location line="+7" />
+        <location filename="../src/ui/qml/settings/AppearanceSettingsPage.qml" line="+35"/>
+        <location line="+7"/>
         <source>Theme</source>
         <translation>Тема</translation>
     </message>
     <message>
-        <location line="+10" />
+        <location line="+10"/>
         <source>Font</source>
         <translation>Шрифт</translation>
     </message>
     <message>
-        <location line="+10" />
+        <location line="+10"/>
         <source>Font size</source>
         <translation>Розмір шрифту</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>The base point size used to compute font sizes. Fractional values are accepted. Recommended range is [10.0;12.0].</source>
         <translation>Базовий кегль, на основі якого обчислюються розміри шрифтів. Допускаються дробні значення. Рекомендований діапазон — [10.0;12.0].</translation>
     </message>
     <message>
-        <location line="+6" />
+        <location line="+6"/>
         <source>e.g. 11</source>
         <translation>наприклад, 11</translation>
     </message>
     <message>
-        <location line="+11" />
+        <location line="+11"/>
         <source>Icon Theme</source>
         <translation>Тема іконок</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>The icon theme used for system icons (applications, mime types, folder icons...). Does not affect builtin Vicinae icons.</source>
         <translation>Тема іконок для системних іконок (додатки, типи MIME, папки...). Не впливає на вбудовані іконки Vicinae.</translation>
     </message>
     <message>
-        <location line="+12" />
+        <location line="+12"/>
         <source>Window</source>
         <translation>Вікно</translation>
     </message>
     <message>
-        <location line="+8" />
+        <location line="+8"/>
         <source>Window material</source>
         <translation>Матеріал вікна</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Background material applied to the launcher window. Lower the window opacity to see it.</source>
         <translation>Матеріал фону, що застосовується до вікна лаунчера. Зменште прозорість вікна, щоб побачити його.</translation>
     </message>
     <message>
-        <location line="+10" />
+        <location line="+10"/>
         <source>Window opacity</source>
         <translation>Прозорість вікна</translation>
     </message>
     <message>
-        <location line="+5" />
+        <location line="+5"/>
         <source>e.g. 1.0</source>
         <translation>наприклад, 1.0</translation>
     </message>
     <message>
-        <location line="+10" />
+        <location line="+10"/>
         <source>Compact mode</source>
         <translation>Компактний режим</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Show only the search bar at root; expand when a query is entered.</source>
         <translation>Показувати лише рядок пошуку на головному рівні; розкриватися при введенні запиту.</translation>
     </message>
     <message>
-        <location line="+9" />
+        <location line="+9"/>
+        <source>Floating status bar</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Let the status bar float over the content, which stays slightly visible under it. Disable to keep the content strictly above the status bar.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
         <source>Use layer shell</source>
         <translation>Використовувати layer shell</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Anchor the launcher as a Wayland layer surface (wlr-layer-shell) instead of a regular window. May require reopening Vicinae to fully apply.</source>
         <translation>Закріпити лаунчер як поверхню шару Wayland (wlr-layer-shell) замість звичайного вікна. Для повного застосування може знадобитися перезапуск Vicinae.</translation>
     </message>
     <message>
-        <location line="+9" />
+        <location line="+9"/>
         <source>Client-side decorations</source>
         <translation>Декорації на стороні клієнта</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Let Vicinae draw its own rounded borders and shadow instead of relying on the windowing system.</source>
         <translation>Дозволити Vicinae малювати власні закруглені рамки та тінь, а не покладатися на оконну систему.</translation>
     </message>
     <message>
-        <location line="+8" />
+        <location line="+8"/>
         <source>Corner rounding</source>
         <translation>Закруглення кутів</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Radius of the launcher window corners, in pixels.</source>
         <translation>Радіус закруглення кутів вікна лаунчера в пікселях.</translation>
     </message>
     <message>
-        <location line="+8" />
+        <location line="+8"/>
         <source>e.g. 10</source>
         <translation>наприклад, 10</translation>
     </message>
     <message>
-        <location line="+11" />
+        <location line="+11"/>
         <source>Border width</source>
         <translation>Ширина рамки</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Thickness of the launcher window border, in pixels.</source>
         <translation>Товщина рамки вікна лаунчера в пікселях.</translation>
     </message>
     <message>
-        <location line="+7" />
+        <location line="+7"/>
         <source>e.g. 3</source>
         <translation>наприклад, 3</translation>
     </message>
     <message>
-        <location line="+11" />
+        <location line="+11"/>
         <source>Shadow size</source>
         <translation>Розмір тіні</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Size of the drop shadow cast by the launcher window, in pixels.</source>
         <translation>Розмір падаючої тіні вікна лаунчера в пікселях.</translation>
     </message>
     <message>
-        <location line="+8" />
+        <location line="+8"/>
         <source>e.g. 12</source>
         <translation>наприклад, 12</translation>
     </message>
     <message>
-        <location line="+10" />
+        <location line="+10"/>
         <source>Native font rendering</source>
         <translation>Системний рендеринг шрифту</translation>
     </message>
     <message>
-        <location line="+1" />
-        <source>Use the platform's native text rendering for system-consistent text. Disable for Qt distance-field rendering (usually faster). May require reopening Vicinae to fully apply.</source>
+        <location line="+1"/>
+        <source>Use the platform&apos;s native text rendering for system-consistent text. Disable for Qt distance-field rendering (usually faster). May require reopening Vicinae to fully apply.</source>
         <translation>Використовувати системний рендеринг тексту платформи для узгодженого відображення. Вимкнути, щоб використовувати Qt distance-field-рендеринг (зазвичай швидше). Для повного застосування може знадобитися перезапуск Vicinae.</translation>
+    </message>
+</context>
+<context>
+    <name>AppleShortcutRootItem</name>
+    <message>
+        <location filename="../src/root-search/apple-shortcuts/apple-shortcut-root-provider.cpp" line="+66"/>
+        <location line="+3"/>
+        <source>Apple Shortcut</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>AppleShortcutRootProvider</name>
+    <message>
+        <location line="+30"/>
+        <source>Could not load Apple Shortcuts</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+14"/>
+        <source>Apple Shortcuts</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>AppleShortcuts</name>
+    <message>
+        <location filename="../src/services/apple-shortcuts/apple-shortcuts.mm" line="+36"/>
+        <source>Allow Vicinae to control Shortcuts Events in System Settings &gt; Privacy &amp; Security &gt; Automation.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+31"/>
+        <location line="+40"/>
+        <source>Shortcuts Events is unavailable.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-30"/>
+        <source>Could not read Apple Shortcuts.</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>AvailableFallbackSection</name>
     <message>
-        <location filename="../src/qml/manage-fallback-model.hpp" line="+49" />
+        <location filename="../src/builtins/vicinae/manage-fallback-model.hpp" line="+49"/>
         <source>Available</source>
         <translation>Доступно</translation>
     </message>
     <message>
-        <location filename="../src/qml/manage-fallback-model.cpp" line="+50" />
+        <location filename="../src/builtins/vicinae/manage-fallback-model.cpp" line="+50"/>
         <source>Enable fallback</source>
         <translation>Увімкнути резервний варіант</translation>
     </message>
@@ -441,7 +503,7 @@
 <context>
     <name>BringToWorkspaceAction</name>
     <message>
-        <location filename="../src/actions/wm/window-actions.hpp" line="+72" />
+        <location filename="../src/actions/window-actions.hpp" line="+72"/>
         <source>Bring to current workspace</source>
         <translation>Перемістити в поточний робочий простір</translation>
     </message>
@@ -449,27 +511,27 @@
 <context>
     <name>BrowseAppsSection</name>
     <message>
-        <location filename="../src/qml/browse-apps-model.hpp" line="+32" />
+        <location filename="../src/builtins/system/browse-apps-model.hpp" line="+32"/>
         <source>Applications ({count})</source>
         <translation>Додатки ({count})</translation>
     </message>
     <message>
-        <location filename="../src/qml/browse-apps-model.cpp" line="+19" />
+        <location filename="../src/builtins/system/browse-apps-model.cpp" line="+19"/>
         <source>Hidden</source>
         <translation>Приховані</translation>
     </message>
     <message>
-        <location line="+16" />
+        <location line="+16"/>
         <source>Open Application</source>
         <translation>Відкрити додаток</translation>
     </message>
     <message>
-        <location line="+17" />
+        <location line="+17"/>
         <source>Copy App ID</source>
         <translation>Скопіювати ID додатку</translation>
     </message>
     <message>
-        <location line="+4" />
+        <location line="+4"/>
         <source>Copy App Location</source>
         <translation>Скопіювати шлях додатку</translation>
     </message>
@@ -477,7 +539,7 @@
 <context>
     <name>BrowseAppsViewHost</name>
     <message>
-        <location filename="../src/qml/browse-apps-view-host.cpp" line="+12" />
+        <location filename="../src/builtins/system/browse-apps-view-host.cpp" line="+13"/>
         <source>Search apps...</source>
         <translation>Пошук додатків...</translation>
     </message>
@@ -485,7 +547,7 @@
 <context>
     <name>BrowseFontsCommand</name>
     <message>
-        <location filename="../src/extensions/font/browse-fonts-command.hpp" line="+8" />
+        <location filename="../src/builtins/font/browse-fonts-command.hpp" line="+8"/>
         <source>Search Fonts</source>
         <translation>Пошук шрифтів</translation>
     </message>
@@ -493,55 +555,50 @@
 <context>
     <name>BrowserExtension</name>
     <message>
-        <location filename="../src/extensions/browser/browser-extension.hpp" line="+12" />
+        <location filename="../src/builtins/browser/browser-extension.hpp" line="+12"/>
         <source>Browser Extension</source>
         <translation>Розширення для браузера</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Browser extension related commands.</source>
-        <translation>Команди, пов'язані з браузерним розширенням.</translation>
+        <translation>Команди, пов&apos;язані з браузерним розширенням.</translation>
     </message>
 </context>
 <context>
     <name>BrowserTabActionGenerator</name>
     <message>
-        <location filename="../src/actions/browser-tab-actions.hpp" line="+24" />
+        <location filename="../src/actions/browser-tab-actions.hpp" line="+24"/>
         <source>Switch to tab</source>
         <translation>Перейти на вкладку</translation>
     </message>
     <message>
-        <location line="+8" />
+        <location line="+8"/>
         <source>Convert to shortcut</source>
         <translation>Створити ярлик</translation>
     </message>
     <message>
-        <location line="+4" />
-        <source>Convert tab to shortcut</source>
-        <translation>Створити ярлик з вкладки</translation>
-    </message>
-    <message>
-        <location line="+5" />
+        <location line="+3"/>
         <source>Close tab</source>
         <translation>Закрити вкладку</translation>
     </message>
     <message>
-        <location line="+2" />
+        <location line="+2"/>
         <source>Failed to close tab: %1</source>
         <translation>Не вдалося закрити вкладку: %1</translation>
     </message>
     <message>
-        <location line="+7" />
+        <location line="+7"/>
         <source>Copy URL</source>
         <translation>Копіювати URL</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Copy Title</source>
         <translation>Копіювати заголовок</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Copy ID</source>
         <translation>Копіювати ID</translation>
     </message>
@@ -549,7 +606,7 @@
 <context>
     <name>BrowserTabProvider</name>
     <message>
-        <location filename="../src/root-search/browser-tabs/browser-tabs-provider.hpp" line="+70" />
+        <location filename="../src/root-search/browser-tabs/browser-tabs-provider.hpp" line="+69"/>
         <source>Browser Tabs</source>
         <translation>Вкладки браузера</translation>
     </message>
@@ -557,12 +614,12 @@
 <context>
     <name>BrowserTabRootItem</name>
     <message>
-        <location line="-51" />
+        <location line="-51"/>
         <source>Browser Tab</source>
         <translation>Вкладка браузера</translation>
     </message>
     <message>
-        <location line="+14" />
+        <location line="+14"/>
         <source>Tab</source>
         <translation>Вкладка</translation>
     </message>
@@ -570,22 +627,22 @@
 <context>
     <name>BrowserTabsSection</name>
     <message>
-        <location filename="../src/qml/browser-tabs-model.hpp" line="+22" />
+        <location filename="../src/builtins/browser/browser-tabs-model.hpp" line="+22"/>
         <source>Tabs ({count})</source>
         <translation>Вкладки ({count})</translation>
     </message>
     <message>
-        <location line="+0" />
+        <location line="+0"/>
         <source>Playing Media ({count})</source>
         <translation>Відтворюване медіа ({count})</translation>
     </message>
     <message>
-        <location filename="../src/qml/browser-tabs-model.cpp" line="+13" />
+        <location filename="../src/builtins/browser/browser-tabs-model.cpp" line="+13"/>
         <source>Muted</source>
         <translation>Без звуку</translation>
     </message>
     <message>
-        <location line="+0" />
+        <location line="+0"/>
         <source>Playing</source>
         <translation>Відтворюється</translation>
     </message>
@@ -593,7 +650,7 @@
 <context>
     <name>BrowserTabsViewHost</name>
     <message>
-        <location filename="../src/qml/browser-tabs-view-host.cpp" line="+12" />
+        <location filename="../src/builtins/browser/browser-tabs-view-host.cpp" line="+12"/>
         <source>Search, focus and close tabs</source>
         <translation>Пошук, фокус та закриття вкладок</translation>
     </message>
@@ -601,20 +658,20 @@
 <context>
     <name>BuiltinIconsSection</name>
     <message>
-        <location filename="../src/qml/builtin-icons-model.hpp" line="+20" />
+        <location filename="../src/builtins/vicinae/builtin-icons-model.hpp" line="+20"/>
         <source>Icons ({count})</source>
         <translation>Значки ({count})</translation>
     </message>
     <message>
-        <location filename="../src/qml/builtin-icons-model.cpp" line="+15" />
+        <location filename="../src/builtins/vicinae/builtin-icons-model.cpp" line="+15"/>
         <source>Copy Icon Name</source>
-        <translation>Копіювати ім'я значка</translation>
+        <translation>Копіювати ім&apos;я значка</translation>
     </message>
 </context>
 <context>
     <name>BuiltinIconsViewHost</name>
     <message>
-        <location filename="../src/qml/builtin-icons-view-host.cpp" line="+10" />
+        <location filename="../src/builtins/vicinae/builtin-icons-view-host.cpp" line="+10"/>
         <source>Search icons...</source>
         <translation>Пошук значків...</translation>
     </message>
@@ -622,7 +679,7 @@
 <context>
     <name>CalcHistoryListView</name>
     <message>
-        <location filename="../src/qml/qml/CalcHistoryListView.qml" line="+12" />
+        <location filename="../src/ui/qml/views/CalcHistoryListView.qml" line="+13"/>
         <source>No results</source>
         <translation>Не знайдено результатів</translation>
     </message>
@@ -630,17 +687,17 @@
 <context>
     <name>CalcHistorySection</name>
     <message>
-        <location filename="../src/qml/calc-history-model.cpp" line="+39" />
+        <location filename="../src/builtins/calculator/calc-history-model.cpp" line="+39"/>
         <source>Copy answer</source>
         <translation>Скопіювати відповідь</translation>
     </message>
     <message>
-        <location line="+3" />
+        <location line="+3"/>
         <source>Copy question</source>
         <translation>Скопіювати питання</translation>
     </message>
     <message>
-        <location line="+2" />
+        <location line="+2"/>
         <source>Copy question and answer</source>
         <translation>Скопіювати питання та відповідь</translation>
     </message>
@@ -648,7 +705,7 @@
 <context>
     <name>CalcHistoryViewHost</name>
     <message>
-        <location filename="../src/qml/calc-history-view-host.cpp" line="+92" />
+        <location filename="../src/builtins/calculator/calc-history-view-host.cpp" line="+92"/>
         <source>Search past calculations...</source>
         <translation>Пошук у попередніх обчисленнях...</translation>
     </message>
@@ -656,12 +713,12 @@
 <context>
     <name>CalcLiveSection</name>
     <message>
-        <location filename="../src/qml/calc-history-view-host.hpp" line="+27" />
+        <location filename="../src/builtins/calculator/calc-history-view-host.hpp" line="+28"/>
         <source>Calculator</source>
         <translation>Калькулятор</translation>
     </message>
     <message>
-        <location filename="../src/qml/calc-history-view-host.cpp" line="-14" />
+        <location filename="../src/builtins/calculator/calc-history-view-host.cpp" line="-14"/>
         <source>Copy unformatted answer</source>
         <translation>Скопіювати відповідь без форматування</translation>
     </message>
@@ -669,45 +726,25 @@
 <context>
     <name>CalculatorExtension</name>
     <message>
-        <location filename="../src/extensions/calculator/calculator-extension.hpp" line="+73" />
+        <location filename="../src/builtins/calculator/calculator-extension.hpp" line="+94"/>
         <source>Calculator</source>
         <translation>Калькулятор</translation>
     </message>
     <message>
-        <location line="+2" />
+        <location line="+2"/>
         <source>Do maths, convert units or search past calculations...</source>
         <translation>Виконуйте обчислення, переводите одиниці вимірювання або шукайте попередні розрахунки...</translation>
-    </message>
-    <message>
-        <location line="+22" />
-        <source>Calculator Backend</source>
-        <translation>Бекенд калькулятора</translation>
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Which backend to use to perform calculations</source>
-        <translation>Який бекенд використовувати для обчислень</translation>
-    </message>
-    <message>
-        <location line="+5" />
-        <source>Refresh rates on startup</source>
-        <translation>Оновлювати курси при запуску</translation>
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Whether exchange rates should be refreshed every time the vicinae server is started. If the current backend does not support it, this is ignored.</source>
-        <translation>Оновлювати курси валют при кожному запуску vicinae? Якщо поточний бекенд це не підтримує, параметр ігнорується.</translation>
     </message>
 </context>
 <context>
     <name>CalculatorHistoryCommand</name>
     <message>
-        <location line="-87" />
+        <location line="-77"/>
         <source>Calculator history</source>
         <translation>Історія калькулятора</translation>
     </message>
     <message>
-        <location line="+2" />
+        <location line="+2"/>
         <source>Browse past calculations. You need to copy the result of a calculation for it to be saved in history.</source>
         <translation>Перегляд попередніх обчислень. Щоб результат потрапив в історію, його потрібно скопіювати.</translation>
     </message>
@@ -715,27 +752,27 @@
 <context>
     <name>CalculatorRefreshRatesCommand</name>
     <message>
-        <location line="+11" />
+        <location line="+11"/>
         <source>Refresh Exchange Rates</source>
         <translation>Оновити курси валют</translation>
     </message>
     <message>
-        <location line="+2" />
+        <location line="+2"/>
         <source>Refresh exchange rates used by the calculator to provide currency conversion features. Not all backends may support currency conversions or manually refreshing the rates.</source>
         <translation>Оновити курси валют, які використовуються калькулятором для конвертації валют. Не всі бекенди підтримують конвертацію або ручне оновлення курсів.</translation>
     </message>
     <message>
-        <location line="+17" />
-        <source>%1 can't refresh rates</source>
+        <location line="+17"/>
+        <source>%1 can&apos;t refresh rates</source>
         <translation>%1 не може оновити курси</translation>
     </message>
     <message>
-        <location line="+4" />
+        <location line="+4"/>
         <source>Refreshing rates...</source>
         <translation>Оновлення курсів...</translation>
     </message>
     <message>
-        <location line="+9" />
+        <location line="+9"/>
         <source>Rates successfully refreshed</source>
         <translation>Курси успішно оновлені</translation>
     </message>
@@ -743,12 +780,12 @@
 <context>
     <name>CalculatorResultDelegate</name>
     <message>
-        <location filename="../src/qml/qml/CalculatorResultDelegate.qml" line="+53" />
+        <location filename="../src/ui/qml/list/CalculatorResultDelegate.qml" line="+61"/>
         <source>Expression</source>
         <translation>Вираз</translation>
     </message>
     <message>
-        <location line="+58" />
+        <location line="+59"/>
         <source>Result</source>
         <translation>Результат</translation>
     </message>
@@ -756,32 +793,32 @@
 <context>
     <name>CalculatorService</name>
     <message>
-        <location filename="../src/services/calculator-service/calculator-service.cpp" line="+122" />
+        <location filename="../src/services/calculator-service/calculator-service.cpp" line="+125"/>
         <source>Pinned</source>
         <translation>Зафіксовано</translation>
     </message>
     <message>
-        <location line="+7" />
+        <location line="+7"/>
         <source>Today</source>
         <translation>Сьогодні</translation>
     </message>
     <message>
-        <location line="+12" />
+        <location line="+12"/>
         <source>This week</source>
         <translation>Цього тижня</translation>
     </message>
     <message>
-        <location line="+13" />
+        <location line="+13"/>
         <source>This month</source>
         <translation>Цього місяця</translation>
     </message>
     <message>
-        <location line="+13" />
+        <location line="+13"/>
         <source>This year</source>
         <translation>Цього року</translation>
     </message>
     <message>
-        <location line="+9" />
+        <location line="+9"/>
         <source>A few years ago</source>
         <translation>Кілька років тому</translation>
     </message>
@@ -789,7 +826,7 @@
 <context>
     <name>ChangeEmojiSkinToneAction</name>
     <message>
-        <location filename="../src/qml/emoji-grid-model.cpp" line="+101" />
+        <location filename="../src/builtins/vicinae/emoji-grid-model.cpp" line="+102"/>
         <source>%1 skin tone</source>
         <translation>Відтінок шкіри %1</translation>
     </message>
@@ -797,32 +834,32 @@
 <context>
     <name>ClearClipboardHistoryCommand</name>
     <message>
-        <location filename="../src/extensions/clipboard/clipboard-extension.cpp" line="+35" />
+        <location filename="../src/builtins/clipboard/clipboard-extension.cpp" line="+37"/>
         <source>Clear Clipboard History</source>
         <translation>Очистити історію буфера обміну</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Clear the clipboard history</source>
         <translation>Очистити історію буфера обміну</translation>
     </message>
     <message>
-        <location line="+9" />
+        <location line="+11"/>
         <source>Are you sure?</source>
         <translation>Ви впевнені?</translation>
     </message>
     <message>
-        <location line="+0" />
+        <location line="+0"/>
         <source>Your clipboard history will be gone forever :(</source>
         <translation>Ваша історія буфера обміну буде видалена назавжди :(</translation>
     </message>
     <message>
-        <location line="+3" />
+        <location line="+3"/>
         <source>Failed to clear clipboard history</source>
         <translation>Не вдалося очистити історію буфера обміну</translation>
     </message>
     <message>
-        <location line="+4" />
+        <location line="+4"/>
         <source>Clipboard history cleared</source>
         <translation>Буфер обміну очищено</translation>
     </message>
@@ -830,22 +867,22 @@
 <context>
     <name>ClipboardClearCommand</name>
     <message>
-        <location line="-39" />
+        <location line="-43"/>
         <source>Clear Current Clipboard Data</source>
         <translation>Очистити поточний вміст буфера обміну</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Clear the current content of the clipboard</source>
         <translation>Очистити вміст буфера обміну</translation>
     </message>
     <message>
-        <location line="+10" />
+        <location line="+12"/>
         <source>Failed to clear clipboard</source>
         <translation>Не вдалося очистити буфер обміну</translation>
     </message>
     <message>
-        <location line="+4" />
+        <location line="+4"/>
         <source>Clipboard cleared</source>
         <translation>Буфер обміну очищено</translation>
     </message>
@@ -853,83 +890,33 @@
 <context>
     <name>ClipboardExtension</name>
     <message>
-        <location filename="../src/extensions/clipboard/clipboard-extension.hpp" line="+13" />
+        <location filename="../src/builtins/clipboard/clipboard-extension.hpp" line="+13"/>
         <source>Clipboard</source>
         <translation>Буфер обміну</translation>
     </message>
     <message>
-        <location line="+4" />
+        <location line="+4"/>
         <source>System clipboard integration</source>
         <translation>Інтеграція з буфером обміну</translation>
-    </message>
-    <message>
-        <location filename="../src/extensions/clipboard/clipboard-extension.cpp" line="+55" />
-        <source>Erase on startup</source>
-        <translation>Очищає при запуску</translation>
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Erase clipboard history every time the vicinae server is started</source>
-        <translation>Очищає історію буфера обміну при кожному запуску сервера Vicinae</translation>
-    </message>
-    <message>
-        <location line="+3" />
-        <source>Clipboard monitoring</source>
-        <translation>Відстеження буфера обміну</translation>
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Whether clipboard activity is recorded in the history. Every clipboard action performed while this is turned off will not be recorded.</source>
-        <translation>Чи потрібно записувати дії з буфером обміну в історію? Кожна дія, виконана при вимкненій опції, не буде записана.</translation>
-    </message>
-    <message>
-        <location line="+9" />
-        <source>Ignore Passwords</source>
-        <translation>Ігнорувати паролі</translation>
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Ignore selections that can be identified as a password. This relies on the application providing an explicit hint that the selection is a password. While most password managers and private browser windows do, some might not implement this properly.</source>
-        <translation>Ігнорувати виділення, які можна розпізнати як пароль. Це залежить від того, чи надає додаток явну вказівку, що виділення є паролем. Більшість менеджерів паролів і приватних вікон браузера це роблять, але деякі можуть реалізувати це некоректно.</translation>
     </message>
 </context>
 <context>
     <name>ClipboardHistoryCommand</name>
     <message>
-        <location filename="../src/extensions/clipboard/clipboard-history-command.cpp" line="+16" />
-        <source>Paste</source>
-        <translation>Вставити</translation>
-    </message>
-    <message>
-        <location line="+3" />
-        <source>Copy</source>
-        <translation>Копіювати</translation>
-    </message>
-    <message>
-        <location line="+5" />
-        <source>Default Action</source>
-        <translation>Дії за замовчуванням</translation>
-    </message>
-    <message>
-        <location line="+1" />
-        <source>The default action to perform on pressing return. Paste is only available if your environment supports it.</source>
-        <translation>Дія, що виконується при натисканні Enter. Вставка доступна лише за підтримки вашого середовища.</translation>
-    </message>
-    <message>
-        <location filename="../src/extensions/clipboard/clipboard-history-command.hpp" line="+11" />
+        <location filename="../src/builtins/clipboard/clipboard-history-command.hpp" line="+12"/>
         <source>Clipboard History</source>
         <translation>Історія буфера обміну</translation>
     </message>
     <message>
-        <location line="+2" />
-        <source>Browse your clipboard's history, pin, edit and remove entries.</source>
+        <location line="+2"/>
+        <source>Browse your clipboard&apos;s history, pin, edit and remove entries.</source>
         <translation>Переглядайте історію буфера обміну: закріплюйте, редагуйте та видаляйте записи.</translation>
     </message>
 </context>
 <context>
     <name>ClipboardHistorySection</name>
     <message>
-        <location filename="../src/qml/clipboard-history-model.cpp" line="+70" />
+        <location filename="../src/builtins/clipboard/history/clipboard-history-model.cpp" line="+73"/>
         <source>Open Settings</source>
         <translation>Відкрити налаштування</translation>
     </message>
@@ -937,22 +924,22 @@
 <context>
     <name>ClipboardHistoryView</name>
     <message>
-        <location filename="../src/qml/qml/ClipboardHistoryView.qml" line="+193" />
+        <location filename="../src/ui/qml/views/ClipboardHistoryView.qml" line="+205"/>
         <source>Type</source>
         <translation>Тип</translation>
     </message>
     <message>
-        <location line="+5" />
+        <location line="+5"/>
         <source>Size</source>
         <translation>Розмір</translation>
     </message>
     <message>
-        <location line="+4" />
+        <location line="+4"/>
         <source>Copied at</source>
         <translation>Скопійовано</translation>
     </message>
     <message>
-        <location line="+52" />
+        <location line="+47"/>
         <source>Preview not available for this content type</source>
         <translation>Попередній перегляд недоступний для цього типу вмісту</translation>
     </message>
@@ -960,88 +947,91 @@
 <context>
     <name>ClipboardHistoryViewHost</name>
     <message>
-        <location filename="../src/qml/clipboard-history-view-host.hpp" line="+88" />
+        <location filename="../src/builtins/clipboard/history/clipboard-history-view-host.hpp" line="+95"/>
         <source>Loading...</source>
         <translation>Завантаження...</translation>
     </message>
     <message>
-        <location filename="../src/qml/clipboard-history-view-host.cpp" line="+72" />
+        <location filename="../src/builtins/clipboard/history/clipboard-history-view-host.cpp" line="+74"/>
         <source>All</source>
         <translation>Всі</translation>
     </message>
     <message>
-        <location line="+0" />
+        <location line="+0"/>
         <source>Text</source>
         <translation>Текст</translation>
     </message>
     <message>
-        <location line="+0" />
+        <location line="+0"/>
         <source>Images</source>
         <translation>Зображення</translation>
     </message>
     <message>
-        <location line="+0" />
+        <location line="+0"/>
         <source>Links</source>
         <translation>Посилання</translation>
     </message>
     <message>
-        <location line="+0" />
+        <location line="+0"/>
         <source>Files</source>
         <translation>Файли</translation>
     </message>
     <message>
-        <location line="+31" />
+        <location line="+34"/>
         <source>Browse clipboard history...</source>
         <translation>Перегляд історії буфера обміну...</translation>
     </message>
     <message>
-        <location line="+4" />
+        <location line="+4"/>
         <source>Clipboard monitoring unavailable</source>
         <translation>Відстеження буфера обміну недоступне</translation>
     </message>
     <message>
-        <location line="+68" />
+        <location line="+70"/>
         <source>Pause clipboard</source>
         <translation>Призупинити буфер обміну</translation>
     </message>
     <message>
-        <location line="+4" />
+        <location line="+4"/>
         <source>Resume clipboard</source>
         <translation>Відновити буфер обміну</translation>
     </message>
     <message numerus="yes">
-        <location line="+8" />
+        <location line="+8"/>
         <source>%n Items</source>
         <translation>
-            <numerusform>%n елемент</numerusform><numerusform>%n елементи</numerusform><numerusform>%n елементів</numerusform></translation>
+            <numerusform>%n елемент</numerusform>
+            <numerusform>%n елементи</numerusform>
+            <numerusform>%n елементів</numerusform>
+        </translation>
     </message>
     <message>
-        <location line="+28" />
+        <location line="+28"/>
         <source>Decryption failed</source>
         <translation>Помилка декодування</translation>
     </message>
     <message>
-        <location line="+2" />
+        <location line="+2"/>
         <source>Vicinae could not decrypt the data for this selection. It was most likely encrypted with a different key and cannot be recovered. You can remove this entry from the history.</source>
         <translation>Vicinae не вдалося декодувати дані цього виділення. Ймовірно, вони були зашифровані іншим ключем і не підлягають відновленню. Ви можете видалити цей запис з історії.</translation>
     </message>
     <message>
-        <location line="+5" />
+        <location line="+5"/>
         <source>Data unavailable</source>
         <translation>Дані недоступні</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>The data for this selection could not be found on disk.</source>
         <translation>Дані для цього виділення не знайдено на диску.</translation>
     </message>
     <message>
-        <location line="+3" />
+        <location line="+3"/>
         <source>Data is encrypted</source>
         <translation>Дані зашифровані</translation>
     </message>
     <message>
-        <location line="+2" />
+        <location line="+2"/>
         <source>Data for this selection was previously encrypted but the clipboard is not currently configured to use encryption. You should be able to fix this by enabling it in the settings.</source>
         <translation>Ці дані були раніше зашифровані, але зараз буфер обміну не налаштований на шифрування. Зазвичай це виправляється шляхом увімкнення шифрування в налаштуваннях.</translation>
     </message>
@@ -1049,17 +1039,17 @@
 <context>
     <name>ClipboardService</name>
     <message>
-        <location filename="../src/services/clipboard/clipboard-service.cpp" line="+316" />
+        <location filename="../src/services/clipboard/clipboard-service.cpp" line="+451"/>
         <source>Image (%1x%2)</source>
         <translation>Зображення (%1x%2)</translation>
     </message>
     <message>
-        <location line="+2" />
+        <location line="+2"/>
         <source>Image</source>
         <translation>Зображення</translation>
     </message>
     <message>
-        <location line="+3" />
+        <location line="+3"/>
         <source>Unknown</source>
         <translation>Невідомо</translation>
     </message>
@@ -1067,7 +1057,7 @@
 <context>
     <name>CloseWindowAction</name>
     <message>
-        <location filename="../src/actions/wm/window-actions.hpp" line="-37" />
+        <location filename="../src/actions/window-actions.hpp" line="-37"/>
         <source>Close window</source>
         <translation>Закрити вікно</translation>
     </message>
@@ -1075,17 +1065,17 @@
 <context>
     <name>CommandLineSection</name>
     <message>
-        <location filename="../src/qml/system-run-model.hpp" line="+19" />
+        <location filename="../src/builtins/system/system-run-model.hpp" line="+48"/>
         <source>Execute query</source>
         <translation>Виконати запит</translation>
     </message>
     <message>
-        <location filename="../src/qml/system-run-model.cpp" line="+44" />
+        <location filename="../src/builtins/system/system-run-model.cpp" line="+38"/>
         <source>Open in %1 (hold)</source>
         <translation>Відкрити в %1 (утримувати)</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Open in %1</source>
         <translation>Відкрити в %1</translation>
     </message>
@@ -1093,7 +1083,7 @@
 <context>
     <name>CommandListView</name>
     <message>
-        <location filename="../src/qml/qml/CommandListView.qml" line="+12" />
+        <location filename="../src/ui/qml/views/CommandListView.qml" line="+13"/>
         <source>No results</source>
         <translation>Не знайдено результатів</translation>
     </message>
@@ -1101,24 +1091,24 @@
 <context>
     <name>CommandRootItem</name>
     <message>
-        <location filename="../src/root-search/extensions/extension-root-provider.cpp" line="+28" />
-        <location line="+48" />
+        <location filename="../src/root-search/extensions/extension-root-provider.cpp" line="+28"/>
+        <location line="+49"/>
         <source>Command</source>
         <translation>Команда</translation>
     </message>
     <message>
-        <location line="-43" />
-        <location line="+27" />
+        <location line="-44"/>
+        <location line="+28"/>
         <source>Open command</source>
         <translation>Відкрити команду</translation>
     </message>
     <message>
-        <location line="-13" />
+        <location line="-13"/>
         <source>Copy extension path</source>
         <translation>Копіювати шлях до розширення</translation>
     </message>
     <message>
-        <location line="+28" />
+        <location line="+28"/>
         <source>Internal Command</source>
         <translation>Внутрішня команда</translation>
     </message>
@@ -1126,25 +1116,33 @@
 <context>
     <name>CompletionPopup</name>
     <message>
-        <location filename="../src/qml/qml/CompletionPopup.qml" line="+13" />
+        <location filename="../src/ui/qml/controls/CompletionPopup.qml" line="+15"/>
         <source>Filter...</source>
         <translation>Фільтр...</translation>
     </message>
 </context>
 <context>
+    <name>ConfigGlobalShortcuts</name>
+    <message>
+        <location filename="../src/services/global-shortcuts/config-global-shortcuts.cpp" line="+25"/>
+        <source>Toggle Vicinae</source>
+        <translation type="unfinished">Показати/приховати Vicinae</translation>
+    </message>
+</context>
+<context>
     <name>CopyCalculatorAnswerAction</name>
     <message>
-        <location filename="../src/actions/calculator/calculator-actions.hpp" line="+29" />
+        <location filename="../src/actions/calculator-actions.hpp" line="+29"/>
         <source>Answer copied to clipboard</source>
         <translation>Текст скопійовано в буфер обміну</translation>
     </message>
     <message>
-        <location line="+3" />
+        <location line="+3"/>
         <source>Failed to copy answer</source>
         <translation>Не вдалося скопіювати відповідь</translation>
     </message>
     <message>
-        <location line="+7" />
+        <location line="+7"/>
         <source>Copy Result</source>
         <translation>Копіювати результат</translation>
     </message>
@@ -1152,17 +1150,17 @@
 <context>
     <name>CopyCalculatorQuestionAndAnswerAction</name>
     <message>
-        <location line="+18" />
+        <location line="+18"/>
         <source>Answer copied to clipboard</source>
         <translation>Текст скопійовано в буфер обміну</translation>
     </message>
     <message>
-        <location line="+3" />
+        <location line="+3"/>
         <source>Failed to copy answer</source>
         <translation>Не вдалося скопіювати відповідь</translation>
     </message>
     <message>
-        <location line="+7" />
+        <location line="+7"/>
         <source>Copy Question And Answer</source>
         <translation>Копіювати питання та відповідь</translation>
     </message>
@@ -1170,17 +1168,17 @@
 <context>
     <name>CopyClipboardSelection</name>
     <message>
-        <location filename="../src/extensions/clipboard/history/clipboard-history-actions.hpp" line="+29" />
+        <location filename="../src/builtins/clipboard/history/clipboard-history-actions.hpp" line="+29"/>
         <source>Selection copied to clipboard</source>
         <translation>Виділення скопійовано в буфер обміну</translation>
     </message>
     <message>
-        <location line="+3" />
+        <location line="+3"/>
         <source>Failed to copy to clipboard</source>
         <translation>Не вдалося скопіювати в буфер обміну</translation>
     </message>
     <message>
-        <location line="+5" />
+        <location line="+5"/>
         <source>Copy to clipboard</source>
         <translation>Копіювати в буфер обміну</translation>
     </message>
@@ -1188,12 +1186,12 @@
 <context>
     <name>CopyItemDeeplink</name>
     <message>
-        <location filename="../src/actions/root-search/root-search-actions.hpp" line="+76" />
+        <location filename="../src/actions/root-search-actions.hpp" line="+99"/>
         <source>Deeplink copied in clipboard</source>
         <translation>Диплинк скопійовано в буфер обміну</translation>
     </message>
     <message>
-        <location line="+3" />
+        <location line="+3"/>
         <source>Copy Deeplink</source>
         <translation>Копіювати диплинк</translation>
     </message>
@@ -1201,12 +1199,12 @@
 <context>
     <name>CopyShortcutAction</name>
     <message>
-        <location filename="../src/actions/shortcut/shortcut-actions.hpp" line="+232" />
+        <location filename="../src/actions/shortcut-actions.hpp" line="+269"/>
         <source>Copied to clipboard</source>
         <translation>Скопійовано в буфер обміну</translation>
     </message>
     <message>
-        <location line="+4" />
+        <location line="+4"/>
         <source>Copy shortcut</source>
         <translation>Копіювати ярлик</translation>
     </message>
@@ -1214,12 +1212,12 @@
 <context>
     <name>CopyToClipboardAction</name>
     <message>
-        <location filename="../src/clipboard-actions.hpp" line="+20" />
+        <location filename="../src/actions/clipboard-actions.hpp" line="+21"/>
         <source>Copied to clipboard</source>
         <translation>Скопійовано в буфер обміну</translation>
     </message>
     <message>
-        <location line="+5" />
+        <location line="+5"/>
         <source>Copy to clipboard</source>
         <translation>Копіювати в буфер обміну</translation>
     </message>
@@ -1227,7 +1225,7 @@
 <context>
     <name>CreateExtensionCommand</name>
     <message>
-        <location filename="../src/extensions/developer/developer-extension.hpp" line="+10" />
+        <location filename="../src/builtins/developer/developer-extension.hpp" line="+10"/>
         <source>Create Extension</source>
         <translation>Створити розширення</translation>
     </message>
@@ -1235,63 +1233,63 @@
 <context>
     <name>CreateExtensionFormView</name>
     <message>
-        <location filename="../src/qml/qml/CreateExtensionFormView.qml" line="+15" />
+        <location filename="../src/ui/qml/views/CreateExtensionFormView.qml" line="+16"/>
         <source>Author</source>
         <translation>Автор</translation>
     </message>
     <message>
-        <location line="+2" />
-        <source>If you plan on submitting your extension to the &lt;a href="vicinae://launch/core/store"&gt;Vicinae store&lt;/a&gt;, this must exactly match your GitHub handle. Otherwise, you can set it to anything.</source>
-        <translation>Якщо ви плануєте надіслати своє розширення до &lt;a href="vicinae://launch/core/store"&gt;магазину Vicinae&lt;/a&gt;, це значення має точно збігатися з вашим іменем користувача на GitHub. Інакше можна вказати будь-що.</translation>
+        <location line="+2"/>
+        <source>If you plan on submitting your extension to the &lt;a href=&quot;vicinae://launch/core/store&quot;&gt;Vicinae store&lt;/a&gt;, this must exactly match your GitHub handle. Otherwise, you can set it to anything.</source>
+        <translation>Якщо ви плануєте надіслати своє розширення до &lt;a href=&quot;vicinae://launch/core/store&quot;&gt;магазину Vicinae&lt;/a&gt;, це значення має точно збігатися з вашим іменем користувача на GitHub. Інакше можна вказати будь-що.</translation>
     </message>
     <message>
-        <location line="+4" />
+        <location line="+4"/>
         <source>Username</source>
-        <translation>Ім'я користувача</translation>
+        <translation>Ім&apos;я користувача</translation>
     </message>
     <message>
-        <location line="+10" />
+        <location line="+10"/>
         <source>Extension Title</source>
         <translation>Назва розширення</translation>
     </message>
     <message>
-        <location line="+5" />
+        <location line="+5"/>
         <source>My Extension</source>
         <translation>Моє розширення</translation>
     </message>
     <message>
-        <location line="+8" />
-        <location line="+42" />
+        <location line="+8"/>
+        <location line="+43"/>
         <source>Description</source>
         <translation>Опис</translation>
     </message>
     <message>
-        <location line="-36" />
+        <location line="-37"/>
         <source>An extension that does super cool things</source>
         <translation>Розширення, яке робить круті речі</translation>
     </message>
     <message>
-        <location line="+8" />
+        <location line="+8"/>
         <source>Location</source>
         <translation>Розташування</translation>
     </message>
     <message>
-        <location line="+15" />
+        <location line="+16"/>
         <source>Command Title</source>
         <translation>Назва команди</translation>
     </message>
     <message>
-        <location line="+5" />
+        <location line="+5"/>
         <source>My Wonderful Command</source>
         <translation>Моя чудова команда</translation>
     </message>
     <message>
-        <location line="+14" />
+        <location line="+14"/>
         <source>My command does this, and that...</source>
         <translation>Наша команда робить це і те...</translation>
     </message>
     <message>
-        <location line="+7" />
+        <location line="+7"/>
         <source>Template</source>
         <translation>Шаблон</translation>
     </message>
@@ -1299,7 +1297,7 @@
 <context>
     <name>CreateExtensionSuccessViewHost</name>
     <message>
-        <location filename="../src/qml/create-extension-success-view-host.cpp" line="+7" />
+        <location filename="../src/builtins/developer/create-extension-success-view-host.cpp" line="+8"/>
         <source>
 # Extension successfully created
 
@@ -1308,29 +1306,17 @@ Your new extension %1 has been succesfully created at `%2`.
 For commands from this extension to be picked up by Vicinae, you need to run your extension in development mode at least once:
 
 ```bash
-cd %2
+cd &apos;%2&apos;
 npm install
 npm run dev
 ```
 
 You can learn more about extension development in the [Vicinae documentation](https://docs.vicinae.com/).
 </source>
-        <translation># Розширення успішно створено
-
-Ваше нове розширення %1 успішно створено в `%2`.
-
-Щоб команди цього розширення були доступні у Vicinae, необхідно принаймні один раз запустити його в режимі розробки:
-
-```bash
-cd %2
-npm install
-npm run dev
-```
-
-Більше інформації про розробку розширень — у [документації Vicinae](https://docs.vicinae.com/).</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+37" />
+        <location line="+37"/>
         <source>Open in %1</source>
         <translation>Відкрити в %1</translation>
     </message>
@@ -1338,48 +1324,56 @@ npm run dev
 <context>
     <name>CreateExtensionViewHost</name>
     <message>
-        <location filename="../src/qml/create-extension-view-host.cpp" line="+37" />
+        <location filename="../src/builtins/developer/create-extension-view-host.cpp" line="+37"/>
         <source>Create extension</source>
         <translation>Створити розширення</translation>
     </message>
     <message>
-        <location line="+19" />
-        <location line="+4" />
-        <location line="+19" />
-        <location line="+5" />
+        <location line="+19"/>
+        <location line="+4"/>
+        <location line="+19"/>
+        <location line="+5"/>
         <source>Min. 3 chars</source>
         <translation>Мінімальна довжина: 3 символи</translation>
     </message>
     <message>
-        <location line="-20" />
+        <location line="-20"/>
         <source>Min. 16 chars</source>
         <translation>Мінімальна довжина 16 символів</translation>
     </message>
     <message>
-        <location line="+9" />
+        <location line="+9"/>
         <source>Must exist</source>
-        <translation>Обов'язкове поле</translation>
+        <translation>Обов&apos;язкове поле</translation>
     </message>
     <message>
-        <location line="+18" />
+        <location line="+18"/>
         <source>Form has errors</source>
         <translation>У формі є помилки</translation>
     </message>
     <message>
-        <location line="+21" />
+        <location line="+21"/>
         <source>Failed to create extension</source>
         <translation>Не вдалося створити розширення</translation>
     </message>
     <message>
-        <location line="+10" />
+        <location line="+10"/>
         <source>Extension created!</source>
         <translation>Розширення створено!</translation>
     </message>
 </context>
 <context>
+    <name>CreateShortcutAction</name>
+    <message>
+        <location filename="../src/actions/shortcut-actions.hpp" line="-53"/>
+        <source>Create shortcut</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>CreateShortcutCommand</name>
     <message>
-        <location filename="../src/extensions/shortcut/shortcut-extension.hpp" line="+13" />
+        <location filename="../src/builtins/shortcut/shortcut-extension.hpp" line="+13"/>
         <source>Create Shortcut</source>
         <translation>Створити ярлик</translation>
     </message>
@@ -1387,17 +1381,17 @@ npm run dev
 <context>
     <name>CreateShortcutFromActiveBrowserTabCommand</name>
     <message>
-        <location filename="../src/extensions/browser/browser-extension.cpp" line="+44" />
+        <location filename="../src/builtins/browser/browser-extension.cpp" line="+44"/>
         <source>Create Shortcut from Active Tab</source>
         <translation>Створити ярлик з поточної вкладки</translation>
     </message>
     <message>
-        <location line="+2" />
+        <location line="+2"/>
         <source>Create a vicinae shortcut from the currently active browser tab. May yield unexpected results if many browsers are connected at once.</source>
         <translation>Створити ярлик для Vicinae з поточної вкладки браузера. Якщо підключено кілька браузерів одночасно, результат може бути непередбачуваним.</translation>
     </message>
     <message>
-        <location line="+15" />
+        <location line="+15"/>
         <source>No active tab!</source>
         <translation>Нема активної вкладки!</translation>
     </message>
@@ -1405,7 +1399,7 @@ npm run dev
 <context>
     <name>CreateSnippetCommand</name>
     <message>
-        <location filename="../src/extensions/snippet/create-snippet-command.hpp" line="+10" />
+        <location filename="../src/builtins/snippet/create-snippet-command.hpp" line="+10"/>
         <source>Create Snippet</source>
         <translation>Створити фрагмент</translation>
     </message>
@@ -1413,22 +1407,22 @@ npm run dev
 <context>
     <name>DMenuSection</name>
     <message>
-        <location filename="../src/qml/dmenu-model.cpp" line="+96" />
+        <location filename="../src/ui/views/dmenu-model.cpp" line="+96"/>
         <source>Select entry</source>
         <translation>Вибрати елемент</translation>
     </message>
     <message>
-        <location line="+0" />
+        <location line="+0"/>
         <source>Select entry (index)</source>
         <translation>Вибрати елемент (за індексом)</translation>
     </message>
     <message>
-        <location line="+14" />
+        <location line="+14"/>
         <source>Pass search text</source>
         <translation>Передати текст пошуку</translation>
     </message>
     <message>
-        <location line="+4" />
+        <location line="+4"/>
         <source>Select and copy entry</source>
         <translation>Вибрати та скопіювати елемент</translation>
     </message>
@@ -1436,17 +1430,17 @@ npm run dev
 <context>
     <name>DMenuView</name>
     <message>
-        <location filename="../src/qml/qml/DMenuView.qml" line="+79" />
+        <location filename="../src/ui/qml/views/DMenuView.qml" line="+81"/>
         <source>Name</source>
         <translation>Назва</translation>
     </message>
     <message>
-        <location line="+4" />
+        <location line="+4"/>
         <source>Path</source>
         <translation>Шлях</translation>
     </message>
     <message>
-        <location line="+4" />
+        <location line="+4"/>
         <source>Type</source>
         <translation>Тип</translation>
     </message>
@@ -1454,17 +1448,17 @@ npm run dev
 <context>
     <name>DMenuViewHost</name>
     <message>
-        <location filename="../src/qml/dmenu-view-host.cpp" line="+35" />
+        <location filename="../src/ui/views/dmenu-view-host.cpp" line="+36"/>
         <source>Search entries...</source>
         <translation>Пошук елементів...</translation>
     </message>
     <message>
-        <location line="+73" />
+        <location line="+73"/>
         <source>Pass search text</source>
         <translation>Передати текст пошуку</translation>
     </message>
     <message>
-        <location line="+5" />
+        <location line="+5"/>
         <source>Pass and copy search text</source>
         <translation>Передати та скопіювати текст пошуку</translation>
     </message>
@@ -1472,7 +1466,7 @@ npm run dev
 <context>
     <name>DetailListView</name>
     <message>
-        <location filename="../src/qml/qml/DetailListView.qml" line="+32" />
+        <location filename="../src/ui/qml/views/DetailListView.qml" line="+32"/>
         <source>No results</source>
         <translation>Не знайдено результатів</translation>
     </message>
@@ -1480,7 +1474,7 @@ npm run dev
 <context>
     <name>DeveloperExtension</name>
     <message>
-        <location filename="../src/extensions/developer/developer-extension.hpp" line="+10" />
+        <location filename="../src/builtins/developer/developer-extension.hpp" line="+12"/>
         <source>Developer</source>
         <translation>Розробка</translation>
     </message>
@@ -1488,7 +1482,7 @@ npm run dev
 <context>
     <name>DisableApplication</name>
     <message>
-        <location filename="../src/actions/root-search/root-search-actions.hpp" line="+8" />
+        <location filename="../src/actions/root-search-actions.hpp" line="+8"/>
         <source>Disable item</source>
         <translation>Вимкнути елемент</translation>
     </message>
@@ -1496,32 +1490,32 @@ npm run dev
 <context>
     <name>DisableItemAction</name>
     <message>
-        <location filename="../src/actions/root-search/root-search-actions.cpp" line="+89" />
+        <location filename="../src/actions/root-search-actions.cpp" line="+111"/>
         <source>Are you sure?</source>
         <translation>Ви впевнені?</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>You will need to go in the settings to manually re-enable it.</source>
         <translation>Щоб знову увімкнути його, вам потрібно перейти до налаштувань.</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Disable</source>
         <translation>Вимкнути</translation>
     </message>
     <message>
-        <location line="+8" />
+        <location line="+8"/>
         <source>Item disabled</source>
         <translation>Елемент вимкнено</translation>
     </message>
     <message>
-        <location line="+2" />
+        <location line="+2"/>
         <source>Failed to disable</source>
         <translation>Не вдалося вимкнути</translation>
     </message>
     <message>
-        <location line="+8" />
+        <location line="+8"/>
         <source>Disable item</source>
         <translation>Вимкнути елемент</translation>
     </message>
@@ -1529,7 +1523,7 @@ npm run dev
 <context>
     <name>DismissNewsAction</name>
     <message>
-        <location filename="../src/services/news/news-service.cpp" line="+34" />
+        <location filename="../src/services/news/news-service.cpp" line="+34"/>
         <source>Dismiss</source>
         <translation>Приховати</translation>
     </message>
@@ -1537,20 +1531,33 @@ npm run dev
 <context>
     <name>DuplicateShortcutAction</name>
     <message>
-        <location filename="../src/actions/shortcut/shortcut-actions.hpp" line="-50" />
+        <location filename="../src/actions/shortcut-actions.hpp" line="-26"/>
         <source>Duplicate link</source>
         <translation>Копіювати посилання</translation>
     </message>
 </context>
 <context>
+    <name>EditAppleShortcutAction</name>
+    <message>
+        <location filename="../src/root-search/apple-shortcuts/apple-shortcut-root-provider.cpp" line="-75"/>
+        <source>Edit in Shortcuts</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Failed to open shortcut</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>EditClipboardKeywordsAction</name>
     <message>
-        <location filename="../src/extensions/clipboard/history/clipboard-history-actions.hpp" line="+50" />
+        <location filename="../src/builtins/clipboard/history/clipboard-history-actions.hpp" line="+50"/>
         <source>Additional keywords that will be used to index this selection.</source>
         <translation>Додаткові ключові слова для індексації цього виділення.</translation>
     </message>
     <message>
-        <location line="+6" />
+        <location line="+6"/>
         <source>Edit keywords</source>
         <translation>Змінити ключові слова</translation>
     </message>
@@ -1558,12 +1565,12 @@ npm run dev
 <context>
     <name>EditEmojiKeywordsAction</name>
     <message>
-        <location filename="../src/qml/emoji-grid-model.cpp" line="+35" />
+        <location filename="../src/builtins/vicinae/emoji-grid-model.cpp" line="+35"/>
         <source>Additional keywords that will be used to index this glyph</source>
         <translation>Додаткові ключові слова для індексації цього символу</translation>
     </message>
     <message>
-        <location line="+7" />
+        <location line="+7"/>
         <source>Edit keyword</source>
         <translation>Змінити ключове слово</translation>
     </message>
@@ -1571,7 +1578,7 @@ npm run dev
 <context>
     <name>EditKeywordsFormView</name>
     <message>
-        <location filename="../src/qml/qml/EditKeywordsFormView.qml" line="+19" />
+        <location filename="../src/ui/qml/views/EditKeywordsFormView.qml" line="+20"/>
         <source>Keywords</source>
         <translation>Ключові слова</translation>
     </message>
@@ -1579,17 +1586,17 @@ npm run dev
 <context>
     <name>EditKeywordsViewHost</name>
     <message>
-        <location filename="../src/qml/edit-keywords-view-host.cpp" line="+27" />
+        <location filename="../src/ui/views/edit-keywords-view-host.cpp" line="+26"/>
         <source>Submit</source>
         <translation>Надіслати</translation>
     </message>
     <message>
-        <location line="+11" />
+        <location line="+11"/>
         <source>Keywords edited</source>
         <translation>Ключові слова змінено</translation>
     </message>
     <message>
-        <location line="+3" />
+        <location line="+3"/>
         <source>Failed to edit keywords</source>
         <translation>Не вдалося змінити ключові слова</translation>
     </message>
@@ -1597,7 +1604,7 @@ npm run dev
 <context>
     <name>EditShortcutAction</name>
     <message>
-        <location filename="../src/actions/shortcut/shortcut-actions.hpp" line="-41" />
+        <location filename="../src/actions/shortcut-actions.hpp" line="-41"/>
         <source>Edit shortcut</source>
         <translation>Змінити ярлик</translation>
     </message>
@@ -1605,17 +1612,17 @@ npm run dev
 <context>
     <name>EmojiGridModel</name>
     <message>
-        <location filename="../src/qml/emoji-grid-model.hpp" line="+58" />
+        <location filename="../src/builtins/vicinae/emoji-grid-model.hpp" line="+68"/>
         <source>Search for emojis and symbols...</source>
         <translation>Пошук емодзі та символів...</translation>
     </message>
     <message>
-        <location filename="../src/qml/emoji-grid-model.cpp" line="+241" />
+        <location filename="../src/builtins/vicinae/emoji-grid-model.cpp" line="+262"/>
         <source>Pinned</source>
         <translation>Закріплені</translation>
     </message>
     <message>
-        <location line="+3" />
+        <location line="+3"/>
         <source>Recently used</source>
         <translation>Нещодавні</translation>
     </message>
@@ -1623,7 +1630,7 @@ npm run dev
 <context>
     <name>EmojiGridViewHost</name>
     <message>
-        <location filename="../src/qml/emoji-grid-view-host.hpp" line="+64" />
+        <location filename="../src/builtins/vicinae/emoji-grid-view-host.hpp" line="+60"/>
         <source>All</source>
         <translation>Все</translation>
     </message>
@@ -1631,7 +1638,7 @@ npm run dev
 <context>
     <name>EmptyView</name>
     <message>
-        <location filename="../src/qml/qml/EmptyView.qml" line="+7" />
+        <location filename="../src/ui/qml/views/EmptyView.qml" line="+9"/>
         <source>No results</source>
         <translation>Не знайдено результатів</translation>
     </message>
@@ -1639,12 +1646,12 @@ npm run dev
 <context>
     <name>EnabledFallbackSection</name>
     <message>
-        <location filename="../src/qml/manage-fallback-model.hpp" line="-19" />
+        <location filename="../src/builtins/vicinae/manage-fallback-model.hpp" line="-19"/>
         <source>Enabled</source>
         <translation>Увімкнено</translation>
     </message>
     <message>
-        <location filename="../src/qml/manage-fallback-model.cpp" line="-22" />
+        <location filename="../src/builtins/vicinae/manage-fallback-model.cpp" line="-22"/>
         <source>Disable fallback</source>
         <translation>Вимкнути резервний варіант</translation>
     </message>
@@ -1652,17 +1659,17 @@ npm run dev
 <context>
     <name>Expansion</name>
     <message>
-        <location filename="../src/services/snippet/snippet-db.hpp" line="+31" />
+        <location filename="../src/services/snippet/snippet-db.hpp" line="+31"/>
         <source>Keyword cannot be empty</source>
         <translation>Поле не може бути порожнім</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Keyword exceeds maximum length of %1</source>
         <translation>Ключове слово перевищує максимальну довжину %1</translation>
     </message>
     <message>
-        <location line="+5" />
+        <location line="+5"/>
         <source>Keyword must only contain printable ASCII characters (no spaces)</source>
         <translation>Ключове слово повинно містити лише друковані символи ASCII (без пробілів)</translation>
     </message>
@@ -1670,27 +1677,27 @@ npm run dev
 <context>
     <name>ExtensionBoilerplateGenerator</name>
     <message>
-        <location filename="../src/services/extension-boilerplate-generator/extension-boilerplate-generator.cpp" line="+24" />
+        <location filename="../src/services/extension-boilerplate-generator/extension-boilerplate-generator.cpp" line="+32"/>
         <source>Simple List</source>
         <translation>Простий список</translation>
     </message>
     <message>
-        <location line="+2" />
+        <location line="+2"/>
         <source>List with Detail</source>
         <translation>Список з деталями</translation>
     </message>
     <message>
-        <location line="+3" />
+        <location line="+3"/>
         <source>Controlled List</source>
         <translation>Керуваний список</translation>
     </message>
     <message>
-        <location line="+3" />
+        <location line="+3"/>
         <source>Simple Detail</source>
         <translation>Простий елемент</translation>
     </message>
     <message>
-        <location line="+3" />
+        <location line="+3"/>
         <source>No View</source>
         <translation>Без інтерфейсу</translation>
     </message>
@@ -1698,7 +1705,7 @@ npm run dev
 <context>
     <name>ExtensionErrorViewHost</name>
     <message>
-        <location filename="../src/qml/extension-error-view-host.cpp" line="+6" />
+        <location filename="../src/extension/views/extension-error-view-host.cpp" line="+7"/>
         <source># Extension crashed 💥!
 
 This extension threw an uncaught exception and crashed as a result.
@@ -1722,7 +1729,7 @@ Find the full stacktrace below. You can also directly copy it from the action me
 <context>
     <name>ExtensionFormModel</name>
     <message>
-        <location filename="../src/qml/extension-form-model.cpp" line="+229" />
+        <location filename="../src/extension/views/extension-form-model.cpp" line="+229"/>
         <source>One or more fields have errors</source>
         <translation>Одне або декілька полів містять помилки</translation>
     </message>
@@ -1730,12 +1737,12 @@ Find the full stacktrace below. You can also directly copy it from the action me
 <context>
     <name>ExtensionGridModel</name>
     <message>
-        <location filename="../src/qml/extension-grid-model.cpp" line="+204" />
+        <location filename="../src/extension/views/extension-grid-model.cpp" line="+233"/>
         <source>Search...</source>
         <translation>Пошук...</translation>
     </message>
     <message>
-        <location line="+52" />
+        <location line="+5"/>
         <source>No results</source>
         <translation>Не знайдено результатів</translation>
     </message>
@@ -1743,7 +1750,7 @@ Find the full stacktrace below. You can also directly copy it from the action me
 <context>
     <name>ExtensionGridView</name>
     <message>
-        <location filename="../src/qml/qml/ExtensionGridView.qml" line="+9" />
+        <location filename="../src/ui/qml/views/ExtensionGridView.qml" line="+11"/>
         <source>No results</source>
         <translation>Не знайдено результатів</translation>
     </message>
@@ -1751,12 +1758,12 @@ Find the full stacktrace below. You can also directly copy it from the action me
 <context>
     <name>ExtensionListModel</name>
     <message>
-        <location filename="../src/qml/extension-list-model.cpp" line="+197" />
+        <location filename="../src/extension/views/extension-list-model.cpp" line="+197"/>
         <source>Search...</source>
         <translation>Пошук...</translation>
     </message>
     <message>
-        <location line="+5" />
+        <location line="+5"/>
         <source>No results</source>
         <translation>Не знайдено результатів</translation>
     </message>
@@ -1764,45 +1771,45 @@ Find the full stacktrace below. You can also directly copy it from the action me
 <context>
     <name>ExtensionSettingsPage</name>
     <message>
-        <location filename="../src/qml/qml/ExtensionSettingsPage.qml" line="+113" />
+        <location filename="../src/ui/qml/settings/ExtensionSettingsPage.qml" line="+115"/>
         <source>Description</source>
         <translation>Опис</translation>
     </message>
     <message>
-        <location line="+23" />
+        <location line="+23"/>
         <source>Preferences</source>
         <translation>Налаштування</translation>
     </message>
     <message>
-        <location line="+14" />
+        <location line="+14"/>
         <source>Commands</source>
         <translation>Команди</translation>
     </message>
     <message>
-        <location line="+118" />
+        <location line="+118"/>
         <source>Shortcut</source>
         <translation>Ярлик</translation>
     </message>
     <message>
-        <location line="+11" />
+        <location line="+11"/>
         <source>Add Alias</source>
         <translation>Додати аліас</translation>
     </message>
     <message>
-        <location line="+96" />
+        <location line="+96"/>
         <source>Nothing to configure</source>
         <translation>Немає налаштувань</translation>
     </message>
     <message>
-        <location line="+8" />
+        <location line="+8"/>
         <source>Commands and preferences will show up here once available.</source>
-        <translation>Команди та налаштування з'являться тут, як тільки стануть доступними.</translation>
+        <translation>Команди та налаштування з&apos;являться тут, як тільки стануть доступними.</translation>
     </message>
 </context>
 <context>
     <name>ExtensionView</name>
     <message>
-        <location filename="../src/qml/qml/ExtensionView.qml" line="+99" />
+        <location filename="../src/ui/qml/views/ExtensionView.qml" line="+114"/>
         <source>No results</source>
         <translation>Результатів не знайдено</translation>
     </message>
@@ -1810,50 +1817,20 @@ Find the full stacktrace below. You can also directly copy it from the action me
 <context>
     <name>FileExtension</name>
     <message>
-        <location filename="../src/extensions/file/file-extension.hpp" line="+65" />
+        <location filename="../src/builtins/file/file-extension.hpp" line="+105"/>
         <source>System files</source>
         <translation>Системні файли</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Integrate with system files</source>
         <translation>Інтеграція з системними файлами</translation>
-    </message>
-    <message>
-        <location line="+24" />
-        <source>Enabled</source>
-        <translation>Увімкнено</translation>
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Whether to run the file indexer in the background. When turned off, the indexer process is stopped entirely and file search becomes unavailable until it is turned back on.</source>
-        <translation>Запускати індексатор файлів у фоновому режимі. При вимкненні процес індексації повністю зупиняється, і пошук файлів стає недоступним, поки його не ввімкнуть знову.</translation>
-    </message>
-    <message>
-        <location line="+5" />
-        <source>Search paths</source>
-        <translation>Шлях пошуку</translation>
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Directories that Vicinae will search</source>
-        <translation>Каталоги, які шукатиме Vicinae</translation>
-    </message>
-    <message>
-        <location line="+4" />
-        <source>Excluded search paths</source>
-        <translation>Виключені шляхи пошуку</translation>
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Directories to exclude from file indexing</source>
-        <translation>Каталоги, які слід виключити з індексування файлів</translation>
     </message>
 </context>
 <context>
     <name>FilePreview</name>
     <message>
-        <location filename="../src/qml/qml/FilePreview.qml" line="+42" />
+        <location filename="../src/ui/qml/detail/FilePreview.qml" line="+37"/>
         <source>Preview not available for this file type</source>
         <translation>Попередній перегляд недоступний для цього типу файлу</translation>
     </message>
@@ -1861,7 +1838,7 @@ Find the full stacktrace below. You can also directly copy it from the action me
 <context>
     <name>FocusWindowAction</name>
     <message>
-        <location filename="../src/actions/wm/window-actions.hpp" line="-17" />
+        <location filename="../src/actions/window-actions.hpp" line="-17"/>
         <source>Focus window</source>
         <translation>Сфокусувати вікно</translation>
     </message>
@@ -1869,7 +1846,7 @@ Find the full stacktrace below. You can also directly copy it from the action me
 <context>
     <name>FontBrowserViewHost</name>
     <message>
-        <location filename="../src/qml/font-browser-view-host.hpp" line="+56" />
+        <location filename="../src/builtins/font/font-browser-view-host.hpp" line="+55"/>
         <source>All</source>
         <translation>Все</translation>
     </message>
@@ -1877,7 +1854,7 @@ Find the full stacktrace below. You can also directly copy it from the action me
 <context>
     <name>FontExtension</name>
     <message>
-        <location filename="../src/extensions/font/font-extension.hpp" line="+9" />
+        <location filename="../src/builtins/font/font-extension.hpp" line="+9"/>
         <source>Font</source>
         <translation>Шрифт</translation>
     </message>
@@ -1885,17 +1862,17 @@ Find the full stacktrace below. You can also directly copy it from the action me
 <context>
     <name>FontGridModel</name>
     <message>
-        <location filename="../src/qml/font-grid-model.hpp" line="+47" />
+        <location filename="../src/builtins/font/font-grid-model.hpp" line="+53"/>
         <source>Search fonts...</source>
         <translation>Пошук шрифтів...</translation>
     </message>
     <message>
-        <location filename="../src/qml/font-grid-model.cpp" line="+133" />
+        <location filename="../src/builtins/font/font-grid-model.cpp" line="+152"/>
         <source>All Fonts (%1)</source>
         <translation>Всі шрифти (%1)</translation>
     </message>
     <message>
-        <location line="+15" />
+        <location line="+15"/>
         <source>Results (%1)</source>
         <translation>Результати (%1)</translation>
     </message>
@@ -1903,7 +1880,7 @@ Find the full stacktrace below. You can also directly copy it from the action me
 <context>
     <name>Footer</name>
     <message>
-        <location filename="../src/qml/qml/Footer.qml" line="+60" />
+        <location filename="../src/ui/qml/launcher/Footer.qml" line="+62"/>
         <source>Actions</source>
         <translation>Дії</translation>
     </message>
@@ -1911,17 +1888,17 @@ Find the full stacktrace below. You can also directly copy it from the action me
 <context>
     <name>ForceQuitAppAction</name>
     <message>
-        <location filename="../src/actions/app/app-actions.cpp" line="+95" />
+        <location filename="../src/actions/app-actions.cpp" line="+96"/>
         <source>Force Quit Application</source>
         <translation>Примусово завершити програму</translation>
     </message>
     <message>
-        <location line="+8" />
+        <location line="+8"/>
         <source>Failed to force quit %1</source>
         <translation>Не вдалося примусово завершити %1</translation>
     </message>
     <message>
-        <location line="+4" />
+        <location line="+4"/>
         <source>Force quit %1</source>
         <translation>Примусово завершити %1</translation>
     </message>
@@ -1929,27 +1906,27 @@ Find the full stacktrace below. You can also directly copy it from the action me
 <context>
     <name>ForgetTelemetryCommand</name>
     <message>
-        <location filename="../src/extensions/vicinae/vicinae-extension.cpp" line="+171" />
+        <location filename="../src/builtins/vicinae/vicinae-extension.cpp" line="+175"/>
         <source>Forget Past Vicinae Telemetry</source>
         <translation>Забути попередню телеметрію Vicinae</translation>
     </message>
     <message>
-        <location line="+2" />
+        <location line="+2"/>
         <source>Asks the vicinae server to anonymize telemetry data that was sent with your vicinae instance ID attached. The ID is only linked to your vicinae install, which has no direct relationship with your system.</source>
-        <translation>Запитує у сервера vicinae анонімізацію телеметрії, відправленої з прив'язаним ідентифікатором вашого екземпляру vicinae. Цей ідентифікатор пов'язаний лише з вашою установкою vicinae і не має прямого зв'язку з вашою системою.</translation>
+        <translation>Запитує у сервера vicinae анонімізацію телеметрії, відправленої з прив&apos;язаним ідентифікатором вашого екземпляру vicinae. Цей ідентифікатор пов&apos;язаний лише з вашою установкою vicinae і не має прямого зв&apos;язку з вашою системою.</translation>
     </message>
     <message>
-        <location line="+19" />
+        <location line="+19"/>
         <source>Processing...</source>
         <translation>Обробка...</translation>
     </message>
     <message>
-        <location line="+4" />
+        <location line="+4"/>
         <source>Past telemetry was successfully detached from your vicinae user ID.</source>
-        <translation>Попередню телеметрію успішно від'єднано від вашого ідентифікатора vicinae.</translation>
+        <translation>Попередню телеметрію успішно від&apos;єднано від вашого ідентифікатора vicinae.</translation>
     </message>
     <message>
-        <location line="+2" />
+        <location line="+2"/>
         <source>Failed to forget past telemetry data</source>
         <translation>Не вдалося видалити дані останньої телеметрії</translation>
     </message>
@@ -1957,12 +1934,17 @@ Find the full stacktrace below. You can also directly copy it from the action me
 <context>
     <name>FormAppSelector</name>
     <message>
-        <location filename="../src/qml/qml/FormAppSelector.qml" line="+46" />
+        <location filename="../src/ui/qml/form/FormAppSelector.qml" line="+50"/>
         <source>All applications</source>
         <translation>Всі додатки</translation>
     </message>
     <message>
-        <location line="+70" />
+        <location line="+63"/>
+        <source>Remove</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-98"/>
         <source>+ Restrict to app…</source>
         <translation>+ Обмежити додатком…</translation>
     </message>
@@ -1970,105 +1952,132 @@ Find the full stacktrace below. You can also directly copy it from the action me
 <context>
     <name>FormFilePicker</name>
     <message>
-        <location filename="../src/qml/qml/FormFilePicker.qml" line="+85" />
+        <location filename="../src/ui/qml/form/FormFilePicker.qml" line="+91"/>
         <source>Select files</source>
         <translation>Вибрати файли</translation>
     </message>
     <message>
-        <location line="+0" />
+        <location line="+0"/>
         <source>Select a file</source>
         <translation>Вибрати файл</translation>
     </message>
     <message>
-        <location line="+10" />
+        <location line="+10"/>
         <source>Select a directory</source>
         <translation>Вибрати каталог</translation>
     </message>
     <message>
-        <location line="+46" />
+        <location line="-73"/>
+        <location line="+119"/>
         <source>No directory selected</source>
         <translation>Каталог не вибрано</translation>
     </message>
     <message>
-        <location line="+0" />
+        <location line="-119"/>
+        <location line="+119"/>
         <source>No file selected</source>
         <translation>Файл не вибрано</translation>
     </message>
     <message>
-        <location line="+164" />
+        <location line="+13"/>
+        <location line="+124"/>
+        <source>Remove</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+31"/>
         <source>+ Add folder…</source>
         <translation>+ Додати папку…</translation>
     </message>
     <message>
-        <location line="+0" />
+        <location line="+0"/>
         <source>+ Add file…</source>
         <translation>+ Додати файл…</translation>
     </message>
 </context>
 <context>
+    <name>FormPasswordInput</name>
+    <message>
+        <location filename="../src/ui/qml/form/FormPasswordInput.qml" line="+98"/>
+        <source>Hide password</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Show password</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>GeneralSettingsModel</name>
     <message>
-        <location filename="../src/qml/general-settings-model.cpp" line="+189" />
-        <location line="+11" />
+        <location filename="../src/ui/settings/general-settings-model.cpp" line="+202"/>
+        <location line="+12"/>
+        <source>Automatic</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-10"/>
+        <location line="+15"/>
         <source>None</source>
         <translation>Немає</translation>
     </message>
     <message>
-        <location line="-10" />
-        <location line="+10" />
+        <location line="-14"/>
+        <location line="+14"/>
         <source>Blurred</source>
         <translation>Розмитий</translation>
     </message>
     <message>
-        <location line="-8" />
-        <location line="+8" />
+        <location line="-12"/>
+        <location line="+12"/>
         <source>Liquid Glass</source>
         <translation>Рідина</translation>
     </message>
     <message>
-        <location line="-7" />
+        <location line="-11"/>
         <source>Window material</source>
         <translation>Матеріал вікна</translation>
     </message>
     <message>
-        <location line="+23" />
+        <location line="+27"/>
         <source>Themes</source>
         <translation>Теми</translation>
     </message>
     <message>
-        <location line="+17" />
+        <location line="+17"/>
         <source>Fonts</source>
         <translation>Шрифти</translation>
     </message>
     <message>
-        <location line="+17" />
+        <location line="+17"/>
         <source>Icon Themes</source>
         <translation>Теми значків</translation>
     </message>
     <message>
-        <location line="+15" />
+        <location line="+15"/>
         <source>Favicon Services</source>
         <translation>Іконки favicon</translation>
     </message>
     <message>
-        <location line="+13" />
-        <location line="+10" />
+        <location line="+13"/>
+        <location line="+10"/>
         <source>Default</source>
         <translation>За замовчуванням</translation>
     </message>
     <message>
-        <location line="-7" />
+        <location line="-7"/>
         <source>Keybinding Schemes</source>
         <translation>Схеми комбінацій клавіш</translation>
     </message>
     <message>
-        <location line="+48" />
-        <location line="+10" />
+        <location line="+48"/>
+        <location line="+10"/>
         <source>System default</source>
         <translation>Системна за замовчуванням</translation>
     </message>
     <message>
-        <location line="-6" />
+        <location line="-6"/>
         <source>Languages</source>
         <translation>Мови</translation>
     </message>
@@ -2076,68 +2085,68 @@ Find the full stacktrace below. You can also directly copy it from the action me
 <context>
     <name>GeneralSettingsPage</name>
     <message>
-        <location filename="../src/qml/qml/GeneralSettingsPage.qml" line="+33" />
+        <location filename="../src/ui/qml/settings/GeneralSettingsPage.qml" line="+35"/>
         <source>Behavior</source>
         <translation>Поведінка</translation>
     </message>
     <message>
-        <location line="+8" />
+        <location line="+8"/>
         <source>Launcher hotkey</source>
         <translation>Комбінація клавіш для запуску лаунчера</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Global shortcut to toggle the Vicinae launcher.</source>
         <translation>Глобальна комбінація клавіш для відображення/приховування лаунчера Vicinae.</translation>
     </message>
     <message>
-        <location line="+13" />
+        <location line="+13"/>
         <source>Close on focus loss</source>
         <translation>Закривати при втраті фокусу</translation>
     </message>
     <message>
-        <location line="+8" />
+        <location line="+10"/>
         <source>Close on Escape</source>
         <translation>Закривати за допомогою Esc</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Pressing Escape closes the launcher instead of navigating one view back.</source>
         <translation>Натискання Esc закриває лаунчер, а не повертає на один рівень назад.</translation>
     </message>
     <message>
-        <location line="+8" />
+        <location line="+8"/>
         <source>Pop to root on close</source>
         <translation>Повернення до кореневого рівня при закритті</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Reset the navigation state when the launcher window is closed.</source>
         <translation>Сбросити стан навігації при закритті вікна лаунчера.</translation>
     </message>
     <message>
-        <location line="+10" />
-        <location line="+7" />
+        <location line="+10"/>
+        <location line="+7"/>
         <source>Language</source>
         <translation>Мова</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Requires restarting Vicinae to take effect.</source>
         <translation>Для застосування потрібна перезавантаження Vicinae.</translation>
     </message>
     <message>
-        <location line="+12" />
+        <location line="+12"/>
         <source>Privacy</source>
         <translation>Конфіденційність</translation>
     </message>
     <message>
-        <location line="+7" />
+        <location line="+7"/>
         <source>Basic usage statistics</source>
         <translation>Базова статистика використання</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Send basic system and vicinae installation information on startup to help improve Vicinae.</source>
         <translation>Надсилати базову інформацію про систему та встановлення vicinae при запуску, щоб допомогти покращити Vicinae.</translation>
     </message>
@@ -2145,7 +2154,7 @@ Find the full stacktrace below. You can also directly copy it from the action me
 <context>
     <name>GenericGridView</name>
     <message>
-        <location filename="../src/qml/qml/GenericGridView.qml" line="+39" />
+        <location filename="../src/ui/qml/views/GenericGridView.qml" line="+29"/>
         <source>No results</source>
         <translation>Не знайдено результатів</translation>
     </message>
@@ -2153,33 +2162,15 @@ Find the full stacktrace below. You can also directly copy it from the action me
 <context>
     <name>GenericListView</name>
     <message>
-        <location filename="../src/qml/qml/GenericListView.qml" line="+31" />
+        <location filename="../src/ui/qml/views/GenericListView.qml" line="+26"/>
         <source>No results</source>
         <translation>Не знайдено результатів</translation>
     </message>
 </context>
 <context>
-    <name>GlobalShortcutService</name>
-    <message>
-        <location filename="../src/services/global-shortcuts/global-shortcut-service.cpp" line="+57" />
-        <source>Toggle Vicinae</source>
-        <translation>Показати/приховати Vicinae</translation>
-    </message>
-    <message>
-        <location line="+111" />
-        <source>the launcher hotkey</source>
-        <translation>Горяча клавіша лаунчера</translation>
-    </message>
-    <message>
-        <location line="+11" />
-        <source>another command</source>
-        <translation>Інша команда</translation>
-    </message>
-</context>
-<context>
     <name>Gnome::Workspace</name>
     <message>
-        <location filename="../src/services/window-manager/gnome/gnome-workspace.cpp" line="+18" />
+        <location filename="../src/services/window-manager/gnome/gnome-workspace.cpp" line="+18"/>
         <source>Workspace %1</source>
         <translation>Робоче місце %1</translation>
     </message>
@@ -2187,22 +2178,22 @@ Find the full stacktrace below. You can also directly copy it from the action me
 <context>
     <name>HibernateCommand</name>
     <message>
-        <location filename="../src/extensions/power-management/power-management-extension.cpp" line="+127" />
+        <location filename="../src/builtins/power-management/power-management-extension.cpp" line="+124"/>
         <source>Hibernate System</source>
         <translation>Перевести систему в гібернацію</translation>
     </message>
     <message>
-        <location line="+2" />
+        <location line="+2"/>
         <source>Suspend the system to disk. This turns off the system completely and saves its state on disk, to be restored on next boot.</source>
         <translation>Призупинити роботу системи з записом на диск. Система повністю вимкнеться, а її стан буде збережено на диску та відновлено при наступному завантаженні.</translation>
     </message>
     <message>
-        <location line="+14" />
-        <source>System can't hibernate</source>
+        <location line="+14"/>
+        <source>System can&apos;t hibernate</source>
         <translation>Система не може перейти в гібернацію</translation>
     </message>
     <message>
-        <location line="+4" />
+        <location line="+4"/>
         <source>Failed to hibernate</source>
         <translation>Не вдалося виконати гібернацію</translation>
     </message>
@@ -2210,12 +2201,12 @@ Find the full stacktrace below. You can also directly copy it from the action me
 <context>
     <name>IconBrowserCommand</name>
     <message>
-        <location filename="../src/extensions/vicinae/vicinae-extension.cpp" line="+26" />
+        <location filename="../src/builtins/vicinae/vicinae-extension.cpp" line="+26"/>
         <source>Search Builtin Icons</source>
         <translation>Пошук вбудованих значків</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Search Vicinae builtin set of icons</source>
         <translation>Пошук у вбудованому наборі значків Vicinae</translation>
     </message>
@@ -2223,7 +2214,7 @@ Find the full stacktrace below. You can also directly copy it from the action me
 <context>
     <name>ImageViewer</name>
     <message>
-        <location filename="../src/qml/qml/ImageViewer.qml" line="+159" />
+        <location filename="../src/ui/qml/detail/ImageViewer.qml" line="+161"/>
         <source>%1 / %2</source>
         <translation>%1 / %2</translation>
     </message>
@@ -2231,25 +2222,53 @@ Find the full stacktrace below. You can also directly copy it from the action me
 <context>
     <name>InspectLocalStorage</name>
     <message>
-        <location filename="../src/extensions/vicinae/vicinae-extension.cpp" line="+13" />
+        <location filename="../src/builtins/vicinae/vicinae-extension.cpp" line="+13"/>
         <source>Inspect Local Storage</source>
         <translation>Перегляд локального сховища</translation>
     </message>
     <message>
-        <location line="+3" />
-        <source>Browse data stored in Vicinae's local storage. This includes data stored for builtin extensions as well as third-party extensions making use of the LocalStorage API.</source>
+        <location line="+3"/>
+        <source>Browse data stored in Vicinae&apos;s local storage. This includes data stored for builtin extensions as well as third-party extensions making use of the LocalStorage API.</source>
         <translation>Перегляд даних у локальному сховищі Vicinae. Це містить дані вбудованих розширень, а також сторонніх розширень, які використовують API LocalStorage.</translation>
+    </message>
+</context>
+<context>
+    <name>InstallExtensionAction</name>
+    <message>
+        <location filename="../src/actions/extension-actions.cpp" line="+15"/>
+        <source>Downloading extension...</source>
+        <translation type="unfinished">Завантаження розширення...</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Failed to download extension</source>
+        <translation type="unfinished">Не вдалося завантажити розширення</translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Failed to extract extension archive</source>
+        <translation type="unfinished">Не вдалося розпакувати архів розширення</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Extension installed</source>
+        <translation type="unfinished">Розширення встановлено</translation>
+    </message>
+    <message>
+        <location filename="../src/actions/extension-actions.hpp" line="+28"/>
+        <source>Install extension</source>
+        <translation type="unfinished">Встановити розширення</translation>
     </message>
 </context>
 <context>
     <name>InstallUpdateAction</name>
     <message>
-        <location filename="../src/services/update/update-service.cpp" line="+188" />
+        <location filename="../src/services/update/update-service.cpp" line="+190"/>
         <source>Install Update</source>
         <translation>Встановити оновлення</translation>
     </message>
     <message>
-        <location line="+7" />
+        <location line="+7"/>
         <source>An update is already in progress</source>
         <translation>Оновлення вже триває</translation>
     </message>
@@ -2257,37 +2276,37 @@ Find the full stacktrace below. You can also directly copy it from the action me
 <context>
     <name>InstalledExtensionsSection</name>
     <message>
-        <location filename="../src/qml/installed-extensions-model.hpp" line="+18" />
+        <location filename="../src/builtins/vicinae/installed-extensions-model.hpp" line="+18"/>
         <source>Installed Extensions ({count})</source>
         <translation>Встановлені розширення ({count})</translation>
     </message>
     <message>
-        <location filename="../src/qml/installed-extensions-model.cpp" line="+38" />
+        <location filename="../src/builtins/vicinae/installed-extensions-model.cpp" line="+38"/>
         <source>Local</source>
         <translation>Локальні</translation>
     </message>
     <message>
-        <location line="+16" />
+        <location line="+16"/>
         <source>Copy</source>
         <translation>Копіювати</translation>
     </message>
     <message>
-        <location line="+2" />
+        <location line="+2"/>
         <source>Copy Name</source>
         <translation>Копіювати назву</translation>
     </message>
     <message>
-        <location line="+4" />
+        <location line="+4"/>
         <source>Copy ID</source>
         <translation>Копіювати ID</translation>
     </message>
     <message>
-        <location line="+4" />
+        <location line="+4"/>
         <source>Copy Path</source>
         <translation>Копіювати шлях</translation>
     </message>
     <message>
-        <location line="+4" />
+        <location line="+4"/>
         <source>Copy Author</source>
         <translation>Копіювати автора</translation>
     </message>
@@ -2295,7 +2314,7 @@ Find the full stacktrace below. You can also directly copy it from the action me
 <context>
     <name>InstalledExtensionsViewHost</name>
     <message>
-        <location filename="../src/qml/installed-extensions-view-host.cpp" line="+12" />
+        <location filename="../src/builtins/vicinae/installed-extensions-view-host.cpp" line="+12"/>
         <source>Search extensions...</source>
         <translation>Пошук розширень...</translation>
     </message>
@@ -2303,16 +2322,58 @@ Find the full stacktrace below. You can also directly copy it from the action me
 <context>
     <name>InternalExtension</name>
     <message>
-        <location filename="../src/extensions/internal/internal-extension.hpp" line="+12" />
-        <location line="+1" />
+        <location filename="../src/builtins/internal/internal-extension.hpp" line="+12"/>
+        <location line="+1"/>
         <source>Internal Commands</source>
         <translation>Внутрішні команди</translation>
     </message>
 </context>
 <context>
+    <name>KdeSettingsRootItem</name>
+    <message>
+        <location filename="../src/root-search/kde-settings/kde-settings-root-provider.cpp" line="+13"/>
+        <location line="+9"/>
+        <source>KDE Settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Name</source>
+        <translation type="unfinished">Назва</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Where</source>
+        <translation type="unfinished">Розташування</translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Open in System Settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Copy Module ID</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>KdeSettingsRootProvider</name>
+    <message>
+        <location line="+17"/>
+        <source>KDE Settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Modules of the KDE System Settings application.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>KeyboardBridge</name>
     <message>
-        <location filename="../src/qml/keyboard-bridge.hpp" line="+51" />
+        <location filename="../src/ui/bridges/keyboard-bridge.hpp" line="+60"/>
         <source>Modifier required</source>
         <translation>Потрібен модифікатор</translation>
     </message>
@@ -2320,43 +2381,43 @@ Find the full stacktrace below. You can also directly copy it from the action me
 <context>
     <name>LauncherWindow</name>
     <message>
-        <location filename="../src/qml/qml/LauncherWindow.qml" line="+32" />
+        <location filename="../src/ui/qml/launcher/LauncherWindow.qml" line="+46"/>
         <source>Vicinae Launcher</source>
         <translation>Лаунчер Vicinae</translation>
     </message>
     <message>
-        <location filename="../src/qml/launcher-window.cpp" line="+640" />
+        <location filename="../src/ui/windows/launcher-window.cpp" line="+872"/>
         <source>Open Settings</source>
         <translation>Відкрити налаштування</translation>
     </message>
     <message>
-        <location line="+4" />
+        <location line="+4"/>
         <source>Keyboard Shortcuts</source>
         <translation>Клавіатурні комбінації</translation>
     </message>
     <message>
-        <location line="+5" />
+        <location line="+5"/>
         <source>Extension Store</source>
         <translation>Магазин розширень</translation>
     </message>
     <message>
-        <location line="+8" />
+        <location line="+8"/>
         <source>Documentation</source>
         <translation>Документація</translation>
     </message>
     <message>
-        <location line="+3" />
-        <location line="+5" />
+        <location line="+3"/>
+        <location line="+5"/>
         <source>Opened in browser</source>
         <translation>Відкрито в браузері</translation>
     </message>
     <message>
-        <location line="-2" />
+        <location line="-2"/>
         <source>Report a Bug</source>
         <translation>Повідомити про помилку</translation>
     </message>
     <message>
-        <location line="+4" />
+        <location line="+4"/>
         <source>About Vicinae</source>
         <translation>Про Vicinae</translation>
     </message>
@@ -2364,12 +2425,12 @@ Find the full stacktrace below. You can also directly copy it from the action me
 <context>
     <name>LocalStorageItemSection</name>
     <message>
-        <location filename="../src/qml/local-storage-model.hpp" line="+19" />
+        <location filename="../src/builtins/vicinae/local-storage-model.hpp" line="+19"/>
         <source>Items ({count})</source>
         <translation>Елементи ({count})</translation>
     </message>
     <message>
-        <location filename="../src/qml/local-storage-model.cpp" line="+31" />
+        <location filename="../src/builtins/vicinae/local-storage-model.cpp" line="+31"/>
         <source>Show value</source>
         <translation>Показати значення</translation>
     </message>
@@ -2377,7 +2438,7 @@ Find the full stacktrace below. You can also directly copy it from the action me
 <context>
     <name>LocalStorageItemViewHost</name>
     <message>
-        <location filename="../src/qml/local-storage-view-host.cpp" line="+23" />
+        <location filename="../src/builtins/vicinae/local-storage-view-host.cpp" line="+23"/>
         <source>Search items...</source>
         <translation>Пошук елементів...</translation>
     </message>
@@ -2385,12 +2446,12 @@ Find the full stacktrace below. You can also directly copy it from the action me
 <context>
     <name>LocalStorageNamespaceSection</name>
     <message>
-        <location filename="../src/qml/local-storage-model.hpp" line="-11" />
+        <location filename="../src/builtins/vicinae/local-storage-model.hpp" line="-11"/>
         <source>Namespaces ({count})</source>
         <translation>Простори імен ({count})</translation>
     </message>
     <message>
-        <location filename="../src/qml/local-storage-model.cpp" line="-16" />
+        <location filename="../src/builtins/vicinae/local-storage-model.cpp" line="-16"/>
         <source>Browse namespace</source>
         <translation>Переглянути простір імен</translation>
     </message>
@@ -2398,7 +2459,7 @@ Find the full stacktrace below. You can also directly copy it from the action me
 <context>
     <name>LocalStorageViewHost</name>
     <message>
-        <location filename="../src/qml/local-storage-view-host.cpp" line="-15" />
+        <location filename="../src/builtins/vicinae/local-storage-view-host.cpp" line="-15"/>
         <source>Search namespaces...</source>
         <translation>Пошук просторів імен...</translation>
     </message>
@@ -2406,22 +2467,22 @@ Find the full stacktrace below. You can also directly copy it from the action me
 <context>
     <name>LockCommand</name>
     <message>
-        <location filename="../src/extensions/power-management/power-management-extension.cpp" line="-48" />
+        <location filename="../src/builtins/power-management/power-management-extension.cpp" line="-48"/>
         <source>Lock Session</source>
         <translation>Заблокувати сеанс</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Lock the current user session</source>
         <translation>Заблокувати поточний сеанс користувача</translation>
     </message>
     <message>
-        <location line="+13" />
-        <source>System can't lock</source>
+        <location line="+13"/>
+        <source>System can&apos;t lock</source>
         <translation>Система не може виконати блокування</translation>
     </message>
     <message>
-        <location line="+4" />
+        <location line="+4"/>
         <source>Failed to lock</source>
         <translation>Не вдалося заблокувати</translation>
     </message>
@@ -2429,49 +2490,36 @@ Find the full stacktrace below. You can also directly copy it from the action me
 <context>
     <name>LogOutCommand</name>
     <message>
-        <location line="+176" />
+        <location line="+176"/>
         <source>Log Out</source>
         <translation>Вийти</translation>
     </message>
     <message>
-        <location line="+2" />
-        <source>Terminate the current user session. If you simply want to lock your session you should use 'Lock Session' instead.</source>
+        <location line="+2"/>
+        <source>Terminate the current user session. If you simply want to lock your session you should use &apos;Lock Session&apos; instead.</source>
         <translation>Завершити поточний сеанс користувача. Якщо потрібно просто заблокувати сеанс, використовуйте замість цього «Заблокувати сеанс».</translation>
     </message>
     <message>
-        <location line="+15" />
-        <source>System can't logout</source>
+        <location line="+15"/>
+        <source>System can&apos;t logout</source>
         <translation>Система не може завершити вихід</translation>
     </message>
     <message>
-        <location line="+4" />
+        <location line="+4"/>
         <source>Failed to log out</source>
         <translation>Не вдалося вийти</translation>
     </message>
 </context>
 <context>
-    <name>MacAppDatabase</name>
-    <message>
-        <location filename="../src/services/app-service/macos/mac-app-database.mm" line="+159" />
-        <source>Application directories</source>
-        <translation>Каталоги додатків</translation>
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Directories applications are sourced from. System directories are always scanned and cannot be removed.</source>
-        <translation>Каталоги, з яких беруться додатки. Системні каталоги скануються завжди і не можуть бути видалені.</translation>
-    </message>
-</context>
-<context>
     <name>MacOSGlobalShortcutBackend</name>
     <message>
-        <location filename="../src/services/global-shortcuts/macos-global-shortcut-backend.cpp" line="+238" />
-        <location line="+40" />
+        <location filename="../src/services/global-shortcuts/macos-global-shortcut-backend.cpp" line="+166"/>
+        <location line="+44"/>
         <source>unsupported or invalid trigger</source>
         <translation>Непідтримуваний або неправильний тригер</translation>
     </message>
     <message>
-        <location line="-32" />
+        <location line="-36"/>
         <source>failed to register hot key (%1)</source>
         <translation>не вдалося зареєструвати комбінацію клавіш (%1)</translation>
     </message>
@@ -2479,43 +2527,43 @@ Find the full stacktrace below. You can also directly copy it from the action me
 <context>
     <name>MacSettingsRootItem</name>
     <message>
-        <location filename="../src/root-search/macos-settings/macos-settings-root-provider.mm" line="+132" />
-        <location line="+9" />
+        <location filename="../src/root-search/macos-settings/macos-settings-root-provider.mm" line="+140"/>
+        <location line="+9"/>
         <source>System Settings</source>
         <translation>Налаштування системи</translation>
     </message>
     <message>
-        <location line="+6" />
+        <location line="+6"/>
         <source>Name</source>
         <translation>Назва</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Bundle ID</source>
         <translation>ID пакета</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Legacy ID</source>
         <translation>Недійсний ID</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Where</source>
         <translation>Розташування</translation>
     </message>
     <message>
-        <location line="+12" />
+        <location line="+12"/>
         <source>Open %1 Settings</source>
         <translation>Відкрити налаштування %1</translation>
     </message>
     <message>
-        <location line="+3" />
+        <location line="+3"/>
         <source>Copy URL</source>
         <translation>Копіювати URL</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Copy Bundle ID</source>
         <translation>Копіювати ID пакета</translation>
     </message>
@@ -2523,55 +2571,63 @@ Find the full stacktrace below. You can also directly copy it from the action me
 <context>
     <name>MacSettingsRootProvider</name>
     <message>
-        <location line="+13" />
+        <location line="+14"/>
         <source>System Settings</source>
         <translation>Налаштування системи</translation>
     </message>
 </context>
 <context>
+    <name>MacosScreenshotProvider</name>
+    <message>
+        <location filename="../src/services/screenshots/macos/macos-screenshot-provider.mm" line="+99"/>
+        <source>Spotlight is unavailable. Showing screenshots and recordings from the screenshot folder.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>MacosUpdateInstaller</name>
     <message>
-        <location filename="../src/services/update/macos-update-installer.mm" line="+207" />
+        <location filename="../src/services/update/macos-update-installer.mm" line="+207"/>
         <source>This installation cannot update itself</source>
         <translation>Ця інсталяція не може оновлюватися автоматично</translation>
     </message>
     <message>
-        <location line="+10" />
+        <location line="+10"/>
         <source>Mounting update image…</source>
         <translation>Монтаж образу оновлення…</translation>
     </message>
     <message>
-        <location line="+11" />
+        <location line="+11"/>
         <source>Failed to mount the update image</source>
         <translation>Не вдалося змонтувати образ оновлення</translation>
     </message>
     <message>
-        <location line="+7" />
+        <location line="+7"/>
         <source>Could not find the update image mount point</source>
         <translation>Не вдалося знайти точку монтування образу оновлення</translation>
     </message>
     <message>
-        <location line="+9" />
+        <location line="+9"/>
         <source>Verifying update…</source>
         <translation>Перевірка оновлення...</translation>
     </message>
     <message>
-        <location line="+8" />
+        <location line="+8"/>
         <source>Installing update…</source>
         <translation>Встановлення оновлення...</translation>
     </message>
     <message>
-        <location line="+12" />
+        <location line="+12"/>
         <source>Failed to stage update: %1</source>
         <translation>Не вдалося підготувати оновлення: %1</translation>
     </message>
     <message>
-        <location line="+23" />
+        <location line="+23"/>
         <source>Failed to move the current app aside: %1</source>
         <translation>Не вдалося перемістити поточну програму в бік: %1</translation>
     </message>
     <message>
-        <location line="+4" />
+        <location line="+4"/>
         <source>Failed to install the new app: %1</source>
         <translation>Не вдалося встановити нову програму: %1</translation>
     </message>
@@ -2579,7 +2635,7 @@ Find the full stacktrace below. You can also directly copy it from the action me
 <context>
     <name>ManageFallbackActions</name>
     <message>
-        <location filename="../src/actions/fallback-actions.hpp" line="+15" />
+        <location filename="../src/actions/fallback-actions.hpp" line="+15"/>
         <source>Manage Fallback Actions</source>
         <translation>Управління резервними діями</translation>
     </message>
@@ -2587,12 +2643,12 @@ Find the full stacktrace below. You can also directly copy it from the action me
 <context>
     <name>ManageFallbackCommand</name>
     <message>
-        <location filename="../src/extensions/vicinae/configure-fallback-command.hpp" line="+11" />
+        <location filename="../src/builtins/vicinae/configure-fallback-command.hpp" line="+11"/>
         <source>Configure Fallback Commands</source>
         <translation>Налаштування резервних команд</translation>
     </message>
     <message>
-        <location line="+5" />
+        <location line="+5"/>
         <source>Configure what commands are to be presented as fallback options when nothing matches the search in the root search.</source>
         <translation>Налаштування команд, які повинні відображатися як резервні, коли пошук на кореневому рівні не дає результатів.</translation>
     </message>
@@ -2600,7 +2656,7 @@ Find the full stacktrace below. You can also directly copy it from the action me
 <context>
     <name>ManageFallbackViewHost</name>
     <message>
-        <location filename="../src/qml/manage-fallback-view-host.cpp" line="+12" />
+        <location filename="../src/builtins/vicinae/manage-fallback-view-host.cpp" line="+12"/>
         <source>Search commands...</source>
         <translation>Пошук команд...</translation>
     </message>
@@ -2608,7 +2664,7 @@ Find the full stacktrace below. You can also directly copy it from the action me
 <context>
     <name>ManageShortcutsCommand</name>
     <message>
-        <location filename="../src/extensions/shortcut/shortcut-extension.hpp" line="+11" />
+        <location filename="../src/builtins/shortcut/shortcut-extension.hpp" line="+13"/>
         <source>Manage Shortcuts</source>
         <translation>Керування ярликами</translation>
     </message>
@@ -2616,7 +2672,7 @@ Find the full stacktrace below. You can also directly copy it from the action me
 <context>
     <name>ManageShortcutsSection</name>
     <message>
-        <location filename="../src/qml/manage-shortcuts-model.hpp" line="+17" />
+        <location filename="../src/builtins/shortcut/manage-shortcuts-model.hpp" line="+17"/>
         <source>Shortcuts ({count})</source>
         <translation>Ярлики ({count})</translation>
     </message>
@@ -2624,42 +2680,42 @@ Find the full stacktrace below. You can also directly copy it from the action me
 <context>
     <name>ManageShortcutsViewHost</name>
     <message>
-        <location filename="../src/qml/manage-shortcuts-view-host.cpp" line="+28" />
+        <location filename="../src/builtins/shortcut/manage-shortcuts-view-host.cpp" line="+26"/>
         <source>Search shortcuts...</source>
         <translation>Пошук ярликів...</translation>
     </message>
     <message>
-        <location line="+28" />
+        <location line="+28"/>
         <source>Name</source>
         <translation>Назва</translation>
     </message>
     <message>
-        <location line="+6" />
+        <location line="+6"/>
         <source>Application</source>
         <translation>Додаток</translation>
     </message>
     <message>
-        <location line="+2" />
+        <location line="+2"/>
         <source>%1 (Default)</source>
         <translation>%1 (За замовчуванням)</translation>
     </message>
     <message>
-        <location line="+6" />
+        <location line="+6"/>
         <source>Opened</source>
         <translation>Відкрито</translation>
     </message>
     <message>
-        <location line="+5" />
+        <location line="+5"/>
         <source>Last Opened</source>
         <translation>Останній запуск</translation>
     </message>
     <message>
-        <location line="+3" />
+        <location line="+3"/>
         <source>Never</source>
         <translation>Ніколи</translation>
     </message>
     <message>
-        <location line="+4" />
+        <location line="+4"/>
         <source>Created at</source>
         <translation>Створено</translation>
     </message>
@@ -2667,7 +2723,7 @@ Find the full stacktrace below. You can also directly copy it from the action me
 <context>
     <name>ManageSnippetsCommand</name>
     <message>
-        <location filename="../src/extensions/snippet/manage-snippets-command.hpp" line="+10" />
+        <location filename="../src/builtins/snippet/manage-snippets-command.hpp" line="+10"/>
         <source>Manage Snippets</source>
         <translation>Керування сніппетами</translation>
     </message>
@@ -2675,42 +2731,42 @@ Find the full stacktrace below. You can also directly copy it from the action me
 <context>
     <name>ManageSnippetsSection</name>
     <message>
-        <location filename="../src/qml/manage-snippets-model.hpp" line="+18" />
+        <location filename="../src/builtins/snippet/manage-snippets-model.hpp" line="+18"/>
         <source>Snippets ({count})</source>
         <translation>Сніпети ({count})</translation>
     </message>
     <message>
-        <location filename="../src/qml/manage-snippets-model.cpp" line="+33" />
+        <location filename="../src/builtins/snippet/manage-snippets-model.cpp" line="+33"/>
         <source>Copy to clipboard</source>
         <translation>Копіювати в буфер обміну</translation>
     </message>
     <message>
-        <location line="+3" />
+        <location line="+4"/>
         <source>Copied to clipboard</source>
         <translation>Скопійовано в буфер обміну</translation>
     </message>
     <message>
-        <location line="+2" />
+        <location line="+2"/>
         <source>Failed to copy to clipboard</source>
         <translation>Не вдалося скопіювати в буфер обміну</translation>
     </message>
     <message>
-        <location line="+4" />
+        <location line="+4"/>
         <source>Edit snippet</source>
         <translation>Редагувати фрагмент</translation>
     </message>
     <message>
-        <location line="+5" />
+        <location line="+5"/>
         <source>Duplicate snippet</source>
         <translation>Дублювати фрагмент</translation>
     </message>
     <message>
-        <location line="+4" />
+        <location line="+4"/>
         <source>Remove snippet</source>
         <translation>Видалити фрагмент</translation>
     </message>
     <message>
-        <location line="+2" />
+        <location line="+2"/>
         <source>Failed to remove snippet</source>
         <translation>Не вдалося видалити фрагмент</translation>
     </message>
@@ -2718,57 +2774,57 @@ Find the full stacktrace below. You can also directly copy it from the action me
 <context>
     <name>ManageSnippetsViewHost</name>
     <message>
-        <location filename="../src/qml/manage-snippets-view-host.hpp" line="+54" />
+        <location filename="../src/builtins/snippet/manage-snippets-view-host.cpp" line="+12"/>
         <source>No snippets</source>
         <translation>Відсутні сніпти</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Create a snippet to get started</source>
         <translation>Створіть скрипт для початку</translation>
     </message>
     <message>
-        <location filename="../src/qml/manage-snippets-view-host.cpp" line="+28" />
+        <location line="+19"/>
         <source>Search for snippets...</source>
         <translation>Пошук сніппетів...</translation>
     </message>
     <message>
-        <location line="+25" />
+        <location line="+25"/>
         <source>Text</source>
         <translation>Текст</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>File</source>
         <translation>Файл</translation>
     </message>
     <message>
-        <location line="+4" />
+        <location line="+4"/>
         <source>Type</source>
         <translation>Тип</translation>
     </message>
     <message>
-        <location line="+5" />
+        <location line="+5"/>
         <source>Created at</source>
         <translation>Створено</translation>
     </message>
     <message>
-        <location line="+6" />
+        <location line="+6"/>
         <source>Updated at</source>
         <translation>Оновлено</translation>
     </message>
     <message>
-        <location line="+7" />
+        <location line="+7"/>
         <source>Keyword</source>
         <translation>Ключове слово</translation>
     </message>
     <message>
-        <location line="+16" />
+        <location line="+16"/>
         <source>Apps</source>
         <translation>Додатки</translation>
     </message>
     <message>
-        <location line="+68" />
+        <location line="+69"/>
         <source>Create snippet</source>
         <translation>Створити фрагмент</translation>
     </message>
@@ -2776,7 +2832,7 @@ Find the full stacktrace below. You can also directly copy it from the action me
 <context>
     <name>MarkItemAsFavorite</name>
     <message>
-        <location filename="../src/actions/root-search/root-search-actions.cpp" line="-60" />
+        <location filename="../src/actions/root-search-actions.cpp" line="-80"/>
         <source>Mark as favorite</source>
         <translation>Відмітити як улюблене</translation>
     </message>
@@ -2784,25 +2840,33 @@ Find the full stacktrace below. You can also directly copy it from the action me
 <context>
     <name>MarkdownShowcase</name>
     <message>
-        <location filename="../src/extensions/internal/markdown-showcase-command.hpp" line="+172" />
+        <location filename="../src/builtins/internal/markdown-showcase-command.hpp" line="+171"/>
         <source>Markdown Showcase</source>
         <translation>Вітрина Markdown</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Preview all supported markdown features</source>
         <translation>Перегляд усіх підтримуваних функцій Markdown</translation>
     </message>
 </context>
 <context>
+    <name>MarkdownShowcaseView</name>
+    <message>
+        <location line="-160"/>
+        <source>Close</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>MarkdownView</name>
     <message>
-        <location filename="../src/qml/qml/markdown/MarkdownView.qml" line="+270" />
+        <location filename="../src/ui/qml/markdown/MarkdownView.qml" line="+272"/>
         <source>Copy</source>
         <translation>Копіювати</translation>
     </message>
     <message>
-        <location line="+16" />
+        <location line="+16"/>
         <source>Select All</source>
         <translation>Вибрати все</translation>
     </message>
@@ -2810,27 +2874,27 @@ Find the full stacktrace below. You can also directly copy it from the action me
 <context>
     <name>MdCallout</name>
     <message>
-        <location filename="../src/qml/qml/markdown/MdCallout.qml" line="+35" />
+        <location filename="../src/ui/qml/markdown/MdCallout.qml" line="+36"/>
         <source>Caution</source>
         <translation>Увага</translation>
     </message>
     <message>
-        <location line="+2" />
+        <location line="+2"/>
         <source>Warning</source>
         <translation>Увага</translation>
     </message>
     <message>
-        <location line="+2" />
+        <location line="+2"/>
         <source>Important</source>
         <translation>Важливо</translation>
     </message>
     <message>
-        <location line="+2" />
+        <location line="+2"/>
         <source>Tip</source>
         <translation>Порада</translation>
     </message>
     <message>
-        <location line="+2" />
+        <location line="+2"/>
         <source>Note</source>
         <translation>Примітка</translation>
     </message>
@@ -2838,46 +2902,111 @@ Find the full stacktrace below. You can also directly copy it from the action me
 <context>
     <name>MdCodeBlock</name>
     <message>
-        <location filename="../src/qml/qml/markdown/MdCodeBlock.qml" line="+58" />
+        <location filename="../src/ui/qml/markdown/MdCodeBlock.qml" line="+59"/>
         <source>Copied!</source>
         <translation>Скопійовано!</translation>
     </message>
     <message>
-        <location line="+0" />
+        <location line="+0"/>
         <source>Copy</source>
         <translation>Копіювати</translation>
     </message>
 </context>
 <context>
+    <name>MediaExtension</name>
+    <message>
+        <location filename="../src/builtins/media/media-extension.hpp" line="+330"/>
+        <source>Media</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Control media playback and system audio</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>MenuBarMenuSection</name>
+    <message>
+        <location filename="../src/builtins/vicinae/menu-bar-search-view-host.hpp" line="+38"/>
+        <source>Results ({count} items)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+28"/>
+        <source>Run Menu Item</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Open in Menu Bar</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>MenuBarSearchViewHost</name>
+    <message>
+        <location line="+22"/>
+        <source>Filter by menu item title...</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>MissingPreferenceView</name>
     <message>
-        <location filename="../src/qml/qml/MissingPreferenceView.qml" line="+28" />
+        <location filename="../src/ui/qml/views/MissingPreferenceView.qml" line="+30"/>
         <source>Welcome to %1</source>
         <translation>Ласкаво просимо до %1</translation>
     </message>
     <message>
-        <location line="+9" />
+        <location line="+9"/>
         <source>Before you can use this command, you need to fill in the required preference fields below.</source>
-        <translation>Перш ніж використовувати цю команду, заповніть обов'язкові поля налаштувань нижче.</translation>
+        <translation>Перш ніж використовувати цю команду, заповніть обов&apos;язкові поля налаштувань нижче.</translation>
+    </message>
+    <message>
+        <location line="+130"/>
+        <source>Select an app…</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+19"/>
+        <source>Add app…</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>MissingPreferenceViewHost</name>
     <message>
-        <location filename="../src/qml/missing-preference-view-host.cpp" line="+212" />
+        <location filename="../src/extension/views/missing-preference-view-host.cpp" line="+215"/>
         <source>Save preferences</source>
         <translation>Зберегти налаштування</translation>
     </message>
     <message>
-        <location line="+10" />
+        <location line="+10"/>
         <source>Please fill in all required fields</source>
-        <translation>Заповніть усі обов'язкові поля</translation>
+        <translation>Заповніть усі обов&apos;язкові поля</translation>
+    </message>
+</context>
+<context>
+    <name>MoveFavoriteDownAction</name>
+    <message>
+        <location filename="../src/actions/root-search-actions.cpp" line="+53"/>
+        <source>Move down in favorites</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>MoveFavoriteUpAction</name>
+    <message>
+        <location line="-9"/>
+        <source>Move up in favorites</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>NavigationController</name>
     <message>
-        <location filename="../src/navigation-controller.cpp" line="+653" />
+        <location filename="../src/navigation-controller.cpp" line="+669"/>
         <source>Extension manager is not running</source>
         <translation>Менеджер розширень не запущено</translation>
     </message>
@@ -2885,25 +3014,110 @@ Find the full stacktrace below. You can also directly copy it from the action me
 <context>
     <name>NewsService</name>
     <message>
-        <location filename="../src/services/news/news-service.cpp" line="+68" />
+        <location filename="../src/services/news/news-service.cpp" line="+68"/>
         <source>Telemetry</source>
         <translation>Телеметрія</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>We now collect basic usage statistics on startup</source>
         <translation>Тепер ми збираємо базову статистику використання при запуску</translation>
     </message>
     <message>
-        <location line="+7" />
+        <location line="+7"/>
         <source>Learn more</source>
         <translation>Більше інформації</translation>
     </message>
 </context>
 <context>
+    <name>NextTrackCommand</name>
+    <message>
+        <location filename="../src/builtins/media/media-extension.hpp" line="-219"/>
+        <location line="+26"/>
+        <source>Next Track</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-25"/>
+        <source>Skip to the next track</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>player</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>%1 cannot skip to the next track</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Failed to skip to the next track</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>NowPlayingCommand</name>
+    <message>
+        <location line="+46"/>
+        <source>Now Playing</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Browse and control running media players</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>NowPlayingViewHost</name>
+    <message>
+        <location filename="../src/builtins/media/now-playing-view-host.hpp" line="+27"/>
+        <source>Search players...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>Players</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>Playing</source>
+        <translation type="unfinished">Відтворюється</translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Paused</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+12"/>
+        <source>Pause</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Play</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Next Track</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Previous Track</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>NullUpdateInstaller</name>
     <message>
-        <location filename="../src/services/update/null-update-installer.hpp" line="+14" />
+        <location filename="../src/services/update/null-update-installer.hpp" line="+14"/>
         <source>Self update is not supported on this platform</source>
         <translation>Автооновлення не підтримується на цій платформі</translation>
     </message>
@@ -2911,17 +3125,22 @@ Find the full stacktrace below. You can also directly copy it from the action me
 <context>
     <name>OAuthOverlayView</name>
     <message>
-        <location filename="../src/qml/qml/OAuthOverlayView.qml" line="+91" />
+        <location filename="../src/ui/qml/views/OAuthOverlayView.qml" line="+29"/>
+        <source>Back</source>
+        <translation type="unfinished">Назад</translation>
+    </message>
+    <message>
+        <location line="+65"/>
         <source>Continue with %1</source>
         <translation>Продовжити з %1</translation>
     </message>
     <message>
-        <location line="+33" />
-        <source>You're in!</source>
+        <location line="+33"/>
+        <source>You&apos;re in!</source>
         <translation>Готово!</translation>
     </message>
     <message>
-        <location line="+9" />
+        <location line="+9"/>
         <source>Successfully connected to %1.
 Back to command in an instant...</source>
         <translation>Успішно підключено до %1.
@@ -2931,12 +3150,12 @@ Back to command in an instant...</source>
 <context>
     <name>OAuthTokenStoreCommand</name>
     <message>
-        <location filename="../src/extensions/vicinae/vicinae-extension.cpp" line="-33" />
+        <location filename="../src/builtins/vicinae/vicinae-extension.cpp" line="-33"/>
         <source>Manage OAuth Token Sets</source>
         <translation>Керування наборами OAuth-токенів</translation>
     </message>
     <message>
-        <location line="+2" />
+        <location line="+2"/>
         <source>Manage OAuth token sets that have been saved by extensions providing OAuth integrations.</source>
         <translation>Керування наборами OAuth-токенів, збереженими розширеннями з OAuth-інтеграціями.</translation>
     </message>
@@ -2944,67 +3163,67 @@ Back to command in an instant...</source>
 <context>
     <name>OAuthTokenStoreSection</name>
     <message>
-        <location filename="../src/qml/oauth-token-store-model.hpp" line="+17" />
+        <location filename="../src/builtins/vicinae/oauth-token-store-model.hpp" line="+17"/>
         <source>OAuth Token Sets ({count})</source>
         <translation>Набори OAuth-токенів ({count})</translation>
     </message>
     <message>
-        <location filename="../src/qml/oauth-token-store-model.cpp" line="+20" />
+        <location filename="../src/builtins/vicinae/oauth-token-store-model.cpp" line="+21"/>
         <source>Expired</source>
         <translation>Час дії закінчився</translation>
     </message>
     <message>
-        <location line="+11" />
+        <location line="+11"/>
         <source>Remove token set</source>
         <translation>Видалити набір токенів</translation>
     </message>
     <message>
-        <location line="+5" />
+        <location line="+5"/>
         <source>Are you sure?</source>
         <translation>Ви впевнені?</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>You will need to go through the OAuth login flow again the next time you want to use this service</source>
         <translation>Наступного разу, використовуючи цей сервіс, вам потрібно буде знову пройти процедуру входу OAuth.</translation>
     </message>
     <message>
-        <location line="+4" />
+        <location line="+4"/>
         <source>Failed to remove token set</source>
         <translation>Не вдалося видалити набір токенів</translation>
     </message>
     <message>
-        <location line="+3" />
+        <location line="+3"/>
         <source>Token set removed</source>
         <translation>Набір токенів видалено</translation>
     </message>
     <message>
-        <location line="+7" />
+        <location line="+7"/>
         <source>Copy</source>
         <translation>Копіювати</translation>
     </message>
     <message>
-        <location line="+2" />
+        <location line="+2"/>
         <source>Copy Access Token</source>
         <translation>Копіювати токен доступу</translation>
     </message>
     <message>
-        <location line="+6" />
+        <location line="+6"/>
         <source>Copy Refresh Token</source>
         <translation>Копіювати токен оновлення</translation>
     </message>
     <message>
-        <location line="+5" />
+        <location line="+5"/>
         <source>Copy ID Token</source>
         <translation>Копіювати ID-токен</translation>
     </message>
     <message>
-        <location line="+5" />
+        <location line="+5"/>
         <source>Copy Scopes</source>
         <translation>Копіювати області</translation>
     </message>
     <message>
-        <location line="+6" />
+        <location line="+6"/>
         <source>Copy Expiration Date</source>
         <translation>Копіювати термін дії</translation>
     </message>
@@ -3012,7 +3231,7 @@ Back to command in an instant...</source>
 <context>
     <name>OAuthTokenStoreViewHost</name>
     <message>
-        <location filename="../src/qml/oauth-token-store-view-host.cpp" line="+12" />
+        <location filename="../src/builtins/vicinae/oauth-token-store-view-host.cpp" line="+12"/>
         <source>Search token sets...</source>
         <translation>Пошук наборів токенів...</translation>
     </message>
@@ -3020,148 +3239,163 @@ Back to command in an instant...</source>
 <context>
     <name>OnboardingWindow</name>
     <message>
-        <location filename="../src/qml/qml/OnboardingWindow.qml" line="+36" />
+        <location filename="../src/ui/qml/onboarding/OnboardingWindow.qml" line="+41"/>
         <source>Grant Access</source>
         <translation>Надати доступ</translation>
     </message>
     <message>
-        <location line="+18" />
+        <location line="+18"/>
         <source>Granted</source>
         <translation>Надано</translation>
     </message>
     <message>
-        <location line="+16" />
-        <location line="+39" />
+        <location line="+16"/>
+        <location line="+40"/>
         <source>Welcome to Vicinae</source>
         <translation>Ласкаво просимо до Vicinae</translation>
     </message>
     <message>
-        <location line="+9" />
-        <source>Let's set it up. It only takes a minute.</source>
+        <location line="+9"/>
+        <source>Let&apos;s set it up. It only takes a minute.</source>
         <translation>Давайте налаштуємо. Це займе одну хвилину.</translation>
     </message>
     <message>
-        <location line="+17" />
+        <location line="+20"/>
         <source>Permissions</source>
         <translation>Дозволи</translation>
     </message>
     <message>
-        <location line="+9" />
+        <location line="+9"/>
         <source>Vicinae needs additional permissions in order to make the best of your Mac.</source>
         <translation>Для повноцінної роботи на вашому Mac Vicinae потрібні додаткові дозволи.</translation>
     </message>
     <message>
-        <location line="+11" />
+        <location line="+11"/>
         <source>Accessibility</source>
         <translation>Налаштування доступності</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Used to paste, expand snippets, and move windows.</source>
         <translation>Використовується для вставки, розгортання фрагментів та переміщення вікон.</translation>
     </message>
     <message>
-        <location line="+7" />
+        <location line="+7"/>
         <source>Full Disk Access</source>
         <translation>Повний доступ до диску</translation>
     </message>
     <message>
-        <location line="+9" />
+        <location line="+9"/>
         <source>Notifications</source>
         <translation>Сповіщення</translation>
     </message>
     <message>
-        <location line="-8" />
+        <location line="-8"/>
         <source>Allows file search to cover your entire disk.</source>
         <translation>Дозволяє пошуку файлів охоплювати весь диск.</translation>
     </message>
     <message>
-        <location line="+9" />
+        <location line="+9"/>
         <source>Allows extensions to send desktop notifications.</source>
         <translation>Дозволяє розширенням надсилати сповіщення на робочому столі.</translation>
     </message>
     <message>
-        <location line="+11" />
+        <location line="+11"/>
         <source>Full disk access needs to be explicitly enabled if you want file search to cover all your files.</source>
         <translation>Повний доступ до диску потрібно увімкнути вручну, якщо ви хочете, щоб пошук файлів охоплював усі ваші файли.</translation>
     </message>
     <message>
-        <location line="+0" />
+        <location line="+0"/>
         <source>Without accessibility access, paste, snippet expansion, and window management are unavailable.</source>
         <translation>Без доступу до спеціальних можливостей, вставки, розкриття фрагментів та управління вікнами недоступні.</translation>
     </message>
     <message>
-        <location line="+18" />
+        <location line="+19"/>
         <source>Make it your own</source>
         <translation>Налаштуйте під себе</translation>
     </message>
     <message>
-        <location line="+9" />
+        <location line="+9"/>
         <source>You will be able to change these settings later.</source>
         <translation>Ці налаштування можна буде змінити пізніше.</translation>
     </message>
     <message>
-        <location line="+11" />
+        <location line="+11"/>
         <source>Theme</source>
         <translation>Тема</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Shared across the entire app.</source>
         <translation>Єдина для всього додатку.</translation>
     </message>
     <message>
-        <location line="+11" />
+        <location line="+11"/>
         <source>Global hotkey</source>
         <translation>Глобальна гаряча клавіша</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Opens the launcher from anywhere.</source>
         <translation>Відкриває лаунчер з будь-якого місця.</translation>
     </message>
     <message>
-        <location line="+16" />
+        <location line="+0"/>
+        <source>Bind a key to &quot;vicinae toggle&quot;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+18"/>
+        <source>Open Docs</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
         <source>Launch at login</source>
         <translation>Запускати при вході</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Starts Vicinae in the background at login.</source>
         <translation>Запускає Vicinae у фоновому режимі при вході в систему.</translation>
     </message>
     <message>
-        <location line="+19" />
+        <location line="+19"/>
         <source>Setup complete</source>
         <translation>Налаштування завершено</translation>
     </message>
     <message>
-        <location line="+9" />
+        <location line="+9"/>
         <source>Vicinae is running. Open the launcher with:</source>
         <translation>Vicinae працює. Відкрийте лаунчер за допомогою:</translation>
     </message>
     <message>
-        <location line="+17" />
+        <location line="+0"/>
+        <source>Vicinae is running. Bind a key to &quot;vicinae toggle&quot; to open it from anywhere.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+17"/>
         <source>Vicinae is open source software.</source>
         <translation>Vicinae — це програмне забезпечення з відкритим вихідним кодом.</translation>
     </message>
     <message>
-        <location line="+20" />
+        <location line="+20"/>
         <source>Sponsor</source>
         <translation>Підтримати</translation>
     </message>
     <message>
-        <location line="+17" />
+        <location line="+17"/>
         <source>Back</source>
         <translation>Назад</translation>
     </message>
     <message>
-        <location line="+38" />
+        <location line="+39"/>
         <source>Finish</source>
         <translation>Готово</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Continue</source>
         <translation>Продовжити</translation>
     </message>
@@ -3169,7 +3403,7 @@ Back to command in an instant...</source>
 <context>
     <name>OpenAppAction</name>
     <message>
-        <location filename="../src/actions/app/app-actions.cpp" line="-56" />
+        <location filename="../src/actions/app-actions.cpp" line="-56"/>
         <source>Failed to start app</source>
         <translation>Не вдалося запустити програму</translation>
     </message>
@@ -3177,12 +3411,12 @@ Back to command in an instant...</source>
 <context>
     <name>OpenAppLocationAction</name>
     <message>
-        <location line="-36" />
+        <location line="-36"/>
         <source>Open Location</source>
         <translation>Відкрити місцезнаходження</translation>
     </message>
     <message>
-        <location line="+4" />
+        <location line="+4"/>
         <source>Failed to open app location</source>
         <translation>Не вдалося відкрити розташування програми</translation>
     </message>
@@ -3190,7 +3424,7 @@ Back to command in an instant...</source>
 <context>
     <name>OpenBuiltinCommandAction</name>
     <message>
-        <location filename="../src/command-actions.hpp" line="+17" />
+        <location filename="../src/actions/command-actions.hpp" line="+17"/>
         <source>Open command</source>
         <translation>Відкрити команду</translation>
     </message>
@@ -3198,7 +3432,7 @@ Back to command in an instant...</source>
 <context>
     <name>OpenCalculatorHistoryAction</name>
     <message>
-        <location filename="../src/actions/calculator/calculator-actions.hpp" line="+9" />
+        <location filename="../src/actions/calculator-actions.hpp" line="+9"/>
         <source>Open Calculator History</source>
         <translation>Відкрити історію калькулятора</translation>
     </message>
@@ -3206,7 +3440,7 @@ Back to command in an instant...</source>
 <context>
     <name>OpenCompletedShortcutAction</name>
     <message>
-        <location filename="../src/actions/shortcut/shortcut-actions.hpp" line="-32" />
+        <location filename="../src/actions/shortcut-actions.hpp" line="-32"/>
         <source>Open shortcut</source>
         <translation>Відкрити ярлик</translation>
     </message>
@@ -3214,7 +3448,7 @@ Back to command in an instant...</source>
 <context>
     <name>OpenCompletedShortcutWithAction</name>
     <message>
-        <location line="+85" />
+        <location line="+114"/>
         <source>Open with...</source>
         <translation>Відкрити за допомогою...</translation>
     </message>
@@ -3222,7 +3456,7 @@ Back to command in an instant...</source>
 <context>
     <name>OpenControlPanelItemAction</name>
     <message>
-        <location filename="../src/root-search/control-panel/control-panel-root-provider.cpp" line="+45" />
+        <location filename="../src/root-search/control-panel/control-panel-root-provider.cpp" line="+45"/>
         <source>Failed to open settings</source>
         <translation>Не вдалося відкрити налаштування</translation>
     </message>
@@ -3230,7 +3464,7 @@ Back to command in an instant...</source>
 <context>
     <name>OpenControlPanelTaskAction</name>
     <message>
-        <location line="+26" />
+        <location line="+26"/>
         <source>Failed to open settings</source>
         <translation>Не вдалося відкрити налаштування</translation>
     </message>
@@ -3238,22 +3472,22 @@ Back to command in an instant...</source>
 <context>
     <name>OpenDefaultVicinaeConfig</name>
     <message>
-        <location filename="../src/extensions/vicinae/vicinae-extension.cpp" line="-117" />
+        <location filename="../src/builtins/vicinae/vicinae-extension.cpp" line="-117"/>
         <source>Open Default Config File</source>
         <translation>Відкрити файл конфігурації за замовчуванням</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Open the default vicinae configuration file</source>
         <translation>Відкрити файл конфігурації Vicinae за замовчуванням</translation>
     </message>
     <message>
-        <location line="+16" />
+        <location line="+16"/>
         <source>Failed to open temporary file</source>
         <translation>Не вдалося відкрити тимчасовий файл</translation>
     </message>
     <message>
-        <location line="+5" />
+        <location line="+5"/>
         <source>Failed to open default config file</source>
         <translation>Не вдалося відкрити файл конфігурації за замовчуванням</translation>
     </message>
@@ -3261,12 +3495,12 @@ Back to command in an instant...</source>
 <context>
     <name>OpenDiscordCommand</name>
     <message>
-        <location line="-85" />
+        <location line="-85"/>
         <source>Join the Discord Server</source>
         <translation>Приєднатися до сервера у Discord</translation>
     </message>
     <message>
-        <location line="+2" />
+        <location line="+2"/>
         <source>Open link to join the official Vicinae discord server.</source>
         <translation>Відкрити посилання для вступу на офіційний сервер Vicinae у Discord.</translation>
     </message>
@@ -3274,7 +3508,7 @@ Back to command in an instant...</source>
 <context>
     <name>OpenFileAction</name>
     <message>
-        <location filename="../src/actions/files/file-actions.hpp" line="+18" />
+        <location filename="../src/actions/file-actions.hpp" line="+18"/>
         <source>Open with %1</source>
         <translation>Відкрити за допомогою %1</translation>
     </message>
@@ -3282,17 +3516,17 @@ Back to command in an instant...</source>
 <context>
     <name>OpenInBrowserAction</name>
     <message>
-        <location filename="../src/actions/app/app-actions.hpp" line="+105" />
+        <location filename="../src/actions/app-actions.hpp" line="+117"/>
         <source>Open in browser</source>
         <translation>Відкрити в браузері</translation>
     </message>
     <message>
-        <location filename="../src/actions/app/app-actions.cpp" line="+95" />
+        <location filename="../src/actions/app-actions.cpp" line="+160"/>
         <source>Failed to open in browser</source>
         <translation>Не вдалося відкрити в браузері</translation>
     </message>
     <message>
-        <location line="+4" />
+        <location line="+4"/>
         <source>Opened in browser</source>
         <translation>Відкрито в браузері</translation>
     </message>
@@ -3300,12 +3534,12 @@ Back to command in an instant...</source>
 <context>
     <name>OpenInTerminalAction</name>
     <message>
-        <location filename="../src/actions/app/app-actions.hpp" line="-62" />
+        <location filename="../src/actions/app-actions.hpp" line="-74"/>
         <source>Open in %1</source>
         <translation>Відкрити в %1</translation>
     </message>
     <message>
-        <location filename="../src/actions/app/app-actions.cpp" line="-85" />
+        <location filename="../src/actions/app-actions.cpp" line="-150"/>
         <source>Failed to start app</source>
         <translation>Не вдалося запустити програму</translation>
     </message>
@@ -3313,7 +3547,7 @@ Back to command in an instant...</source>
 <context>
     <name>OpenItemPreferencesAction</name>
     <message>
-        <location filename="../src/actions/root-search/root-search-actions.hpp" line="-28" />
+        <location filename="../src/actions/root-search-actions.hpp" line="-28"/>
         <source>Open Preferences</source>
         <translation>Відкрити налаштування</translation>
     </message>
@@ -3321,12 +3555,12 @@ Back to command in an instant...</source>
 <context>
     <name>OpenRawProgramAction</name>
     <message>
-        <location filename="../src/actions/app/app-actions.hpp" line="+25" />
+        <location filename="../src/actions/app-actions.hpp" line="+25"/>
         <source>Execute program</source>
         <translation>Запустити програму</translation>
     </message>
     <message>
-        <location filename="../src/actions/app/app-actions.cpp" line="+35" />
+        <location filename="../src/actions/app-actions.cpp" line="+35"/>
         <source>Failed to start app</source>
         <translation>Не вдалося запустити програму</translation>
     </message>
@@ -3334,12 +3568,12 @@ Back to command in an instant...</source>
 <context>
     <name>OpenSettingsCommand</name>
     <message>
-        <location filename="../src/extensions/vicinae/vicinae-extension.cpp" line="+100" />
+        <location filename="../src/builtins/vicinae/vicinae-extension.cpp" line="+100"/>
         <source>Open Vicinae Settings</source>
         <translation>Відкрити налаштування Vicinae</translation>
     </message>
     <message>
-        <location line="+2" />
+        <location line="+2"/>
         <source>Open the vicinae settings window, which is an independent floating window.</source>
         <translation>Відкрити вікно налаштувань Vicinae — це окреме вікно, яке можна переміщувати.</translation>
     </message>
@@ -3347,7 +3581,7 @@ Back to command in an instant...</source>
 <context>
     <name>OpenSettingsPaneAction</name>
     <message>
-        <location filename="../src/root-search/macos-settings/macos-settings-root-provider.mm" line="-134" />
+        <location filename="../src/root-search/macos-settings/macos-settings-root-provider.mm" line="-143"/>
         <source>Failed to open System Settings</source>
         <translation>Не вдалося відкрити Налаштування системи</translation>
     </message>
@@ -3355,18 +3589,18 @@ Back to command in an instant...</source>
 <context>
     <name>OpenShortcutAction</name>
     <message>
-        <location filename="../src/actions/shortcut/shortcut-actions.hpp" line="-132" />
+        <location filename="../src/actions/shortcut-actions.hpp" line="-161"/>
         <source>No default app to open %1</source>
         <translation>Немає за замовчуванням встановленого додатку для відкриття %1</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>No app with id %1</source>
         <translation>Не знайдено додаток з ID %1</translation>
     </message>
     <message>
-        <location line="+12" />
-        <location line="+7" />
+        <location line="+12"/>
+        <location line="+7"/>
         <source>Open shortcut</source>
         <translation>Відкрити ярлик</translation>
     </message>
@@ -3374,7 +3608,7 @@ Back to command in an instant...</source>
 <context>
     <name>OpenShortcutFromSearchText</name>
     <message>
-        <location line="+43" />
+        <location line="+43"/>
         <source>Open shortcut</source>
         <translation>Відкрити ярлик</translation>
     </message>
@@ -3382,22 +3616,22 @@ Back to command in an instant...</source>
 <context>
     <name>OpenVicinaeConfig</name>
     <message>
-        <location filename="../src/extensions/vicinae/vicinae-extension.cpp" line="-76" />
+        <location filename="../src/builtins/vicinae/vicinae-extension.cpp" line="-76"/>
         <source>Open Config File</source>
         <translation>Відкрити файл конфігурації</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Open the main vicinae configuration file</source>
         <translation>Відкрити основний файл конфігурації Vicinae</translation>
     </message>
     <message>
-        <location line="+17" />
+        <location line="+17"/>
         <source>Show Log File</source>
         <translation>Показати файл журналу</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Open the Vicinae log file in your file browser</source>
         <translation>Відкрити файл журналу Vicinae у вашому файловому менеджері</translation>
     </message>
@@ -3405,7 +3639,7 @@ Back to command in an instant...</source>
 <context>
     <name>OpenWindowsSettingAction</name>
     <message>
-        <location filename="../src/root-search/windows-settings/windows-settings-root-provider.cpp" line="+147" />
+        <location filename="../src/root-search/windows-settings/windows-settings-root-provider.cpp" line="+147"/>
         <source>Failed to open settings</source>
         <translation>Не вдалося відкрити налаштування</translation>
     </message>
@@ -3413,20 +3647,38 @@ Back to command in an instant...</source>
 <context>
     <name>OpenWithAction</name>
     <message>
-        <location filename="../src/actions/app/app-actions.cpp" line="+54" />
+        <location filename="../src/actions/app-actions.cpp" line="+119"/>
         <source>Open with...</source>
         <translation>Відкрити за допомогою...</translation>
     </message>
 </context>
 <context>
+    <name>PasteLastScreenshotCommand</name>
+    <message>
+        <location filename="../src/builtins/screenshots/screenshots-extension.hpp" line="+30"/>
+        <source>Paste Last Screenshot</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Paste the most recent saved screenshot into the active app.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>PasteToFocusedWindowAction</name>
     <message>
-        <location filename="../src/clipboard-actions.hpp" line="+15" />
+        <location filename="../src/actions/clipboard-actions.hpp" line="+16"/>
+        <source>Paste to %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
         <source>Paste to active window</source>
         <translation>Вставити у активне вікно</translation>
     </message>
     <message>
-        <location line="+3" />
+        <location line="+9"/>
         <source>Copy to focused window</source>
         <translation>Скопіювати у активне вікно</translation>
     </message>
@@ -3434,12 +3686,12 @@ Back to command in an instant...</source>
 <context>
     <name>PinCalculatorHistoryRecordAction</name>
     <message>
-        <location filename="../src/actions/calculator/calculator-actions.hpp" line="+28" />
+        <location filename="../src/actions/calculator-actions.hpp" line="+28"/>
         <source>Entry pinned</source>
         <translation>Запис закріплено</translation>
     </message>
     <message>
-        <location line="+3" />
+        <location line="+3"/>
         <source>Pin entry</source>
         <translation>Закріпити запис</translation>
     </message>
@@ -3447,27 +3699,27 @@ Back to command in an instant...</source>
 <context>
     <name>PinClipboardAction</name>
     <message>
-        <location filename="../src/extensions/clipboard/history/clipboard-history-actions.hpp" line="-27" />
+        <location filename="../src/builtins/clipboard/history/clipboard-history-actions.hpp" line="-27"/>
         <source>Selection pinned</source>
         <translation>Закріплено</translation>
     </message>
     <message>
-        <location line="+0" />
+        <location line="+0"/>
         <source>Selection unpinned</source>
         <translation>Відкріплено</translation>
     </message>
     <message>
-        <location line="+2" />
+        <location line="+2"/>
         <source>Failed to change pin status</source>
         <translation>Не вдалося змінити статус закріплення</translation>
     </message>
     <message>
-        <location line="+6" />
+        <location line="+6"/>
         <source>Pin</source>
         <translation>Закріпити</translation>
     </message>
     <message>
-        <location line="+0" />
+        <location line="+0"/>
         <source>Unpin</source>
         <translation>Відкрепити</translation>
     </message>
@@ -3475,7 +3727,7 @@ Back to command in an instant...</source>
 <context>
     <name>PinEmojiAction</name>
     <message>
-        <location filename="../src/qml/emoji-grid-model.cpp" line="-324" />
+        <location filename="../src/builtins/vicinae/emoji-grid-model.cpp" line="-345"/>
         <source>Pin emoji</source>
         <translation>Закріпити емодзі</translation>
     </message>
@@ -3483,45 +3735,63 @@ Back to command in an instant...</source>
 <context>
     <name>PinWindowAction</name>
     <message>
-        <location filename="../src/actions/wm/window-actions.hpp" line="+37" />
+        <location filename="../src/actions/window-actions.hpp" line="+37"/>
         <source>Unpin from all workspaces</source>
         <translation>Відкрепити від усіх робочих просторів</translation>
     </message>
     <message>
-        <location line="+0" />
+        <location line="+0"/>
         <source>Pin to all workspaces</source>
         <translation>Закріпити у всіх робочих просторах</translation>
     </message>
 </context>
 <context>
+    <name>PlayPauseCommand</name>
+    <message>
+        <location filename="../src/builtins/media/media-extension.hpp" line="-100"/>
+        <source>Play / Pause</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Toggle playback of the active media player</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>player</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Failed to toggle playback</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Paused</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Playing %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>PowerManagementCommand</name>
     <message>
-        <location filename="../src/extensions/power-management/power-management-extension.cpp" line="-283" />
-        <source>Ask for confirmation</source>
-        <translation>Запитувати підтвердження</translation>
-    </message>
-    <message>
-        <location line="+7" />
-        <source>Custom program</source>
-        <translation>Ваш власний додаток</translation>
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Custom POSIX shell command to run instead of the default implementation</source>
-        <translation>Ваш власний POSIX-командний рядок замість реалізації за замовчуванням</translation>
-    </message>
-    <message>
-        <location line="+27" />
+        <location filename="../src/builtins/power-management/power-management-extension.cpp" line="-248"/>
         <source>Failed to execute custom program %1</source>
         <translation>Не вдалося виконати ваш власний додаток %1</translation>
     </message>
     <message>
-        <location line="+10" />
+        <location line="+10"/>
         <source>Are you sure</source>
         <translation>Ви впевнені?</translation>
     </message>
     <message>
-        <location line="+0" />
+        <location line="+0"/>
         <source>High-impact operation, please confirm</source>
         <translation>Операція з високим впливом, підтвердіть дію</translation>
     </message>
@@ -3529,66 +3799,465 @@ Back to command in an instant...</source>
 <context>
     <name>PowerManagementExtension</name>
     <message>
-        <location filename="../src/extensions/power-management/power-management-extension.hpp" line="+8" />
+        <location filename="../src/builtins/power-management/power-management-extension.hpp" line="+8"/>
         <source>Power Management</source>
         <translation>Керування живленням</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Power off, suspend, sleep, hibernate your computer.</source>
-        <translation>Вимкнення, призупинення, сон та гібернація вашого комп'ютера.</translation>
+        <translation>Вимкнення, призупинення, сон та гібернація вашого комп&apos;ютера.</translation>
     </message>
 </context>
 <context>
     <name>PowerOffCommand</name>
     <message>
-        <location filename="../src/extensions/power-management/power-management-extension.cpp" line="+137" />
+        <location filename="../src/builtins/power-management/power-management-extension.cpp" line="+137"/>
         <source>Power Off System</source>
         <translation>Вимкнути систему</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Power off the system</source>
         <translation>Вимкнути систему</translation>
     </message>
     <message>
-        <location line="+11" />
+        <location line="+11"/>
         <source>System cannot power off</source>
         <translation>Система не може вимкнутися</translation>
     </message>
     <message>
-        <location line="+4" />
+        <location line="+4"/>
         <source>Failed to power off</source>
         <translation>Не вдалося вимкнути</translation>
     </message>
 </context>
 <context>
+    <name>PreferenceSchema</name>
+    <message>
+        <location filename="../src/services/app-service/app-preferences.hpp" line="+34"/>
+        <source>Default action</source>
+        <translation type="unfinished">Дії за замовчуванням</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Action to perform when the return key is pressed. Always default to &apos;launch&apos; if the app has no open window.</source>
+        <translation type="unfinished">Дія, що виконується при натисканні Enter. Якщо у програми немає відкритого вікна, дія виконується завжди.</translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Focus window</source>
+        <translation type="unfinished">Сфокусувати вікно</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Launch app</source>
+        <translation type="unfinished">Запустити програму</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Launch Prefix</source>
+        <translation type="unfinished">Префікс запуску</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Custom app launcher to use. Affects applications as well as their sub-actions.</source>
+        <translation type="unfinished">Ваш власний лаунчер додатків для використання. Впливає на додатки та їх взаємодії.</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <location line="+9"/>
+        <location line="+6"/>
+        <source>Application directories</source>
+        <translation type="unfinished">Каталоги додатків</translation>
+    </message>
+    <message>
+        <location line="-14"/>
+        <source>Directories applications are sourced from. The list cannot be modified directly. In order to do so, you need to append additonal paths to the &lt;b&gt;XDG_DATA_DIRS&lt;/b&gt; environment variables.</source>
+        <translation type="unfinished">Каталоги, з яких беруться додатки. Список не можна змінити безпосередньо. Для цього потрібно додати додаткові шляхи до змінної середовища `&lt;b&gt;XDG_DATA_DIRS&lt;/b&gt;`.</translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Directories applications are sourced from.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Directories applications are sourced from. System directories are always scanned and cannot be removed.</source>
+        <translation type="unfinished">Каталоги, з яких беруться додатки. Системні каталоги скануються завжди і не можуть бути видалені.</translation>
+    </message>
+    <message>
+        <location filename="../src/builtins/clipboard/clipboard-preferences.hpp" line="+62"/>
+        <source>Clipboard monitoring</source>
+        <translation type="unfinished">Відстеження буфера обміну</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Whether new clipboard selections are appended to the history</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Ignore Passwords</source>
+        <translation type="unfinished">Ігнорувати паролі</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Ignore selections that can be identified as a password. May not work with all apps.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Preserve tagged</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Never evict or mass delete selections that have been explicitly tagged (pinned, custom keyword)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Excluded apps</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Never add selections copied from these apps to the history</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Eviction threshold</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Automatically delete selections older than this threshold</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Never</source>
+        <translation type="unfinished">Ніколи</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>15 minutes</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>1 hour</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>1 day</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>1 week</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>1 month</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>1 year</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Erase on startup</source>
+        <translation type="unfinished">Очищає при запуску</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Erase clipboard history every time the vicinae server is started</source>
+        <translation type="unfinished">Очищає історію буфера обміну при кожному запуску сервера Vicinae</translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <location filename="../src/builtins/system/system-run-model.hpp" line="-21"/>
+        <location filename="../src/builtins/vicinae/emoji-preferences.hpp" line="+27"/>
+        <source>Default Action</source>
+        <translation type="unfinished">Дії за замовчуванням</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <location filename="../src/builtins/vicinae/emoji-preferences.hpp" line="+1"/>
+        <source>The default action to perform on pressing return. Paste is only available if your environment supports it.</source>
+        <translation type="unfinished">Дія, що виконується при натисканні Enter. Вставка доступна лише за підтримки вашого середовища.</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <location filename="../src/builtins/vicinae/emoji-preferences.hpp" line="+6"/>
+        <source>Paste</source>
+        <translation type="unfinished">Вставити</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <location filename="../src/builtins/vicinae/emoji-preferences.hpp" line="+2"/>
+        <source>Copy</source>
+        <translation type="unfinished">Копіювати</translation>
+    </message>
+    <message>
+        <location filename="../src/builtins/power-management/power-management-extension.cpp" line="-201"/>
+        <source>Ask for confirmation</source>
+        <translation type="unfinished">Запитувати підтвердження</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Custom program</source>
+        <translation type="unfinished">Ваш власний додаток</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Custom shell command to run instead of the default implementation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/builtins/system/browse-apps-preferences.hpp" line="+11"/>
+        <source>Sort alphabetically</source>
+        <translation type="unfinished">Сортування за алфавітом</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Show hidden apps</source>
+        <translation type="unfinished">Показувати приховані додатки</translation>
+    </message>
+    <message>
+        <location filename="../src/builtins/system/system-run-model.hpp" line="+1"/>
+        <source>The default action to run on pressing return</source>
+        <translation type="unfinished">Дія, що виконується при натисканні Enter</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Run in terminal</source>
+        <translation type="unfinished">Запустити в терміналі</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Run in terminal (hold)</source>
+        <translation type="unfinished">Запустити в терміналі (утримувати)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Run directly</source>
+        <translation type="unfinished">Запустити безпосередньо</translation>
+    </message>
+    <message>
+        <location filename="../src/builtins/vicinae/emoji-preferences.hpp" line="+5"/>
+        <source>Skin tone</source>
+        <translation type="unfinished">Тон шкіри</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Skin tone to use for relevant emojis.</source>
+        <translation type="unfinished">Відтінок шкіри для відповідних емодзі.</translation>
+    </message>
+    <message>
+        <location filename="../src/builtins/calculator/calculator-extension.hpp" line="+11"/>
+        <source>Calculator Backend</source>
+        <translation type="unfinished">Бекенд калькулятора</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Which backend to use to perform calculations</source>
+        <translation type="unfinished">Який бекенд використовувати для обчислень</translation>
+    </message>
+    <message>
+        <location filename="../src/builtins/file/file-extension.hpp" line="-44"/>
+        <source>Enabled</source>
+        <translation type="unfinished">Увімкнено</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Whether to run the file indexer in the background. When turned off, the indexer process is stopped entirely and file search becomes unavailable until it is turned back on.</source>
+        <translation type="unfinished">Запускати індексатор файлів у фоновому режимі. При вимкненні процес індексації повністю зупиняється, і пошук файлів стає недоступним, поки його не ввімкнуть знову.</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Search paths</source>
+        <translation type="unfinished">Шлях пошуку</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Directories that Vicinae will search</source>
+        <translation type="unfinished">Каталоги, які шукатиме Vicinae</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Excluded search paths</source>
+        <translation type="unfinished">Виключені шляхи пошуку</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Directories to exclude from file indexing</source>
+        <translation type="unfinished">Каталоги, які слід виключити з індексування файлів</translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Search backend</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Automatic uses Everything when it is running and falls back to Windows Search otherwise.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Automatic</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Windows Search</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Everything</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Everything instance</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Name of the Everything instance to connect to. Leave empty for the default instance, the Everything 1.5 alpha runs as &quot;1.5a&quot;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/builtins/snippet/snippet-extension.hpp" line="+23"/>
+        <source>Expansion</source>
+        <translation type="unfinished">Розкриття</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Enable automatic snippet expansion when triggers are typed</source>
+        <translation type="unfinished">Автоматично розкривати фрагменти при введенні тригерів</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Undo</source>
+        <translation type="unfinished">Скасувати</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Press backspace immediately after expansion to undo and restore the trigger text</source>
+        <translation type="unfinished">Натисніть клавішу Backspace відразу після відкриття, щоб скасувати його та відновити текст тригера</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Keyboard layout</source>
+        <translation type="unfinished">Розташування клавіш</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>XKB layout used for trigger detection (e.g. &quot;us&quot;, &quot;fr&quot;). Leave empty for system default.</source>
+        <translation type="unfinished">Розташування клавіш XKB для визначення тригерів (наприклад, «us», «fr»). Залиште порожнім для системного значення за замовчуванням.</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Pre-paste delay (ms)</source>
+        <translation type="unfinished">Затримка перед вставкою (мс)</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Delay between setting clipboard and injecting paste shortcut. Increase if expansions paste empty on slow compositors.</source>
+        <translation type="unfinished">Затримка між встановленням буфера обміну та натисканням комбінації вставки. Збільште, якщо на повільних композиторах вставка після відкриття порожня.</translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Key injection delay (ms)</source>
+        <translation type="unfinished">Затримка введення клавіш (мс)</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Delay between injected key events. Increase if expansions produce missing or garbled characters on slow compositors.</source>
+        <translation type="unfinished">Затримка між натисканнями клавіш. Збільште, якщо в розширенні символи зникають або спотворюються на повільних композиторах.</translation>
+    </message>
+    <message>
+        <location filename="../src/builtins/vicinae/store-intro-preferences.hpp" line="+10"/>
+        <source>Always show intro</source>
+        <translation type="unfinished">Завжди показувати вступ</translation>
+    </message>
+    <message>
+        <location filename="../src/root-search/scripts/script-root-provider.hpp" line="+135"/>
+        <source>Custom directories</source>
+        <translation type="unfinished">Свої каталоги</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Additional list of directories to source scripts from. These directories always take precedence over the default system ones</source>
+        <translation type="unfinished">Додатковий список каталогів для завантаження скриптів. Ці каталоги завжди мають пріоритет над системними за замовчуванням.</translation>
+    </message>
+</context>
+<context>
     <name>PreviewFontAction</name>
     <message>
-        <location filename="../src/qml/font-grid-model.cpp" line="-104" />
+        <location filename="../src/builtins/font/font-grid-model.cpp" line="-123"/>
         <source>Preview font</source>
         <translation>Перегляд шрифту</translation>
     </message>
 </context>
 <context>
+    <name>PreviousTrackCommand</name>
+    <message>
+        <location filename="../src/builtins/media/media-extension.hpp" line="+43"/>
+        <location line="+26"/>
+        <source>Previous Track</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-25"/>
+        <source>Skip to the previous track</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>player</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>%1 cannot skip to the previous track</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Failed to skip to the previous track</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>ProgramsSection</name>
     <message>
-        <location filename="../src/qml/system-run-model.hpp" line="+21" />
+        <location filename="../src/builtins/system/system-run-model.hpp" line="+35"/>
         <source>Programs (%1)</source>
         <translation>Програми (%1)</translation>
     </message>
     <message>
-        <location filename="../src/qml/system-run-model.cpp" line="+52" />
+        <location filename="../src/builtins/system/system-run-model.cpp" line="+52"/>
         <source>Open in %1 (hold)</source>
         <translation>Відкрити в %1 (утримувати)</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Open in %1</source>
         <translation>Відкрити в %1</translation>
     </message>
     <message>
-        <location line="+20" />
+        <location line="+20"/>
         <source>Copy exec path</source>
         <translation>Копіювати шлях до виконуваного файлу</translation>
     </message>
@@ -3596,7 +4265,7 @@ Back to command in an instant...</source>
 <context>
     <name>ProviderSearchSection</name>
     <message>
-        <location filename="../src/qml/provider-search-model.hpp" line="+11" />
+        <location filename="../src/builtins/root/provider-search-model.hpp" line="+11"/>
         <source>Results ({count})</source>
         <translation>Результати ({count})</translation>
     </message>
@@ -3604,7 +4273,7 @@ Back to command in an instant...</source>
 <context>
     <name>ProviderSearchViewHost</name>
     <message>
-        <location filename="../src/qml/provider-search-view-host.cpp" line="+15" />
+        <location filename="../src/builtins/root/provider-search-view-host.cpp" line="+15"/>
         <source>Search %1</source>
         <translation>Пошук: %1</translation>
     </message>
@@ -3612,7 +4281,7 @@ Back to command in an instant...</source>
 <context>
     <name>PutCalculatorAnswerInSearchBar</name>
     <message>
-        <location filename="../src/actions/calculator/calculator-actions.hpp" line="-20" />
+        <location filename="../src/actions/calculator-actions.hpp" line="-20"/>
         <source>Put answer in search bar</source>
         <translation>Додати відповідь у рядок пошуку</translation>
     </message>
@@ -3620,42 +4289,57 @@ Back to command in an instant...</source>
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../src/utils/utils.cpp" line="+50" />
+        <location filename="../src/utils/utils.cpp" line="+48"/>
         <source>in the future</source>
         <translation>у майбутньому</translation>
     </message>
     <message numerus="yes">
-        <location line="+8" />
+        <location line="+8"/>
         <source>%n year(s) ago</source>
         <translation>
-            <numerusform>%n рік тому</numerusform><numerusform>%n роки тому</numerusform><numerusform>%n років тому</numerusform></translation>
+            <numerusform>%n рік тому</numerusform>
+            <numerusform>%n роки тому</numerusform>
+            <numerusform>%n років тому</numerusform>
+        </translation>
     </message>
     <message numerus="yes">
-        <location line="+3" />
+        <location line="+3"/>
         <source>%n month(s) ago</source>
         <translation>
-            <numerusform>%n місяць тому</numerusform><numerusform>%n місяці тому</numerusform><numerusform>%n місяців тому</numerusform></translation>
+            <numerusform>%n місяць тому</numerusform>
+            <numerusform>%n місяці тому</numerusform>
+            <numerusform>%n місяців тому</numerusform>
+        </translation>
     </message>
     <message numerus="yes">
-        <location line="+2" />
+        <location line="+2"/>
         <source>%n day(s) ago</source>
         <translation>
-            <numerusform>%n день тому</numerusform><numerusform>%n дні тому</numerusform><numerusform>%n днів тому</numerusform></translation>
+            <numerusform>%n день тому</numerusform>
+            <numerusform>%n дні тому</numerusform>
+            <numerusform>%n днів тому</numerusform>
+        </translation>
     </message>
     <message numerus="yes">
-        <location line="+2" />
+        <location line="+2"/>
         <source>%n hour(s) ago</source>
         <translation>
-            <numerusform>%n годину тому</numerusform><numerusform>%n години тому</numerusform><numerusform>%n годин тому</numerusform></translation>
+            <numerusform>%n годину тому</numerusform>
+            <numerusform>%n години тому</numerusform>
+            <numerusform>%n годин тому</numerusform>
+        </translation>
     </message>
     <message numerus="yes">
-        <location line="+2" />
+        <location line="+2"/>
         <source>%n minute(s) ago</source>
         <translation>
-            <numerusform>%n хвилину тому</numerusform><numerusform>%n хвилини тому</numerusform><numerusform>%n хвилин тому</numerusform></translation>
+            <numerusform>%n хвилину тому</numerusform>
+            <numerusform>%n хвилини тому</numerusform>
+            <numerusform>%n хвилин тому</numerusform>
+        </translation>
     </message>
     <message>
-        <location line="+2" />
+        <location line="+2"/>
         <source>just now</source>
         <translation>щойно</translation>
     </message>
@@ -3663,17 +4347,17 @@ Back to command in an instant...</source>
 <context>
     <name>QuitAppAction</name>
     <message>
-        <location filename="../src/actions/app/app-actions.cpp" line="-43" />
+        <location filename="../src/actions/app-actions.cpp" line="-108"/>
         <source>Quit Application</source>
         <translation>Завершити програму</translation>
     </message>
     <message>
-        <location line="+8" />
+        <location line="+8"/>
         <source>Failed to quit %1</source>
         <translation>Не вдалося завершити %1</translation>
     </message>
     <message>
-        <location line="+4" />
+        <location line="+4"/>
         <source>Quit %1</source>
         <translation>Завершити %1</translation>
     </message>
@@ -3681,7 +4365,7 @@ Back to command in an instant...</source>
 <context>
     <name>RaycastCompatExtension</name>
     <message>
-        <location filename="../src/extensions/raycast/raycast-compat-extension.hpp" line="+15" />
+        <location filename="../src/builtins/raycast/raycast-compat-extension.hpp" line="+15"/>
         <source>Raycast compatibility features</source>
         <translation>Функції сумісності з Raycast</translation>
     </message>
@@ -3689,17 +4373,12 @@ Back to command in an instant...</source>
 <context>
     <name>RaycastStoreCommand</name>
     <message>
-        <location filename="../src/extensions/raycast/raycast-store-command.hpp" line="+13" />
+        <location filename="../src/builtins/raycast/raycast-store-command.hpp" line="+15"/>
         <source>Install compatible extensions from the Raycast store</source>
         <translation>Встановлювати сумісні розширення з магазину Raycast</translation>
     </message>
     <message>
-        <location line="+9" />
-        <source>Always show intro</source>
-        <translation>Завжди показувати вступ</translation>
-    </message>
-    <message>
-        <location line="+11" />
+        <location line="+14"/>
         <source>
 # Welcome to the Raycast Extension Store
 
@@ -3710,7 +4389,7 @@ Vicinae provides direct integration with the official [Raycast store](https://ww
 Vicinae має пряму інтеграцію з офіційним [магазином Raycast](https://www.raycast.com/store), що дозволяє шукати та встановлювати розширення Raycast безпосередньо з Vicinae.</translation>
     </message>
     <message>
-        <location line="+6" />
+        <location line="+6"/>
         <source>
 Each extension has a colored compatibility indicator showing how well it works on Linux.
 
@@ -3721,14 +4400,14 @@ Vicinae also has its own [extension store](vicinae://launch/core/store), which d
 У Vicinae також є власний [магазин розширень](vicinae://launch/core/store), у якого немає таких обмежень.</translation>
     </message>
     <message>
-        <location line="+6" />
+        <location line="+6"/>
         <source>
 Vicinae also has its own [extension store](vicinae://launch/core/store).
 </source>
         <translation>У Vicinae також є власний [магазин розширень](vicinae://launch/core/store).</translation>
     </message>
     <message>
-        <location line="+9" />
+        <location line="+9"/>
         <source>Continue to store</source>
         <translation>Відвідати магазин</translation>
     </message>
@@ -3736,77 +4415,52 @@ Vicinae also has its own [extension store](vicinae://launch/core/store).
 <context>
     <name>RaycastStoreDetailHost</name>
     <message>
-        <location filename="../src/qml/raycast-store-detail-host.cpp" line="+43" />
+        <location filename="../src/builtins/raycast/raycast-store-detail-host.cpp" line="+41"/>
         <source>Failed to load extension</source>
         <translation>Не вдалося завантажити розширення</translation>
     </message>
     <message>
-        <location line="+1" />
-        <source>The extension "%1" could not be loaded. It may not exist or the store may be unreachable.</source>
-        <translation>Розширення "%1" не вдалося завантажити. Можливо, воно не існує або магазин недоступний.</translation>
+        <location line="+1"/>
+        <source>The extension &quot;%1&quot; could not be loaded. It may not exist or the store may be unreachable.</source>
+        <translation>Розширення &quot;%1&quot; не вдалося завантажити. Можливо, воно не існує або магазин недоступний.</translation>
     </message>
     <message>
-        <location line="+27" />
+        <location line="+27"/>
         <source>Extension Store - %1</source>
         <translation>Магазин розширень - %1</translation>
     </message>
     <message>
-        <location line="+31" />
+        <location line="+31"/>
         <source>This extension should be fully compatible.</source>
         <translation>Це розширення має бути повністю сумісним.</translation>
     </message>
     <message>
-        <location line="+4" />
+        <location line="+4"/>
         <source>This extension works but has a few quirks.</source>
         <translation>Це розширення працює, але має деякі недоліки.</translation>
     </message>
     <message>
-        <location line="+4" />
+        <location line="+4"/>
         <source>This extension is not compatible.</source>
         <translation>Це розширення несумісне.</translation>
     </message>
     <message>
-        <location line="+4" />
+        <location line="+4"/>
         <source>No compatibility data is available for this extension.</source>
         <translation>Немає інформації про сумісність цього розширення.</translation>
     </message>
     <message>
-        <location line="+21" />
+        <location line="+21"/>
         <source>No compatibility data is available — this extension may or may not work.</source>
         <translation>Інформації про сумісність немає — це розширення може працювати, а може і ні.</translation>
     </message>
     <message>
-        <location line="+75" />
+        <location line="+75"/>
         <source>Extension Store</source>
         <translation>Магазин розширень</translation>
     </message>
     <message>
-        <location line="+8" />
-        <source>Install extension</source>
-        <translation>Встановити розширення</translation>
-    </message>
-    <message>
-        <location line="+7" />
-        <source>Downloading extension...</source>
-        <translation>Завантаження розширення...</translation>
-    </message>
-    <message>
-        <location line="+7" />
-        <source>Failed to download extension</source>
-        <translation>Не вдалося завантажити розширення</translation>
-    </message>
-    <message>
-        <location line="+7" />
-        <source>Failed to extract extension archive</source>
-        <translation>Не вдалося розпакувати архів розширення</translation>
-    </message>
-    <message>
-        <location line="+3" />
-        <source>Extension installed</source>
-        <translation>Розширення встановлено</translation>
-    </message>
-    <message>
-        <location line="+14" />
+        <location line="+17"/>
         <source>Report issue</source>
         <translation>Повідомити про проблему</translation>
     </message>
@@ -3814,7 +4468,7 @@ Vicinae also has its own [extension store](vicinae://launch/core/store).
 <context>
     <name>RaycastStoreSection</name>
     <message>
-        <location filename="../src/qml/raycast-store-model.cpp" line="+45" />
+        <location filename="../src/builtins/raycast/raycast-store-model.cpp" line="+46"/>
         <source>Show details</source>
         <translation>Показати деталі</translation>
     </message>
@@ -3822,27 +4476,27 @@ Vicinae also has its own [extension store](vicinae://launch/core/store).
 <context>
     <name>RaycastStoreViewHost</name>
     <message>
-        <location filename="../src/qml/raycast-store-view-host.cpp" line="+37" />
+        <location filename="../src/builtins/raycast/raycast-store-view-host.cpp" line="+36"/>
         <source>Browse Raycast extensions</source>
         <translation>Перегляд розширень Raycast</translation>
     </message>
     <message>
-        <location line="+32" />
+        <location line="+32"/>
         <source>Failed to fetch extensions</source>
         <translation>Не вдалося отримати розширення</translation>
     </message>
     <message>
-        <location line="+18" />
+        <location line="+18"/>
         <source>Extensions</source>
         <translation>Розширення</translation>
     </message>
     <message>
-        <location line="+9" />
+        <location line="+9"/>
         <source>Failed to search extensions</source>
         <translation>Не вдалося знайти розширення</translation>
     </message>
     <message>
-        <location line="+6" />
+        <location line="+6"/>
         <source>Results</source>
         <translation>Результати</translation>
     </message>
@@ -3850,22 +4504,22 @@ Vicinae also has its own [extension store](vicinae://launch/core/store).
 <context>
     <name>RebootCommand</name>
     <message>
-        <location filename="../src/extensions/power-management/power-management-extension.cpp" line="-72" />
+        <location filename="../src/builtins/power-management/power-management-extension.cpp" line="+125"/>
         <source>Reboot System</source>
         <translation>Перезавантажити систему</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Reboot the system</source>
         <translation>Перезавантажити систему</translation>
     </message>
     <message>
-        <location line="+12" />
-        <source>System can't reboot</source>
+        <location line="+12"/>
+        <source>System can&apos;t reboot</source>
         <translation>Система не може перезавантажитися</translation>
     </message>
     <message>
-        <location line="+4" />
+        <location line="+4"/>
         <source>Failed to reboot</source>
         <translation>Не вдалося перезавантажити</translation>
     </message>
@@ -3873,32 +4527,32 @@ Vicinae also has its own [extension store](vicinae://launch/core/store).
 <context>
     <name>RebuildFileIndexCommand</name>
     <message>
-        <location filename="../src/extensions/file/file-extension.hpp" line="-72" />
+        <location filename="../src/builtins/file/file-extension.hpp" line="-62"/>
         <source>Rebuild File Index</source>
         <translation>Перебудувати індекс файлів</translation>
     </message>
     <message>
-        <location line="+2" />
+        <location line="+2"/>
         <source>Fully rebuild the file index. Running this manually can be useful if the file search feels particularly out of date.</source>
         <translation>Повністю перебудувати індекс файлів. Ручний запуск може бути корисним, якщо пошук файлів здається особливо застарілим.</translation>
     </message>
     <message>
-        <location line="+13" />
+        <location line="+11"/>
         <source>Are you sure?</source>
         <translation>Ви впевнені?</translation>
     </message>
     <message>
-        <location line="+2" />
+        <location line="+2"/>
         <source>Rebuilding the entire index can be time consuming and CPU intensive, depending on the number of files present in your home directory.</source>
         <translation>Перебудова всього індексу може зайняти час і сильно навантажити процесор — це залежить від кількості файлів у вашому домашньому каталозі.</translation>
     </message>
     <message>
-        <location line="+2" />
+        <location line="+2"/>
         <source>Reset</source>
         <translation>Скинути</translation>
     </message>
     <message>
-        <location line="+5" />
+        <location line="+5"/>
         <source>Index rebuild started...</source>
         <translation>Перестворення індексу розпочато...</translation>
     </message>
@@ -3906,22 +4560,22 @@ Vicinae also has its own [extension store](vicinae://launch/core/store).
 <context>
     <name>RefreshAppsCommand</name>
     <message>
-        <location filename="../src/extensions/vicinae/refresh-apps-command.hpp" line="+12" />
+        <location filename="../src/builtins/vicinae/refresh-apps-command.hpp" line="+12"/>
         <source>Refresh Apps</source>
         <translation>Оновити програми</translation>
     </message>
     <message>
-        <location line="+2" />
+        <location line="+2"/>
         <source>Force a refresh of the application database. The database should normally automatically update itself on changes, but this can help working around some edge cases.</source>
         <translation>Примусово оновити базу даних програм. Зазвичай вона оновлюється автоматично при змінах, але це може допомогти в деяких особливих випадках.</translation>
     </message>
     <message>
-        <location filename="../src/extensions/vicinae/refresh-apps-command.cpp" line="+15" />
+        <location filename="../src/builtins/vicinae/refresh-apps-command.cpp" line="+15"/>
         <source>Apps successfully refreshed</source>
         <translation>Програми успішно оновлено</translation>
     </message>
     <message>
-        <location line="+2" />
+        <location line="+2"/>
         <source>Failed to refresh apps</source>
         <translation>Не вдалося оновити програми</translation>
     </message>
@@ -3929,17 +4583,17 @@ Vicinae also has its own [extension store](vicinae://launch/core/store).
 <context>
     <name>ReloadScriptDirectoriesCommand</name>
     <message>
-        <location filename="../src/extensions/vicinae/vicinae-extension.cpp" line="+76" />
+        <location filename="../src/builtins/vicinae/vicinae-extension.cpp" line="+76"/>
         <source>Reload Script Directories</source>
         <translation>Перезавантажити каталоги скриптів</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Reload script directories</source>
         <translation>Перезавантажити каталоги скриптів</translation>
     </message>
     <message>
-        <location line="+9" />
+        <location line="+9"/>
         <source>New scan triggered, index will update shortly</source>
         <translation>Запущено нове сканування, індекс скоро оновиться</translation>
     </message>
@@ -3947,7 +4601,7 @@ Vicinae also has its own [extension store](vicinae://launch/core/store).
 <context>
     <name>RemoveAllCalculatorHistoryRecordsAction</name>
     <message>
-        <location filename="../src/actions/calculator/calculator-actions.hpp" line="+97" />
+        <location filename="../src/actions/calculator-actions.hpp" line="+76"/>
         <source>Delete all entries</source>
         <translation>Видалити всі записи</translation>
     </message>
@@ -3955,32 +4609,32 @@ Vicinae also has its own [extension store](vicinae://launch/core/store).
 <context>
     <name>RemoveAllSelectionsAction</name>
     <message>
-        <location filename="../src/extensions/clipboard/history/clipboard-history-actions.hpp" line="+28" />
+        <location filename="../src/builtins/clipboard/history/clipboard-history-actions.hpp" line="+28"/>
         <source>Are you sure?</source>
         <translation>Ви впевнені?</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>All your clipboard history will be lost forever</source>
         <translation>Уся ваша історія буфера обміну буде втрачена назавжди.</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Delete all</source>
         <translation>Видалити все</translation>
     </message>
     <message>
-        <location line="+5" />
+        <location line="+5"/>
         <source>All selections were removed</source>
         <translation>Усі виділення видалено</translation>
     </message>
     <message>
-        <location line="+2" />
+        <location line="+2"/>
         <source>Failed to remove all selections</source>
         <translation>Не вдалося видалити всі виділені елементи</translation>
     </message>
     <message>
-        <location line="+7" />
+        <location line="+7"/>
         <source>Remove all</source>
         <translation>Видалити все</translation>
     </message>
@@ -3988,17 +4642,17 @@ Vicinae also has its own [extension store](vicinae://launch/core/store).
 <context>
     <name>RemoveCalculatorHistoryRecordAction</name>
     <message>
-        <location filename="../src/actions/calculator/calculator-actions.hpp" line="-43" />
+        <location filename="../src/actions/calculator-actions.hpp" line="-22"/>
         <source>Entry removed</source>
         <translation>Запис видалено</translation>
     </message>
     <message>
-        <location line="+2" />
+        <location line="+2"/>
         <source>Failed to remove entry</source>
         <translation>Не вдалося видалити запис</translation>
     </message>
     <message>
-        <location line="+4" />
+        <location line="+4"/>
         <source>Delete entry</source>
         <translation>Видалити запис</translation>
     </message>
@@ -4006,17 +4660,17 @@ Vicinae also has its own [extension store](vicinae://launch/core/store).
 <context>
     <name>RemoveSelectionAction</name>
     <message>
-        <location filename="../src/extensions/clipboard/history/clipboard-history-actions.hpp" line="-71" />
+        <location filename="../src/builtins/clipboard/history/clipboard-history-actions.hpp" line="-71"/>
         <source>Entry removed</source>
         <translation>Запис видалено</translation>
     </message>
     <message>
-        <location line="+2" />
+        <location line="+2"/>
         <source>Failed to remove entry</source>
         <translation>Не вдалося видалити запис</translation>
     </message>
     <message>
-        <location line="+6" />
+        <location line="+6"/>
         <source>Remove entry</source>
         <translation>Видалити запис</translation>
     </message>
@@ -4024,17 +4678,17 @@ Vicinae also has its own [extension store](vicinae://launch/core/store).
 <context>
     <name>RemoveShortcutAction</name>
     <message>
-        <location filename="../src/actions/shortcut/shortcut-actions.hpp" line="+33" />
+        <location filename="../src/actions/shortcut-actions.hpp" line="+33"/>
         <source>Removed link</source>
         <translation>Посилання видалено</translation>
     </message>
     <message>
-        <location line="+2" />
+        <location line="+2"/>
         <source>Failed to remove link</source>
         <translation>Не вдалося видалити посилання</translation>
     </message>
     <message>
-        <location line="+5" />
+        <location line="+5"/>
         <source>Remove link</source>
         <translation>Видалити посилання</translation>
     </message>
@@ -4042,17 +4696,17 @@ Vicinae also has its own [extension store](vicinae://launch/core/store).
 <context>
     <name>ReportVicinaeBugCommand</name>
     <message>
-        <location filename="../src/extensions/vicinae/report-bug-command.hpp" line="+10" />
+        <location filename="../src/builtins/vicinae/report-bug-command.hpp" line="+10"/>
         <source>Report a Vicinae Bug</source>
         <translation>Повідомити про помилку Vicinae</translation>
     </message>
     <message>
-        <location line="+3" />
+        <location line="+3"/>
         <source>Navigate to Vicinae issue creation page with all relevant informations pre-filled.</source>
         <translation>Відкрити сторінку створення завдання Vicinae з попередньо заповненою необхідною інформацією.</translation>
     </message>
     <message>
-        <location line="+8" />
+        <location line="+8"/>
         <source>Title</source>
         <translation>Заголовок</translation>
     </message>
@@ -4060,7 +4714,7 @@ Vicinae also has its own [extension store](vicinae://launch/core/store).
 <context>
     <name>ResetEmojiRankingAction</name>
     <message>
-        <location filename="../src/qml/emoji-grid-model.cpp" line="+21" />
+        <location filename="../src/builtins/vicinae/emoji-grid-model.cpp" line="+21"/>
         <source>Reset ranking</source>
         <translation>Скинути рейтинг</translation>
     </message>
@@ -4068,7 +4722,7 @@ Vicinae also has its own [extension store](vicinae://launch/core/store).
 <context>
     <name>ResetEmojiSkinToneAction</name>
     <message>
-        <location line="+34" />
+        <location line="+34"/>
         <source>Reset to preference</source>
         <translation>Скинути до налаштувань</translation>
     </message>
@@ -4076,32 +4730,32 @@ Vicinae also has its own [extension store](vicinae://launch/core/store).
 <context>
     <name>ResetItemRanking</name>
     <message>
-        <location filename="../src/actions/root-search/root-search-actions.cpp" line="-25" />
+        <location filename="../src/actions/root-search-actions.cpp" line="-69"/>
         <source>Ranking was successfully reset</source>
         <translation>Рейтинг успішно скинуто</translation>
     </message>
     <message>
-        <location line="+2" />
+        <location line="+2"/>
         <source>Unable to reset ranking</source>
         <translation>Не вдалося скинути рейтинг</translation>
     </message>
     <message>
-        <location line="+6" />
+        <location line="+6"/>
         <source>Are you sure?</source>
         <translation>Ви впевнені?</translation>
     </message>
     <message>
-        <location line="+2" />
+        <location line="+2"/>
         <source>You will have to rebuild search history for this item in order for it to reappear on top of the root search results.</source>
-        <translation>Щоб цей елемент знову з'явився у верхній частині результатів кореневого пошуку, вам потрібно відновити історію пошуку.</translation>
+        <translation>Щоб цей елемент знову з&apos;явився у верхній частині результатів кореневого пошуку, вам потрібно відновити історію пошуку.</translation>
     </message>
     <message>
-        <location line="+2" />
+        <location line="+2"/>
         <source>Reset</source>
         <translation>Скинути</translation>
     </message>
     <message>
-        <location line="+6" />
+        <location line="+6"/>
         <source>Reset ranking</source>
         <translation>Скинути рейтинг</translation>
     </message>
@@ -4109,12 +4763,12 @@ Vicinae also has its own [extension store](vicinae://launch/core/store).
 <context>
     <name>RevealFileInFolderAction</name>
     <message>
-        <location filename="../src/utils/file-list-item.hpp" line="+26" />
+        <location filename="../src/utils/file-list-item.hpp" line="+31"/>
         <source>Show in file browser</source>
         <translation>Показати у файловому менеджері</translation>
     </message>
     <message>
-        <location line="+13" />
+        <location line="+12"/>
         <source>Failed to open folder</source>
         <translation>Не вдалося відкрити папку</translation>
     </message>
@@ -4122,12 +4776,12 @@ Vicinae also has its own [extension store](vicinae://launch/core/store).
 <context>
     <name>RootCalculatorSection</name>
     <message>
-        <location filename="../src/qml/root-search-sources.hpp" line="+91" />
+        <location filename="../src/builtins/root/root-search-sources.hpp" line="+89"/>
         <source>Calculator</source>
         <translation>Калькулятор</translation>
     </message>
     <message>
-        <location filename="../src/qml/root-search-sources.cpp" line="+175" />
+        <location filename="../src/builtins/root/root-search-sources.cpp" line="+175"/>
         <source>Copy unformatted answer</source>
         <translation>Копіювати відповідь без форматування</translation>
     </message>
@@ -4135,15 +4789,15 @@ Vicinae also has its own [extension store](vicinae://launch/core/store).
 <context>
     <name>RootFallbackSection</name>
     <message>
-        <location line="+260" />
-        <source>Use "%1" with...</source>
+        <location line="+259"/>
+        <source>Use &quot;%1&quot; with...</source>
         <translation>Використовувати «%1» з...</translation>
     </message>
 </context>
 <context>
     <name>RootFavoritesSection</name>
     <message>
-        <location filename="../src/qml/root-search-sources.hpp" line="+67" />
+        <location filename="../src/builtins/root/root-search-sources.hpp" line="+67"/>
         <source>Favorites</source>
         <translation>Закладки</translation>
     </message>
@@ -4151,7 +4805,7 @@ Vicinae also has its own [extension store](vicinae://launch/core/store).
 <context>
     <name>RootFilesSection</name>
     <message>
-        <location line="+50" />
+        <location line="+52"/>
         <source>Files</source>
         <translation>Файли</translation>
     </message>
@@ -4159,12 +4813,12 @@ Vicinae also has its own [extension store](vicinae://launch/core/store).
 <context>
     <name>RootLinkSection</name>
     <message>
-        <location line="-139" />
+        <location line="-141"/>
         <source>Link</source>
         <translation>Посилання</translation>
     </message>
     <message>
-        <location filename="../src/qml/root-search-sources.cpp" line="-313" />
+        <location filename="../src/builtins/root/root-search-sources.cpp" line="-311"/>
         <source>Open in %1</source>
         <translation>Відкрити в %1</translation>
     </message>
@@ -4172,20 +4826,20 @@ Vicinae also has its own [extension store](vicinae://launch/core/store).
 <context>
     <name>RootNewsSection</name>
     <message>
-        <location filename="../src/qml/root-search-sources.hpp" line="+66" />
-        <source>What's New</source>
+        <location filename="../src/builtins/root/root-search-sources.hpp" line="+66"/>
+        <source>What&apos;s New</source>
         <translation>Що нового</translation>
     </message>
 </context>
 <context>
     <name>RootResultsSection</name>
     <message>
-        <location filename="../src/qml/root-search-sources.cpp" line="+207" />
+        <location filename="../src/builtins/root/root-search-sources.cpp" line="+204"/>
         <source>Suggestions</source>
         <translation>Рекомендації</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Results (%1)</source>
         <translation>Результати (%1)</translation>
     </message>
@@ -4193,7 +4847,7 @@ Vicinae also has its own [extension store](vicinae://launch/core/store).
 <context>
     <name>RootSearchActionGenerator</name>
     <message>
-        <location filename="../src/actions/root-search/root-search-actions.hpp" line="+71" />
+        <location filename="../src/actions/root-search-actions.hpp" line="+71"/>
         <source>Copy ID</source>
         <translation>Копіювати ID</translation>
     </message>
@@ -4201,8 +4855,8 @@ Vicinae also has its own [extension store](vicinae://launch/core/store).
 <context>
     <name>RootShortcutItem</name>
     <message>
-        <location filename="../src/root-search/shortcuts/shortcut-root-provider.cpp" line="+69" />
-        <location line="+11" />
+        <location filename="../src/root-search/shortcuts/shortcut-root-provider.cpp" line="+70"/>
+        <location line="+11"/>
         <source>Shortcut</source>
         <translation>Ярлик</translation>
     </message>
@@ -4210,23 +4864,23 @@ Vicinae also has its own [extension store](vicinae://launch/core/store).
 <context>
     <name>RootUpdateSection</name>
     <message>
-        <location filename="../src/qml/root-search-sources.hpp" line="-21" />
-        <location filename="../src/qml/root-search-sources.cpp" line="-125" />
+        <location filename="../src/builtins/root/root-search-sources.hpp" line="-21"/>
+        <location filename="../src/builtins/root/root-search-sources.cpp" line="-124"/>
         <source>Update</source>
         <translation>Оновлення</translation>
     </message>
     <message>
-        <location filename="../src/qml/root-search-sources.cpp" line="-14" />
+        <location filename="../src/builtins/root/root-search-sources.cpp" line="-13"/>
         <source>Vicinae %1 is available</source>
         <translation>Доступна версія Vicinae %1</translation>
     </message>
     <message>
-        <location line="+5" />
+        <location line="+5"/>
         <source>You are running %1</source>
         <translation>У вас запущена версія %1</translation>
     </message>
     <message>
-        <location line="+27" />
+        <location line="+26"/>
         <source>View Release Notes</source>
         <translation>Переглянути нотатки про випуск</translation>
     </message>
@@ -4234,46 +4888,305 @@ Vicinae also has its own [extension store](vicinae://launch/core/store).
 <context>
     <name>RootViewHost</name>
     <message>
-        <location filename="../src/qml/root-view-host.hpp" line="+15" />
+        <location filename="../src/builtins/root/root-view-host.hpp" line="+15"/>
         <source>Search for anything...</source>
         <translation>Знайти будь-що…</translation>
     </message>
 </context>
 <context>
+    <name>RunAppleShortcutAction</name>
+    <message>
+        <location filename="../src/root-search/apple-shortcuts/apple-shortcut-root-provider.cpp" line="-29"/>
+        <source>Run Shortcut</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Failed to start shortcut</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>RunExecutableAction</name>
+    <message>
+        <location filename="../src/utils/file-list-item.hpp" line="+50"/>
+        <source>Run executable</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+12"/>
+        <source>Failed to give executable permission</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Failed to start executable</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>ScreenshotActions</name>
+    <message>
+        <location filename="../src/builtins/screenshots/screenshot-actions.cpp" line="+15"/>
+        <source>Refresh</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>Cannot paste</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Allow Accessibility access to paste into other apps.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Could not read recording</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Could not read screenshot</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>The file may have been moved or deleted.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Could not paste recording</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Could not paste screenshot</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Recording copied</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Screenshot copied</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Could not copy recording</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Could not copy screenshot</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+12"/>
+        <source>No saved screenshots found</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Take a screenshot and save it to a file first.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+12"/>
+        <source>Refreshing...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Could not refresh all screenshots and recordings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Refreshed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>Paste Recording</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Paste Screenshot</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Copy Recording</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Copy Screenshot</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Open Recording</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Open Screenshot</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Could not open file</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Show in Finder</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Show in File Browser</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Could not show file in file browser</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Copy File Path</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Move to Trash</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>File moved to Trash</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Could not move file to Trash</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>ScreenshotGridModel</name>
+    <message>
+        <location filename="../src/builtins/screenshots/screenshot-grid-model.cpp" line="+80"/>
+        <source>Today</source>
+        <translation type="unfinished">Сьогодні</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Yesterday</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Older</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>Search Results</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>ScreenshotGridSource</name>
+    <message>
+        <location line="-79"/>
+        <source>Screen Recording</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Recording · %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>ScreenshotsExtension</name>
+    <message>
+        <location filename="../src/builtins/screenshots/screenshots-extension.hpp" line="+17"/>
+        <source>Screenshots</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Search and share saved screenshots and screen recordings.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>ScreenshotsView</name>
+    <message>
+        <location filename="../src/ui/qml/views/ScreenshotsView.qml" line="+10"/>
+        <source>No screenshots or recordings found</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Save a screenshot or screen recording to a file, or try another search.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>ScreenshotsViewHost</name>
+    <message>
+        <location filename="../src/builtins/screenshots/screenshots-view-host.cpp" line="+13"/>
+        <source>Search screenshots and recordings...</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>ScriptExecutorViewHost</name>
     <message>
-        <location filename="../src/qml/script-executor-view-host.cpp" line="+76" />
+        <location filename="../src/script/script-executor-view-host.cpp" line="+79"/>
         <source>Script execution failed: %1</source>
         <translation>Помилка виконання скрипта: %1</translation>
     </message>
     <message>
-        <location line="+10" />
+        <location line="+10"/>
         <source>Running... (%1s ago)</source>
         <translation>Виконання... (%1 з попереднього)</translation>
     </message>
     <message>
-        <location line="+7" />
+        <location line="+7"/>
         <source>Done in %1s (exit=%2)</source>
         <translation>Готово за %1 з (код виходу=%2)</translation>
     </message>
     <message>
-        <location line="+12" />
-        <location line="+9" />
+        <location line="+12"/>
+        <location line="+9"/>
         <source>Script process killed</source>
         <translation>Процес скрипта завершено</translation>
     </message>
     <message>
-        <location line="+20" />
+        <location line="+20"/>
         <source>Running...</source>
         <translation>Виконання…</translation>
     </message>
     <message>
-        <location line="+15" />
+        <location line="+15"/>
         <source>Kill process</source>
         <translation>Завершити процес</translation>
     </message>
     <message>
-        <location line="+3" />
+        <location line="+3"/>
         <source>Run script again</source>
         <translation>Запустити скрипт ще раз</translation>
     </message>
@@ -4281,33 +5194,33 @@ Vicinae also has its own [extension store](vicinae://launch/core/store).
 <context>
     <name>ScriptRootItem</name>
     <message>
-        <location filename="../src/root-search/scripts/script-root-provider.hpp" line="+27" />
-        <location line="+86" />
+        <location filename="../src/root-search/scripts/script-root-provider.hpp" line="-110"/>
+        <location line="+87"/>
         <source>Script</source>
         <translation>Сценарій</translation>
     </message>
     <message>
-        <location line="-43" />
+        <location line="-44"/>
         <source>Mode</source>
         <translation>Режим</translation>
     </message>
     <message>
-        <location line="+2" />
+        <location line="+2"/>
         <source>Path</source>
         <translation>Шлях</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Author</source>
         <translation>Автор</translation>
     </message>
     <message>
-        <location line="+23" />
+        <location line="+23"/>
         <source>Open script directory</source>
         <translation>Відкрити каталог скриптів</translation>
     </message>
     <message>
-        <location line="+4" />
+        <location line="+4"/>
         <source>Copy path to script</source>
         <translation>Копіювати шлях до скрипта</translation>
     </message>
@@ -4315,30 +5228,20 @@ Vicinae also has its own [extension store](vicinae://launch/core/store).
 <context>
     <name>ScriptRootProvider</name>
     <message>
-        <location line="+47" />
+        <location line="+63"/>
         <source>Script Commands</source>
         <translation>Скриптові команди</translation>
-    </message>
-    <message>
-        <location line="+7" />
-        <source>Custom directories</source>
-        <translation>Свої каталоги</translation>
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Additional list of directories to source scripts from. These directories always take precedence over the default system ones</source>
-        <translation>Додатковий список каталогів для завантаження скриптів. Ці каталоги завжди мають пріоритет над системними за замовчуванням.</translation>
     </message>
 </context>
 <context>
     <name>SearchBrowserTabsCommand</name>
     <message>
-        <location filename="../src/extensions/browser/browser-extension.cpp" line="+15" />
+        <location filename="../src/builtins/browser/browser-extension.cpp" line="+15"/>
         <source>Search Browser Tabs</source>
         <translation>Пошук вкладок браузера</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Search tabs from all connected browsers</source>
         <translation>Пошук вкладок у всіх підключених браузерах</translation>
     </message>
@@ -4346,50 +5249,20 @@ Vicinae also has its own [extension store](vicinae://launch/core/store).
 <context>
     <name>SearchEmojiCommand</name>
     <message>
-        <location filename="../src/extensions/vicinae/search-emoji-command.hpp" line="+15" />
+        <location filename="../src/builtins/vicinae/search-emoji-command.hpp" line="+16"/>
         <source>Search Emojis &amp; Symbols</source>
         <translation>Пошук емодзі та символів</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Search for any emoji or symbol</source>
         <translation>Пошук будь-якої емодзі або символу</translation>
-    </message>
-    <message>
-        <location line="+13" />
-        <source>Paste</source>
-        <translation>Вставити</translation>
-    </message>
-    <message>
-        <location line="+3" />
-        <source>Copy</source>
-        <translation>Копіювати</translation>
-    </message>
-    <message>
-        <location line="+5" />
-        <source>Default Action</source>
-        <translation>Дії за замовчуванням</translation>
-    </message>
-    <message>
-        <location line="+1" />
-        <source>The default action to perform on pressing return. Paste is only available if your environment supports it.</source>
-        <translation>Дія, що виконується при натисканні Enter. Вставка доступна лише за підтримки вашого середовища.</translation>
-    </message>
-    <message>
-        <location line="+21" />
-        <source>Skin tone</source>
-        <translation>Тон шкіри</translation>
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Skin tone to use for relevant emojis.</source>
-        <translation>Відтінок шкіри для відповідних емодзі.</translation>
     </message>
 </context>
 <context>
     <name>SearchEmojiGridSource</name>
     <message>
-        <location filename="../src/qml/emoji-grid-model.hpp" line="-22" />
+        <location filename="../src/builtins/vicinae/emoji-grid-model.hpp" line="-20"/>
         <source>Results (%1)</source>
         <translation>Результати (%1)</translation>
     </message>
@@ -4397,12 +5270,12 @@ Vicinae also has its own [extension store](vicinae://launch/core/store).
 <context>
     <name>SearchFilesCommand</name>
     <message>
-        <location filename="../src/extensions/file/file-extension.hpp" line="-38" />
+        <location filename="../src/builtins/file/file-extension.hpp" line="-34"/>
         <source>Search Files</source>
         <translation>Пошук файлів</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Search files on your system</source>
         <translation>Пошук файлів у вашій системі</translation>
     </message>
@@ -4410,22 +5283,22 @@ Vicinae also has its own [extension store](vicinae://launch/core/store).
 <context>
     <name>SearchFilesView</name>
     <message>
-        <location filename="../src/qml/qml/SearchFilesView.qml" line="+37" />
+        <location filename="../src/ui/qml/views/SearchFilesView.qml" line="+37"/>
         <source>Name</source>
         <translation>Назва</translation>
     </message>
     <message>
-        <location line="+4" />
+        <location line="+4"/>
         <source>Path</source>
         <translation>Шлях</translation>
     </message>
     <message>
-        <location line="+4" />
+        <location line="+4"/>
         <source>Type</source>
         <translation>Тип</translation>
     </message>
     <message>
-        <location line="+4" />
+        <location line="+4"/>
         <source>Last modified</source>
         <translation>Змінено</translation>
     </message>
@@ -4433,89 +5306,202 @@ Vicinae also has its own [extension store](vicinae://launch/core/store).
 <context>
     <name>SearchFilesViewHost</name>
     <message>
-        <location filename="../src/qml/search-files-view-host.cpp" line="+59" />
+        <location filename="../src/builtins/file/search-files-view-host.cpp" line="+55"/>
         <source>Search for files...</source>
         <translation>Пошук файлів...</translation>
     </message>
     <message>
-        <location line="+31" />
-        <location line="+4" />
+        <location line="+31"/>
+        <location line="+4"/>
         <source>Direct file path</source>
         <translation>Прямий шлях до файлу</translation>
     </message>
     <message>
-        <location line="+18" />
+        <location line="+38"/>
         <source>Recently Accessed</source>
         <translation>Нещодавно відкриті</translation>
     </message>
     <message>
-        <location line="+30" />
+        <location line="+43"/>
         <source>Results</source>
         <translation>Результати</translation>
     </message>
     <message>
-        <location line="+40" />
+        <location line="+0"/>
+        <source>Recently Modified</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+40"/>
         <source>All</source>
         <translation>Все</translation>
     </message>
     <message>
-        <location line="+0" />
+        <location line="+0"/>
         <source>Other</source>
         <translation>Друге</translation>
     </message>
     <message>
-        <location line="+0" />
+        <location line="+0"/>
         <source>Directories</source>
         <translation>Каталоги</translation>
     </message>
     <message>
-        <location line="+0" />
+        <location line="+0"/>
         <source>Images</source>
         <translation>Зображення</translation>
     </message>
     <message>
-        <location line="+0" />
+        <location line="+0"/>
         <source>Videos</source>
         <translation>Відео</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Audio</source>
         <translation>Аудіо</translation>
     </message>
     <message>
-        <location line="+0" />
+        <location line="+0"/>
         <source>Documents</source>
         <translation>Документи</translation>
     </message>
     <message>
-        <location line="+0" />
+        <location line="+0"/>
         <source>Archives</source>
         <translation>Архіви</translation>
     </message>
     <message>
-        <location line="+0" />
+        <location line="+0"/>
         <source>Applications</source>
         <translation>Додатки</translation>
     </message>
 </context>
 <context>
+    <name>SearchMenuBarCommand</name>
+    <message>
+        <location filename="../src/builtins/vicinae/search-menu-bar-command.hpp" line="+11"/>
+        <source>Search Menu Bar Items</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Search and run menu bar items of the frontmost application</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>SearchScreenshotsCommand</name>
+    <message>
+        <location filename="../src/builtins/screenshots/screenshots-extension.hpp" line="-38"/>
+        <source>Search Screenshots</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Search and share saved screenshots and screen recordings.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>SearchTrayCommand</name>
+    <message>
+        <location filename="../src/builtins/vicinae/search-tray-command.hpp" line="+10"/>
+        <source>Search Tray</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Browse system tray items and trigger their menu actions</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>SearchTrayViewHost</name>
+    <message>
+        <location filename="../src/builtins/vicinae/search-tray-view-host.hpp" line="+122"/>
+        <source>Search tray items...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>Attention</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Browse Menu</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Activate</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+15"/>
+        <source>Secondary Activate</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>SetAppFont</name>
     <message>
-        <location filename="../src/qml/font-grid-model.cpp" line="-15" />
+        <location filename="../src/builtins/font/font-grid-model.cpp" line="-15"/>
         <source>Set as vicinae font</source>
         <translation>Використовувати як шрифт Vicinae</translation>
     </message>
 </context>
 <context>
+    <name>SetDefaultBrowser</name>
+    <message>
+        <location filename="../src/builtins/system/system-extension.hpp" line="+117"/>
+        <source>Set Default Browser</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Change the default system web browser</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>SetDefaultBrowserViewHost</name>
+    <message>
+        <location filename="../src/builtins/system/set-default-browser-view-host.hpp" line="+22"/>
+        <source>Select a web browser...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Available web browsers</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+21"/>
+        <source>Set as default browser</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Default browser changed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Failed to set default browser</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>SetDefaultTerminal</name>
     <message>
-        <location filename="../src/extensions/system/system-extension.hpp" line="+265" />
+        <location filename="../src/builtins/system/system-extension.hpp" line="-11"/>
         <source>Set Default Terminal</source>
         <translation>Встановити термінал за замовчуванням</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Change the default system terminal</source>
         <translation>Змінити термінал за замовчуванням</translation>
     </message>
@@ -4523,7 +5509,7 @@ Vicinae also has its own [extension store](vicinae://launch/core/store).
 <context>
     <name>SetRootItemAliasAction</name>
     <message>
-        <location filename="../src/actions/root-search/root-search-actions.hpp" line="-34" />
+        <location filename="../src/actions/root-search-actions.hpp" line="-34"/>
         <source>Set alias</source>
         <translation>Задати аліас</translation>
     </message>
@@ -4531,7 +5517,7 @@ Vicinae also has its own [extension store](vicinae://launch/core/store).
 <context>
     <name>SetRootItemShortcutAction</name>
     <message>
-        <location filename="../src/actions/root-search/root-search-actions.cpp" line="+83" />
+        <location filename="../src/actions/root-search-actions.cpp" line="+103"/>
         <source>Set Global Shortcut</source>
         <translation>Встановити глобальне комбінування клавіш</translation>
     </message>
@@ -4539,12 +5525,12 @@ Vicinae also has its own [extension store](vicinae://launch/core/store).
 <context>
     <name>SetThemeAction</name>
     <message>
-        <location filename="../src/actions/theme/theme-actions.cpp" line="+11" />
+        <location filename="../src/actions/theme-actions.cpp" line="+11"/>
         <source>Theme successfully updated</source>
         <translation>Тема успішно оновлена</translation>
     </message>
     <message>
-        <location line="+4" />
+        <location line="+4"/>
         <source>Set theme</source>
         <translation>Застосувати тему</translation>
     </message>
@@ -4552,7 +5538,7 @@ Vicinae also has its own [extension store](vicinae://launch/core/store).
 <context>
     <name>SetThemeCommand</name>
     <message>
-        <location filename="../src/extensions/theme/set-theme-command.hpp" line="+9" />
+        <location filename="../src/builtins/theme/set-theme-command.hpp" line="+9"/>
         <source>Set Theme</source>
         <translation>Встановити тему</translation>
     </message>
@@ -4560,17 +5546,17 @@ Vicinae also has its own [extension store](vicinae://launch/core/store).
 <context>
     <name>SetVolumeCommand</name>
     <message>
-        <location filename="../src/extensions/system/system-extension.hpp" line="-49" />
+        <location filename="../src/builtins/media/media-extension.hpp" line="+113"/>
         <source>Set Volume to %1%</source>
         <translation>Встановити гучність на %1%</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Set system volume to %1%</source>
         <translation>Встановлює гучність системи на %1%</translation>
     </message>
     <message>
-        <location line="+9" />
+        <location line="+9"/>
         <source>Failed to set volume</source>
         <translation>Не вдалося встановити гучність</translation>
     </message>
@@ -4578,25 +5564,38 @@ Vicinae also has its own [extension store](vicinae://launch/core/store).
 <context>
     <name>SetWallpaperAction</name>
     <message>
-        <location filename="../src/utils/file-list-item.hpp" line="+17" />
+        <location filename="../src/utils/file-list-item.hpp" line="-55"/>
         <source>Set as wallpaper</source>
         <translation>Встановити як шпалери</translation>
     </message>
     <message>
-        <location line="+12" />
+        <location line="+12"/>
         <source>Wallpaper set</source>
         <translation>Фон встановлено</translation>
     </message>
     <message>
-        <location line="+2" />
+        <location line="+2"/>
         <source>Failed to set wallpaper</source>
         <translation>Не вдалося встановити шпалери</translation>
     </message>
 </context>
 <context>
+    <name>SettingsPreferenceForm</name>
+    <message>
+        <location filename="../src/ui/qml/settings/SettingsPreferenceForm.qml" line="+161"/>
+        <source>Select an app…</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+45"/>
+        <source>Add app…</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>SettingsSidebar</name>
     <message>
-        <location filename="../src/qml/qml/SettingsSidebar.qml" line="+124" />
+        <location filename="../src/ui/qml/settings/SettingsSidebar.qml" line="+126"/>
         <source>Search...</source>
         <translation>Пошук...</translation>
     </message>
@@ -4604,27 +5603,27 @@ Vicinae also has its own [extension store](vicinae://launch/core/store).
 <context>
     <name>SettingsSidebarModel</name>
     <message>
-        <location filename="../src/qml/settings-sidebar-model.cpp" line="+90" />
+        <location filename="../src/ui/settings/settings-sidebar-model.cpp" line="+90"/>
         <source>General</source>
         <translation>Загальні</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Appearance</source>
         <translation>Зовнішній вигляд</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Keybindings</source>
         <translation>Гарячі клавіші</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Advanced</source>
         <translation>Додатково</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>About</source>
         <translation>Про додаток</translation>
     </message>
@@ -4632,47 +5631,47 @@ Vicinae also has its own [extension store](vicinae://launch/core/store).
 <context>
     <name>SettingsWindow</name>
     <message>
-        <location filename="../src/qml/qml/SettingsWindow.qml" line="+11" />
+        <location filename="../src/ui/qml/settings/SettingsWindow.qml" line="+13"/>
         <source>General</source>
         <translation>Загальні</translation>
     </message>
     <message>
-        <location line="+4" />
+        <location line="+4"/>
         <source>Appearance</source>
         <translation>Зовнішній вигляд</translation>
     </message>
     <message>
-        <location line="+4" />
+        <location line="+4"/>
         <source>Keybindings</source>
         <translation>Клавіатурні комбінації</translation>
     </message>
     <message>
-        <location line="+4" />
+        <location line="+4"/>
         <source>Advanced</source>
         <translation>Додатково</translation>
     </message>
     <message>
-        <location line="+4" />
+        <location line="+4"/>
         <source>About</source>
         <translation>Про додаток</translation>
     </message>
     <message>
-        <location line="+27" />
+        <location line="+27"/>
         <source>Vicinae Settings</source>
         <translation>Налаштування Vicinae</translation>
     </message>
     <message>
-        <location line="+194" />
+        <location line="+199"/>
         <source>Imported from Raycast</source>
         <translation>Імпортовано з Raycast</translation>
     </message>
     <message>
-        <location line="+2" />
+        <location line="+2"/>
         <source>From the Vicinae store</source>
         <translation>З магазину Vicinae</translation>
     </message>
     <message>
-        <location line="+2" />
+        <location line="+2"/>
         <source>Locally installed extension</source>
         <translation>Розширення, встановлене локально</translation>
     </message>
@@ -4680,7 +5679,7 @@ Vicinae also has its own [extension store](vicinae://launch/core/store).
 <context>
     <name>ShortcutExtension</name>
     <message>
-        <location filename="../src/extensions/shortcut/shortcut-extension.hpp" line="+11" />
+        <location filename="../src/builtins/shortcut/shortcut-extension.hpp" line="+11"/>
         <source>Manage Shortcuts</source>
         <translation>Керування ярликами</translation>
     </message>
@@ -4688,7 +5687,7 @@ Vicinae also has its own [extension store](vicinae://launch/core/store).
 <context>
     <name>ShortcutField</name>
     <message>
-        <location filename="../src/qml/qml/ShortcutField.qml" line="+14" />
+        <location filename="../src/ui/qml/form/ShortcutField.qml" line="+16"/>
         <source>Record shortcut</source>
         <translation>Записати комбінацію клавіш</translation>
     </message>
@@ -4696,27 +5695,27 @@ Vicinae also has its own [extension store](vicinae://launch/core/store).
 <context>
     <name>ShortcutFormView</name>
     <message>
-        <location filename="../src/qml/qml/ShortcutFormView.qml" line="+14" />
+        <location filename="../src/ui/qml/views/ShortcutFormView.qml" line="+15"/>
         <source>Name</source>
         <translation>Назва</translation>
     </message>
     <message>
-        <location line="+4" />
+        <location line="+4"/>
         <source>Shortcut Name</source>
         <translation>Назва ярлика</translation>
     </message>
     <message>
-        <location line="+9" />
+        <location line="+9"/>
         <source>The URL that will be opened by the specified app. You can make it dynamic by using placeholders such as {argument}.</source>
         <translation>URL, який буде відкрито вказаним додатком. Ви можете зробити його динамічним за допомогою плейсхолдерів, наприклад {argument}.</translation>
     </message>
     <message>
-        <location line="+22" />
+        <location line="+23"/>
         <source>Open with</source>
         <translation>Відкрити за допомогою</translation>
     </message>
     <message>
-        <location line="+13" />
+        <location line="+13"/>
         <source>Icon</source>
         <translation>Значок</translation>
     </message>
@@ -4724,76 +5723,76 @@ Vicinae also has its own [extension store](vicinae://launch/core/store).
 <context>
     <name>ShortcutFormViewHost</name>
     <message>
-        <location filename="../src/qml/shortcut-form-view-host.cpp" line="+48" />
+        <location filename="../src/builtins/shortcut/shortcut-form-view-host.cpp" line="+46"/>
         <source>Submit</source>
         <translation>Надіслати</translation>
     </message>
     <message>
-        <location line="+13" />
+        <location line="+13"/>
         <source>Copy of %1</source>
         <translation>Копія %1</translation>
     </message>
     <message>
-        <location line="+45" />
-        <source>Edit "%1"</source>
+        <location line="+45"/>
+        <source>Edit &quot;%1&quot;</source>
         <translation>Змінити «%1»</translation>
     </message>
     <message>
-        <location line="+3" />
-        <source>Duplicate "%1"</source>
+        <location line="+3"/>
+        <source>Duplicate &quot;%1&quot;</source>
         <translation>Дублювати «%1»</translation>
     </message>
     <message>
-        <location line="+9" />
-        <location line="+109" />
-        <location line="+43" />
+        <location line="+9"/>
+        <location line="+109"/>
+        <location line="+43"/>
         <source>Default</source>
         <translation>За замовчуванням</translation>
     </message>
     <message>
-        <location line="-136" />
+        <location line="-136"/>
         <source>Selected Text</source>
         <translation>Вибраний текст</translation>
     </message>
     <message>
-        <location line="+5" />
+        <location line="+5"/>
         <source>Clipboard Text</source>
         <translation>Текст з буфера обміну</translation>
     </message>
     <message>
-        <location line="+5" />
+        <location line="+5"/>
         <source>Argument</source>
         <translation>Аргумент</translation>
     </message>
     <message>
-        <location line="+25" />
-        <location line="+5" />
-        <location line="+5" />
+        <location line="+25"/>
+        <location line="+5"/>
+        <location line="+5"/>
         <source>Required</source>
-        <translation>Обов'язково</translation>
+        <translation>Обов&apos;язково</translation>
     </message>
     <message>
-        <location line="+7" />
+        <location line="+7"/>
         <source>Validation failed</source>
         <translation>Перевірка не пройшла</translation>
     </message>
     <message>
-        <location line="+12" />
+        <location line="+12"/>
         <source>Failed to update shortcut</source>
         <translation>Не вдалося оновити ярлик</translation>
     </message>
     <message>
-        <location line="+3" />
+        <location line="+3"/>
         <source>Shortcut updated</source>
         <translation>Ярлик оновлено</translation>
     </message>
     <message>
-        <location line="+4" />
+        <location line="+4"/>
         <source>Failed to create shortcut</source>
         <translation>Не вдалося створити ярлик</translation>
     </message>
     <message>
-        <location line="+3" />
+        <location line="+3"/>
         <source>Shortcut created</source>
         <translation>Створено ярлик</translation>
     </message>
@@ -4801,14 +5800,14 @@ Vicinae also has its own [extension store](vicinae://launch/core/store).
 <context>
     <name>ShortcutRecorderCapture</name>
     <message>
-        <location filename="../src/qml/qml/ShortcutRecorderCapture.qml" line="+26" />
-        <location line="+10" />
-        <location line="+32" />
+        <location filename="../src/ui/qml/form/ShortcutRecorderCapture.qml" line="+28"/>
+        <location line="+14"/>
+        <location line="+81"/>
         <source>Recording...</source>
         <translation>Запис...</translation>
     </message>
     <message>
-        <location line="+14" />
+        <location line="+30"/>
         <source>Keybind updated</source>
         <translation>Налаштування клавіатури оновлено</translation>
     </message>
@@ -4816,7 +5815,7 @@ Vicinae also has its own [extension store](vicinae://launch/core/store).
 <context>
     <name>ShortcutRecorderPanel</name>
     <message>
-        <location filename="../src/qml/qml/ShortcutRecorderPanel.qml" line="+106" />
+        <location filename="../src/ui/qml/actions/ShortcutRecorderPanel.qml" line="+108"/>
         <source>Press Backspace to remove the current shortcut</source>
         <translation>Натисніть Backspace, щоб видалити поточне сполучення клавіш.</translation>
     </message>
@@ -4824,7 +5823,7 @@ Vicinae also has its own [extension store](vicinae://launch/core/store).
 <context>
     <name>ShortcutRootProvider</name>
     <message>
-        <location filename="../src/root-search/shortcuts/shortcut-root-provider.cpp" line="+42" />
+        <location filename="../src/root-search/shortcuts/shortcut-root-provider.cpp" line="+42"/>
         <source>Shortcuts</source>
         <translation>Ярлики</translation>
     </message>
@@ -4832,12 +5831,12 @@ Vicinae also has its own [extension store](vicinae://launch/core/store).
 <context>
     <name>ShortcutsSettingsPage</name>
     <message>
-        <location filename="../src/qml/qml/ShortcutsSettingsPage.qml" line="+59" />
+        <location filename="../src/ui/qml/settings/ShortcutsSettingsPage.qml" line="+61"/>
         <source>Keybindings</source>
         <translation>Клавіатурні комбінації</translation>
     </message>
     <message>
-        <location line="+78" />
+        <location line="+78"/>
         <source>Record Shortcut</source>
         <translation>Записати комбінацію клавіш</translation>
     </message>
@@ -4845,12 +5844,12 @@ Vicinae also has its own [extension store](vicinae://launch/core/store).
 <context>
     <name>SkipUpdateVersionAction</name>
     <message>
-        <location filename="../src/services/update/update-service.cpp" line="+8" />
+        <location filename="../src/services/update/update-service.cpp" line="+8"/>
         <source>Skip This Version</source>
         <translation>Пропустити цю версію</translation>
     </message>
     <message>
-        <location line="+6" />
+        <location line="+6"/>
         <source>Skipped %1</source>
         <translation>Пропущено %1</translation>
     </message>
@@ -4858,22 +5857,22 @@ Vicinae also has its own [extension store](vicinae://launch/core/store).
 <context>
     <name>SleepCommand</name>
     <message>
-        <location filename="../src/extensions/power-management/power-management-extension.cpp" line="+94" />
+        <location filename="../src/builtins/power-management/power-management-extension.cpp" line="+94"/>
         <source>Put System to Sleep</source>
         <translation>Перевести систему в режим сну</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Put system to sleep</source>
         <translation>Перевести систему в режим сну</translation>
     </message>
     <message>
-        <location line="+10" />
-        <source>System can't sleep</source>
+        <location line="+10"/>
+        <source>System can&apos;t sleep</source>
         <translation>Система не може спати</translation>
     </message>
     <message>
-        <location line="+4" />
+        <location line="+4"/>
         <source>Failed to sleep</source>
         <translation>Не вдалося перейти в режим очікування</translation>
     </message>
@@ -4881,28 +5880,28 @@ Vicinae also has its own [extension store](vicinae://launch/core/store).
 <context>
     <name>SnippetDatabase</name>
     <message>
-        <location filename="../src/services/snippet/snippet-db.cpp" line="+42" />
-        <location line="+56" />
-        <source>keyword already assigned to "%1"</source>
+        <location filename="../src/services/snippet/snippet-db.cpp" line="+42"/>
+        <location line="+56"/>
+        <source>keyword already assigned to &quot;%1&quot;</source>
         <translation>Ключове слово вже призначено для «%1»</translation>
     </message>
     <message>
-        <location line="-43" />
+        <location line="-43"/>
         <source>No snippet with that ID</source>
         <translation>Не знайдено сниппет з таким ID</translation>
     </message>
     <message>
-        <location line="+15" />
+        <location line="+15"/>
         <source>No such snippet</source>
         <translation>Такого фрагменту не знайдено</translation>
     </message>
     <message>
-        <location line="+22" />
+        <location line="+22"/>
         <source>Snippet limit reached (%1)</source>
         <translation>Чи досягнуто ліміт сніппетів (%1)</translation>
     </message>
     <message>
-        <location line="+26" />
+        <location line="+26"/>
         <source>Failed to save snippets on disk: %1</source>
         <translation>Не вдалося зберегти фрагменти коду на диск: %1</translation>
     </message>
@@ -4910,62 +5909,12 @@ Vicinae also has its own [extension store](vicinae://launch/core/store).
 <context>
     <name>SnippetExtension</name>
     <message>
-        <location filename="../src/extensions/snippet/snippet-extension.cpp" line="+38" />
-        <source>Expansion</source>
-        <translation>Розкриття</translation>
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Enable automatic snippet expansion when triggers are typed</source>
-        <translation>Автоматично розкривати фрагменти при введенні тригерів</translation>
-    </message>
-    <message>
-        <location line="+7" />
-        <source>Undo</source>
-        <translation>Скасувати</translation>
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Press backspace immediately after expansion to undo and restore the trigger text</source>
-        <translation>Натисніть клавішу Backspace відразу після відкриття, щоб скасувати його та відновити текст тригера</translation>
-    </message>
-    <message>
-        <location line="+9" />
-        <source>Keyboard layout</source>
-        <translation>Розташування клавіш</translation>
-    </message>
-    <message>
-        <location line="+2" />
-        <source>XKB layout used for trigger detection (e.g. "us", "fr"). Leave empty for system default.</source>
-        <translation>Розташування клавіш XKB для визначення тригерів (наприклад, «us», «fr»). Залиште порожнім для системного значення за замовчуванням.</translation>
-    </message>
-    <message>
-        <location line="+8" />
-        <source>Pre-paste delay (ms)</source>
-        <translation>Затримка перед вставкою (мс)</translation>
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Delay between setting clipboard and injecting paste shortcut. Increase if expansions paste empty on slow compositors.</source>
-        <translation>Затримка між встановленням буфера обміну та натисканням комбінації вставки. Збільште, якщо на повільних композиторах вставка після відкриття порожня.</translation>
-    </message>
-    <message>
-        <location line="+9" />
-        <source>Key injection delay (ms)</source>
-        <translation>Затримка введення клавіш (мс)</translation>
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Delay between injected key events. Increase if expansions produce missing or garbled characters on slow compositors.</source>
-        <translation>Затримка між натисканнями клавіш. Збільште, якщо в розширенні символи зникають або спотворюються на повільних композиторах.</translation>
-    </message>
-    <message>
-        <location filename="../src/extensions/snippet/snippet-extension.hpp" line="+11" />
+        <location filename="../src/builtins/snippet/snippet-extension.hpp" line="+11"/>
         <source>Snippets</source>
         <translation>Сніпети</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Text expansion and snippet management</source>
         <translation>Текстове редагування та керування сніппетами</translation>
     </message>
@@ -4973,57 +5922,57 @@ Vicinae also has its own [extension store](vicinae://launch/core/store).
 <context>
     <name>SnippetFormView</name>
     <message>
-        <location filename="../src/qml/qml/SnippetFormView.qml" line="+15" />
+        <location filename="../src/ui/qml/views/SnippetFormView.qml" line="+16"/>
         <source>Title</source>
         <translation>Назва</translation>
     </message>
     <message>
-        <location line="+5" />
+        <location line="+5"/>
         <source>Euro symbol</source>
         <translation>Символ євро</translation>
     </message>
     <message>
-        <location line="+8" />
+        <location line="+8"/>
         <source>Content</source>
         <translation>Зміст</translation>
     </message>
     <message>
-        <location line="+2" />
-        <source>You can use {dynamic placeholders} to make the content dynamic: &lt;a href="https://docs.vicinae.com/snippets"&gt;learn more&lt;/a&gt;.</source>
-        <translation>Ви можете використовувати {dynamic placeholders}, щоб зробити вміст динамічним: &lt;a href="https://docs.vicinae.com/snippets"&gt;дізнатися більше&lt;/a&gt;.</translation>
+        <location line="+2"/>
+        <source>You can use {dynamic placeholders} to make the content dynamic: &lt;a href=&quot;https://docs.vicinae.com/snippets&quot;&gt;learn more&lt;/a&gt;.</source>
+        <translation>Ви можете використовувати {dynamic placeholders}, щоб зробити вміст динамічним: &lt;a href=&quot;https://docs.vicinae.com/snippets&quot;&gt;дізнатися більше&lt;/a&gt;.</translation>
     </message>
     <message>
-        <location line="+16" />
+        <location line="+17"/>
         <source>Keyword</source>
         <translation>Ключове слово</translation>
     </message>
     <message>
-        <location line="+2" />
+        <location line="+2"/>
         <source>Typing this keyword anywhere will result in it being replaced by the content of the snippet.</source>
         <translation>Введення цього ключового слова в будь-якому місці призведе до його заміни на зміст сниппета.</translation>
     </message>
     <message>
-        <location line="+0" />
-        <source>The snippet server is not running. Keyword expansion is unavailable. &lt;a href="https://docs.vicinae.com/snippets"&gt;Learn more&lt;/a&gt;.</source>
-        <translation>Сервер сниппетів не запущено. Розкриття за ключовими словами недоступне. &lt;a href="https://docs.vicinae.com/snippets"&gt;Дізнатися більше&lt;/a&gt;.</translation>
+        <location line="+0"/>
+        <source>The snippet server is not running. Keyword expansion is unavailable. &lt;a href=&quot;https://docs.vicinae.com/snippets&quot;&gt;Learn more&lt;/a&gt;.</source>
+        <translation>Сервер сниппетів не запущено. Розкриття за ключовими словами недоступне. &lt;a href=&quot;https://docs.vicinae.com/snippets&quot;&gt;Дізнатися більше&lt;/a&gt;.</translation>
     </message>
     <message>
-        <location line="+12" />
+        <location line="+12"/>
         <source>Applications</source>
         <translation>Додатки</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Restrict expansion to specific applications. By default, it works everywhere.</source>
         <translation>Обмежити розкриття певними додатками. За замовчуванням воно працює всюди.</translation>
     </message>
     <message>
-        <location line="+12" />
+        <location line="+12"/>
         <source>Expand as word</source>
         <translation>Розкривати як слово</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>If a keyword is typed, it will only be expanded after space or punctuation.</source>
         <translation>Якщо введено ключове слово, воно буде розгорнуто лише після пробілу або розділового знаку.</translation>
     </message>
@@ -5031,77 +5980,82 @@ Vicinae also has its own [extension store](vicinae://launch/core/store).
 <context>
     <name>SnippetFormViewHost</name>
     <message>
-        <location filename="../src/qml/snippet-form-view-host.cpp" line="+42" />
+        <location filename="../src/builtins/snippet/snippet-form-view-host.cpp" line="+33"/>
         <source>Submit</source>
         <translation>Надіслати</translation>
     </message>
     <message>
-        <location line="+8" />
+        <location line="+8"/>
         <source>Copy of %1</source>
         <translation>Копія %1</translation>
     </message>
     <message>
-        <location line="+24" />
-        <source>Edit "%1"</source>
+        <location line="+24"/>
+        <source>Edit &quot;%1&quot;</source>
         <translation>Змінити «%1»</translation>
     </message>
     <message>
-        <location line="+2" />
-        <source>Duplicate "%1"</source>
+        <location line="+2"/>
+        <source>Duplicate &quot;%1&quot;</source>
         <translation>Дублювати «%1»</translation>
     </message>
     <message>
-        <location line="+15" />
+        <location line="+15"/>
         <source>2 chars min.</source>
         <translation>Мінімальна довжина: 2 символи.</translation>
     </message>
     <message>
-        <location line="+4" />
+        <location line="+4"/>
         <source>Content should not be empty</source>
         <translation>Не повинно бути порожнім</translation>
     </message>
     <message>
-        <location line="+7" />
+        <location line="+7"/>
         <source>Only one {cursor} placeholder is allowed</source>
         <translation>Дозволено лише один плейсхолдер {cursor}</translation>
     </message>
     <message>
-        <location line="+14" />
+        <location line="+14"/>
         <source>Validation failed</source>
         <translation>Перевірка не пройшла</translation>
     </message>
     <message>
-        <location line="+26" />
+        <location line="+26"/>
         <source>Snippet updated</source>
         <translation>Сніпет оновлено</translation>
     </message>
     <message>
-        <location line="+7" />
+        <location line="+7"/>
         <source>Snippet successfully created</source>
         <translation>Сніпет успішно створено</translation>
     </message>
     <message>
-        <location line="+12" />
+        <location line="+12"/>
         <source>Cursor Position</source>
         <translation>Позиція курсора</translation>
     </message>
     <message>
-        <location line="+5" />
+        <location line="+5"/>
         <source>Clipboard Text</source>
         <translation>Текст з буфера обміну</translation>
     </message>
     <message>
-        <location line="+10" />
+        <location line="+10"/>
         <source>Date</source>
         <translation>Дата</translation>
     </message>
     <message>
-        <location line="+7" />
+        <location line="+7"/>
         <source>Argument</source>
         <translation>Аргумент</translation>
     </message>
     <message>
-        <location line="+7" />
+        <location line="+8"/>
+        <source>PowerShell Command</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
         <source>Shell Command</source>
         <translation>Команда терміналу</translation>
     </message>
@@ -5109,83 +6063,83 @@ Vicinae also has its own [extension store](vicinae://launch/core/store).
 <context>
     <name>SoftRebootCommand</name>
     <message>
-        <location filename="../src/extensions/power-management/power-management-extension.cpp" line="-99" />
+        <location filename="../src/builtins/power-management/power-management-extension.cpp" line="-99"/>
         <source>Soft Reboot System</source>
-        <translation>М'яке перезавантаження системи</translation>
+        <translation>М&apos;яке перезавантаження системи</translation>
     </message>
     <message>
-        <location line="+2" />
+        <location line="+2"/>
         <source>Soft reboot the system, which usually means only userspace is rebooted.</source>
-        <translation>М'яке перезавантаження системи, зазвичай означає перезапуск лише користувацького простору.</translation>
+        <translation>М&apos;яке перезавантаження системи, зазвичай означає перезапуск лише користувацького простору.</translation>
     </message>
     <message>
-        <location line="+13" />
-        <source>System can't soft reboot</source>
-        <translation>Система не може виконати м'яке перезавантаження</translation>
+        <location line="+13"/>
+        <source>System can&apos;t soft reboot</source>
+        <translation>Система не може виконати м&apos;яке перезавантаження</translation>
     </message>
     <message>
-        <location line="+4" />
+        <location line="+4"/>
         <source>Failed to soft reboot</source>
-        <translation>Не вдалося виконати м'яке перезавантаження</translation>
+        <translation>Не вдалося виконати м&apos;яке перезавантаження</translation>
     </message>
 </context>
 <context>
     <name>SponsorVicinaeCommand</name>
     <message>
-        <location filename="../src/extensions/vicinae/vicinae-extension.cpp" line="-118" />
+        <location filename="../src/builtins/vicinae/vicinae-extension.cpp" line="-118"/>
         <source>Donate to Vicinae</source>
         <translation>Підтримати Vicinae</translation>
     </message>
     <message>
-        <location line="+1" />
-        <source>Open link to Vicinae's GitHub sponsor page</source>
+        <location line="+1"/>
+        <source>Open link to Vicinae&apos;s GitHub sponsor page</source>
         <translation>Відкрити посилання на сторінку спонсорування Vicinae на GitHub</translation>
     </message>
 </context>
 <context>
     <name>StoreDetailView</name>
     <message>
-        <location filename="../src/qml/qml/StoreDetailView.qml" line="+201" />
+        <location filename="../src/ui/qml/views/StoreDetailView.qml" line="+208"/>
         <source>Installed</source>
         <translation>Встановлено</translation>
     </message>
     <message>
-        <location line="+166" />
+        <location line="+171"/>
         <source>Description</source>
         <translation>Опис</translation>
     </message>
     <message>
-        <location line="+26" />
+        <location line="+26"/>
         <source>Commands</source>
         <translation>Команди</translation>
     </message>
     <message>
-        <location line="+74" />
+        <location line="+78"/>
         <source>Open README</source>
         <translation>Відкрити README</translation>
     </message>
     <message>
-        <location line="+9" />
+        <location line="+9"/>
         <source>Last update</source>
         <translation>Останнє оновлення</translation>
     </message>
     <message>
-        <location line="+14" />
+        <location line="+14"/>
         <source>Contributors</source>
         <translation>Автори</translation>
     </message>
     <message>
-        <location line="+29" />
+        <location line="+31"/>
         <source>Categories</source>
         <translation>Категорії</translation>
     </message>
     <message>
-        <location line="+19" />
+        <location line="+20"/>
         <source>Source Code</source>
         <translation>Джерельний код</translation>
     </message>
     <message>
-        <location line="+3" />
+        <location line="+3"/>
         <source>View Code</source>
         <translation>Переглянути код</translation>
     </message>
@@ -5193,22 +6147,22 @@ Vicinae also has its own [extension store](vicinae://launch/core/store).
 <context>
     <name>SuspendCommand</name>
     <message>
-        <location filename="../src/extensions/power-management/power-management-extension.cpp" line="+36" />
+        <location filename="../src/builtins/power-management/power-management-extension.cpp" line="+36"/>
         <source>Suspend System</source>
         <translation>Призупиняє систему</translation>
     </message>
     <message>
-        <location line="+2" />
+        <location line="+2"/>
         <source>Suspend the system to RAM. Unlike hibernation, this does not turn the computer off and will break on power loss.</source>
-        <translation>Призупиняє роботу системи з збереженням в оперативній пам'яті. На відміну від глибокого сну, комп'ютер не вимикається, і при вимкненні живлення дані будуть втрачені.</translation>
+        <translation>Призупиняє роботу системи з збереженням в оперативній пам&apos;яті. На відміну від глибокого сну, комп&apos;ютер не вимикається, і при вимкненні живлення дані будуть втрачені.</translation>
     </message>
     <message>
-        <location line="+13" />
+        <location line="+13"/>
         <source>System cannot suspend</source>
         <translation>Система не може зупинитись</translation>
     </message>
     <message>
-        <location line="+4" />
+        <location line="+4"/>
         <source>Failed to suspend</source>
         <translation>Не вдалося призупинити</translation>
     </message>
@@ -5216,7 +6170,7 @@ Vicinae also has its own [extension store](vicinae://launch/core/store).
 <context>
     <name>SwitchWindowsCommand</name>
     <message>
-        <location filename="../src/extensions/wm/wm-extension.cpp" line="+89" />
+        <location filename="../src/builtins/wm/wm-extension.cpp" line="+89"/>
         <source>Switch Windows</source>
         <translation>Перемикати вікна</translation>
     </message>
@@ -5224,17 +6178,17 @@ Vicinae also has its own [extension store](vicinae://launch/core/store).
 <context>
     <name>SwitchWindowsSection</name>
     <message>
-        <location filename="../src/qml/switch-windows-model.hpp" line="+28" />
+        <location filename="../src/builtins/wm/switch-windows-model.hpp" line="+28"/>
         <source>Open Windows</source>
         <translation>Відкриті вікна</translation>
     </message>
     <message>
-        <location filename="../src/qml/switch-windows-model.cpp" line="+19" />
+        <location filename="../src/builtins/wm/switch-windows-model.cpp" line="+19"/>
         <source>WS %1</source>
         <translation>РП %1</translation>
     </message>
     <message>
-        <location line="+7" />
+        <location line="+7"/>
         <source>Window Actions</source>
         <translation>Дії з вікном</translation>
     </message>
@@ -5242,7 +6196,7 @@ Vicinae also has its own [extension store](vicinae://launch/core/store).
 <context>
     <name>SwitchWindowsViewHost</name>
     <message>
-        <location filename="../src/qml/switch-windows-view-host.cpp" line="+12" />
+        <location filename="../src/builtins/wm/switch-windows-view-host.cpp" line="+12"/>
         <source>Search open window...</source>
         <translation>Пошук відкритого вікна...</translation>
     </message>
@@ -5250,7 +6204,12 @@ Vicinae also has its own [extension store](vicinae://launch/core/store).
 <context>
     <name>SwitchWorkspacesCommand</name>
     <message>
-        <location filename="../src/extensions/wm/wm-extension.cpp" line="+10" />
+        <location filename="../src/builtins/wm/wm-extension.cpp" line="+11"/>
+        <source>Switch Desktops</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
         <source>Switch Workspaces</source>
         <translation>Перемикання робочих просторів</translation>
     </message>
@@ -5258,23 +6217,31 @@ Vicinae also has its own [extension store](vicinae://launch/core/store).
 <context>
     <name>SwitchWorkspacesSection</name>
     <message>
-        <location filename="../src/qml/switch-workspaces-model.hpp" line="+47" />
+        <location filename="../src/builtins/wm/switch-workspaces-model.hpp" line="+47"/>
         <source>%1</source>
         <translation>%1</translation>
     </message>
     <message numerus="yes">
-        <location line="+3" />
+        <location line="+3"/>
         <source>%n window(s)</source>
         <translation>
-            <numerusform>%n вікно</numerusform><numerusform>%n вікна</numerusform><numerusform>%n вікон</numerusform></translation>
+            <numerusform>%n вікно</numerusform>
+            <numerusform>%n вікна</numerusform>
+            <numerusform>%n вікон</numerusform>
+        </translation>
     </message>
     <message>
-        <location line="+0" />
+        <location line="+0"/>
         <source>empty</source>
         <translation>порожньо</translation>
     </message>
     <message>
-        <location line="+21" />
+        <location line="+22"/>
+        <source>Switch to desktop</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
         <source>Switch to workspace</source>
         <translation>Переключитися на робочий простір</translation>
     </message>
@@ -5282,12 +6249,17 @@ Vicinae also has its own [extension store](vicinae://launch/core/store).
 <context>
     <name>SwitchWorkspacesViewHost</name>
     <message>
-        <location filename="../src/qml/switch-workspaces-view-host.hpp" line="+16" />
+        <location filename="../src/builtins/wm/switch-workspaces-view-host.hpp" line="+16"/>
         <source>Open Workspaces</source>
         <translation>Відкриті робочі простори</translation>
     </message>
     <message>
-        <location filename="../src/qml/switch-workspaces-view-host.cpp" line="+12" />
+        <location filename="../src/builtins/wm/switch-workspaces-view-host.cpp" line="+13"/>
+        <source>Search desktops...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
         <source>Search workspaces...</source>
         <translation>Пошук робочих просторів...</translation>
     </message>
@@ -5295,83 +6267,48 @@ Vicinae also has its own [extension store](vicinae://launch/core/store).
 <context>
     <name>SystemBrowseApps</name>
     <message>
-        <location filename="../src/extensions/system/system-extension.hpp" line="-123" />
+        <location filename="../src/builtins/system/system-extension.hpp" line="-17"/>
         <source>Browse Apps</source>
         <translation>Перегляд додатків</translation>
     </message>
     <message>
-        <location line="+2" />
+        <location line="+2"/>
         <source>Browse all applications that are installed on the system</source>
         <translation>Перегляд усіх встановлених додатків у системі</translation>
-    </message>
-    <message>
-        <location line="+8" />
-        <source>Show hidden apps</source>
-        <translation>Показувати приховані додатки</translation>
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Sort alphabetically</source>
-        <translation>Сортування за алфавітом</translation>
     </message>
 </context>
 <context>
     <name>SystemExtension</name>
     <message>
-        <location line="+163" />
+        <location line="+39"/>
         <source>System</source>
         <translation>Система</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>System-related commands</source>
-        <translation>Команди, пов'язані з системою</translation>
+        <translation>Команди, пов&apos;язані з системою</translation>
     </message>
 </context>
 <context>
     <name>SystemRunCommand</name>
     <message>
-        <location line="-253" />
+        <location line="-105"/>
         <source>Run Terminal Program</source>
         <translation>Запустити програму в терміналі</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Run a program in a terminal window</source>
         <translation>Запустити програму в термінальному вікні</translation>
     </message>
     <message>
-        <location line="+7" />
+        <location line="+7"/>
         <source>command</source>
         <translation>команда</translation>
     </message>
     <message>
-        <location line="+5" />
-        <source>Run in terminal</source>
-        <translation>Запустити в терміналі</translation>
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Run in terminal (hold)</source>
-        <translation>Запустити в терміналі (утримувати)</translation>
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Run directly</source>
-        <translation>Запустити безпосередньо</translation>
-    </message>
-    <message>
-        <location line="+4" />
-        <source>Default Action</source>
-        <translation>Дії за замовчуванням</translation>
-    </message>
-    <message>
-        <location line="+1" />
-        <source>The default action to run on pressing return</source>
-        <translation>Дія, що виконується при натисканні Enter</translation>
-    </message>
-    <message>
-        <location line="+29" />
+        <location line="+26"/>
         <source>Not a valid executable</source>
         <translation>Не є допустимим виконуваним файлом</translation>
     </message>
@@ -5379,7 +6316,7 @@ Vicinae also has its own [extension store](vicinae://launch/core/store).
 <context>
     <name>SystemRunViewHost</name>
     <message>
-        <location filename="../src/qml/system-run-view-host.cpp" line="+20" />
+        <location filename="../src/builtins/system/system-run-view-host.cpp" line="+19"/>
         <source>Search for a program to execute...</source>
         <translation>Пошук програми для запуску...</translation>
     </message>
@@ -5387,7 +6324,7 @@ Vicinae also has its own [extension store](vicinae://launch/core/store).
 <context>
     <name>ThemeExtension</name>
     <message>
-        <location filename="../src/extensions/theme/theme-extension.hpp" line="+9" />
+        <location filename="../src/builtins/theme/theme-extension.hpp" line="+9"/>
         <source>Theme</source>
         <translation>Тема</translation>
     </message>
@@ -5395,22 +6332,22 @@ Vicinae also has its own [extension store](vicinae://launch/core/store).
 <context>
     <name>ThemeSection</name>
     <message>
-        <location filename="../src/qml/theme-list-model.cpp" line="+22" />
+        <location filename="../src/builtins/theme/theme-list-model.cpp" line="+22"/>
         <source>Default theme description</source>
         <translation>Опис теми за замовчуванням</translation>
     </message>
     <message>
-        <location line="+64" />
+        <location line="+64"/>
         <source>Open theme file</source>
         <translation>Відкрити файл теми</translation>
     </message>
     <message>
-        <location line="+7" />
+        <location line="+7"/>
         <source>Copy ID</source>
         <translation>Копіювати ID</translation>
     </message>
     <message>
-        <location line="+6" />
+        <location line="+6"/>
         <source>Copy path</source>
         <translation>Копіювати шлях</translation>
     </message>
@@ -5418,17 +6355,17 @@ Vicinae also has its own [extension store](vicinae://launch/core/store).
 <context>
     <name>ThemeViewHost</name>
     <message>
-        <location filename="../src/qml/theme-view-host.cpp" line="+22" />
+        <location filename="../src/builtins/theme/theme-view-host.cpp" line="+22"/>
         <source>Search for a theme...</source>
         <translation>Пошук теми...</translation>
     </message>
     <message>
-        <location line="+53" />
+        <location line="+53"/>
         <source>Current Theme</source>
         <translation>Поточна тема</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Available Themes</source>
         <translation>Доступні теми</translation>
     </message>
@@ -5436,17 +6373,17 @@ Vicinae also has its own [extension store](vicinae://launch/core/store).
 <context>
     <name>ToggleFloatingWindowCommand</name>
     <message>
-        <location filename="../src/extensions/wm/wm-extension.cpp" line="-51" />
+        <location filename="../src/builtins/wm/wm-extension.cpp" line="-54"/>
         <source>Toggle Floating</source>
         <translation>Режим плаваючі (увімкнено/вимкнено)</translation>
     </message>
     <message>
-        <location line="+13" />
+        <location line="+13"/>
         <source>Active window is not on the current workspace</source>
         <translation>Активне вікно не знаходиться в поточному робочому просторі</translation>
     </message>
     <message>
-        <location line="+5" />
+        <location line="+5"/>
         <source>No window to toggle</source>
         <translation>Відсутнє вікно для перемикання</translation>
     </message>
@@ -5454,17 +6391,17 @@ Vicinae also has its own [extension store](vicinae://launch/core/store).
 <context>
     <name>ToggleFullscreenWindowCommand</name>
     <message>
-        <location line="-44" />
+        <location line="-44"/>
         <source>Toggle Fullscreen</source>
         <translation>Режим повноекранного відображення (увімкнути/вимкнути)</translation>
     </message>
     <message>
-        <location line="+13" />
+        <location line="+13"/>
         <source>Active window is not on the current workspace</source>
         <translation>Активне вікно не знаходиться в поточному робочому просторі</translation>
     </message>
     <message>
-        <location line="+5" />
+        <location line="+5"/>
         <source>No window to fullscreen</source>
         <translation>Відсутнє вікно для переходу в повноекранний режим</translation>
     </message>
@@ -5472,32 +6409,32 @@ Vicinae also has its own [extension store](vicinae://launch/core/store).
 <context>
     <name>ToggleItemAsFavorite</name>
     <message>
-        <location filename="../src/actions/root-search/root-search-actions.cpp" line="-66" />
+        <location filename="../src/actions/root-search-actions.cpp" line="-86"/>
         <source>Remove from favorites</source>
         <translation>Видалити з улюблених</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Add to favorites</source>
         <translation>Додати до улюблених</translation>
     </message>
     <message>
-        <location line="+10" />
+        <location line="+10"/>
         <source>Successfuly added to favorites</source>
         <translation>Додано до улюблених</translation>
     </message>
     <message>
-        <location line="+2" />
+        <location line="+2"/>
         <source>Successfuly removed from favorites</source>
         <translation>Успішно видалено з улюблених</translation>
     </message>
     <message>
-        <location line="+4" />
+        <location line="+4"/>
         <source>Failed to add to favorites</source>
         <translation>Не вдалося додати до улюблених</translation>
     </message>
     <message>
-        <location line="+2" />
+        <location line="+2"/>
         <source>Failed to remove from favorites</source>
         <translation>Не вдалося видалити з улюблених</translation>
     </message>
@@ -5505,22 +6442,22 @@ Vicinae also has its own [extension store](vicinae://launch/core/store).
 <context>
     <name>ToggleMuteCommand</name>
     <message>
-        <location filename="../src/extensions/system/system-extension.hpp" line="+163" />
+        <location filename="../src/builtins/media/media-extension.hpp" line="+11"/>
         <source>Toggle Mute</source>
         <translation>Увімкнути/вимкнути звук</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Mute or unmute system audio</source>
         <translation>Вимкнути або увімкнути системний звук</translation>
     </message>
     <message>
-        <location line="+10" />
+        <location line="+10"/>
         <source>Failed to toggle mute</source>
         <translation>Не вдалося вимкнути звук</translation>
     </message>
     <message>
-        <location line="+4" />
+        <location line="+4"/>
         <source>Muted</source>
         <translation>Звук вимкнено</translation>
     </message>
@@ -5528,40 +6465,149 @@ Vicinae also has its own [extension store](vicinae://launch/core/store).
 <context>
     <name>ToggleOverviewCommand</name>
     <message>
-        <location filename="../src/extensions/wm/wm-extension.cpp" line="+34" />
+        <location filename="../src/builtins/wm/wm-extension.cpp" line="+34"/>
         <source>Toggle Overview</source>
         <translation>Переключити перегляд</translation>
     </message>
 </context>
 <context>
+    <name>TrayMenuViewHost</name>
+    <message>
+        <location filename="../src/builtins/vicinae/search-tray-view-host.hpp" line="-122"/>
+        <source>Search menu...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+36"/>
+        <source>Trigger</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>TrayService</name>
+    <message>
+        <location filename="../src/services/tray/tray-service.cpp" line="+10"/>
+        <source>Toggle Vicinae</source>
+        <translation type="unfinished">Показати/приховати Vicinae</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>About Vicinae</source>
+        <translation type="unfinished">Про Vicinae</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Check for Updates…</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Update Available: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Settings…</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Preferences…</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Sponsor Vicinae</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Join the Discord</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Follow on X</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Quit Vicinae</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>UninstallAppAction</name>
+    <message>
+        <location filename="../src/actions/app-actions.cpp" line="+20"/>
+        <source>Uninstall Application</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Failed to uninstall %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Uninstalled %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Failed to quit %1</source>
+        <translation type="unfinished">Не вдалося завершити %1</translation>
+    </message>
+    <message>
+        <location line="+15"/>
+        <source>%1 did not quit, uninstall cancelled</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+12"/>
+        <source>%1 is running. It will be quit and moved to the trash.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>The application will be moved to the trash.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Uninstall %1?</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>UninstallExtensionAction</name>
     <message>
-        <location filename="../src/actions/extension/extension-actions.cpp" line="+11" />
+        <location filename="../src/actions/extension-actions.cpp" line="+10"/>
         <source>Are you sure?</source>
         <translation>Ви впевнені?</translation>
     </message>
     <message>
-        <location line="+2" />
+        <location line="+2"/>
         <source>All this extension data will be permanently lost. If you just want the extension to not appear in the root search anymore, consider disabling it instead.</source>
-        <translation>Усі дані цього розширення будуть безповоротно втрачені. Якщо ви просто хочете, щоб розширення більше не з'являлося в головному пошуку, замість цього вимкніть його.</translation>
+        <translation>Усі дані цього розширення будуть безповоротно втрачені. Якщо ви просто хочете, щоб розширення більше не з&apos;являлося в головному пошуку, замість цього вимкніть його.</translation>
     </message>
     <message>
-        <location line="+2" />
+        <location line="+2"/>
         <source>Uninstall</source>
         <translation>Видалити</translation>
     </message>
     <message>
-        <location line="+4" />
+        <location line="+4"/>
         <source>Extension uninstalled</source>
         <translation>Розширення видалено</translation>
     </message>
     <message>
-        <location line="+2" />
+        <location line="+2"/>
         <source>Failed to uninstall extension</source>
         <translation>Не вдалося видалити розширення</translation>
     </message>
     <message>
-        <location filename="../src/actions/extension/extension-actions.hpp" line="+14" />
+        <location filename="../src/actions/extension-actions.hpp" line="+10"/>
         <source>Uninstall Extension</source>
         <translation>Видалити розширення</translation>
     </message>
@@ -5569,53 +6615,53 @@ Vicinae also has its own [extension store](vicinae://launch/core/store).
 <context>
     <name>UnpinCalculatorHistoryRecordAction</name>
     <message>
-        <location filename="../src/actions/calculator/calculator-actions.hpp" line="-23" />
+        <location filename="../src/actions/calculator-actions.hpp" line="-23"/>
         <source>Entry unpinned</source>
-        <translation>Запис від'єднано</translation>
+        <translation>Запис від&apos;єднано</translation>
     </message>
     <message>
-        <location line="+3" />
+        <location line="+3"/>
         <source>Unpin entry</source>
-        <translation>Від'єднати запис</translation>
+        <translation>Від&apos;єднати запис</translation>
     </message>
 </context>
 <context>
     <name>UnpinEmojiAction</name>
     <message>
-        <location filename="../src/qml/emoji-grid-model.cpp" line="-45" />
+        <location filename="../src/builtins/vicinae/emoji-grid-model.cpp" line="-45"/>
         <source>Unpin emoji</source>
-        <translation>Від'єднати емодзі</translation>
+        <translation>Від&apos;єднати емодзі</translation>
     </message>
 </context>
 <context>
     <name>UpdateService</name>
     <message>
-        <location filename="../src/services/update/update-service.cpp" line="-167" />
+        <location filename="../src/services/update/update-service.cpp" line="-169"/>
         <source>Update installed</source>
         <translation>Оновлення встановлено</translation>
     </message>
     <message>
-        <location line="+0" />
+        <location line="+0"/>
         <source>Restarting…</source>
         <translation>Перезапуск…</translation>
     </message>
     <message>
-        <location line="+88" />
+        <location line="+90"/>
         <source>Downloading Vicinae %1…</source>
         <translation>Завантаження Vicinae %1…</translation>
     </message>
     <message>
-        <location line="+7" />
+        <location line="+7"/>
         <source>Downloading Vicinae %1… %2%</source>
         <translation>Завантаження Vicinae %1… %2%</translation>
     </message>
     <message>
-        <location line="+6" />
+        <location line="+6"/>
         <source>Installing update…</source>
         <translation>Встановлення оновлення...</translation>
     </message>
     <message>
-        <location line="+24" />
+        <location line="+24"/>
         <source>Update failed</source>
         <translation>Не вдалося оновити</translation>
     </message>
@@ -5623,38 +6669,38 @@ Vicinae also has its own [extension store](vicinae://launch/core/store).
 <context>
     <name>VicinaeExtension</name>
     <message>
-        <location filename="../src/extensions/vicinae/vicinae-extension.hpp" line="+11" />
+        <location filename="../src/builtins/vicinae/vicinae-extension.hpp" line="+11"/>
         <source>General vicinae-related commands.</source>
-        <translation>Загальні команди, пов'язані з Vicinae.</translation>
+        <translation>Загальні команди, пов&apos;язані з Vicinae.</translation>
     </message>
 </context>
 <context>
     <name>VicinaeHotkeyGlobalShortcutBackend</name>
     <message>
-        <location filename="../src/services/global-shortcuts/vicinae-hotkey-global-shortcut-backend.cpp" line="+75" />
+        <location filename="../src/services/global-shortcuts/vicinae-hotkey-global-shortcut-backend.cpp" line="+79"/>
         <source>Compositor does not support global hotkeys</source>
         <translation>Композитор не підтримує глобальні комбінації клавіш</translation>
     </message>
     <message>
-        <location line="+6" />
+        <location line="+6"/>
         <source>Unsupported trigger key</source>
         <translation>Непідтримувана клавіша тригера</translation>
     </message>
     <message>
-        <location line="+17" />
+        <location line="+17"/>
         <source>Hotkey binding was lost</source>
-        <translation>Прив'язка комбінації клавіш втрачена</translation>
+        <translation>Прив&apos;язка комбінації клавіш втрачена</translation>
     </message>
 </context>
 <context>
     <name>VicinaeListInstalledExtensionsCommand</name>
     <message>
-        <location filename="../src/extensions/vicinae/list-installed-extensions-command.hpp" line="+11" />
+        <location filename="../src/builtins/vicinae/list-installed-extensions-command.hpp" line="+11"/>
         <source>Show Installed Extensions</source>
         <translation>Показати встановлені розширення</translation>
     </message>
     <message>
-        <location line="+2" />
+        <location line="+2"/>
         <source>Show all third-party extensions that have been installed. This includes local extensions as well as extensions downloaded from the stores (vicinae and raycast).</source>
         <translation>Показати всі встановлені сторонні розширення. Це містить локальні розширення, а також завантажені з магазинів (Vicinae та Raycast).</translation>
     </message>
@@ -5662,17 +6708,12 @@ Vicinae also has its own [extension store](vicinae://launch/core/store).
 <context>
     <name>VicinaeStoreCommand</name>
     <message>
-        <location filename="../src/extensions/vicinae/vicinae-store-command.hpp" line="+13" />
+        <location filename="../src/builtins/vicinae/vicinae-store-command.hpp" line="+15"/>
         <source>Install extensions from the Vicinae store</source>
         <translation>Встановлювати розширення з магазину Vicinae</translation>
     </message>
     <message>
-        <location line="+9" />
-        <source>Always show intro</source>
-        <translation>Завжди показувати вступ</translation>
-    </message>
-    <message>
-        <location line="+10" />
+        <location line="+13"/>
         <source>
 # Welcome to the vicinae extension store
 
@@ -5680,7 +6721,7 @@ The vicinae extension store features community-built extensions that have been a
 
 Every extension listed here has its source code available in the [vicinaehq/extensions](https://github.com/vicinaehq/extensions) repository.
 
-If you're looking to build your own extension, take a look at the [documentation](https://docs.vicinae.com/extensions/introduction). If you think your extension would be a good fit for the store, feel free to submit it!
+If you&apos;re looking to build your own extension, take a look at the [documentation](https://docs.vicinae.com/extensions/introduction). If you think your extension would be a good fit for the store, feel free to submit it!
 </source>
         <translation># Ласкаво просимо до магазину розширень vicinae
 
@@ -5692,7 +6733,7 @@ If you're looking to build your own extension, take a look at the [documentation
 </translation>
     </message>
     <message>
-        <location line="+13" />
+        <location line="+13"/>
         <source>Continue to store</source>
         <translation>Перейти до магазину</translation>
     </message>
@@ -5700,62 +6741,37 @@ If you're looking to build your own extension, take a look at the [documentation
 <context>
     <name>VicinaeStoreDetailHost</name>
     <message>
-        <location filename="../src/qml/vicinae-store-detail-host.cpp" line="+38" />
+        <location filename="../src/builtins/vicinae/vicinae-store-detail-host.cpp" line="+36"/>
         <source>Failed to load extension</source>
         <translation>Не вдалося завантажити розширення</translation>
     </message>
     <message>
-        <location line="+0" />
+        <location line="+0"/>
         <source>Could not fetch extension data from the store.</source>
         <translation>Не вдалося отримати дані розширення з магазину.</translation>
     </message>
     <message>
-        <location line="+11" />
+        <location line="+11"/>
         <source>Extension not found</source>
         <translation>Розширення не знайдено</translation>
     </message>
     <message>
-        <location line="+0" />
-        <source>The extension "%1" could not be found in the store.</source>
-        <translation>Розширення "%1" не знайдено в магазині.</translation>
+        <location line="+0"/>
+        <source>The extension &quot;%1&quot; could not be found in the store.</source>
+        <translation>Розширення &quot;%1&quot; не знайдено в магазині.</translation>
     </message>
     <message>
-        <location line="+20" />
+        <location line="+20"/>
         <source>Extension Store - %1</source>
         <translation>Магазин розширень - %1</translation>
     </message>
     <message>
-        <location line="+73" />
+        <location line="+73"/>
         <source>Extension Store</source>
         <translation>Магазин розширень</translation>
     </message>
     <message>
-        <location line="+8" />
-        <source>Install extension</source>
-        <translation>Встановити розширення</translation>
-    </message>
-    <message>
-        <location line="+7" />
-        <source>Downloading extension...</source>
-        <translation>Завантаження розширення...</translation>
-    </message>
-    <message>
-        <location line="+7" />
-        <source>Failed to download extension</source>
-        <translation>Не вдалося завантажити розширення</translation>
-    </message>
-    <message>
-        <location line="+7" />
-        <source>Failed to extract extension archive</source>
-        <translation>Не вдалося розпакувати архів розширення</translation>
-    </message>
-    <message>
-        <location line="+3" />
-        <source>Extension installed</source>
-        <translation>Розширення встановлено</translation>
-    </message>
-    <message>
-        <location line="+14" />
+        <location line="+17"/>
         <source>Report issue</source>
         <translation>Повідомити про проблему</translation>
     </message>
@@ -5763,7 +6779,7 @@ If you're looking to build your own extension, take a look at the [documentation
 <context>
     <name>VicinaeStoreSection</name>
     <message>
-        <location filename="../src/qml/vicinae-store-model.cpp" line="+41" />
+        <location filename="../src/builtins/vicinae/vicinae-store-model.cpp" line="+42"/>
         <source>Show details</source>
         <translation>Показати деталі</translation>
     </message>
@@ -5771,22 +6787,22 @@ If you're looking to build your own extension, take a look at the [documentation
 <context>
     <name>VicinaeStoreViewHost</name>
     <message>
-        <location filename="../src/qml/vicinae-store-view-host.cpp" line="+27" />
+        <location filename="../src/builtins/vicinae/vicinae-store-view-host.cpp" line="+26"/>
         <source>Browse Vicinae extensions</source>
         <translation>Перегляд розширень Vicinae</translation>
     </message>
     <message>
-        <location line="+23" />
+        <location line="+23"/>
         <source>Failed to fetch extensions</source>
         <translation>Не вдалося отримати розширення</translation>
     </message>
     <message>
-        <location line="+4" />
+        <location line="+4"/>
         <source>Extensions</source>
         <translation>Розширення</translation>
     </message>
     <message>
-        <location line="+3" />
+        <location line="+3"/>
         <source>Extension Store</source>
         <translation>Магазин розширень</translation>
     </message>
@@ -5794,22 +6810,22 @@ If you're looking to build your own extension, take a look at the [documentation
 <context>
     <name>VolumeDownCommand</name>
     <message>
-        <location filename="../src/extensions/system/system-extension.hpp" line="-74" />
+        <location filename="../src/builtins/media/media-extension.hpp" line="-74"/>
         <source>Turn Volume Down</source>
         <translation>Зменшити гучність</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Decrease system volume</source>
         <translation>Зменшити гучність системи</translation>
     </message>
     <message>
-        <location line="+18" />
+        <location line="+18"/>
         <source>Invalid step value</source>
         <translation>Неправильне значення кроку</translation>
     </message>
     <message>
-        <location line="+6" />
+        <location line="+6"/>
         <source>Failed to adjust volume</source>
         <translation>Не вдалося змінити гучність</translation>
     </message>
@@ -5817,22 +6833,22 @@ If you're looking to build your own extension, take a look at the [documentation
 <context>
     <name>VolumeUpCommand</name>
     <message>
-        <location line="-61" />
+        <location line="-61"/>
         <source>Turn Volume Up</source>
         <translation>Збільшити гучність</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Increase system volume</source>
         <translation>Збільшити гучність системи</translation>
     </message>
     <message>
-        <location line="+18" />
+        <location line="+18"/>
         <source>Invalid step value</source>
         <translation>Неправильне значення кроку</translation>
     </message>
     <message>
-        <location line="+6" />
+        <location line="+6"/>
         <source>Failed to adjust volume</source>
         <translation>Не вдалося змінити гучність</translation>
     </message>
@@ -5840,12 +6856,12 @@ If you're looking to build your own extension, take a look at the [documentation
 <context>
     <name>WallpaperManager</name>
     <message>
-        <location filename="../src/services/wallpaper/wallpaper-manager.cpp" line="+68" />
+        <location filename="../src/services/wallpaper/wallpaper-manager.cpp" line="+68"/>
         <source>Setting the wallpaper is not supported in the current environment</source>
         <translation>Встановлення шпалер не підтримується в поточному середовищі</translation>
     </message>
     <message>
-        <location line="+4" />
+        <location line="+4"/>
         <source>No such file: %1</source>
         <translation>Файлу не знайдено: %1</translation>
     </message>
@@ -5853,28 +6869,28 @@ If you're looking to build your own extension, take a look at the [documentation
 <context>
     <name>WinControlPanelRootItem</name>
     <message>
-        <location filename="../src/root-search/control-panel/control-panel-root-provider.cpp" line="+104" />
-        <location line="+10" />
+        <location filename="../src/root-search/control-panel/control-panel-root-provider.cpp" line="+104"/>
+        <location line="+10"/>
         <source>Control Panel</source>
         <translation>Панель керування</translation>
     </message>
     <message>
-        <location line="+4" />
+        <location line="+4"/>
         <source>Name</source>
         <translation>Назва</translation>
     </message>
     <message>
-        <location line="+0" />
+        <location line="+0"/>
         <source>Where</source>
         <translation>Розташування</translation>
     </message>
     <message>
-        <location line="+11" />
+        <location line="+11"/>
         <source>Open Applet</source>
         <translation>Відкрити елемент</translation>
     </message>
     <message>
-        <location line="+3" />
+        <location line="+3"/>
         <source>Copy Path</source>
         <translation>Копіювати шлях</translation>
     </message>
@@ -5882,12 +6898,12 @@ If you're looking to build your own extension, take a look at the [documentation
 <context>
     <name>WinControlPanelRootProvider</name>
     <message>
-        <location line="+49" />
+        <location line="+51"/>
         <source>Control Panel</source>
         <translation>Панель керування</translation>
     </message>
     <message>
-        <location line="+3" />
+        <location line="+3"/>
         <source>Control Panel applets and system tasks.</source>
         <translation>Елементи панелі керування та системні завдання.</translation>
     </message>
@@ -5895,23 +6911,23 @@ If you're looking to build your own extension, take a look at the [documentation
 <context>
     <name>WinControlPanelTaskRootItem</name>
     <message>
-        <location line="-40" />
-        <location line="+11" />
+        <location line="-41"/>
+        <location line="+11"/>
         <source>Control Panel</source>
         <translation>Панель керування</translation>
     </message>
     <message>
-        <location line="+4" />
+        <location line="+4"/>
         <source>Name</source>
         <translation>Назва</translation>
     </message>
     <message>
-        <location line="+0" />
+        <location line="+0"/>
         <source>Task ID</source>
         <translation>ID завдання</translation>
     </message>
     <message>
-        <location line="+9" />
+        <location line="+9"/>
         <source>Open</source>
         <translation>Відкрити</translation>
     </message>
@@ -5919,564 +6935,561 @@ If you're looking to build your own extension, take a look at the [documentation
 <context>
     <name>WinSettingsPage</name>
     <message>
-        <location filename="../src/root-search/windows-settings/windows-settings-root-provider.cpp" line="-114" />
+        <location filename="../src/root-search/windows-settings/windows-settings-root-provider.cpp" line="-114"/>
         <source>Display</source>
         <translation>Дисплей</translation>
     </message>
     <message>
-        <location line="+0" />
-        <location line="+1" />
-        <location line="+1" />
-        <location line="+1" />
-        <location line="+1" />
-        <location line="+1" />
-        <location line="+1" />
-        <location line="+1" />
-        <location line="+1" />
-        <location line="+1" />
-        <location line="+1" />
-        <location line="+1" />
-        <location line="+1" />
-        <location line="+1" />
-        <location line="+1" />
-        <location line="+1" />
-        <location line="+1" />
-        <location line="+1" />
-        <location line="+1" />
+        <location line="+0"/>
+        <location line="+1"/>
+        <location line="+1"/>
+        <location line="+1"/>
+        <location line="+1"/>
+        <location line="+1"/>
+        <location line="+1"/>
+        <location line="+1"/>
+        <location line="+1"/>
+        <location line="+1"/>
+        <location line="+1"/>
+        <location line="+1"/>
+        <location line="+1"/>
+        <location line="+1"/>
+        <location line="+1"/>
+        <location line="+1"/>
+        <location line="+1"/>
+        <location line="+1"/>
+        <location line="+1"/>
         <source>System</source>
         <translation>Система</translation>
     </message>
     <message>
-        <location line="-17" />
+        <location line="-17"/>
         <source>Night Light</source>
         <translation>Нічний режим</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Sound</source>
         <translation>Звук</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Volume Mixer</source>
         <translation>Мікшер гучності</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Notifications</source>
         <translation>Сповіщення</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Focus</source>
         <translation>Фокус</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Power &amp; Battery</source>
         <translation>Живлення та акумулятор</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Storage</source>
-        <translation>Пам'ять</translation>
+        <translation>Пам&apos;ять</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Nearby Sharing</source>
         <translation>Спільний доступ поблизу</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Multitasking</source>
         <translation>Мультизадачність</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Activation</source>
         <translation>Активація</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Troubleshoot</source>
         <translation>Вирішення проблем</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Recovery</source>
         <translation>Відновлення</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Projecting to This PC</source>
-        <translation>Проєктування на цей комп'ютер</translation>
+        <translation>Проєктування на цей комп&apos;ютер</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Remote Desktop</source>
         <translation>Віддалений робочий стіл</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Clipboard</source>
         <translation>Виділення тексту</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>About</source>
         <translation>Про систему</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Optional Features</source>
         <translation>Додаткові компоненти</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>For Developers</source>
         <translation>Для розробників</translation>
     </message>
     <message>
-        <location line="+2" />
-        <location line="+0" />
-        <location line="+1" />
-        <location line="+1" />
-        <location line="+1" />
-        <location line="+1" />
-        <location line="+1" />
-        <location line="+1" />
-        <location line="+1" />
-        <location line="+1" />
-        <location line="+1" />
+        <location line="+2"/>
+        <location line="+1"/>
+        <location line="+1"/>
+        <location line="+1"/>
+        <location line="+1"/>
+        <location line="+1"/>
+        <location line="+1"/>
+        <location line="+1"/>
+        <location line="+1"/>
+        <location line="+1"/>
         <source>Bluetooth &amp; Devices</source>
         <translation>Bluetooth та пристрої</translation>
     </message>
     <message>
-        <location line="-8" />
+        <location line="-8"/>
         <source>Devices</source>
         <translation>Пристрої</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Printers &amp; Scanners</source>
         <translation>Принтери та сканери</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Mobile Devices</source>
         <translation>Мобільні пристрої</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Cameras</source>
         <translation>Камери</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Mouse</source>
         <translation>Мишка</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Touchpad</source>
         <translation>Тактильна панель</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Pen &amp; Windows Ink</source>
         <translation>Перо та Windows Ink</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>AutoPlay</source>
         <translation>Автозапуск</translation>
     </message>
     <message>
-        <location line="+3" />
-        <location line="+0" />
-        <location line="+1" />
-        <location line="+1" />
-        <location line="+1" />
-        <location line="+1" />
-        <location line="+1" />
-        <location line="+1" />
-        <location line="+1" />
-        <location line="+1" />
+        <location line="+3"/>
+        <location line="+1"/>
+        <location line="+1"/>
+        <location line="+1"/>
+        <location line="+1"/>
+        <location line="+1"/>
+        <location line="+1"/>
+        <location line="+1"/>
+        <location line="+1"/>
         <source>Network &amp; Internet</source>
         <translation>Мережа та Інтернет</translation>
     </message>
     <message>
-        <location line="-7" />
+        <location line="-7"/>
         <source>Wi-Fi</source>
         <translation>Wi-Fi</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Ethernet</source>
         <translation>Ethernet</translation>
     </message>
     <message>
-        <location line="+2" />
+        <location line="+2"/>
         <source>Mobile Hotspot</source>
         <translation>Мобільний Wi-Fi</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Airplane Mode</source>
         <translation>Режим «В самоліті»</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Proxy</source>
         <translation>Проксі</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Dial-up</source>
         <translation>Коммутируване підключення</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Advanced Network Settings</source>
         <translation>Додаткові параметри мережі</translation>
     </message>
     <message>
-        <location line="+2" />
+        <location line="+2"/>
         <source>Background</source>
         <translation>Фон</translation>
     </message>
     <message>
-        <location line="+0" />
-        <location line="+1" />
-        <location line="+1" />
-        <location line="+1" />
-        <location line="+1" />
-        <location line="+1" />
-        <location line="+1" />
-        <location line="+1" />
-        <location line="+1" />
+        <location line="+0"/>
+        <location line="+1"/>
+        <location line="+1"/>
+        <location line="+1"/>
+        <location line="+1"/>
+        <location line="+1"/>
+        <location line="+1"/>
+        <location line="+1"/>
+        <location line="+1"/>
         <source>Personalization</source>
         <translation>Персоналізація</translation>
     </message>
     <message>
-        <location line="-7" />
+        <location line="-7"/>
         <source>Colors</source>
         <translation>Кольори</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Themes</source>
         <translation>Теми</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Lock Screen</source>
         <translation>Екран блокування</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Touch Keyboard</source>
         <translation>Сенсорна клавіатура</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Start</source>
         <translation>Пуск</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Taskbar</source>
         <translation>Панель завдань</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Fonts</source>
         <translation>Шрифти</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Dynamic Lighting</source>
         <translation>Динамічне підсвічування</translation>
     </message>
     <message>
-        <location line="+2" />
+        <location line="+2"/>
         <source>Installed Apps</source>
         <translation>Встановлені додатки</translation>
     </message>
     <message>
-        <location line="+0" />
-        <location line="+1" />
-        <location line="+1" />
-        <location line="+1" />
-        <location line="+1" />
-        <location line="+1" />
+        <location line="+0"/>
+        <location line="+1"/>
+        <location line="+1"/>
+        <location line="+1"/>
+        <location line="+1"/>
+        <location line="+1"/>
         <source>Apps</source>
         <translation>Додатки</translation>
     </message>
     <message>
-        <location line="-4" />
+        <location line="-4"/>
         <source>Default Apps</source>
         <translation>Додатки за замовчуванням</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Offline Maps</source>
         <translation>Автономні карти</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Apps for Websites</source>
         <translation>Додатки для веб-сайтів</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Video Playback</source>
         <translation>Відтворення відео</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Startup Apps</source>
         <translation>Додатки для автоматичного запуску</translation>
     </message>
     <message>
-        <location line="+2" />
+        <location line="+2"/>
         <source>Your Info</source>
         <translation>Ваші дані</translation>
     </message>
     <message>
-        <location line="+0" />
-        <location line="+1" />
-        <location line="+1" />
-        <location line="+1" />
-        <location line="+1" />
-        <location line="+1" />
+        <location line="+0"/>
+        <location line="+1"/>
+        <location line="+1"/>
+        <location line="+1"/>
+        <location line="+1"/>
+        <location line="+1"/>
         <source>Accounts</source>
         <translation>Профілі</translation>
     </message>
     <message>
-        <location line="-4" />
+        <location line="-4"/>
         <source>Email &amp; Accounts</source>
         <translation>Електронна пошта та профілі</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Sign-in Options</source>
         <translation>Способи входу</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Access Work or School</source>
         <translation>Доступ до роботи або навчання</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Family &amp; Other Users</source>
-        <translation>Сім'я та інші користувачі</translation>
+        <translation>Сім&apos;я та інші користувачі</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Windows Backup</source>
         <translation>Резервне копіювання Windows</translation>
     </message>
     <message>
-        <location line="+2" />
+        <location line="+2"/>
         <source>Date &amp; Time</source>
         <translation>Дата та час</translation>
     </message>
     <message>
-        <location line="+0" />
-        <location line="+1" />
-        <location line="+1" />
-        <location line="+1" />
+        <location line="+0"/>
+        <location line="+1"/>
+        <location line="+1"/>
+        <location line="+1"/>
         <source>Time &amp; Language</source>
         <translation>Час та мова</translation>
     </message>
     <message>
-        <location line="-2" />
+        <location line="-2"/>
         <source>Language &amp; Region</source>
         <translation>Мова та регіон</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Typing</source>
         <translation>Введення</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Speech</source>
         <translation>Розпізнавання мови</translation>
     </message>
     <message>
-        <location line="+2" />
+        <location line="+2"/>
         <source>Game Bar</source>
         <translation>Ігрова панель</translation>
     </message>
     <message>
-        <location line="+0" />
-        <location line="+1" />
-        <location line="+1" />
+        <location line="+0"/>
+        <location line="+1"/>
+        <location line="+1"/>
         <source>Gaming</source>
         <translation>Ігри</translation>
     </message>
     <message>
-        <location line="-1" />
+        <location line="-1"/>
         <source>Captures</source>
         <translation>Запис екрана</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Game Mode</source>
         <translation>Ігровий режим</translation>
     </message>
     <message>
-        <location line="+2" />
+        <location line="+2"/>
         <source>Text Size</source>
         <translation>Розмір тексту</translation>
     </message>
     <message>
-        <location line="+0" />
-        <location line="+1" />
-        <location line="+1" />
-        <location line="+1" />
-        <location line="+1" />
-        <location line="+1" />
-        <location line="+1" />
-        <location line="+1" />
-        <location line="+1" />
-        <location line="+1" />
-        <location line="+1" />
+        <location line="+0"/>
+        <location line="+1"/>
+        <location line="+1"/>
+        <location line="+1"/>
+        <location line="+1"/>
+        <location line="+1"/>
+        <location line="+1"/>
+        <location line="+1"/>
+        <location line="+1"/>
+        <location line="+1"/>
+        <location line="+1"/>
         <source>Accessibility</source>
         <translation>Налаштування доступності</translation>
     </message>
     <message>
-        <location line="-9" />
+        <location line="-9"/>
         <source>Visual Effects</source>
         <translation>Візуальні ефекти</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Magnifier</source>
         <translation>Лупа на екрані</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Color Filters</source>
         <translation>Кольорові фільтри</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Contrast Themes</source>
         <translation>Контрастні теми</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Narrator</source>
         <translation>Екранний диктор</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Accessibility Audio</source>
         <translation>Доступність: звук</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Captions</source>
         <translation>Субтитри</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Accessibility Keyboard</source>
         <translation>Доступність: клавіатура</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Accessibility Mouse</source>
         <translation>Функції доступності: миша</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Eye Control</source>
         <translation>Управління за допомогою погляду</translation>
     </message>
     <message>
-        <location line="+2" />
+        <location line="+2"/>
         <source>Windows Security</source>
         <translation>Безпека Windows</translation>
     </message>
     <message>
-        <location line="+0" />
-        <location line="+1" />
-        <location line="+1" />
-        <location line="+1" />
-        <location line="+1" />
-        <location line="+1" />
-        <location line="+1" />
-        <location line="+1" />
-        <location line="+1" />
+        <location line="+0"/>
+        <location line="+1"/>
+        <location line="+1"/>
+        <location line="+1"/>
+        <location line="+1"/>
+        <location line="+1"/>
+        <location line="+1"/>
+        <location line="+1"/>
+        <location line="+1"/>
         <source>Privacy &amp; Security</source>
         <translation>Конфіденційність та безпека</translation>
     </message>
     <message>
-        <location line="-7" />
+        <location line="-7"/>
         <source>Find My Device</source>
         <translation>Пошук пристрою</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Privacy</source>
         <translation>Конфіденційність</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Location</source>
         <translation>Геолокація</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Camera Access</source>
         <translation>Доступ до камери</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Microphone Access</source>
         <translation>Доступ до мікрофона</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Activity History</source>
         <translation>Журнал дій</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Diagnostics &amp; Feedback</source>
         <translation>Діагностика та відгуки</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Search Permissions</source>
         <translation>Дозволи пошуку</translation>
     </message>
     <message>
-        <location line="+2" />
-        <location line="+0" />
-        <location line="+1" />
-        <location line="+1" />
-        <location line="+1" />
+        <location line="+2"/>
+        <location line="+1"/>
+        <location line="+1"/>
+        <location line="+1"/>
         <source>Windows Update</source>
         <translation>Центр оновлення Windows</translation>
     </message>
     <message>
-        <location line="-2" />
+        <location line="-2"/>
         <source>Update History</source>
         <translation>Журнал оновлень</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Advanced Update Options</source>
         <translation>Додаткові параметри оновлення</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Windows Insider Program</source>
         <translation>Програма попередньої оцінки Windows</translation>
     </message>
@@ -6484,32 +7497,32 @@ If you're looking to build your own extension, take a look at the [documentation
 <context>
     <name>WinSettingsPageRootItem</name>
     <message>
-        <location line="+37" />
+        <location line="+37"/>
         <source>System Settings</source>
         <translation>Параметри системи</translation>
     </message>
     <message>
-        <location line="+10" />
+        <location line="+10"/>
         <source>Settings</source>
         <translation>Налаштування</translation>
     </message>
     <message>
-        <location line="+12" />
+        <location line="+12"/>
         <source>Name</source>
         <translation>Назва</translation>
     </message>
     <message>
-        <location line="+0" />
+        <location line="+0"/>
         <source>Category</source>
         <translation>Категорія</translation>
     </message>
     <message>
-        <location line="+10" />
+        <location line="+10"/>
         <source>Open %1 Settings</source>
         <translation>Відкрити параметри %1</translation>
     </message>
     <message>
-        <location line="+4" />
+        <location line="+4"/>
         <source>Copy URL</source>
         <translation>Копіювати URL</translation>
     </message>
@@ -6517,12 +7530,12 @@ If you're looking to build your own extension, take a look at the [documentation
 <context>
     <name>WinSettingsRootProvider</name>
     <message>
-        <location line="+12" />
+        <location line="+13"/>
         <source>Windows Settings</source>
         <translation>Налаштування Windows</translation>
     </message>
     <message>
-        <location line="+2" />
+        <location line="+2"/>
         <source>Pages of the Windows Settings app.</source>
         <translation>Сторінки програми «Налаштування Windows».</translation>
     </message>
@@ -6530,7 +7543,7 @@ If you're looking to build your own extension, take a look at the [documentation
 <context>
     <name>WindowManagementExtension</name>
     <message>
-        <location filename="../src/extensions/wm/wm-extension.cpp" line="+49" />
+        <location filename="../src/builtins/wm/wm-extension.cpp" line="+56"/>
         <source>Window Management</source>
         <translation>Керування вікнами</translation>
     </message>
@@ -6538,37 +7551,17 @@ If you're looking to build your own extension, take a look at the [documentation
 <context>
     <name>WindowsAppDatabase</name>
     <message>
-        <location filename="../src/services/app-service/windows/win-app-database.cpp" line="+993" />
-        <source>Focus window</source>
-        <translation>Сфокусувати вікно</translation>
-    </message>
-    <message>
-        <location line="+0" />
-        <source>Launch app</source>
-        <translation>Запустити програму</translation>
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Default action</source>
-        <translation>Дії за замовчуванням</translation>
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Action to perform when the return key is pressed. Always default to 'launch' if the app has no open window.</source>
-        <translation>Дія, що виконується при натисканні Enter. Якщо у програми немає відкритого вікна, дія виконується завжди.</translation>
-    </message>
-    <message>
-        <location line="+15" />
+        <location filename="../src/services/app-service/windows/win-app-database.cpp" line="+1107"/>
         <source>File Explorer</source>
         <translation>Навігатор</translation>
     </message>
     <message>
-        <location line="+19" />
+        <location line="+20"/>
         <source>Terminal</source>
         <translation>Термінал</translation>
     </message>
     <message>
-        <location line="+2" />
+        <location line="+2"/>
         <source>Command Prompt</source>
         <translation>Командний рядок</translation>
     </message>
@@ -6576,12 +7569,12 @@ If you're looking to build your own extension, take a look at the [documentation
 <context>
     <name>WindowsApplication</name>
     <message>
-        <location filename="../src/services/app-service/windows/win-app.hpp" line="+70" />
+        <location filename="../src/services/app-service/windows/win-app.hpp" line="+71"/>
         <source>%1: Run as Administrator</source>
         <translation>%1: Запуск від імені адміністратора</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Run as Administrator</source>
         <translation>Запуск від імені адміністратора</translation>
     </message>
@@ -6589,30 +7582,78 @@ If you're looking to build your own extension, take a look at the [documentation
 <context>
     <name>WindowsGlobalShortcutBackend</name>
     <message>
-        <location filename="../src/services/global-shortcuts/windows-global-shortcut-backend.cpp" line="+215" />
+        <location filename="../src/services/global-shortcuts/windows-global-shortcut-backend.cpp" line="+302"/>
         <source>unsupported or invalid trigger</source>
         <translation>Непідтримуваний або неправильний тригер</translation>
     </message>
+</context>
+<context>
+    <name>WindowsUpdateInstaller</name>
     <message>
-        <location line="+9" />
-        <source>already registered by another application</source>
-        <translation>Зареєстровано іншим додатком</translation>
+        <location filename="../src/services/update/windows-update-installer.cpp" line="+184"/>
+        <source>This installation cannot update itself</source>
+        <translation type="unfinished">Ця інсталяція не може оновлюватися автоматично</translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>The update is not signed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Update signature verification failed (0x%1)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Update is signed by %1, expected %2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Verifying update…</source>
+        <translation type="unfinished">Перевірка оновлення...</translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>Update has no version information</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Update version mismatch: expected %1, found %2</source>
+        <translation type="unfinished">Несумісність версії оновлення: очікувалося %1, знайдено %2</translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Starting installer…</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>Failed to start the installer</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>X11GlobalShortcutBackend</name>
     <message>
-        <location filename="../src/services/global-shortcuts/x11-global-shortcut-backend.cpp" line="+122" />
+        <location filename="../src/services/global-shortcuts/x11-global-shortcut-backend.cpp" line="+147"/>
         <source>This shortcut is already in use by another application</source>
         <translation>Це комбінація клавіш вже використовується іншим додатком</translation>
     </message>
     <message>
-        <location line="+17" />
+        <location line="+15"/>
+        <source>Modifier-only shortcuts are not supported</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
         <source>Unsupported trigger key</source>
         <translation>Непідтримувана клавіша тригера</translation>
     </message>
     <message>
-        <location line="+5" />
+        <location line="+5"/>
         <source>Trigger key is not present on this keyboard</source>
         <translation>Кнопка триггера відсутня на цій клавіатурі</translation>
     </message>
@@ -6620,81 +7661,61 @@ If you're looking to build your own extension, take a look at the [documentation
 <context>
     <name>X11Workspace</name>
     <message>
-        <location filename="../src/services/window-manager/x11/x11-window-manager.cpp" line="+426" />
+        <location filename="../src/services/window-manager/x11/x11-window-manager.cpp" line="+424"/>
         <source>Desktop %1</source>
         <translation>Робочий стіл %1</translation>
     </message>
 </context>
 <context>
-    <name>XdgAppDatabase</name>
-    <message>
-        <location filename="../src/services/app-service/xdg/xdg-app-database.cpp" line="+585" />
-        <source>Focus window</source>
-        <translation>Сфокусувати вікно</translation>
-    </message>
-    <message>
-        <location line="+0" />
-        <source>Launch app</source>
-        <translation>Запустити програму</translation>
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Default action</source>
-        <translation>Дії за замовчуванням</translation>
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Action to perform when the return key is pressed. Always default to 'launch' if the app has no open window.</source>
-        <translation>Дія, що виконується при натисканні Enter. Якщо у програми немає відкритого вікна, дія виконується завжди.</translation>
-    </message>
-    <message>
-        <location line="+4" />
-        <source>Launch Prefix</source>
-        <translation>Префікс запуску</translation>
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Custom app launcher to use. Affects applications as well as their sub-actions.</source>
-        <translation>Ваш власний лаунчер додатків для використання. Впливає на додатки та їх взаємодії.</translation>
-    </message>
-    <message>
-        <location line="+11" />
-        <source>Application directories</source>
-        <translation>Каталоги додатків</translation>
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Directories applications are sourced from. The list cannot be modified directly. In order to do so, you need to append additonal paths to the &lt;b&gt;XDG_DATA_DIRS&lt;/b&gt; environment variables.</source>
-        <translation>Каталоги, з яких беруться додатки. Список не можна змінити безпосередньо. Для цього потрібно додати додаткові шляхи до змінної середовища `&lt;b&gt;XDG_DATA_DIRS&lt;/b&gt;`.</translation>
-    </message>
-</context>
-<context>
     <name>XdpFileChooser</name>
     <message>
-        <location filename="../src/services/file-chooser/xdp-file-chooser/xdp-file-chooser.cpp" line="+39" />
+        <location filename="../src/services/file-chooser/xdp-file-chooser/xdp-file-chooser.cpp" line="+39"/>
         <source>Open Directory</source>
         <translation>Відкрити каталог</translation>
     </message>
     <message>
-        <location line="+0" />
+        <location line="+0"/>
         <source>Open File</source>
         <translation>Відкрити файл</translation>
     </message>
 </context>
 <context>
+    <name>XxHotkeyGlobalShortcutBackend</name>
+    <message>
+        <location filename="../src/services/global-shortcuts/xx-hotkey-global-shortcut-backend.cpp" line="+108"/>
+        <source>Unsupported trigger key</source>
+        <translation type="unfinished">Непідтримувана клавіша тригера</translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Compositor does not support global hotkeys</source>
+        <translation type="unfinished">Композитор не підтримує глобальні комбінації клавіш</translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Hotkey binding was lost</source>
+        <translation type="unfinished">Прив&apos;язка комбінації клавіш втрачена</translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Compositor denied the bind. Try another key combination.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>browser-extension</name>
     <message>
-        <location filename="../src/extensions/browser/browser-extension.cpp" line="-58" />
+        <location filename="../src/builtins/browser/browser-extension.cpp" line="-58"/>
         <source>No browser connected</source>
         <translation>Браузер не підключено</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>You need to connect at least one browser to vicinae using the browser extension in order to use this command.</source>
         <translation>Щоб використовувати цю команду, підключіть до Vicinae хоча б один браузер через браузерне розширення.</translation>
     </message>
     <message>
-        <location line="+11" />
+        <location line="+11"/>
         <source>Open documentation</source>
         <translation>Відкрити документацію</translation>
     </message>
@@ -6702,27 +7723,27 @@ If you're looking to build your own extension, take a look at the [documentation
 <context>
     <name>clipboard-history-view-host</name>
     <message>
-        <location filename="../src/qml/clipboard-history-view-host.cpp" line="-211" />
+        <location filename="../src/builtins/clipboard/history/clipboard-history-view-host.cpp" line="-216"/>
         <source>Text</source>
         <translation>Текст</translation>
     </message>
     <message>
-        <location line="+2" />
+        <location line="+2"/>
         <source>Link</source>
         <translation>Посилання</translation>
     </message>
     <message>
-        <location line="+2" />
+        <location line="+2"/>
         <source>Image</source>
         <translation>Зображення</translation>
     </message>
     <message>
-        <location line="+2" />
+        <location line="+2"/>
         <source>File</source>
         <translation>Файл</translation>
     </message>
     <message>
-        <location line="+5" />
+        <location line="+5"/>
         <source>Unknown</source>
         <translation>Невідомо</translation>
     </message>
@@ -6730,92 +7751,92 @@ If you're looking to build your own extension, take a look at the [documentation
 <context>
     <name>emoji-categories</name>
     <message>
-        <location filename="../src/qml/emoji-grid-model.cpp" line="-52" />
+        <location filename="../src/builtins/vicinae/emoji-grid-model.cpp" line="-52"/>
         <source>Smileys &amp; Emotion</source>
         <translation>Емодзі та емоції</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>People &amp; Body</source>
         <translation>Люди та тіло</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Animals &amp; Nature</source>
         <translation>Тварини та природа</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Food &amp; Drink</source>
         <translation>Їжа та напої</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Travel &amp; Places</source>
         <translation>Подорожі та місця</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Activities</source>
         <translation>Заняття</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Objects</source>
-        <translation>Об'єкти</translation>
+        <translation>Об&apos;єкти</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Symbols</source>
         <translation>Символи</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Flags</source>
         <translation>Прапори</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Math</source>
         <translation>Математика</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Arrows</source>
         <translation>Стрілки</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Currency</source>
         <translation>Валюта</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Punctuation</source>
         <translation>Пунктуація</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Shapes</source>
         <translation>Фігури</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Misc Symbols</source>
         <translation>Інші символи</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Greek</source>
         <translation>Грецькі</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Number Forms</source>
         <translation>Числові форми</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Fancy Letters</source>
         <translation>Декоративні літери</translation>
     </message>
@@ -6823,27 +7844,27 @@ If you're looking to build your own extension, take a look at the [documentation
 <context>
     <name>emoji-grid-model</name>
     <message>
-        <location line="+131" />
+        <location line="+131"/>
         <source>Copy</source>
         <translation>Копіювати</translation>
     </message>
     <message>
-        <location line="+3" />
+        <location line="+3"/>
         <source>Copy name</source>
         <translation>Копіювати назву</translation>
     </message>
     <message>
-        <location line="+4" />
+        <location line="+4"/>
         <source>Copy unicode codepoint</source>
         <translation>Копіювати unicode-код</translation>
     </message>
     <message>
-        <location line="+3" />
+        <location line="+3"/>
         <source>Copy category</source>
         <translation>Копіювати категорію</translation>
     </message>
     <message>
-        <location line="+40" />
+        <location line="+40"/>
         <source>Skin tones</source>
         <translation>Відтінки шкіри</translation>
     </message>
@@ -6851,22 +7872,22 @@ If you're looking to build your own extension, take a look at the [documentation
 <context>
     <name>file-list-item</name>
     <message>
-        <location filename="../src/utils/file-list-item.hpp" line="+35" />
+        <location filename="../src/utils/file-list-item.hpp" line="+100"/>
         <source>Copy file</source>
         <translation>Копіювати файл</translation>
     </message>
     <message>
-        <location line="+3" />
+        <location line="+3"/>
         <source>Copy file path</source>
         <translation>Копіювати шлях до файлу</translation>
     </message>
     <message>
-        <location line="+3" />
+        <location line="+3"/>
         <source>Copy file name</source>
-        <translation>Копіювати ім'я файлу</translation>
+        <translation>Копіювати ім&apos;я файлу</translation>
     </message>
     <message>
-        <location line="+20" />
+        <location line="+20"/>
         <source>Copy mime type</source>
         <translation>Копіювати тип MIME</translation>
     </message>
@@ -6874,167 +7895,167 @@ If you're looking to build your own extension, take a look at the [documentation
 <context>
     <name>font-categories</name>
     <message>
-        <location filename="../src/font-service.cpp" line="+127" />
+        <location filename="../src/services/font-service/font-service.cpp" line="+142"/>
         <source>Latin</source>
         <translation>Латиниця</translation>
     </message>
     <message>
-        <location line="+2" />
+        <location line="+2"/>
         <source>Cyrillic</source>
         <translation>Кирилічна</translation>
     </message>
     <message>
-        <location line="+2" />
+        <location line="+2"/>
         <source>Greek</source>
         <translation>Грецька</translation>
     </message>
     <message>
-        <location line="+2" />
+        <location line="+2"/>
         <source>Monospace</source>
         <translation>Моноширинний</translation>
     </message>
     <message>
-        <location line="+3" />
+        <location line="+3"/>
         <source>Emoji</source>
         <translation>Емодзі</translation>
     </message>
     <message>
-        <location line="+3" />
+        <location line="+3"/>
         <source>Japanese</source>
         <translation>Японська</translation>
     </message>
     <message>
-        <location line="+2" />
+        <location line="+2"/>
         <source>Korean</source>
         <translation>Корейська</translation>
     </message>
     <message>
-        <location line="+3" />
+        <location line="+3"/>
         <source>Simplified Chinese</source>
         <translation>Спрощений китайський</translation>
     </message>
     <message>
-        <location line="+2" />
+        <location line="+2"/>
         <source>Traditional Chinese</source>
         <translation>Традиційний китайський</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Arabic</source>
         <translation>Арабська</translation>
     </message>
     <message>
-        <location line="+2" />
+        <location line="+2"/>
         <source>Hebrew</source>
         <translation>Іврит</translation>
     </message>
     <message>
-        <location line="+2" />
+        <location line="+2"/>
         <source>Thai</source>
         <translation>Тайська</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Lao</source>
         <translation>Лаосська</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Devanagari</source>
         <translation>Деванагарі</translation>
     </message>
     <message>
-        <location line="+2" />
+        <location line="+2"/>
         <source>Bengali</source>
         <translation>Бенгальська</translation>
     </message>
     <message>
-        <location line="+2" />
+        <location line="+2"/>
         <source>Gurmukhi</source>
         <translation>Гурмуки</translation>
     </message>
     <message>
-        <location line="+2" />
+        <location line="+2"/>
         <source>Gujarati</source>
         <translation>Гуджарати</translation>
     </message>
     <message>
-        <location line="+2" />
+        <location line="+2"/>
         <source>Tamil</source>
         <translation>Тамільська</translation>
     </message>
     <message>
-        <location line="+2" />
+        <location line="+2"/>
         <source>Telugu</source>
         <translation>Телугу</translation>
     </message>
     <message>
-        <location line="+2" />
+        <location line="+2"/>
         <source>Kannada</source>
         <translation>Каннада</translation>
     </message>
     <message>
-        <location line="+2" />
+        <location line="+2"/>
         <source>Malayalam</source>
         <translation>Малаялам</translation>
     </message>
     <message>
-        <location line="+2" />
+        <location line="+2"/>
         <source>Sinhala</source>
         <translation>Сінгальська</translation>
     </message>
     <message>
-        <location line="+2" />
+        <location line="+2"/>
         <source>Armenian</source>
         <translation>Армянська</translation>
     </message>
     <message>
-        <location line="+2" />
+        <location line="+2"/>
         <source>Georgian</source>
         <translation>Грузинська</translation>
     </message>
     <message>
-        <location line="+2" />
+        <location line="+2"/>
         <source>Thaana</source>
         <translation>Тана</translation>
     </message>
     <message>
-        <location line="+2" />
+        <location line="+2"/>
         <source>Tibetan</source>
         <translation>Тибетська</translation>
     </message>
     <message>
-        <location line="+2" />
+        <location line="+2"/>
         <source>Myanmar</source>
         <translation>Бірманський</translation>
     </message>
     <message>
-        <location line="+2" />
+        <location line="+2"/>
         <source>Khmer</source>
         <translation>Кхмерська</translation>
     </message>
     <message>
-        <location line="+2" />
+        <location line="+2"/>
         <source>Syriac</source>
         <translation>Сирийський</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Ogham</source>
         <translation>Огам</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Runic</source>
         <translation>Рунічний</translation>
     </message>
     <message>
-        <location line="+1" />
-        <source>N'Ko</source>
+        <location line="+1"/>
+        <source>N&apos;Ko</source>
         <translation>Нко</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Symbols</source>
         <translation>Символи</translation>
     </message>
@@ -7042,7 +8063,7 @@ If you're looking to build your own extension, take a look at the [documentation
 <context>
     <name>font-grid-model</name>
     <message>
-        <location filename="../src/qml/font-grid-model.cpp" line="+26" />
+        <location filename="../src/builtins/font/font-grid-model.cpp" line="+26"/>
         <source>Copy font family</source>
         <translation>Копіювати сімейство шрифтів</translation>
     </message>
@@ -7050,182 +8071,182 @@ If you're looking to build your own extension, take a look at the [documentation
 <context>
     <name>keybind-manager</name>
     <message>
-        <location filename="../src/internal/keyboard/keybind-manager.cpp" line="+9" />
+        <location filename="../src/internal/keyboard/keybind-manager.cpp" line="+9"/>
         <source>Toggle action panel</source>
         <translation>Переключити панель дій</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Toggle the action panel to access and filter through the list of available actions for the currently selected item</source>
         <translation>Переключити панель дій, щоб відкрити та відфільтрувати список доступних дій для вибраного елемента</translation>
     </message>
     <message>
-        <location line="+10" />
+        <location line="+10"/>
         <source>Open Search Filter</source>
         <translation>Відкрити фільтр пошуку</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Open the search filter selector if present</source>
         <translation>Відкрити вибір фільтра пошуку, якщо він є</translation>
     </message>
     <message>
-        <location line="+6" />
+        <location line="+6"/>
         <source>Open settings window</source>
         <translation>Відкрити вікно налаштувань</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Open this settings window from the launcher window</source>
         <translation>Відкрити це вікно налаштувань з вікна лаунчера</translation>
     </message>
     <message>
-        <location line="+6" />
+        <location line="+6"/>
         <source>Generic Open Action</source>
         <translation>Загальна дія відкриття</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Can be used by actions that can open the selected item</source>
         <translation>Може використовуватися діями, які можуть відкрити вибраний елемент</translation>
     </message>
     <message>
-        <location line="+6" />
+        <location line="+6"/>
         <source>Generic Copy Action</source>
         <translation>Загальна дія копіювання</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Can be used by actions that can copy the selected item</source>
         <translation>Може використовуватися діями, які можуть скопіювати вибраний елемент</translation>
     </message>
     <message>
-        <location line="+6" />
+        <location line="+6"/>
         <source>Copy Name Action</source>
-        <translation>Дія "Копіювати назву"</translation>
+        <translation>Дія &quot;Копіювати назву&quot;</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Can be used by actions that can copy the name of the selected item</source>
         <translation>Може використовуватися діями, які можуть скопіювати назву вибраного елемента</translation>
     </message>
     <message>
-        <location line="+6" />
+        <location line="+6"/>
         <source>Copy Path Action</source>
-        <translation>Дія "Копіювати шлях"</translation>
+        <translation>Дія &quot;Копіювати шлях&quot;</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Can be used by actions that can copy the path of the selected item</source>
         <translation>Може використовуватися діями, які можуть скопіювати шлях вибраного елемента</translation>
     </message>
     <message>
-        <location line="+6" />
+        <location line="+6"/>
         <source>Save Action</source>
         <translation>Дія збереження</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Can be used by actions that can save the selected item</source>
         <translation>Може використовуватися діями, які можуть зберегти вибраний елемент</translation>
     </message>
     <message>
-        <location line="+6" />
+        <location line="+6"/>
         <source>Duplicate Action</source>
-        <translation>Дія "Дублювати"</translation>
+        <translation>Дія &quot;Дублювати&quot;</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Can be used by actions that can duplicate the selected item</source>
         <translation>Може використовуватися діями, які можуть повторити вибраний елемент</translation>
     </message>
     <message>
-        <location line="+6" />
+        <location line="+6"/>
         <source>Generic New Action</source>
         <translation>Загальна дія створення</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Can be used by actions that create something</source>
         <translation>Може використовуватися діями, які щось створюють</translation>
     </message>
     <message>
-        <location line="+6" />
+        <location line="+6"/>
         <source>Generic Move Up Action</source>
         <translation>Загальна дія переміщення вгору</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Can be used by actions that can move up the selected item. This does not affect list navigation controls.</source>
         <translation>Може використовуватися діями, які можуть перемістити вибраний елемент вгору. Це не впливає на елементи керування навігацією по списку.</translation>
     </message>
     <message>
-        <location line="+6" />
+        <location line="+6"/>
         <source>Generic Move Down Action</source>
         <translation>Загальна дія переміщення вниз</translation>
     </message>
     <message>
-        <location line="+21" />
+        <location line="+21"/>
         <source>Remove Action</source>
         <translation>Дія видалення</translation>
     </message>
     <message>
-        <location line="-20" />
+        <location line="-20"/>
         <source>Can be used by actions that can move down the selected item. This does not affect list navigation controls.</source>
         <translation>Може використовуватися діями, які можуть перемістити вибраний елемент вниз. Це не впливає на елементи керування навігацією по списку.</translation>
     </message>
     <message>
-        <location line="+6" />
+        <location line="+6"/>
         <source>Generic Refresh Action</source>
         <translation>Загальна дія оновлення</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Can be used by actions that can refresh the selected item</source>
         <translation>Може використовуватися діями, які можуть оновити вибраний елемент</translation>
     </message>
     <message>
-        <location line="+6" />
+        <location line="+6"/>
         <source>Generic Pin Action</source>
         <translation>Загальна дія закріплення</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Can be used by actions that can pin the selected item</source>
         <translation>Може використовуватися діями, які можуть закріпити вибраний елемент</translation>
     </message>
     <message>
-        <location line="+7" />
+        <location line="+7"/>
         <source>Can be used by actions that can remove the selected item. This is normally used for small, not too impactful removals.</source>
         <translation>Може використовуватися діями, які можуть видалити вибраний елемент. Зазвичай використовується для невеликих і не дуже важливих видалень.</translation>
     </message>
     <message>
-        <location line="+6" />
+        <location line="+6"/>
         <source>Dangerous Remove Action</source>
         <translation>Небезпечна дія видалення</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Can be used by actions that perform an impactful removal, generally accompanied by a confirmation dialog.</source>
         <translation>Може використовуватися діями, які виконують значну зміну, зазвичай супроводжується діалогом підтвердження.</translation>
     </message>
     <message>
-        <location line="+6" />
+        <location line="+6"/>
         <source>Edit Action</source>
         <translation>Дія редагування</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Can be used by actions that can edit the currently selected item</source>
         <translation>Може використовуватися діями, які можуть змінити вибраний елемент</translation>
     </message>
     <message>
-        <location line="+6" />
+        <location line="+6"/>
         <source>Edit Secondary Action</source>
         <translation>Дія вторинного редагування</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Can be used by actions that can edit a secondary characteristic of the currently selected item</source>
         <translation>Може використовуватися діями, які можуть змінити додаткову властивість вибраного елемента</translation>
     </message>
@@ -7233,77 +8254,92 @@ If you're looking to build your own extension, take a look at the [documentation
 <context>
     <name>macos-update-installer</name>
     <message>
-        <location filename="../src/services/update/macos-update-installer.mm" line="-183" />
+        <location filename="../src/services/update/macos-update-installer.mm" line="-183"/>
         <source>Update image contains more than one app</source>
         <translation>Зображення оновлення містить більше одного додатку</translation>
     </message>
     <message>
-        <location line="+7" />
+        <location line="+7"/>
         <source>Failed to list update image: %1</source>
         <translation>Не вдалося отримати список зображення оновлення: %1</translation>
     </message>
     <message>
-        <location line="+5" />
+        <location line="+5"/>
         <source>No app found in update image</source>
         <translation>У зображенні оновлення не знайдено додатків</translation>
     </message>
     <message>
-        <location line="+12" />
-        <source>Failed to read the update's code signature</source>
+        <location line="+12"/>
+        <source>Failed to read the update&apos;s code signature</source>
         <translation>Не вдалося прочитати підпис коду оновлення</translation>
     </message>
     <message>
-        <location line="+11" />
+        <location line="+11"/>
         <source>Failed to build the signature requirement</source>
         <translation>Не вдалося сформувати вимогу до підпису</translation>
     </message>
     <message>
-        <location line="+11" />
+        <location line="+11"/>
         <source>Update signature verification failed (%1)</source>
         <translation>Не вдалося перевірити підпис оновлення (%1)</translation>
     </message>
     <message>
-        <location line="+15" />
+        <location line="+15"/>
         <source>Update has no CFBundleShortVersionString</source>
         <translation>У оновленні відсутній CFBundleShortVersionString</translation>
     </message>
     <message>
-        <location line="+5" />
+        <location line="+5"/>
         <source>Update version mismatch: expected %1, found %2</source>
         <translation>Несумісність версії оновлення: очікувалося %1, знайдено %2</translation>
     </message>
 </context>
 <context>
+    <name>media-extension</name>
+    <message>
+        <location filename="../src/builtins/media/media-extension.hpp" line="-200"/>
+        <source>%1 — %2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+35"/>
+        <source>No media player is running</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>No media player matches &quot;%1&quot;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+131"/>
+        <source>Volume %1%</source>
+        <translation type="unfinished">Гучність %1%</translation>
+    </message>
+</context>
+<context>
     <name>shortcut-conflict</name>
     <message>
-        <location filename="../src/qml/shortcut-conflict.cpp" line="+10" />
+        <location filename="../src/ui/settings/shortcut-conflict.cpp" line="+10"/>
         <source>Modifier required</source>
         <translation>Потрібен модифікатор</translation>
     </message>
     <message>
-        <location line="+4" />
-        <location line="+5" />
-        <source>Already bound to "%1"</source>
-        <translation>Вже прив'язано до «%1»</translation>
-    </message>
-</context>
-<context>
-    <name>system-extension</name>
-    <message>
-        <location filename="../src/extensions/system/system-extension.hpp" line="-34" />
-        <source>Volume %1%</source>
-        <translation>Гучність %1%</translation>
+        <location line="+4"/>
+        <location line="+5"/>
+        <source>Already bound to &quot;%1&quot;</source>
+        <translation>Вже прив&apos;язано до «%1»</translation>
     </message>
 </context>
 <context>
     <name>utils</name>
     <message>
-        <location filename="../src/utils/utils.cpp" line="+88" />
+        <location filename="../src/utils/utils.cpp" line="+88"/>
         <source>0 bytes</source>
         <translation>0 байт</translation>
     </message>
     <message>
-        <location line="+2" />
+        <location line="+2"/>
         <source>bytes</source>
         <translation>байт</translation>
     </message>
@@ -7311,7 +8347,7 @@ If you're looking to build your own extension, take a look at the [documentation
 <context>
     <name>virtual-desktops</name>
     <message>
-        <location filename="../src/services/window-manager/windows/virtual-desktops.cpp" line="+67" />
+        <location filename="../src/services/window-manager/windows/virtual-desktops.cpp" line="+67"/>
         <source>Desktop %1</source>
         <translation>Робочий стіл %1</translation>
     </message>

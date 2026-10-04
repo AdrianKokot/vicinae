@@ -4,7 +4,7 @@
 <context>
     <name>AboutSettingsPage</name>
     <message>
-        <location filename="../src/qml/qml/AboutSettingsPage.qml" line="+57"/>
+        <location filename="../src/ui/qml/settings/AboutSettingsPage.qml" line="+61"/>
         <source>Version %1 - Commit %2
 (%3)</source>
         <translation>Version %1 – Commit %2
@@ -24,12 +24,12 @@
 <context>
     <name>ActionListPanel</name>
     <message>
-        <location filename="../src/qml/qml/ActionListPanel.qml" line="+113"/>
+        <location filename="../src/ui/qml/actions/ActionListPanel.qml" line="+116"/>
         <source>No matching actions</source>
         <translation>Keine passenden Aktionen</translation>
     </message>
     <message>
-        <location line="+135"/>
+        <location line="+136"/>
         <source>Filter actions...</source>
         <translation>Aktionen filtern...</translation>
     </message>
@@ -37,7 +37,7 @@
 <context>
     <name>AdvancedSettingsPage</name>
     <message>
-        <location filename="../src/qml/qml/AdvancedSettingsPage.qml" line="+29"/>
+        <location filename="../src/ui/qml/settings/AdvancedSettingsPage.qml" line="+35"/>
         <source>Input &amp; Navigation</source>
         <translation>Eingabe &amp; Navigation</translation>
     </message>
@@ -127,7 +127,7 @@
         <translation>System</translation>
     </message>
     <message>
-        <location line="+9"/>
+        <location line="+8"/>
         <source>Input server</source>
         <translation>Eingabeserver</translation>
     </message>
@@ -135,6 +135,16 @@
         <location line="+1"/>
         <source>Whether to spawn the input server at startup. This needs to be enabled in order to support snippets, paste to active window, and other features that require input monitoring or injection.</source>
         <translation>Ob der Eingabeserver beim Start erzeugt werden soll. Dies muss aktiviert werden, um Snippets, Einfügen in das aktive Fenster und andere Funktionen zu unterstützen, die eine Eingabeüberwachung oder -injektion erfordern.</translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>Tray icon</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Show the Vicinae icon in the system tray. You may need to restart Vicinae.</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+10"/>
@@ -178,7 +188,7 @@
 <context>
     <name>AliasFormView</name>
     <message>
-        <location filename="../src/qml/qml/AliasFormView.qml" line="+15"/>
+        <location filename="../src/ui/qml/views/AliasFormView.qml" line="+16"/>
         <source>Alias</source>
         <translation>Alias</translation>
     </message>
@@ -191,12 +201,12 @@
 <context>
     <name>AliasFormViewHost</name>
     <message>
-        <location filename="../src/qml/alias-form-view-host.cpp" line="+28"/>
+        <location filename="../src/builtins/root/alias-form-view-host.cpp" line="+27"/>
         <source>Set alias - %1</source>
         <translation>Alias festlegen: %1</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+6"/>
         <source>Submit</source>
         <translation>Senden</translation>
     </message>
@@ -214,8 +224,8 @@
 <context>
     <name>AppRootItem</name>
     <message>
-        <location filename="../src/root-search/apps/app-root-provider.cpp" line="+22"/>
-        <location line="+29"/>
+        <location filename="../src/root-search/apps/app-root-provider.cpp" line="+18"/>
+        <location line="+24"/>
         <source>Application</source>
         <translation>Anwendung</translation>
     </message>
@@ -263,7 +273,7 @@
 <context>
     <name>AppRootProvider</name>
     <message>
-        <location line="+75"/>
+        <location line="+89"/>
         <source>Applications</source>
         <translation>Anwendungen</translation>
     </message>
@@ -271,8 +281,8 @@
 <context>
     <name>AppSelectorModel</name>
     <message>
-        <location filename="../src/qml/app-selector-model.cpp" line="+20"/>
-        <location line="+65"/>
+        <location filename="../src/ui/views/app-selector-model.cpp" line="+18"/>
+        <location line="+49"/>
         <source>%1 (Default)</source>
         <translation>%1 (Standard)</translation>
     </message>
@@ -280,7 +290,7 @@
 <context>
     <name>AppearanceSettingsPage</name>
     <message>
-        <location filename="../src/qml/qml/AppearanceSettingsPage.qml" line="+29"/>
+        <location filename="../src/ui/qml/settings/AppearanceSettingsPage.qml" line="+35"/>
         <location line="+7"/>
         <source>Theme</source>
         <translation>Design</translation>
@@ -349,6 +359,16 @@
         <location line="+1"/>
         <source>Show only the search bar at root; expand when a query is entered.</source>
         <translation>Nur die Suchleiste im Stammverzeichnis anzeigen; wird erweitert, wenn eine Abfrage eingegeben wird.</translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Floating status bar</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Let the status bar float over the content, which stays slightly visible under it. Disable to keep the content strictly above the status bar.</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+9"/>
@@ -427,14 +447,55 @@
     </message>
 </context>
 <context>
+    <name>AppleShortcutRootItem</name>
+    <message>
+        <location filename="../src/root-search/apple-shortcuts/apple-shortcut-root-provider.cpp" line="+66"/>
+        <location line="+3"/>
+        <source>Apple Shortcut</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>AppleShortcutRootProvider</name>
+    <message>
+        <location line="+30"/>
+        <source>Could not load Apple Shortcuts</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+14"/>
+        <source>Apple Shortcuts</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>AppleShortcuts</name>
+    <message>
+        <location filename="../src/services/apple-shortcuts/apple-shortcuts.mm" line="+36"/>
+        <source>Allow Vicinae to control Shortcuts Events in System Settings &gt; Privacy &amp; Security &gt; Automation.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+31"/>
+        <location line="+40"/>
+        <source>Shortcuts Events is unavailable.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-30"/>
+        <source>Could not read Apple Shortcuts.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>AvailableFallbackSection</name>
     <message>
-        <location filename="../src/qml/manage-fallback-model.hpp" line="+49"/>
+        <location filename="../src/builtins/vicinae/manage-fallback-model.hpp" line="+49"/>
         <source>Available</source>
         <translation>Verfügbar</translation>
     </message>
     <message>
-        <location filename="../src/qml/manage-fallback-model.cpp" line="+50"/>
+        <location filename="../src/builtins/vicinae/manage-fallback-model.cpp" line="+50"/>
         <source>Enable fallback</source>
         <translation>Fallback aktivieren</translation>
     </message>
@@ -442,7 +503,7 @@
 <context>
     <name>BringToWorkspaceAction</name>
     <message>
-        <location filename="../src/actions/wm/window-actions.hpp" line="+72"/>
+        <location filename="../src/actions/window-actions.hpp" line="+72"/>
         <source>Bring to current workspace</source>
         <translation>In den aktuellen Arbeitsbereich bringen</translation>
     </message>
@@ -450,12 +511,12 @@
 <context>
     <name>BrowseAppsSection</name>
     <message>
-        <location filename="../src/qml/browse-apps-model.hpp" line="+32"/>
+        <location filename="../src/builtins/system/browse-apps-model.hpp" line="+32"/>
         <source>Applications ({count})</source>
         <translation>Anwendungen ({count})</translation>
     </message>
     <message>
-        <location filename="../src/qml/browse-apps-model.cpp" line="+21"/>
+        <location filename="../src/builtins/system/browse-apps-model.cpp" line="+19"/>
         <source>Hidden</source>
         <translation>Versteckt</translation>
     </message>
@@ -478,7 +539,7 @@
 <context>
     <name>BrowseAppsViewHost</name>
     <message>
-        <location filename="../src/qml/browse-apps-view-host.cpp" line="+12"/>
+        <location filename="../src/builtins/system/browse-apps-view-host.cpp" line="+13"/>
         <source>Search apps...</source>
         <translation>Apps suchen...</translation>
     </message>
@@ -486,7 +547,7 @@
 <context>
     <name>BrowseFontsCommand</name>
     <message>
-        <location filename="../src/extensions/font/browse-fonts-command.hpp" line="+8"/>
+        <location filename="../src/builtins/font/browse-fonts-command.hpp" line="+8"/>
         <source>Search Fonts</source>
         <translation>Schriftarten suchen</translation>
     </message>
@@ -494,7 +555,7 @@
 <context>
     <name>BrowserExtension</name>
     <message>
-        <location filename="../src/extensions/browser/browser-extension.hpp" line="+12"/>
+        <location filename="../src/builtins/browser/browser-extension.hpp" line="+12"/>
         <source>Browser Extension</source>
         <translation>Browser-Erweiterung</translation>
     </message>
@@ -517,12 +578,7 @@
         <translation>In Verknüpfung umwandeln</translation>
     </message>
     <message>
-        <location line="+4"/>
-        <source>Convert tab to shortcut</source>
-        <translation>Tab in Verknüpfung umwandeln</translation>
-    </message>
-    <message>
-        <location line="+5"/>
+        <location line="+3"/>
         <source>Close tab</source>
         <translation>Tab schließen</translation>
     </message>
@@ -550,7 +606,7 @@
 <context>
     <name>BrowserTabProvider</name>
     <message>
-        <location filename="../src/root-search/browser-tabs/browser-tabs-provider.hpp" line="+70"/>
+        <location filename="../src/root-search/browser-tabs/browser-tabs-provider.hpp" line="+69"/>
         <source>Browser Tabs</source>
         <translation>Browser-Tabs</translation>
     </message>
@@ -571,17 +627,17 @@
 <context>
     <name>BrowserTabsSection</name>
     <message>
-        <location filename="../src/qml/browser-tabs-model.hpp" line="+17"/>
+        <location filename="../src/builtins/browser/browser-tabs-model.hpp" line="+22"/>
         <source>Tabs ({count})</source>
         <translation>Registerkarten ({count})</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+0"/>
         <source>Playing Media ({count})</source>
         <translation>Medienwiedergabe ({count})</translation>
     </message>
     <message>
-        <location filename="../src/qml/browser-tabs-model.cpp" line="+15"/>
+        <location filename="../src/builtins/browser/browser-tabs-model.cpp" line="+13"/>
         <source>Muted</source>
         <translation>Stummgeschaltet</translation>
     </message>
@@ -594,7 +650,7 @@
 <context>
     <name>BrowserTabsViewHost</name>
     <message>
-        <location filename="../src/qml/browser-tabs-view-host.cpp" line="+11"/>
+        <location filename="../src/builtins/browser/browser-tabs-view-host.cpp" line="+12"/>
         <source>Search, focus and close tabs</source>
         <translation>Tabs suchen, fokussieren und schließen</translation>
     </message>
@@ -602,12 +658,12 @@
 <context>
     <name>BuiltinIconsSection</name>
     <message>
-        <location filename="../src/qml/builtin-icons-model.hpp" line="+20"/>
+        <location filename="../src/builtins/vicinae/builtin-icons-model.hpp" line="+20"/>
         <source>Icons ({count})</source>
         <translation>Symbole ({count})</translation>
     </message>
     <message>
-        <location filename="../src/qml/builtin-icons-model.cpp" line="+15"/>
+        <location filename="../src/builtins/vicinae/builtin-icons-model.cpp" line="+15"/>
         <source>Copy Icon Name</source>
         <translation>Symbolnamen kopieren</translation>
     </message>
@@ -615,7 +671,7 @@
 <context>
     <name>BuiltinIconsViewHost</name>
     <message>
-        <location filename="../src/qml/builtin-icons-view-host.cpp" line="+10"/>
+        <location filename="../src/builtins/vicinae/builtin-icons-view-host.cpp" line="+10"/>
         <source>Search icons...</source>
         <translation>Symbole suchen...</translation>
     </message>
@@ -623,7 +679,7 @@
 <context>
     <name>CalcHistoryListView</name>
     <message>
-        <location filename="../src/qml/qml/CalcHistoryListView.qml" line="+12"/>
+        <location filename="../src/ui/qml/views/CalcHistoryListView.qml" line="+13"/>
         <source>No results</source>
         <translation>Keine Ergebnisse</translation>
     </message>
@@ -631,7 +687,7 @@
 <context>
     <name>CalcHistorySection</name>
     <message>
-        <location filename="../src/qml/calc-history-model.cpp" line="+41"/>
+        <location filename="../src/builtins/calculator/calc-history-model.cpp" line="+39"/>
         <source>Copy answer</source>
         <translation>Antwort kopieren</translation>
     </message>
@@ -649,7 +705,7 @@
 <context>
     <name>CalcHistoryViewHost</name>
     <message>
-        <location filename="../src/qml/calc-history-view-host.cpp" line="+83"/>
+        <location filename="../src/builtins/calculator/calc-history-view-host.cpp" line="+92"/>
         <source>Search past calculations...</source>
         <translation>Vergangene Berechnungen durchsuchen...</translation>
     </message>
@@ -657,15 +713,20 @@
 <context>
     <name>CalcLiveSection</name>
     <message>
-        <location filename="../src/qml/calc-history-view-host.hpp" line="+27"/>
+        <location filename="../src/builtins/calculator/calc-history-view-host.hpp" line="+28"/>
         <source>Calculator</source>
         <translation>Rechner</translation>
+    </message>
+    <message>
+        <location filename="../src/builtins/calculator/calc-history-view-host.cpp" line="-14"/>
+        <source>Copy unformatted answer</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>CalculatorExtension</name>
     <message>
-        <location filename="../src/extensions/calculator/calculator-extension.hpp" line="+73"/>
+        <location filename="../src/builtins/calculator/calculator-extension.hpp" line="+94"/>
         <source>Calculator</source>
         <translation>Rechner</translation>
     </message>
@@ -674,31 +735,11 @@
         <source>Do maths, convert units or search past calculations...</source>
         <translation>Berechnungen durchführen, Einheiten umrechnen oder frühere Berechnungen durchsuchen...</translation>
     </message>
-    <message>
-        <location line="+21"/>
-        <source>Calculator Backend</source>
-        <translation>Rechner-Backend</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Which backend to use to perform calculations</source>
-        <translation>Welches Backend zur Durchführung von Berechnungen verwendet werden soll</translation>
-    </message>
-    <message>
-        <location line="+5"/>
-        <source>Refresh rates on startup</source>
-        <translation>Wechselkurse beim Start aktualisieren</translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>Whether exchange rates should be refreshed every time the vicinae server is started. If the current backend does not support it, this is ignored.</source>
-        <translation>Ob die Wechselkurse bei jedem Start des Vicinae-Servers aktualisiert werden sollen. Wenn das aktuelle Backend dies nicht unterstützt, wird dies ignoriert.</translation>
-    </message>
 </context>
 <context>
     <name>CalculatorHistoryCommand</name>
     <message>
-        <location line="-86"/>
+        <location line="-77"/>
         <source>Calculator history</source>
         <translation>Rechenverlauf</translation>
     </message>
@@ -739,20 +780,20 @@
 <context>
     <name>CalculatorResultDelegate</name>
     <message>
-        <location filename="../src/qml/qml/CalculatorResultDelegate.qml" line="+40"/>
-        <source>Question</source>
-        <translation>Frage</translation>
+        <location filename="../src/ui/qml/list/CalculatorResultDelegate.qml" line="+61"/>
+        <source>Expression</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+57"/>
-        <source>Answer</source>
-        <translation>Antwort</translation>
+        <location line="+59"/>
+        <source>Result</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>CalculatorService</name>
     <message>
-        <location filename="../src/services/calculator-service/calculator-service.cpp" line="+119"/>
+        <location filename="../src/services/calculator-service/calculator-service.cpp" line="+125"/>
         <source>Pinned</source>
         <translation>Angeheftet</translation>
     </message>
@@ -783,17 +824,9 @@
     </message>
 </context>
 <context>
-    <name>CategoryFilterAccessory</name>
-    <message>
-        <location filename="../src/qml/qml/CategoryFilterAccessory.qml" line="+8"/>
-        <source>All</source>
-        <translation>Alle</translation>
-    </message>
-</context>
-<context>
     <name>ChangeEmojiSkinToneAction</name>
     <message>
-        <location filename="../src/qml/emoji-grid-model.cpp" line="+99"/>
+        <location filename="../src/builtins/vicinae/emoji-grid-model.cpp" line="+102"/>
         <source>%1 skin tone</source>
         <translation>%1 Hautton</translation>
     </message>
@@ -801,7 +834,7 @@
 <context>
     <name>ClearClipboardHistoryCommand</name>
     <message>
-        <location filename="../src/extensions/clipboard/clipboard-extension.cpp" line="+35"/>
+        <location filename="../src/builtins/clipboard/clipboard-extension.cpp" line="+37"/>
         <source>Clear Clipboard History</source>
         <translation>Zwischenablageverlauf löschen</translation>
     </message>
@@ -811,7 +844,7 @@
         <translation>Zwischenablageverlauf löschen</translation>
     </message>
     <message>
-        <location line="+9"/>
+        <location line="+11"/>
         <source>Are you sure?</source>
         <translation>Wirklich fortfahren?</translation>
     </message>
@@ -834,7 +867,7 @@
 <context>
     <name>ClipboardClearCommand</name>
     <message>
-        <location line="-39"/>
+        <location line="-43"/>
         <source>Clear Current Clipboard Data</source>
         <translation>Aktuelle Zwischenablagedaten löschen</translation>
     </message>
@@ -844,7 +877,7 @@
         <translation>Aktuellen Inhalt der Zwischenablage löschen</translation>
     </message>
     <message>
-        <location line="+10"/>
+        <location line="+12"/>
         <source>Failed to clear clipboard</source>
         <translation>Die Zwischenablage konnte nicht gelöscht werden</translation>
     </message>
@@ -857,7 +890,7 @@
 <context>
     <name>ClipboardExtension</name>
     <message>
-        <location filename="../src/extensions/clipboard/clipboard-extension.hpp" line="+13"/>
+        <location filename="../src/builtins/clipboard/clipboard-extension.hpp" line="+13"/>
         <source>Clipboard</source>
         <translation>Zwischenablage</translation>
     </message>
@@ -866,89 +899,11 @@
         <source>System clipboard integration</source>
         <translation>Integration der Systemzwischenablage</translation>
     </message>
-    <message>
-        <location filename="../src/extensions/clipboard/clipboard-extension.cpp" line="+55"/>
-        <source>Erase on startup</source>
-        <translation>Beim Start löschen</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Erase clipboard history every time the vicinae server is started</source>
-        <translation>Zwischenablageverlauf bei jedem Start des Vicinae-Servers löschen</translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>Clipboard monitoring</source>
-        <translation>Überwachung der Zwischenablage</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Whether clipboard activity is recorded in the history. Every clipboard action performed while this is turned off will not be recorded.</source>
-        <translation>Ob die Aktivität in der Zwischenablage im Verlauf aufgezeichnet wird. Jede Aktion in der Zwischenablage, die ausgeführt wird, während diese Option deaktiviert ist, wird nicht aufgezeichnet.</translation>
-    </message>
-    <message>
-        <location line="+9"/>
-        <source>Ignore Passwords</source>
-        <translation>Passwörter ignorieren</translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>Ignore selections that can be identified as a password. This relies on the application providing an explicit hint that the selection is a password. While most password managers and private browser windows do, some might not implement this properly.</source>
-        <translation>Als Passwort erkennbare Inhalte ignorieren. Dazu muss die Anwendung ausdrücklich kennzeichnen, dass es sich bei der Auswahl um ein Passwort handelt. Die meisten Passwortmanager und privaten Browserfenster tun dies, einige Anwendungen möglicherweise jedoch nicht.</translation>
-    </message>
-</context>
-<context>
-    <name>ClipboardFilterAccessory</name>
-    <message>
-        <location filename="../src/qml/qml/ClipboardFilterAccessory.qml" line="+8"/>
-        <source>All</source>
-        <translation>Alle</translation>
-    </message>
-    <message>
-        <location line="+0"/>
-        <source>Text</source>
-        <translation>Text</translation>
-    </message>
-    <message>
-        <location line="+0"/>
-        <source>Images</source>
-        <translation>Bilder</translation>
-    </message>
-    <message>
-        <location line="+0"/>
-        <source>Links</source>
-        <translation>Links</translation>
-    </message>
-    <message>
-        <location line="+0"/>
-        <source>Files</source>
-        <translation>Dateien</translation>
-    </message>
 </context>
 <context>
     <name>ClipboardHistoryCommand</name>
     <message>
-        <location filename="../src/extensions/clipboard/clipboard-history-command.cpp" line="+16"/>
-        <source>Paste</source>
-        <translation>Einfügen</translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>Copy</source>
-        <translation>Kopieren</translation>
-    </message>
-    <message>
-        <location line="+5"/>
-        <source>Default Action</source>
-        <translation>Standardaktion</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>The default action to perform on pressing return. Paste is only available if your environment supports it.</source>
-        <translation>Die Standardaktion, die beim Drücken der Eingabetaste ausgeführt wird. Einfügen ist nur verfügbar, wenn Ihre Umgebung dies unterstützt.</translation>
-    </message>
-    <message>
-        <location filename="../src/extensions/clipboard/clipboard-history-command.hpp" line="+11"/>
+        <location filename="../src/builtins/clipboard/clipboard-history-command.hpp" line="+12"/>
         <source>Clipboard History</source>
         <translation>Verlauf der Zwischenablage</translation>
     </message>
@@ -961,7 +916,7 @@
 <context>
     <name>ClipboardHistorySection</name>
     <message>
-        <location filename="../src/qml/clipboard-history-model.cpp" line="+58"/>
+        <location filename="../src/builtins/clipboard/history/clipboard-history-model.cpp" line="+73"/>
         <source>Open Settings</source>
         <translation>Einstellungen öffnen</translation>
     </message>
@@ -969,7 +924,7 @@
 <context>
     <name>ClipboardHistoryView</name>
     <message>
-        <location filename="../src/qml/qml/ClipboardHistoryView.qml" line="+187"/>
+        <location filename="../src/ui/qml/views/ClipboardHistoryView.qml" line="+205"/>
         <source>Type</source>
         <translation>Typ</translation>
     </message>
@@ -984,7 +939,7 @@
         <translation>Kopiert am</translation>
     </message>
     <message>
-        <location line="+52"/>
+        <location line="+47"/>
         <source>Preview not available for this content type</source>
         <translation>Für diesen Inhaltstyp ist keine Vorschau verfügbar</translation>
     </message>
@@ -992,12 +947,37 @@
 <context>
     <name>ClipboardHistoryViewHost</name>
     <message>
-        <location filename="../src/qml/clipboard-history-view-host.hpp" line="+84"/>
+        <location filename="../src/builtins/clipboard/history/clipboard-history-view-host.hpp" line="+95"/>
         <source>Loading...</source>
         <translation>Laden...</translation>
     </message>
     <message>
-        <location filename="../src/qml/clipboard-history-view-host.cpp" line="+101"/>
+        <location filename="../src/builtins/clipboard/history/clipboard-history-view-host.cpp" line="+74"/>
+        <source>All</source>
+        <translation type="unfinished">Alle</translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Text</source>
+        <translation type="unfinished">Text</translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Images</source>
+        <translation type="unfinished">Bilder</translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Links</source>
+        <translation type="unfinished">Links</translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Files</source>
+        <translation type="unfinished">Dateien</translation>
+    </message>
+    <message>
+        <location line="+34"/>
         <source>Browse clipboard history...</source>
         <translation>Verlauf der Zwischenablage durchsuchen...</translation>
     </message>
@@ -1007,7 +987,7 @@
         <translation>Überwachung der Zwischenablage nicht verfügbar</translation>
     </message>
     <message>
-        <location line="+67"/>
+        <location line="+70"/>
         <source>Pause clipboard</source>
         <translation>Zwischenablageüberwachung anhalten</translation>
     </message>
@@ -1025,7 +1005,7 @@
         </translation>
     </message>
     <message>
-        <location line="+27"/>
+        <location line="+28"/>
         <source>Decryption failed</source>
         <translation>Die Entschlüsselung ist fehlgeschlagen</translation>
     </message>
@@ -1058,7 +1038,7 @@
 <context>
     <name>ClipboardService</name>
     <message>
-        <location filename="../src/services/clipboard/clipboard-service.cpp" line="+316"/>
+        <location filename="../src/services/clipboard/clipboard-service.cpp" line="+451"/>
         <source>Image (%1x%2)</source>
         <translation>Bild (%1x%2)</translation>
     </message>
@@ -1076,7 +1056,7 @@
 <context>
     <name>CloseWindowAction</name>
     <message>
-        <location filename="../src/actions/wm/window-actions.hpp" line="-37"/>
+        <location filename="../src/actions/window-actions.hpp" line="-37"/>
         <source>Close window</source>
         <translation>Fenster schließen</translation>
     </message>
@@ -1084,12 +1064,12 @@
 <context>
     <name>CommandLineSection</name>
     <message>
-        <location filename="../src/qml/system-run-model.hpp" line="+19"/>
+        <location filename="../src/builtins/system/system-run-model.hpp" line="+48"/>
         <source>Execute query</source>
         <translation>Abfrage ausführen</translation>
     </message>
     <message>
-        <location filename="../src/qml/system-run-model.cpp" line="+44"/>
+        <location filename="../src/builtins/system/system-run-model.cpp" line="+38"/>
         <source>Open in %1 (hold)</source>
         <translation>In %1 öffnen (gedrückt halten)</translation>
     </message>
@@ -1102,7 +1082,7 @@
 <context>
     <name>CommandListView</name>
     <message>
-        <location filename="../src/qml/qml/CommandListView.qml" line="+12"/>
+        <location filename="../src/ui/qml/views/CommandListView.qml" line="+13"/>
         <source>No results</source>
         <translation>Keine Ergebnisse</translation>
     </message>
@@ -1111,13 +1091,13 @@
     <name>CommandRootItem</name>
     <message>
         <location filename="../src/root-search/extensions/extension-root-provider.cpp" line="+28"/>
-        <location line="+48"/>
+        <location line="+49"/>
         <source>Command</source>
         <translation>Befehl</translation>
     </message>
     <message>
-        <location line="-43"/>
-        <location line="+27"/>
+        <location line="-44"/>
+        <location line="+28"/>
         <source>Open command</source>
         <translation>Befehl öffnen</translation>
     </message>
@@ -1135,20 +1115,28 @@
 <context>
     <name>CompletionPopup</name>
     <message>
-        <location filename="../src/qml/qml/CompletionPopup.qml" line="+11"/>
+        <location filename="../src/ui/qml/controls/CompletionPopup.qml" line="+15"/>
         <source>Filter...</source>
         <translation>Filtern...</translation>
     </message>
 </context>
 <context>
+    <name>ConfigGlobalShortcuts</name>
+    <message>
+        <location filename="../src/services/global-shortcuts/config-global-shortcuts.cpp" line="+25"/>
+        <source>Toggle Vicinae</source>
+        <translation type="unfinished">Vicinae ein-/ausblenden</translation>
+    </message>
+</context>
+<context>
     <name>CopyCalculatorAnswerAction</name>
     <message>
-        <location filename="../src/actions/calculator/calculator-actions.hpp" line="+29"/>
+        <location filename="../src/actions/calculator-actions.hpp" line="+29"/>
         <source>Answer copied to clipboard</source>
         <translation>Antwort in die Zwischenablage kopiert</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+3"/>
         <source>Failed to copy answer</source>
         <translation>Antwort konnte nicht kopiert werden</translation>
     </message>
@@ -1166,7 +1154,7 @@
         <translation>Antwort in die Zwischenablage kopiert</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+3"/>
         <source>Failed to copy answer</source>
         <translation>Antwort konnte nicht kopiert werden</translation>
     </message>
@@ -1179,7 +1167,7 @@
 <context>
     <name>CopyClipboardSelection</name>
     <message>
-        <location filename="../src/extensions/clipboard/history/clipboard-history-actions.hpp" line="+29"/>
+        <location filename="../src/builtins/clipboard/history/clipboard-history-actions.hpp" line="+29"/>
         <source>Selection copied to clipboard</source>
         <translation>Auswahl in die Zwischenablage kopiert</translation>
     </message>
@@ -1197,7 +1185,7 @@
 <context>
     <name>CopyItemDeeplink</name>
     <message>
-        <location filename="../src/actions/root-search/root-search-actions.hpp" line="+75"/>
+        <location filename="../src/actions/root-search-actions.hpp" line="+99"/>
         <source>Deeplink copied in clipboard</source>
         <translation>Deeplink in Zwischenablage kopiert</translation>
     </message>
@@ -1210,7 +1198,7 @@
 <context>
     <name>CopyShortcutAction</name>
     <message>
-        <location filename="../src/actions/shortcut/shortcut-actions.hpp" line="+230"/>
+        <location filename="../src/actions/shortcut-actions.hpp" line="+269"/>
         <source>Copied to clipboard</source>
         <translation>In die Zwischenablage kopiert</translation>
     </message>
@@ -1223,12 +1211,12 @@
 <context>
     <name>CopyToClipboardAction</name>
     <message>
-        <location filename="../src/clipboard-actions.hpp" line="+23"/>
+        <location filename="../src/actions/clipboard-actions.hpp" line="+21"/>
         <source>Copied to clipboard</source>
         <translation>In die Zwischenablage kopiert</translation>
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+5"/>
         <source>Copy to clipboard</source>
         <translation>In die Zwischenablage kopieren</translation>
     </message>
@@ -1236,7 +1224,7 @@
 <context>
     <name>CreateExtensionCommand</name>
     <message>
-        <location filename="../src/extensions/developer/developer-extension.hpp" line="+10"/>
+        <location filename="../src/builtins/developer/developer-extension.hpp" line="+10"/>
         <source>Create Extension</source>
         <translation>Erweiterung erstellen</translation>
     </message>
@@ -1244,7 +1232,7 @@
 <context>
     <name>CreateExtensionFormView</name>
     <message>
-        <location filename="../src/qml/qml/CreateExtensionFormView.qml" line="+15"/>
+        <location filename="../src/ui/qml/views/CreateExtensionFormView.qml" line="+16"/>
         <source>Author</source>
         <translation>Autor</translation>
     </message>
@@ -1270,12 +1258,12 @@
     </message>
     <message>
         <location line="+8"/>
-        <location line="+42"/>
+        <location line="+43"/>
         <source>Description</source>
         <translation>Beschreibung</translation>
     </message>
     <message>
-        <location line="-36"/>
+        <location line="-37"/>
         <source>An extension that does super cool things</source>
         <translation>Eine Erweiterung, die super coole Dinge macht</translation>
     </message>
@@ -1285,7 +1273,7 @@
         <translation>Standort</translation>
     </message>
     <message>
-        <location line="+15"/>
+        <location line="+16"/>
         <source>Command Title</source>
         <translation>Befehlstitel</translation>
     </message>
@@ -1308,7 +1296,7 @@
 <context>
     <name>CreateExtensionSuccessViewHost</name>
     <message>
-        <location filename="../src/qml/create-extension-success-view-host.cpp" line="+7"/>
+        <location filename="../src/builtins/developer/create-extension-success-view-host.cpp" line="+8"/>
         <source>
 # Extension successfully created
 
@@ -1317,28 +1305,14 @@ Your new extension %1 has been succesfully created at `%2`.
 For commands from this extension to be picked up by Vicinae, you need to run your extension in development mode at least once:
 
 ```bash
-cd %2
+cd &apos;%2&apos;
 npm install
 npm run dev
 ```
 
 You can learn more about extension development in the [Vicinae documentation](https://docs.vicinae.com/).
 </source>
-        <translation>
-# Erweiterung erfolgreich erstellt
-
-Ihre neue Erweiterung %1 wurde erfolgreich unter `%2` erstellt.
-
-Damit Befehle dieser Erweiterung von Vicinae übernommen werden können, müssen Sie Ihre Erweiterung mindestens einmal im Entwicklungsmodus ausführen:
-
-```bash
-cd %2
-npm install
-npm run dev
-```
-
-Weitere Informationen zur Erweiterungsentwicklung finden Sie in der [Vicinae-Dokumentation](https://docs.vicinae.com/).
-</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+37"/>
@@ -1349,12 +1323,12 @@ Weitere Informationen zur Erweiterungsentwicklung finden Sie in der [Vicinae-Dok
 <context>
     <name>CreateExtensionViewHost</name>
     <message>
-        <location filename="../src/qml/create-extension-view-host.cpp" line="+44"/>
+        <location filename="../src/builtins/developer/create-extension-view-host.cpp" line="+37"/>
         <source>Create extension</source>
         <translation>Erweiterung erstellen</translation>
     </message>
     <message>
-        <location line="+18"/>
+        <location line="+19"/>
         <location line="+4"/>
         <location line="+19"/>
         <location line="+5"/>
@@ -1388,9 +1362,17 @@ Weitere Informationen zur Erweiterungsentwicklung finden Sie in der [Vicinae-Dok
     </message>
 </context>
 <context>
+    <name>CreateShortcutAction</name>
+    <message>
+        <location filename="../src/actions/shortcut-actions.hpp" line="-53"/>
+        <source>Create shortcut</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>CreateShortcutCommand</name>
     <message>
-        <location filename="../src/extensions/shortcut/create-shortcut-command.hpp" line="+10"/>
+        <location filename="../src/builtins/shortcut/shortcut-extension.hpp" line="+13"/>
         <source>Create Shortcut</source>
         <translation>Verknüpfung erstellen</translation>
     </message>
@@ -1398,7 +1380,7 @@ Weitere Informationen zur Erweiterungsentwicklung finden Sie in der [Vicinae-Dok
 <context>
     <name>CreateShortcutFromActiveBrowserTabCommand</name>
     <message>
-        <location filename="../src/extensions/browser/browser-extension.cpp" line="+44"/>
+        <location filename="../src/builtins/browser/browser-extension.cpp" line="+44"/>
         <source>Create Shortcut from Active Tab</source>
         <translation>Verknüpfung aus aktivem Tab erstellen</translation>
     </message>
@@ -1416,7 +1398,7 @@ Weitere Informationen zur Erweiterungsentwicklung finden Sie in der [Vicinae-Dok
 <context>
     <name>CreateSnippetCommand</name>
     <message>
-        <location filename="../src/extensions/snippet/create-snippet-command.hpp" line="+10"/>
+        <location filename="../src/builtins/snippet/create-snippet-command.hpp" line="+10"/>
         <source>Create Snippet</source>
         <translation>Snippet erstellen</translation>
     </message>
@@ -1424,17 +1406,22 @@ Weitere Informationen zur Erweiterungsentwicklung finden Sie in der [Vicinae-Dok
 <context>
     <name>DMenuSection</name>
     <message>
-        <location filename="../src/qml/dmenu-model.cpp" line="+93"/>
+        <location filename="../src/ui/views/dmenu-model.cpp" line="+96"/>
         <source>Select entry</source>
         <translation>Eintrag auswählen</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+0"/>
+        <source>Select entry (index)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+14"/>
         <source>Pass search text</source>
         <translation>Suchtext übergeben</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+4"/>
         <source>Select and copy entry</source>
         <translation>Eintrag auswählen und kopieren</translation>
     </message>
@@ -1442,7 +1429,7 @@ Weitere Informationen zur Erweiterungsentwicklung finden Sie in der [Vicinae-Dok
 <context>
     <name>DMenuView</name>
     <message>
-        <location filename="../src/qml/qml/DMenuView.qml" line="+79"/>
+        <location filename="../src/ui/qml/views/DMenuView.qml" line="+81"/>
         <source>Name</source>
         <translation>Name</translation>
     </message>
@@ -1460,7 +1447,7 @@ Weitere Informationen zur Erweiterungsentwicklung finden Sie in der [Vicinae-Dok
 <context>
     <name>DMenuViewHost</name>
     <message>
-        <location filename="../src/qml/dmenu-view-host.cpp" line="+34"/>
+        <location filename="../src/ui/views/dmenu-view-host.cpp" line="+36"/>
         <source>Search entries...</source>
         <translation>Einträge durchsuchen...</translation>
     </message>
@@ -1478,7 +1465,7 @@ Weitere Informationen zur Erweiterungsentwicklung finden Sie in der [Vicinae-Dok
 <context>
     <name>DetailListView</name>
     <message>
-        <location filename="../src/qml/qml/DetailListView.qml" line="+32"/>
+        <location filename="../src/ui/qml/views/DetailListView.qml" line="+32"/>
         <source>No results</source>
         <translation>Keine Ergebnisse</translation>
     </message>
@@ -1486,7 +1473,7 @@ Weitere Informationen zur Erweiterungsentwicklung finden Sie in der [Vicinae-Dok
 <context>
     <name>DeveloperExtension</name>
     <message>
-        <location filename="../src/extensions/developer/developer-extension.hpp" line="+10"/>
+        <location filename="../src/builtins/developer/developer-extension.hpp" line="+12"/>
         <source>Developer</source>
         <translation>Entwickler</translation>
     </message>
@@ -1494,7 +1481,7 @@ Weitere Informationen zur Erweiterungsentwicklung finden Sie in der [Vicinae-Dok
 <context>
     <name>DisableApplication</name>
     <message>
-        <location filename="../src/actions/root-search/root-search-actions.hpp" line="+8"/>
+        <location filename="../src/actions/root-search-actions.hpp" line="+8"/>
         <source>Disable item</source>
         <translation>Element deaktivieren</translation>
     </message>
@@ -1502,7 +1489,7 @@ Weitere Informationen zur Erweiterungsentwicklung finden Sie in der [Vicinae-Dok
 <context>
     <name>DisableItemAction</name>
     <message>
-        <location filename="../src/actions/root-search/root-search-actions.cpp" line="+88"/>
+        <location filename="../src/actions/root-search-actions.cpp" line="+111"/>
         <source>Are you sure?</source>
         <translation>Wirklich fortfahren?</translation>
     </message>
@@ -1543,15 +1530,28 @@ Weitere Informationen zur Erweiterungsentwicklung finden Sie in der [Vicinae-Dok
 <context>
     <name>DuplicateShortcutAction</name>
     <message>
-        <location filename="../src/actions/shortcut/shortcut-actions.hpp" line="-50"/>
+        <location filename="../src/actions/shortcut-actions.hpp" line="-26"/>
         <source>Duplicate link</source>
         <translation>Link duplizieren</translation>
     </message>
 </context>
 <context>
+    <name>EditAppleShortcutAction</name>
+    <message>
+        <location filename="../src/root-search/apple-shortcuts/apple-shortcut-root-provider.cpp" line="-75"/>
+        <source>Edit in Shortcuts</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Failed to open shortcut</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>EditClipboardKeywordsAction</name>
     <message>
-        <location filename="../src/extensions/clipboard/history/clipboard-history-actions.hpp" line="+49"/>
+        <location filename="../src/builtins/clipboard/history/clipboard-history-actions.hpp" line="+50"/>
         <source>Additional keywords that will be used to index this selection.</source>
         <translation>Zusätzliche Schlüsselwörter, die zum Indexieren dieser Auswahl verwendet werden.</translation>
     </message>
@@ -1564,7 +1564,7 @@ Weitere Informationen zur Erweiterungsentwicklung finden Sie in der [Vicinae-Dok
 <context>
     <name>EditEmojiKeywordsAction</name>
     <message>
-        <location filename="../src/qml/emoji-grid-model.cpp" line="+35"/>
+        <location filename="../src/builtins/vicinae/emoji-grid-model.cpp" line="+35"/>
         <source>Additional keywords that will be used to index this glyph</source>
         <translation>Zusätzliche Schlüsselwörter, die zum Indexieren dieses Glyphen verwendet werden</translation>
     </message>
@@ -1577,7 +1577,7 @@ Weitere Informationen zur Erweiterungsentwicklung finden Sie in der [Vicinae-Dok
 <context>
     <name>EditKeywordsFormView</name>
     <message>
-        <location filename="../src/qml/qml/EditKeywordsFormView.qml" line="+19"/>
+        <location filename="../src/ui/qml/views/EditKeywordsFormView.qml" line="+20"/>
         <source>Keywords</source>
         <translation>Schlüsselwörter</translation>
     </message>
@@ -1585,7 +1585,7 @@ Weitere Informationen zur Erweiterungsentwicklung finden Sie in der [Vicinae-Dok
 <context>
     <name>EditKeywordsViewHost</name>
     <message>
-        <location filename="../src/qml/edit-keywords-view-host.cpp" line="+26"/>
+        <location filename="../src/ui/views/edit-keywords-view-host.cpp" line="+26"/>
         <source>Submit</source>
         <translation>Senden</translation>
     </message>
@@ -1603,28 +1603,20 @@ Weitere Informationen zur Erweiterungsentwicklung finden Sie in der [Vicinae-Dok
 <context>
     <name>EditShortcutAction</name>
     <message>
-        <location filename="../src/actions/shortcut/shortcut-actions.hpp" line="-41"/>
+        <location filename="../src/actions/shortcut-actions.hpp" line="-41"/>
         <source>Edit shortcut</source>
         <translation>Verknüpfung bearbeiten</translation>
     </message>
 </context>
 <context>
-    <name>EmojiCategoryFilterAccessory</name>
-    <message>
-        <location filename="../src/qml/qml/EmojiCategoryFilterAccessory.qml" line="+8"/>
-        <source>All</source>
-        <translation>Alle</translation>
-    </message>
-</context>
-<context>
     <name>EmojiGridModel</name>
     <message>
-        <location filename="../src/qml/emoji-grid-model.hpp" line="+58"/>
+        <location filename="../src/builtins/vicinae/emoji-grid-model.hpp" line="+68"/>
         <source>Search for emojis and symbols...</source>
         <translation>Nach Emojis und Symbolen suchen...</translation>
     </message>
     <message>
-        <location filename="../src/qml/emoji-grid-model.cpp" line="+241"/>
+        <location filename="../src/builtins/vicinae/emoji-grid-model.cpp" line="+262"/>
         <source>Pinned</source>
         <translation>Angeheftet</translation>
     </message>
@@ -1637,7 +1629,7 @@ Weitere Informationen zur Erweiterungsentwicklung finden Sie in der [Vicinae-Dok
 <context>
     <name>EmojiGridViewHost</name>
     <message>
-        <location filename="../src/qml/emoji-grid-view-host.hpp" line="+40"/>
+        <location filename="../src/builtins/vicinae/emoji-grid-view-host.hpp" line="+60"/>
         <source>All</source>
         <translation>Alle</translation>
     </message>
@@ -1645,7 +1637,7 @@ Weitere Informationen zur Erweiterungsentwicklung finden Sie in der [Vicinae-Dok
 <context>
     <name>EmptyView</name>
     <message>
-        <location filename="../src/qml/qml/EmptyView.qml" line="+7"/>
+        <location filename="../src/ui/qml/views/EmptyView.qml" line="+9"/>
         <source>No results</source>
         <translation>Keine Ergebnisse</translation>
     </message>
@@ -1653,12 +1645,12 @@ Weitere Informationen zur Erweiterungsentwicklung finden Sie in der [Vicinae-Dok
 <context>
     <name>EnabledFallbackSection</name>
     <message>
-        <location filename="../src/qml/manage-fallback-model.hpp" line="-19"/>
+        <location filename="../src/builtins/vicinae/manage-fallback-model.hpp" line="-19"/>
         <source>Enabled</source>
         <translation>Aktiviert</translation>
     </message>
     <message>
-        <location filename="../src/qml/manage-fallback-model.cpp" line="-22"/>
+        <location filename="../src/builtins/vicinae/manage-fallback-model.cpp" line="-22"/>
         <source>Disable fallback</source>
         <translation>Fallback deaktivieren</translation>
     </message>
@@ -1684,7 +1676,7 @@ Weitere Informationen zur Erweiterungsentwicklung finden Sie in der [Vicinae-Dok
 <context>
     <name>ExtensionBoilerplateGenerator</name>
     <message>
-        <location filename="../src/services/extension-boilerplate-generator/extension-boilerplate-generator.cpp" line="+24"/>
+        <location filename="../src/services/extension-boilerplate-generator/extension-boilerplate-generator.cpp" line="+32"/>
         <source>Simple List</source>
         <translation>Einfache Liste</translation>
     </message>
@@ -1712,7 +1704,7 @@ Weitere Informationen zur Erweiterungsentwicklung finden Sie in der [Vicinae-Dok
 <context>
     <name>ExtensionErrorViewHost</name>
     <message>
-        <location filename="../src/qml/extension-error-view-host.cpp" line="+6"/>
+        <location filename="../src/extension/views/extension-error-view-host.cpp" line="+7"/>
         <source># Extension crashed 💥!
 
 This extension threw an uncaught exception and crashed as a result.
@@ -1736,7 +1728,7 @@ Den vollständigen Stacktrace finden Sie unten. Sie können es auch direkt aus d
 <context>
     <name>ExtensionFormModel</name>
     <message>
-        <location filename="../src/qml/extension-form-model.cpp" line="+200"/>
+        <location filename="../src/extension/views/extension-form-model.cpp" line="+229"/>
         <source>One or more fields have errors</source>
         <translation>Ein oder mehrere Felder enthalten Fehler</translation>
     </message>
@@ -1744,12 +1736,12 @@ Den vollständigen Stacktrace finden Sie unten. Sie können es auch direkt aus d
 <context>
     <name>ExtensionGridModel</name>
     <message>
-        <location filename="../src/qml/extension-grid-model.cpp" line="+186"/>
+        <location filename="../src/extension/views/extension-grid-model.cpp" line="+233"/>
         <source>Search...</source>
         <translation>Suchen...</translation>
     </message>
     <message>
-        <location line="+52"/>
+        <location line="+5"/>
         <source>No results</source>
         <translation>Keine Ergebnisse</translation>
     </message>
@@ -1757,7 +1749,7 @@ Den vollständigen Stacktrace finden Sie unten. Sie können es auch direkt aus d
 <context>
     <name>ExtensionGridView</name>
     <message>
-        <location filename="../src/qml/qml/ExtensionGridView.qml" line="+9"/>
+        <location filename="../src/ui/qml/views/ExtensionGridView.qml" line="+11"/>
         <source>No results</source>
         <translation>Keine Ergebnisse</translation>
     </message>
@@ -1765,7 +1757,7 @@ Den vollständigen Stacktrace finden Sie unten. Sie können es auch direkt aus d
 <context>
     <name>ExtensionListModel</name>
     <message>
-        <location filename="../src/qml/extension-list-model.cpp" line="+189"/>
+        <location filename="../src/extension/views/extension-list-model.cpp" line="+197"/>
         <source>Search...</source>
         <translation>Suchen...</translation>
     </message>
@@ -1778,7 +1770,7 @@ Den vollständigen Stacktrace finden Sie unten. Sie können es auch direkt aus d
 <context>
     <name>ExtensionSettingsPage</name>
     <message>
-        <location filename="../src/qml/qml/ExtensionSettingsPage.qml" line="+94"/>
+        <location filename="../src/ui/qml/settings/ExtensionSettingsPage.qml" line="+115"/>
         <source>Description</source>
         <translation>Beschreibung</translation>
     </message>
@@ -1793,7 +1785,7 @@ Den vollständigen Stacktrace finden Sie unten. Sie können es auch direkt aus d
         <translation>Befehle</translation>
     </message>
     <message>
-        <location line="+105"/>
+        <location line="+118"/>
         <source>Shortcut</source>
         <translation>Verknüpfung</translation>
     </message>
@@ -1802,11 +1794,21 @@ Den vollständigen Stacktrace finden Sie unten. Sie können es auch direkt aus d
         <source>Add Alias</source>
         <translation>Alias hinzufügen</translation>
     </message>
+    <message>
+        <location line="+96"/>
+        <source>Nothing to configure</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>Commands and preferences will show up here once available.</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>ExtensionView</name>
     <message>
-        <location filename="../src/qml/qml/ExtensionView.qml" line="+99"/>
+        <location filename="../src/ui/qml/views/ExtensionView.qml" line="+114"/>
         <source>No results</source>
         <translation>Keine Ergebnisse</translation>
     </message>
@@ -1814,7 +1816,7 @@ Den vollständigen Stacktrace finden Sie unten. Sie können es auch direkt aus d
 <context>
     <name>FileExtension</name>
     <message>
-        <location filename="../src/extensions/file/file-extension.hpp" line="+65"/>
+        <location filename="../src/builtins/file/file-extension.hpp" line="+105"/>
         <source>System files</source>
         <translation>Systemdateien</translation>
     </message>
@@ -1823,41 +1825,11 @@ Den vollständigen Stacktrace finden Sie unten. Sie können es auch direkt aus d
         <source>Integrate with system files</source>
         <translation>Mit Systemdateien integrieren</translation>
     </message>
-    <message>
-        <location line="+24"/>
-        <source>Enabled</source>
-        <translation>Aktiviert</translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>Whether to run the file indexer in the background. When turned off, the indexer process is stopped entirely and file search becomes unavailable until it is turned back on.</source>
-        <translation>Ob der Dateiindexer im Hintergrund ausgeführt werden soll. Bei Deaktivierung wird der Indexerprozess vollständig gestoppt und die Dateisuche ist erst wieder verfügbar, wenn sie wieder aktiviert wird.</translation>
-    </message>
-    <message>
-        <location line="+5"/>
-        <source>Search paths</source>
-        <translation>Suchpfade</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Directories that Vicinae will search</source>
-        <translation>Verzeichnisse, die Vicinae durchsucht</translation>
-    </message>
-    <message>
-        <location line="+4"/>
-        <source>Excluded search paths</source>
-        <translation>Ausgeschlossene Suchpfade</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Directories to exclude from file indexing</source>
-        <translation>Verzeichnisse, die von der Dateiindizierung ausgeschlossen werden sollen</translation>
-    </message>
 </context>
 <context>
     <name>FilePreview</name>
     <message>
-        <location filename="../src/qml/qml/FilePreview.qml" line="+42"/>
+        <location filename="../src/ui/qml/detail/FilePreview.qml" line="+37"/>
         <source>Preview not available for this file type</source>
         <translation>Für diesen Dateityp ist keine Vorschau verfügbar</translation>
     </message>
@@ -1865,7 +1837,7 @@ Den vollständigen Stacktrace finden Sie unten. Sie können es auch direkt aus d
 <context>
     <name>FocusWindowAction</name>
     <message>
-        <location filename="../src/actions/wm/window-actions.hpp" line="-17"/>
+        <location filename="../src/actions/window-actions.hpp" line="-17"/>
         <source>Focus window</source>
         <translation>Fenster fokussieren</translation>
     </message>
@@ -1873,7 +1845,7 @@ Den vollständigen Stacktrace finden Sie unten. Sie können es auch direkt aus d
 <context>
     <name>FontBrowserViewHost</name>
     <message>
-        <location filename="../src/qml/font-browser-view-host.hpp" line="+38"/>
+        <location filename="../src/builtins/font/font-browser-view-host.hpp" line="+55"/>
         <source>All</source>
         <translation>Alle</translation>
     </message>
@@ -1881,7 +1853,7 @@ Den vollständigen Stacktrace finden Sie unten. Sie können es auch direkt aus d
 <context>
     <name>FontExtension</name>
     <message>
-        <location filename="../src/extensions/font/font-extension.hpp" line="+9"/>
+        <location filename="../src/builtins/font/font-extension.hpp" line="+9"/>
         <source>Font</source>
         <translation>Schriftart</translation>
     </message>
@@ -1889,17 +1861,17 @@ Den vollständigen Stacktrace finden Sie unten. Sie können es auch direkt aus d
 <context>
     <name>FontGridModel</name>
     <message>
-        <location filename="../src/qml/font-grid-model.hpp" line="+47"/>
+        <location filename="../src/builtins/font/font-grid-model.hpp" line="+53"/>
         <source>Search fonts...</source>
         <translation>Schriftarten suchen...</translation>
     </message>
     <message>
-        <location filename="../src/qml/font-grid-model.cpp" line="+133"/>
+        <location filename="../src/builtins/font/font-grid-model.cpp" line="+152"/>
         <source>All Fonts (%1)</source>
         <translation>Alle Schriftarten (%1)</translation>
     </message>
     <message>
-        <location line="+16"/>
+        <location line="+15"/>
         <source>Results (%1)</source>
         <translation>Ergebnisse (%1)</translation>
     </message>
@@ -1907,7 +1879,7 @@ Den vollständigen Stacktrace finden Sie unten. Sie können es auch direkt aus d
 <context>
     <name>Footer</name>
     <message>
-        <location filename="../src/qml/qml/Footer.qml" line="+60"/>
+        <location filename="../src/ui/qml/launcher/Footer.qml" line="+62"/>
         <source>Actions</source>
         <translation>Aktionen</translation>
     </message>
@@ -1915,7 +1887,7 @@ Den vollständigen Stacktrace finden Sie unten. Sie können es auch direkt aus d
 <context>
     <name>ForceQuitAppAction</name>
     <message>
-        <location filename="../src/actions/app/app-actions.cpp" line="+95"/>
+        <location filename="../src/actions/app-actions.cpp" line="+96"/>
         <source>Force Quit Application</source>
         <translation>Anwendung beenden erzwingen</translation>
     </message>
@@ -1933,7 +1905,7 @@ Den vollständigen Stacktrace finden Sie unten. Sie können es auch direkt aus d
 <context>
     <name>ForgetTelemetryCommand</name>
     <message>
-        <location filename="../src/extensions/vicinae/vicinae-extension.cpp" line="+210"/>
+        <location filename="../src/builtins/vicinae/vicinae-extension.cpp" line="+175"/>
         <source>Forget Past Vicinae Telemetry</source>
         <translation>Frühere Vicinae-Telemetrie anonymisieren</translation>
     </message>
@@ -1961,12 +1933,17 @@ Den vollständigen Stacktrace finden Sie unten. Sie können es auch direkt aus d
 <context>
     <name>FormAppSelector</name>
     <message>
-        <location filename="../src/qml/qml/FormAppSelector.qml" line="+50"/>
+        <location filename="../src/ui/qml/form/FormAppSelector.qml" line="+50"/>
         <source>All applications</source>
         <translation>Alle Anwendungen</translation>
     </message>
     <message>
-        <location line="+70"/>
+        <location line="+63"/>
+        <source>Remove</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-98"/>
         <source>+ Restrict to app…</source>
         <translation>+ Auf App beschränken…</translation>
     </message>
@@ -1974,7 +1951,7 @@ Den vollständigen Stacktrace finden Sie unten. Sie können es auch direkt aus d
 <context>
     <name>FormFilePicker</name>
     <message>
-        <location filename="../src/qml/qml/FormFilePicker.qml" line="+84"/>
+        <location filename="../src/ui/qml/form/FormFilePicker.qml" line="+91"/>
         <source>Select files</source>
         <translation>Dateien auswählen</translation>
     </message>
@@ -1989,17 +1966,25 @@ Den vollständigen Stacktrace finden Sie unten. Sie können es auch direkt aus d
         <translation>Verzeichnis auswählen</translation>
     </message>
     <message>
-        <location line="+46"/>
+        <location line="-73"/>
+        <location line="+119"/>
         <source>No directory selected</source>
         <translation>Kein Verzeichnis ausgewählt</translation>
     </message>
     <message>
-        <location line="+0"/>
+        <location line="-119"/>
+        <location line="+119"/>
         <source>No file selected</source>
         <translation>Keine Datei ausgewählt</translation>
     </message>
     <message>
-        <location line="+115"/>
+        <location line="+13"/>
+        <location line="+124"/>
+        <source>Remove</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+31"/>
         <source>+ Add folder…</source>
         <translation>+ Ordner hinzufügen…</translation>
     </message>
@@ -2010,42 +1995,61 @@ Den vollständigen Stacktrace finden Sie unten. Sie können es auch direkt aus d
     </message>
 </context>
 <context>
+    <name>FormPasswordInput</name>
+    <message>
+        <location filename="../src/ui/qml/form/FormPasswordInput.qml" line="+98"/>
+        <source>Hide password</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Show password</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>GeneralSettingsModel</name>
     <message>
-        <location filename="../src/qml/general-settings-model.cpp" line="+176"/>
-        <location line="+11"/>
+        <location filename="../src/ui/settings/general-settings-model.cpp" line="+202"/>
+        <location line="+12"/>
+        <source>Automatic</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-10"/>
+        <location line="+15"/>
         <source>None</source>
         <translation>Keine</translation>
     </message>
     <message>
-        <location line="-10"/>
-        <location line="+10"/>
+        <location line="-14"/>
+        <location line="+14"/>
         <source>Blurred</source>
         <translation>Verschwommen</translation>
     </message>
     <message>
-        <location line="-8"/>
-        <location line="+8"/>
+        <location line="-12"/>
+        <location line="+12"/>
         <source>Liquid Glass</source>
         <translation>Flüssiges Glas</translation>
     </message>
     <message>
-        <location line="-7"/>
+        <location line="-11"/>
         <source>Window material</source>
         <translation>Fensterhintergrund</translation>
     </message>
     <message>
-        <location line="+23"/>
+        <location line="+27"/>
         <source>Themes</source>
         <translation>Themen</translation>
     </message>
     <message>
-        <location line="+18"/>
+        <location line="+17"/>
         <source>Fonts</source>
         <translation>Schriftarten</translation>
     </message>
     <message>
-        <location line="+19"/>
+        <location line="+17"/>
         <source>Icon Themes</source>
         <translation>Symbolthemen</translation>
     </message>
@@ -2080,7 +2084,7 @@ Den vollständigen Stacktrace finden Sie unten. Sie können es auch direkt aus d
 <context>
     <name>GeneralSettingsPage</name>
     <message>
-        <location filename="../src/qml/qml/GeneralSettingsPage.qml" line="+29"/>
+        <location filename="../src/ui/qml/settings/GeneralSettingsPage.qml" line="+35"/>
         <source>Behavior</source>
         <translation>Verhalten</translation>
     </message>
@@ -2100,7 +2104,7 @@ Den vollständigen Stacktrace finden Sie unten. Sie können es auch direkt aus d
         <translation>Bei Fokusverlust schließen</translation>
     </message>
     <message>
-        <location line="+8"/>
+        <location line="+10"/>
         <source>Close on Escape</source>
         <translation>Mit Escape schließen</translation>
     </message>
@@ -2149,7 +2153,7 @@ Den vollständigen Stacktrace finden Sie unten. Sie können es auch direkt aus d
 <context>
     <name>GenericGridView</name>
     <message>
-        <location filename="../src/qml/qml/GenericGridView.qml" line="+33"/>
+        <location filename="../src/ui/qml/views/GenericGridView.qml" line="+29"/>
         <source>No results</source>
         <translation>Keine Ergebnisse</translation>
     </message>
@@ -2157,27 +2161,9 @@ Den vollständigen Stacktrace finden Sie unten. Sie können es auch direkt aus d
 <context>
     <name>GenericListView</name>
     <message>
-        <location filename="../src/qml/qml/GenericListView.qml" line="+25"/>
+        <location filename="../src/ui/qml/views/GenericListView.qml" line="+26"/>
         <source>No results</source>
         <translation>Keine Ergebnisse</translation>
-    </message>
-</context>
-<context>
-    <name>GlobalShortcutService</name>
-    <message>
-        <location filename="../src/services/global-shortcuts/global-shortcut-service.cpp" line="+43"/>
-        <source>Toggle Vicinae</source>
-        <translation>Vicinae ein-/ausblenden</translation>
-    </message>
-    <message>
-        <location line="+84"/>
-        <source>the launcher hotkey</source>
-        <translation>der Launcher-Hotkey</translation>
-    </message>
-    <message>
-        <location line="+11"/>
-        <source>another command</source>
-        <translation>ein weiterer Befehl</translation>
     </message>
 </context>
 <context>
@@ -2191,7 +2177,7 @@ Den vollständigen Stacktrace finden Sie unten. Sie können es auch direkt aus d
 <context>
     <name>HibernateCommand</name>
     <message>
-        <location filename="../src/extensions/power-management/power-management-extension.cpp" line="+127"/>
+        <location filename="../src/builtins/power-management/power-management-extension.cpp" line="+124"/>
         <source>Hibernate System</source>
         <translation>System in den Ruhezustand versetzen</translation>
     </message>
@@ -2214,7 +2200,7 @@ Den vollständigen Stacktrace finden Sie unten. Sie können es auch direkt aus d
 <context>
     <name>IconBrowserCommand</name>
     <message>
-        <location filename="../src/extensions/vicinae/vicinae-extension.cpp" line="+25"/>
+        <location filename="../src/builtins/vicinae/vicinae-extension.cpp" line="+26"/>
         <source>Search Builtin Icons</source>
         <translation>Integrierte Symbole durchsuchen</translation>
     </message>
@@ -2227,7 +2213,7 @@ Den vollständigen Stacktrace finden Sie unten. Sie können es auch direkt aus d
 <context>
     <name>ImageViewer</name>
     <message>
-        <location filename="../src/qml/qml/ImageViewer.qml" line="+159"/>
+        <location filename="../src/ui/qml/detail/ImageViewer.qml" line="+161"/>
         <source>%1 / %2</source>
         <translation>%1 / %2</translation>
     </message>
@@ -2235,7 +2221,7 @@ Den vollständigen Stacktrace finden Sie unten. Sie können es auch direkt aus d
 <context>
     <name>InspectLocalStorage</name>
     <message>
-        <location filename="../src/extensions/vicinae/vicinae-extension.cpp" line="+12"/>
+        <location filename="../src/builtins/vicinae/vicinae-extension.cpp" line="+13"/>
         <source>Inspect Local Storage</source>
         <translation>Lokalen Speicher untersuchen</translation>
     </message>
@@ -2246,9 +2232,37 @@ Den vollständigen Stacktrace finden Sie unten. Sie können es auch direkt aus d
     </message>
 </context>
 <context>
+    <name>InstallExtensionAction</name>
+    <message>
+        <location filename="../src/actions/extension-actions.cpp" line="+15"/>
+        <source>Downloading extension...</source>
+        <translation type="unfinished">Erweiterung wird heruntergeladen...</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Failed to download extension</source>
+        <translation type="unfinished">Die Erweiterung konnte nicht heruntergeladen werden</translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Failed to extract extension archive</source>
+        <translation type="unfinished">Das Extrahieren des Erweiterungsarchivs ist fehlgeschlagen</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Extension installed</source>
+        <translation type="unfinished">Erweiterung installiert</translation>
+    </message>
+    <message>
+        <location filename="../src/actions/extension-actions.hpp" line="+28"/>
+        <source>Install extension</source>
+        <translation type="unfinished">Erweiterung installieren</translation>
+    </message>
+</context>
+<context>
     <name>InstallUpdateAction</name>
     <message>
-        <location filename="../src/services/update/update-service.cpp" line="+188"/>
+        <location filename="../src/services/update/update-service.cpp" line="+190"/>
         <source>Install Update</source>
         <translation>Update installieren</translation>
     </message>
@@ -2261,17 +2275,17 @@ Den vollständigen Stacktrace finden Sie unten. Sie können es auch direkt aus d
 <context>
     <name>InstalledExtensionsSection</name>
     <message>
-        <location filename="../src/qml/installed-extensions-model.hpp" line="+18"/>
+        <location filename="../src/builtins/vicinae/installed-extensions-model.hpp" line="+18"/>
         <source>Installed Extensions ({count})</source>
         <translation>Installierte Erweiterungen ({count})</translation>
     </message>
     <message>
-        <location filename="../src/qml/installed-extensions-model.cpp" line="+36"/>
+        <location filename="../src/builtins/vicinae/installed-extensions-model.cpp" line="+38"/>
         <source>Local</source>
         <translation>Lokal</translation>
     </message>
     <message>
-        <location line="+14"/>
+        <location line="+16"/>
         <source>Copy</source>
         <translation>Kopieren</translation>
     </message>
@@ -2299,7 +2313,7 @@ Den vollständigen Stacktrace finden Sie unten. Sie können es auch direkt aus d
 <context>
     <name>InstalledExtensionsViewHost</name>
     <message>
-        <location filename="../src/qml/installed-extensions-view-host.cpp" line="+12"/>
+        <location filename="../src/builtins/vicinae/installed-extensions-view-host.cpp" line="+12"/>
         <source>Search extensions...</source>
         <translation>Erweiterungen suchen...</translation>
     </message>
@@ -2307,16 +2321,58 @@ Den vollständigen Stacktrace finden Sie unten. Sie können es auch direkt aus d
 <context>
     <name>InternalExtension</name>
     <message>
-        <location filename="../src/extensions/internal/internal-extension.hpp" line="+32"/>
+        <location filename="../src/builtins/internal/internal-extension.hpp" line="+12"/>
         <location line="+1"/>
         <source>Internal Commands</source>
         <translation>Interne Befehle</translation>
     </message>
 </context>
 <context>
+    <name>KdeSettingsRootItem</name>
+    <message>
+        <location filename="../src/root-search/kde-settings/kde-settings-root-provider.cpp" line="+13"/>
+        <location line="+9"/>
+        <source>KDE Settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Name</source>
+        <translation type="unfinished">Name</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Where</source>
+        <translation type="unfinished">Wo</translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Open in System Settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Copy Module ID</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>KdeSettingsRootProvider</name>
+    <message>
+        <location line="+17"/>
+        <source>KDE Settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Modules of the KDE System Settings application.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>KeyboardBridge</name>
     <message>
-        <location filename="../src/qml/keyboard-bridge.hpp" line="+51"/>
+        <location filename="../src/ui/bridges/keyboard-bridge.hpp" line="+60"/>
         <source>Modifier required</source>
         <translation>Modifikator erforderlich</translation>
     </message>
@@ -2324,27 +2380,32 @@ Den vollständigen Stacktrace finden Sie unten. Sie können es auch direkt aus d
 <context>
     <name>LauncherWindow</name>
     <message>
-        <location filename="../src/qml/qml/LauncherWindow.qml" line="+29"/>
+        <location filename="../src/ui/qml/launcher/LauncherWindow.qml" line="+46"/>
         <source>Vicinae Launcher</source>
         <translation>Vicinae Launcher</translation>
     </message>
     <message>
-        <location filename="../src/qml/launcher-window.cpp" line="+571"/>
+        <location filename="../src/ui/windows/launcher-window.cpp" line="+872"/>
         <source>Open Settings</source>
         <translation>Einstellungen öffnen</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+4"/>
         <source>Keyboard Shortcuts</source>
         <translation>Tastaturkürzel</translation>
     </message>
     <message>
-        <location line="+13"/>
+        <location line="+5"/>
+        <source>Extension Store</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
         <source>Documentation</source>
         <translation>Dokumentation</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+3"/>
         <location line="+5"/>
         <source>Opened in browser</source>
         <translation>Im Browser geöffnet</translation>
@@ -2355,7 +2416,7 @@ Den vollständigen Stacktrace finden Sie unten. Sie können es auch direkt aus d
         <translation>Fehler melden</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+4"/>
         <source>About Vicinae</source>
         <translation>Über Vicinae</translation>
     </message>
@@ -2363,12 +2424,12 @@ Den vollständigen Stacktrace finden Sie unten. Sie können es auch direkt aus d
 <context>
     <name>LocalStorageItemSection</name>
     <message>
-        <location filename="../src/qml/local-storage-model.hpp" line="+19"/>
+        <location filename="../src/builtins/vicinae/local-storage-model.hpp" line="+19"/>
         <source>Items ({count})</source>
         <translation>Einträge ({count})</translation>
     </message>
     <message>
-        <location filename="../src/qml/local-storage-model.cpp" line="+31"/>
+        <location filename="../src/builtins/vicinae/local-storage-model.cpp" line="+31"/>
         <source>Show value</source>
         <translation>Wert anzeigen</translation>
     </message>
@@ -2376,7 +2437,7 @@ Den vollständigen Stacktrace finden Sie unten. Sie können es auch direkt aus d
 <context>
     <name>LocalStorageItemViewHost</name>
     <message>
-        <location filename="../src/qml/local-storage-view-host.cpp" line="+23"/>
+        <location filename="../src/builtins/vicinae/local-storage-view-host.cpp" line="+23"/>
         <source>Search items...</source>
         <translation>Einträge suchen...</translation>
     </message>
@@ -2384,12 +2445,12 @@ Den vollständigen Stacktrace finden Sie unten. Sie können es auch direkt aus d
 <context>
     <name>LocalStorageNamespaceSection</name>
     <message>
-        <location filename="../src/qml/local-storage-model.hpp" line="-11"/>
+        <location filename="../src/builtins/vicinae/local-storage-model.hpp" line="-11"/>
         <source>Namespaces ({count})</source>
         <translation>Namensräume ({count})</translation>
     </message>
     <message>
-        <location filename="../src/qml/local-storage-model.cpp" line="-16"/>
+        <location filename="../src/builtins/vicinae/local-storage-model.cpp" line="-16"/>
         <source>Browse namespace</source>
         <translation>Namespace durchsuchen</translation>
     </message>
@@ -2397,7 +2458,7 @@ Den vollständigen Stacktrace finden Sie unten. Sie können es auch direkt aus d
 <context>
     <name>LocalStorageViewHost</name>
     <message>
-        <location filename="../src/qml/local-storage-view-host.cpp" line="-15"/>
+        <location filename="../src/builtins/vicinae/local-storage-view-host.cpp" line="-15"/>
         <source>Search namespaces...</source>
         <translation>Namensräume durchsuchen...</translation>
     </message>
@@ -2405,7 +2466,7 @@ Den vollständigen Stacktrace finden Sie unten. Sie können es auch direkt aus d
 <context>
     <name>LockCommand</name>
     <message>
-        <location filename="../src/extensions/power-management/power-management-extension.cpp" line="-48"/>
+        <location filename="../src/builtins/power-management/power-management-extension.cpp" line="-48"/>
         <source>Lock Session</source>
         <translation>Sitzung sperren</translation>
     </message>
@@ -2451,15 +2512,21 @@ Den vollständigen Stacktrace finden Sie unten. Sie können es auch direkt aus d
 <context>
     <name>MacOSGlobalShortcutBackend</name>
     <message>
-        <location filename="../src/services/global-shortcuts/macos-global-shortcut-backend.cpp" line="+238"/>
+        <location filename="../src/services/global-shortcuts/macos-global-shortcut-backend.cpp" line="+166"/>
+        <location line="+44"/>
         <source>unsupported or invalid trigger</source>
         <translation>nicht unterstützter oder ungültiger Trigger</translation>
+    </message>
+    <message>
+        <location line="-36"/>
+        <source>failed to register hot key (%1)</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>MacSettingsRootItem</name>
     <message>
-        <location filename="../src/root-search/macos-settings/macos-settings-root-provider.mm" line="+132"/>
+        <location filename="../src/root-search/macos-settings/macos-settings-root-provider.mm" line="+140"/>
         <location line="+9"/>
         <source>System Settings</source>
         <translation>Systemeinstellungen</translation>
@@ -2485,7 +2552,7 @@ Den vollständigen Stacktrace finden Sie unten. Sie können es auch direkt aus d
         <translation>Wo</translation>
     </message>
     <message>
-        <location line="+13"/>
+        <location line="+12"/>
         <source>Open %1 Settings</source>
         <translation>%1-Einstellungen öffnen</translation>
     </message>
@@ -2503,15 +2570,23 @@ Den vollständigen Stacktrace finden Sie unten. Sie können es auch direkt aus d
 <context>
     <name>MacSettingsRootProvider</name>
     <message>
-        <location line="+13"/>
+        <location line="+14"/>
         <source>System Settings</source>
         <translation>Systemeinstellungen</translation>
     </message>
 </context>
 <context>
+    <name>MacosScreenshotProvider</name>
+    <message>
+        <location filename="../src/services/screenshots/macos/macos-screenshot-provider.mm" line="+99"/>
+        <source>Spotlight is unavailable. Showing screenshots and recordings from the screenshot folder.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>MacosUpdateInstaller</name>
     <message>
-        <location filename="../src/services/update/macos-update-installer.mm" line="+208"/>
+        <location filename="../src/services/update/macos-update-installer.mm" line="+207"/>
         <source>This installation cannot update itself</source>
         <translation>Diese Installation kann sich nicht selbst aktualisieren</translation>
     </message>
@@ -2567,7 +2642,7 @@ Den vollständigen Stacktrace finden Sie unten. Sie können es auch direkt aus d
 <context>
     <name>ManageFallbackCommand</name>
     <message>
-        <location filename="../src/extensions/vicinae/configure-fallback-command.hpp" line="+11"/>
+        <location filename="../src/builtins/vicinae/configure-fallback-command.hpp" line="+11"/>
         <source>Configure Fallback Commands</source>
         <translation>Fallback-Befehle konfigurieren</translation>
     </message>
@@ -2580,7 +2655,7 @@ Den vollständigen Stacktrace finden Sie unten. Sie können es auch direkt aus d
 <context>
     <name>ManageFallbackViewHost</name>
     <message>
-        <location filename="../src/qml/manage-fallback-view-host.cpp" line="+12"/>
+        <location filename="../src/builtins/vicinae/manage-fallback-view-host.cpp" line="+12"/>
         <source>Search commands...</source>
         <translation>Befehle suchen...</translation>
     </message>
@@ -2588,7 +2663,7 @@ Den vollständigen Stacktrace finden Sie unten. Sie können es auch direkt aus d
 <context>
     <name>ManageShortcutsCommand</name>
     <message>
-        <location filename="../src/extensions/shortcut/manage-shortcuts-command.hpp" line="+9"/>
+        <location filename="../src/builtins/shortcut/shortcut-extension.hpp" line="+13"/>
         <source>Manage Shortcuts</source>
         <translation>Verknüpfungen verwalten</translation>
     </message>
@@ -2596,7 +2671,7 @@ Den vollständigen Stacktrace finden Sie unten. Sie können es auch direkt aus d
 <context>
     <name>ManageShortcutsSection</name>
     <message>
-        <location filename="../src/qml/manage-shortcuts-model.hpp" line="+17"/>
+        <location filename="../src/builtins/shortcut/manage-shortcuts-model.hpp" line="+17"/>
         <source>Shortcuts ({count})</source>
         <translation>Verknüpfungen ({count})</translation>
     </message>
@@ -2604,7 +2679,7 @@ Den vollständigen Stacktrace finden Sie unten. Sie können es auch direkt aus d
 <context>
     <name>ManageShortcutsViewHost</name>
     <message>
-        <location filename="../src/qml/manage-shortcuts-view-host.cpp" line="+28"/>
+        <location filename="../src/builtins/shortcut/manage-shortcuts-view-host.cpp" line="+26"/>
         <source>Search shortcuts...</source>
         <translation>Verknüpfungen suchen...</translation>
     </message>
@@ -2619,7 +2694,12 @@ Den vollständigen Stacktrace finden Sie unten. Sie können es auch direkt aus d
         <translation>Anwendung</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+2"/>
+        <source>%1 (Default)</source>
+        <translation type="unfinished">%1 (Standard)</translation>
+    </message>
+    <message>
+        <location line="+6"/>
         <source>Opened</source>
         <translation>Geöffnet</translation>
     </message>
@@ -2642,7 +2722,7 @@ Den vollständigen Stacktrace finden Sie unten. Sie können es auch direkt aus d
 <context>
     <name>ManageSnippetsCommand</name>
     <message>
-        <location filename="../src/extensions/snippet/manage-snippets-command.hpp" line="+10"/>
+        <location filename="../src/builtins/snippet/manage-snippets-command.hpp" line="+10"/>
         <source>Manage Snippets</source>
         <translation>Snippets verwalten</translation>
     </message>
@@ -2650,17 +2730,17 @@ Den vollständigen Stacktrace finden Sie unten. Sie können es auch direkt aus d
 <context>
     <name>ManageSnippetsSection</name>
     <message>
-        <location filename="../src/qml/manage-snippets-model.hpp" line="+18"/>
+        <location filename="../src/builtins/snippet/manage-snippets-model.hpp" line="+18"/>
         <source>Snippets ({count})</source>
         <translation>Snippets ({count})</translation>
     </message>
     <message>
-        <location filename="../src/qml/manage-snippets-model.cpp" line="+32"/>
+        <location filename="../src/builtins/snippet/manage-snippets-model.cpp" line="+33"/>
         <source>Copy to clipboard</source>
         <translation>In die Zwischenablage kopieren</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+4"/>
         <source>Copied to clipboard</source>
         <translation>In die Zwischenablage kopiert</translation>
     </message>
@@ -2693,7 +2773,7 @@ Den vollständigen Stacktrace finden Sie unten. Sie können es auch direkt aus d
 <context>
     <name>ManageSnippetsViewHost</name>
     <message>
-        <location filename="../src/qml/manage-snippets-view-host.hpp" line="+54"/>
+        <location filename="../src/builtins/snippet/manage-snippets-view-host.cpp" line="+12"/>
         <source>No snippets</source>
         <translation>Keine Snippets</translation>
     </message>
@@ -2703,7 +2783,7 @@ Den vollständigen Stacktrace finden Sie unten. Sie können es auch direkt aus d
         <translation>Zum Einstieg ein Snippet erstellen</translation>
     </message>
     <message>
-        <location filename="../src/qml/manage-snippets-view-host.cpp" line="+28"/>
+        <location line="+19"/>
         <source>Search for snippets...</source>
         <translation>Snippets suchen...</translation>
     </message>
@@ -2743,7 +2823,7 @@ Den vollständigen Stacktrace finden Sie unten. Sie können es auch direkt aus d
         <translation>Apps</translation>
     </message>
     <message>
-        <location line="+68"/>
+        <location line="+69"/>
         <source>Create snippet</source>
         <translation>Snippet erstellen</translation>
     </message>
@@ -2751,7 +2831,7 @@ Den vollständigen Stacktrace finden Sie unten. Sie können es auch direkt aus d
 <context>
     <name>MarkItemAsFavorite</name>
     <message>
-        <location filename="../src/actions/root-search/root-search-actions.cpp" line="-60"/>
+        <location filename="../src/actions/root-search-actions.cpp" line="-80"/>
         <source>Mark as favorite</source>
         <translation>Als Favorit markieren</translation>
     </message>
@@ -2759,7 +2839,7 @@ Den vollständigen Stacktrace finden Sie unten. Sie können es auch direkt aus d
 <context>
     <name>MarkdownShowcase</name>
     <message>
-        <location filename="../src/extensions/internal/markdown-showcase-command.hpp" line="+172"/>
+        <location filename="../src/builtins/internal/markdown-showcase-command.hpp" line="+171"/>
         <source>Markdown Showcase</source>
         <translation>Markdown-Showcase</translation>
     </message>
@@ -2770,9 +2850,17 @@ Den vollständigen Stacktrace finden Sie unten. Sie können es auch direkt aus d
     </message>
 </context>
 <context>
+    <name>MarkdownShowcaseView</name>
+    <message>
+        <location line="-160"/>
+        <source>Close</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>MarkdownView</name>
     <message>
-        <location filename="../src/qml/qml/markdown/MarkdownView.qml" line="+265"/>
+        <location filename="../src/ui/qml/markdown/MarkdownView.qml" line="+272"/>
         <source>Copy</source>
         <translation>Kopieren</translation>
     </message>
@@ -2785,7 +2873,7 @@ Den vollständigen Stacktrace finden Sie unten. Sie können es auch direkt aus d
 <context>
     <name>MdCallout</name>
     <message>
-        <location filename="../src/qml/qml/markdown/MdCallout.qml" line="+35"/>
+        <location filename="../src/ui/qml/markdown/MdCallout.qml" line="+36"/>
         <source>Caution</source>
         <translation>Achtung</translation>
     </message>
@@ -2813,7 +2901,7 @@ Den vollständigen Stacktrace finden Sie unten. Sie können es auch direkt aus d
 <context>
     <name>MdCodeBlock</name>
     <message>
-        <location filename="../src/qml/qml/markdown/MdCodeBlock.qml" line="+58"/>
+        <location filename="../src/ui/qml/markdown/MdCodeBlock.qml" line="+59"/>
         <source>Copied!</source>
         <translation>Kopiert!</translation>
     </message>
@@ -2824,9 +2912,48 @@ Den vollständigen Stacktrace finden Sie unten. Sie können es auch direkt aus d
     </message>
 </context>
 <context>
+    <name>MediaExtension</name>
+    <message>
+        <location filename="../src/builtins/media/media-extension.hpp" line="+330"/>
+        <source>Media</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Control media playback and system audio</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>MenuBarMenuSection</name>
+    <message>
+        <location filename="../src/builtins/vicinae/menu-bar-search-view-host.hpp" line="+38"/>
+        <source>Results ({count} items)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+28"/>
+        <source>Run Menu Item</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Open in Menu Bar</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>MenuBarSearchViewHost</name>
+    <message>
+        <location line="+22"/>
+        <source>Filter by menu item title...</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>MissingPreferenceView</name>
     <message>
-        <location filename="../src/qml/qml/MissingPreferenceView.qml" line="+28"/>
+        <location filename="../src/ui/qml/views/MissingPreferenceView.qml" line="+30"/>
         <source>Welcome to %1</source>
         <translation>Willkommen bei %1</translation>
     </message>
@@ -2835,24 +2962,50 @@ Den vollständigen Stacktrace finden Sie unten. Sie können es auch direkt aus d
         <source>Before you can use this command, you need to fill in the required preference fields below.</source>
         <translation>Bevor Sie diesen Befehl verwenden können, müssen Sie unten die erforderlichen Einstellungsfelder ausfüllen.</translation>
     </message>
+    <message>
+        <location line="+130"/>
+        <source>Select an app…</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+19"/>
+        <source>Add app…</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>MissingPreferenceViewHost</name>
     <message>
-        <location filename="../src/qml/missing-preference-view-host.cpp" line="+202"/>
+        <location filename="../src/extension/views/missing-preference-view-host.cpp" line="+215"/>
         <source>Save preferences</source>
         <translation>Einstellungen speichern</translation>
     </message>
     <message>
-        <location line="+9"/>
+        <location line="+10"/>
         <source>Please fill in all required fields</source>
         <translation>Bitte füllen Sie alle erforderlichen Felder aus</translation>
     </message>
 </context>
 <context>
+    <name>MoveFavoriteDownAction</name>
+    <message>
+        <location filename="../src/actions/root-search-actions.cpp" line="+53"/>
+        <source>Move down in favorites</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>MoveFavoriteUpAction</name>
+    <message>
+        <location line="-9"/>
+        <source>Move up in favorites</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>NavigationController</name>
     <message>
-        <location filename="../src/navigation-controller.cpp" line="+654"/>
+        <location filename="../src/navigation-controller.cpp" line="+669"/>
         <source>Extension manager is not running</source>
         <translation>Der Erweiterungsmanager wird nicht ausgeführt</translation>
     </message>
@@ -2876,6 +3029,91 @@ Den vollständigen Stacktrace finden Sie unten. Sie können es auch direkt aus d
     </message>
 </context>
 <context>
+    <name>NextTrackCommand</name>
+    <message>
+        <location filename="../src/builtins/media/media-extension.hpp" line="-219"/>
+        <location line="+26"/>
+        <source>Next Track</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-25"/>
+        <source>Skip to the next track</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>player</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>%1 cannot skip to the next track</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Failed to skip to the next track</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>NowPlayingCommand</name>
+    <message>
+        <location line="+46"/>
+        <source>Now Playing</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Browse and control running media players</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>NowPlayingViewHost</name>
+    <message>
+        <location filename="../src/builtins/media/now-playing-view-host.hpp" line="+27"/>
+        <source>Search players...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>Players</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>Playing</source>
+        <translation type="unfinished">Wiedergabe läuft</translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Paused</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+12"/>
+        <source>Pause</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Play</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Next Track</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Previous Track</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>NullUpdateInstaller</name>
     <message>
         <location filename="../src/services/update/null-update-installer.hpp" line="+14"/>
@@ -2886,7 +3124,12 @@ Den vollständigen Stacktrace finden Sie unten. Sie können es auch direkt aus d
 <context>
     <name>OAuthOverlayView</name>
     <message>
-        <location filename="../src/qml/qml/OAuthOverlayView.qml" line="+91"/>
+        <location filename="../src/ui/qml/views/OAuthOverlayView.qml" line="+29"/>
+        <source>Back</source>
+        <translation type="unfinished">Zurück</translation>
+    </message>
+    <message>
+        <location line="+65"/>
         <source>Continue with %1</source>
         <translation>Mit %1 fortfahren</translation>
     </message>
@@ -2906,7 +3149,7 @@ Sofort zurück zum Befehl ...</translation>
 <context>
     <name>OAuthTokenStoreCommand</name>
     <message>
-        <location filename="../src/extensions/vicinae/vicinae-extension.cpp" line="-31"/>
+        <location filename="../src/builtins/vicinae/vicinae-extension.cpp" line="-33"/>
         <source>Manage OAuth Token Sets</source>
         <translation>OAuth-Token-Sets verwalten</translation>
     </message>
@@ -2919,12 +3162,12 @@ Sofort zurück zum Befehl ...</translation>
 <context>
     <name>OAuthTokenStoreSection</name>
     <message>
-        <location filename="../src/qml/oauth-token-store-model.hpp" line="+17"/>
+        <location filename="../src/builtins/vicinae/oauth-token-store-model.hpp" line="+17"/>
         <source>OAuth Token Sets ({count})</source>
         <translation>OAuth Token-Sets ({count})</translation>
     </message>
     <message>
-        <location filename="../src/qml/oauth-token-store-model.cpp" line="+20"/>
+        <location filename="../src/builtins/vicinae/oauth-token-store-model.cpp" line="+21"/>
         <source>Expired</source>
         <translation>Abgelaufen</translation>
     </message>
@@ -2987,7 +3230,7 @@ Sofort zurück zum Befehl ...</translation>
 <context>
     <name>OAuthTokenStoreViewHost</name>
     <message>
-        <location filename="../src/qml/oauth-token-store-view-host.cpp" line="+12"/>
+        <location filename="../src/builtins/vicinae/oauth-token-store-view-host.cpp" line="+12"/>
         <source>Search token sets...</source>
         <translation>Token-Sets suchen...</translation>
     </message>
@@ -2995,7 +3238,7 @@ Sofort zurück zum Befehl ...</translation>
 <context>
     <name>OnboardingWindow</name>
     <message>
-        <location filename="../src/qml/qml/OnboardingWindow.qml" line="+39"/>
+        <location filename="../src/ui/qml/onboarding/OnboardingWindow.qml" line="+41"/>
         <source>Grant Access</source>
         <translation>Zugriff gewähren</translation>
     </message>
@@ -3006,7 +3249,7 @@ Sofort zurück zum Befehl ...</translation>
     </message>
     <message>
         <location line="+16"/>
-        <location line="+39"/>
+        <location line="+40"/>
         <source>Welcome to Vicinae</source>
         <translation>Willkommen bei Vicinae</translation>
     </message>
@@ -3016,7 +3259,7 @@ Sofort zurück zum Befehl ...</translation>
         <translation>Die Einrichtung dauert nur eine Minute.</translation>
     </message>
     <message>
-        <location line="+17"/>
+        <location line="+20"/>
         <source>Permissions</source>
         <translation>Berechtigungen</translation>
     </message>
@@ -3057,16 +3300,16 @@ Sofort zurück zum Befehl ...</translation>
     </message>
     <message>
         <location line="+11"/>
-        <source>Accessibility is required: global shortcuts, paste, and snippet expansion cannot work without it.</source>
-        <translation>Bedienungshilfen sind erforderlich: Globale Tastenkürzel, Einfügen und Snippet-Erweiterung funktionieren ohne sie nicht.</translation>
-    </message>
-    <message>
-        <location line="+0"/>
         <source>Full disk access needs to be explicitly enabled if you want file search to cover all your files.</source>
         <translation>Wenn Sie möchten, dass die Dateisuche alle Ihre Dateien abdeckt, muss der vollständige Festplattenzugriff explizit aktiviert werden.</translation>
     </message>
     <message>
-        <location line="+18"/>
+        <location line="+0"/>
+        <source>Without accessibility access, paste, snippet expansion, and window management are unavailable.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+19"/>
         <source>Make it your own</source>
         <translation>Nach eigenen Wünschen anpassen</translation>
     </message>
@@ -3096,7 +3339,17 @@ Sofort zurück zum Befehl ...</translation>
         <translation>Öffnet den Launcher von überall.</translation>
     </message>
     <message>
-        <location line="+16"/>
+        <location line="+0"/>
+        <source>Bind a key to &quot;vicinae toggle&quot;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+18"/>
+        <source>Open Docs</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
         <source>Launch at login</source>
         <translation>Bei der Anmeldung starten</translation>
     </message>
@@ -3116,6 +3369,11 @@ Sofort zurück zum Befehl ...</translation>
         <translation>Vicinae läuft. Öffnen Sie den Launcher mit:</translation>
     </message>
     <message>
+        <location line="+0"/>
+        <source>Vicinae is running. Bind a key to &quot;vicinae toggle&quot; to open it from anywhere.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location line="+17"/>
         <source>Vicinae is open source software.</source>
         <translation>Vicinae ist Open-Source-Software.</translation>
@@ -3131,7 +3389,7 @@ Sofort zurück zum Befehl ...</translation>
         <translation>Zurück</translation>
     </message>
     <message>
-        <location line="+44"/>
+        <location line="+39"/>
         <source>Finish</source>
         <translation>Fertig</translation>
     </message>
@@ -3142,22 +3400,9 @@ Sofort zurück zum Befehl ...</translation>
     </message>
 </context>
 <context>
-    <name>OpenAboutCommand</name>
-    <message>
-        <location filename="../src/extensions/vicinae/open-about-command.hpp" line="+13"/>
-        <source>About</source>
-        <translation>Über</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Open the &quot;About&quot; tab of the vicinae settings.</source>
-        <translation>Öffnen Sie die Registerkarte „Info“ der Vicinae-Einstellungen.</translation>
-    </message>
-</context>
-<context>
     <name>OpenAppAction</name>
     <message>
-        <location filename="../src/actions/app/app-actions.cpp" line="-56"/>
+        <location filename="../src/actions/app-actions.cpp" line="-56"/>
         <source>Failed to start app</source>
         <translation>App konnte nicht gestartet werden</translation>
     </message>
@@ -3178,7 +3423,7 @@ Sofort zurück zum Befehl ...</translation>
 <context>
     <name>OpenBuiltinCommandAction</name>
     <message>
-        <location filename="../src/command-actions.hpp" line="+17"/>
+        <location filename="../src/actions/command-actions.hpp" line="+17"/>
         <source>Open command</source>
         <translation>Befehl öffnen</translation>
     </message>
@@ -3186,7 +3431,7 @@ Sofort zurück zum Befehl ...</translation>
 <context>
     <name>OpenCalculatorHistoryAction</name>
     <message>
-        <location filename="../src/actions/calculator/calculator-actions.hpp" line="+9"/>
+        <location filename="../src/actions/calculator-actions.hpp" line="+9"/>
         <source>Open Calculator History</source>
         <translation>Rechenverlauf öffnen</translation>
     </message>
@@ -3194,7 +3439,7 @@ Sofort zurück zum Befehl ...</translation>
 <context>
     <name>OpenCompletedShortcutAction</name>
     <message>
-        <location filename="../src/actions/shortcut/shortcut-actions.hpp" line="-32"/>
+        <location filename="../src/actions/shortcut-actions.hpp" line="-32"/>
         <source>Open shortcut</source>
         <translation>Verknüpfung öffnen</translation>
     </message>
@@ -3202,7 +3447,7 @@ Sofort zurück zum Befehl ...</translation>
 <context>
     <name>OpenCompletedShortcutWithAction</name>
     <message>
-        <location line="+85"/>
+        <location line="+114"/>
         <source>Open with...</source>
         <translation>Öffnen mit...</translation>
     </message>
@@ -3226,7 +3471,7 @@ Sofort zurück zum Befehl ...</translation>
 <context>
     <name>OpenDefaultVicinaeConfig</name>
     <message>
-        <location filename="../src/extensions/vicinae/vicinae-extension.cpp" line="-157"/>
+        <location filename="../src/builtins/vicinae/vicinae-extension.cpp" line="-117"/>
         <source>Open Default Config File</source>
         <translation>Standardkonfiguration öffnen</translation>
     </message>
@@ -3249,7 +3494,7 @@ Sofort zurück zum Befehl ...</translation>
 <context>
     <name>OpenDiscordCommand</name>
     <message>
-        <location line="-66"/>
+        <location line="-85"/>
         <source>Join the Discord Server</source>
         <translation>Discord-Server beitreten</translation>
     </message>
@@ -3260,22 +3505,9 @@ Sofort zurück zum Befehl ...</translation>
     </message>
 </context>
 <context>
-    <name>OpenDocumentationCommand</name>
-    <message>
-        <location line="-16"/>
-        <source>Open Online Documentation</source>
-        <translation>Online-Dokumentation öffnen</translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>Navigate to the official vicinae documentation website.</source>
-        <translation>Navigieren Sie zur offiziellen Vicinae-Dokumentationswebsite.</translation>
-    </message>
-</context>
-<context>
     <name>OpenFileAction</name>
     <message>
-        <location filename="../src/actions/files/file-actions.hpp" line="+18"/>
+        <location filename="../src/actions/file-actions.hpp" line="+18"/>
         <source>Open with %1</source>
         <translation>Mit %1 öffnen</translation>
     </message>
@@ -3283,12 +3515,12 @@ Sofort zurück zum Befehl ...</translation>
 <context>
     <name>OpenInBrowserAction</name>
     <message>
-        <location filename="../src/actions/app/app-actions.hpp" line="+105"/>
+        <location filename="../src/actions/app-actions.hpp" line="+117"/>
         <source>Open in browser</source>
         <translation>Im Browser öffnen</translation>
     </message>
     <message>
-        <location filename="../src/actions/app/app-actions.cpp" line="+95"/>
+        <location filename="../src/actions/app-actions.cpp" line="+160"/>
         <source>Failed to open in browser</source>
         <translation>Öffnen im Browser fehlgeschlagen</translation>
     </message>
@@ -3301,12 +3533,12 @@ Sofort zurück zum Befehl ...</translation>
 <context>
     <name>OpenInTerminalAction</name>
     <message>
-        <location filename="../src/actions/app/app-actions.hpp" line="-62"/>
+        <location filename="../src/actions/app-actions.hpp" line="-74"/>
         <source>Open in %1</source>
         <translation>In %1 öffnen</translation>
     </message>
     <message>
-        <location filename="../src/actions/app/app-actions.cpp" line="-85"/>
+        <location filename="../src/actions/app-actions.cpp" line="-150"/>
         <source>Failed to start app</source>
         <translation>App konnte nicht gestartet werden</translation>
     </message>
@@ -3314,33 +3546,20 @@ Sofort zurück zum Befehl ...</translation>
 <context>
     <name>OpenItemPreferencesAction</name>
     <message>
-        <location filename="../src/actions/root-search/root-search-actions.hpp" line="-28"/>
+        <location filename="../src/actions/root-search-actions.hpp" line="-28"/>
         <source>Open Preferences</source>
         <translation>Einstellungen öffnen</translation>
     </message>
 </context>
 <context>
-    <name>OpenKeybindSettingsCommand</name>
-    <message>
-        <location filename="../src/extensions/vicinae/vicinae-extension.cpp" line="+156"/>
-        <source>Open Vicinae Keybind Settings</source>
-        <translation>Vicinae-Tastaturbelegung öffnen</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Open the vicinae keybind settings window</source>
-        <translation>Einstellungen für die Vicinae-Tastaturbelegung öffnen</translation>
-    </message>
-</context>
-<context>
     <name>OpenRawProgramAction</name>
     <message>
-        <location filename="../src/actions/app/app-actions.hpp" line="+25"/>
+        <location filename="../src/actions/app-actions.hpp" line="+25"/>
         <source>Execute program</source>
         <translation>Programm ausführen</translation>
     </message>
     <message>
-        <location filename="../src/actions/app/app-actions.cpp" line="+35"/>
+        <location filename="../src/actions/app-actions.cpp" line="+35"/>
         <source>Failed to start app</source>
         <translation>App konnte nicht gestartet werden</translation>
     </message>
@@ -3348,7 +3567,7 @@ Sofort zurück zum Befehl ...</translation>
 <context>
     <name>OpenSettingsCommand</name>
     <message>
-        <location filename="../src/extensions/vicinae/vicinae-extension.cpp" line="-40"/>
+        <location filename="../src/builtins/vicinae/vicinae-extension.cpp" line="+100"/>
         <source>Open Vicinae Settings</source>
         <translation>Vicinae-Einstellungen öffnen</translation>
     </message>
@@ -3361,7 +3580,7 @@ Sofort zurück zum Befehl ...</translation>
 <context>
     <name>OpenSettingsPaneAction</name>
     <message>
-        <location filename="../src/root-search/macos-settings/macos-settings-root-provider.mm" line="-135"/>
+        <location filename="../src/root-search/macos-settings/macos-settings-root-provider.mm" line="-143"/>
         <source>Failed to open System Settings</source>
         <translation>Die Systemeinstellungen konnten nicht geöffnet werden</translation>
     </message>
@@ -3369,12 +3588,17 @@ Sofort zurück zum Befehl ...</translation>
 <context>
     <name>OpenShortcutAction</name>
     <message>
-        <location filename="../src/actions/shortcut/shortcut-actions.hpp" line="-128"/>
+        <location filename="../src/actions/shortcut-actions.hpp" line="-161"/>
+        <source>No default app to open %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
         <source>No app with id %1</source>
         <translation>Keine App mit der ID %1</translation>
     </message>
     <message>
-        <location line="+9"/>
+        <location line="+12"/>
         <location line="+7"/>
         <source>Open shortcut</source>
         <translation>Verknüpfung öffnen</translation>
@@ -3391,7 +3615,7 @@ Sofort zurück zum Befehl ...</translation>
 <context>
     <name>OpenVicinaeConfig</name>
     <message>
-        <location filename="../src/extensions/vicinae/vicinae-extension.cpp" line="-81"/>
+        <location filename="../src/builtins/vicinae/vicinae-extension.cpp" line="-76"/>
         <source>Open Config File</source>
         <translation>Konfigurationsdatei öffnen</translation>
     </message>
@@ -3399,6 +3623,16 @@ Sofort zurück zum Befehl ...</translation>
         <location line="+1"/>
         <source>Open the main vicinae configuration file</source>
         <translation>Hauptkonfigurationsdatei von Vicinae öffnen</translation>
+    </message>
+    <message>
+        <location line="+17"/>
+        <source>Show Log File</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Open the Vicinae log file in your file browser</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -3412,20 +3646,38 @@ Sofort zurück zum Befehl ...</translation>
 <context>
     <name>OpenWithAction</name>
     <message>
-        <location filename="../src/actions/app/app-actions.cpp" line="+54"/>
+        <location filename="../src/actions/app-actions.cpp" line="+119"/>
         <source>Open with...</source>
         <translation>Öffnen mit...</translation>
     </message>
 </context>
 <context>
+    <name>PasteLastScreenshotCommand</name>
+    <message>
+        <location filename="../src/builtins/screenshots/screenshots-extension.hpp" line="+30"/>
+        <source>Paste Last Screenshot</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Paste the most recent saved screenshot into the active app.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>PasteToFocusedWindowAction</name>
     <message>
-        <location filename="../src/clipboard-actions.hpp" line="+11"/>
+        <location filename="../src/actions/clipboard-actions.hpp" line="+16"/>
+        <source>Paste to %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
         <source>Paste to active window</source>
         <translation>In aktives Fenster einfügen</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+9"/>
         <source>Copy to focused window</source>
         <translation>In fokussiertes Fenster kopieren</translation>
     </message>
@@ -3433,7 +3685,7 @@ Sofort zurück zum Befehl ...</translation>
 <context>
     <name>PinCalculatorHistoryRecordAction</name>
     <message>
-        <location filename="../src/actions/calculator/calculator-actions.hpp" line="+28"/>
+        <location filename="../src/actions/calculator-actions.hpp" line="+28"/>
         <source>Entry pinned</source>
         <translation>Eintrag angepinnt</translation>
     </message>
@@ -3446,7 +3698,7 @@ Sofort zurück zum Befehl ...</translation>
 <context>
     <name>PinClipboardAction</name>
     <message>
-        <location filename="../src/extensions/clipboard/history/clipboard-history-actions.hpp" line="-26"/>
+        <location filename="../src/builtins/clipboard/history/clipboard-history-actions.hpp" line="-27"/>
         <source>Selection pinned</source>
         <translation>Auswahl angeheftet</translation>
     </message>
@@ -3474,7 +3726,7 @@ Sofort zurück zum Befehl ...</translation>
 <context>
     <name>PinEmojiAction</name>
     <message>
-        <location filename="../src/qml/emoji-grid-model.cpp" line="-322"/>
+        <location filename="../src/builtins/vicinae/emoji-grid-model.cpp" line="-345"/>
         <source>Pin emoji</source>
         <translation>Emoji anheften</translation>
     </message>
@@ -3482,7 +3734,7 @@ Sofort zurück zum Befehl ...</translation>
 <context>
     <name>PinWindowAction</name>
     <message>
-        <location filename="../src/actions/wm/window-actions.hpp" line="+37"/>
+        <location filename="../src/actions/window-actions.hpp" line="+37"/>
         <source>Unpin from all workspaces</source>
         <translation>Von allen Arbeitsbereichen lösen</translation>
     </message>
@@ -3493,24 +3745,42 @@ Sofort zurück zum Befehl ...</translation>
     </message>
 </context>
 <context>
-    <name>PowerManagementCommand</name>
+    <name>PlayPauseCommand</name>
     <message>
-        <location filename="../src/extensions/power-management/power-management-extension.cpp" line="-283"/>
-        <source>Ask for confirmation</source>
-        <translation>Bestätigung anfordern</translation>
-    </message>
-    <message>
-        <location line="+7"/>
-        <source>Custom program</source>
-        <translation>Benutzerdefiniertes Programm</translation>
+        <location filename="../src/builtins/media/media-extension.hpp" line="-100"/>
+        <source>Play / Pause</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Custom POSIX shell command to run instead of the default implementation</source>
-        <translation>Benutzerdefinierter POSIX-Shell-Befehl, der anstelle der Standardimplementierung ausgeführt wird</translation>
+        <source>Toggle playback of the active media player</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+27"/>
+        <location line="+5"/>
+        <source>player</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Failed to toggle playback</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Paused</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Playing %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>PowerManagementCommand</name>
+    <message>
+        <location filename="../src/builtins/power-management/power-management-extension.cpp" line="-248"/>
         <source>Failed to execute custom program %1</source>
         <translation>Das benutzerdefinierte Programm %1 konnte nicht ausgeführt werden</translation>
     </message>
@@ -3528,7 +3798,7 @@ Sofort zurück zum Befehl ...</translation>
 <context>
     <name>PowerManagementExtension</name>
     <message>
-        <location filename="../src/extensions/power-management/power-management-extension.hpp" line="+8"/>
+        <location filename="../src/builtins/power-management/power-management-extension.hpp" line="+8"/>
         <source>Power Management</source>
         <translation>Energieverwaltung</translation>
     </message>
@@ -3541,7 +3811,7 @@ Sofort zurück zum Befehl ...</translation>
 <context>
     <name>PowerOffCommand</name>
     <message>
-        <location filename="../src/extensions/power-management/power-management-extension.cpp" line="+137"/>
+        <location filename="../src/builtins/power-management/power-management-extension.cpp" line="+137"/>
         <source>Power Off System</source>
         <translation>System ausschalten</translation>
     </message>
@@ -3562,22 +3832,421 @@ Sofort zurück zum Befehl ...</translation>
     </message>
 </context>
 <context>
+    <name>PreferenceSchema</name>
+    <message>
+        <location filename="../src/services/app-service/app-preferences.hpp" line="+34"/>
+        <source>Default action</source>
+        <translation type="unfinished">Standardaktion</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Action to perform when the return key is pressed. Always default to &apos;launch&apos; if the app has no open window.</source>
+        <translation type="unfinished">Aktion, die ausgeführt werden soll, wenn die Eingabetaste gedrückt wird. Wenn die App kein geöffnetes Fenster hat, ist die Standardeinstellung immer „Starten“.</translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Focus window</source>
+        <translation type="unfinished">Fenster fokussieren</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Launch app</source>
+        <translation type="unfinished">App starten</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Launch Prefix</source>
+        <translation type="unfinished">Startpräfix</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Custom app launcher to use. Affects applications as well as their sub-actions.</source>
+        <translation type="unfinished">Zu verwendender benutzerdefinierter App-Launcher. Wirkt sich auf Anwendungen und deren Unteraktionen aus.</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <location line="+9"/>
+        <location line="+6"/>
+        <source>Application directories</source>
+        <translation type="unfinished">Anwendungsverzeichnisse</translation>
+    </message>
+    <message>
+        <location line="-14"/>
+        <source>Directories applications are sourced from. The list cannot be modified directly. In order to do so, you need to append additonal paths to the &lt;b&gt;XDG_DATA_DIRS&lt;/b&gt; environment variables.</source>
+        <translation type="unfinished">Verzeichnisse, aus denen Anwendungen stammen. Die Liste kann nicht direkt geändert werden. Dazu müssen Sie zusätzliche Pfade an die Umgebungsvariablen &lt;b&gt;XDG_DATA_DIRS&lt;/b&gt; anhängen.</translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Directories applications are sourced from.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Directories applications are sourced from. System directories are always scanned and cannot be removed.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/builtins/clipboard/clipboard-preferences.hpp" line="+62"/>
+        <source>Clipboard monitoring</source>
+        <translation type="unfinished">Überwachung der Zwischenablage</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Whether new clipboard selections are appended to the history</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Ignore Passwords</source>
+        <translation type="unfinished">Passwörter ignorieren</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Ignore selections that can be identified as a password. May not work with all apps.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Preserve tagged</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Never evict or mass delete selections that have been explicitly tagged (pinned, custom keyword)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Excluded apps</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Never add selections copied from these apps to the history</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Eviction threshold</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Automatically delete selections older than this threshold</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Never</source>
+        <translation type="unfinished">Niemals</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>15 minutes</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>1 hour</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>1 day</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>1 week</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>1 month</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>1 year</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Erase on startup</source>
+        <translation type="unfinished">Beim Start löschen</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Erase clipboard history every time the vicinae server is started</source>
+        <translation type="unfinished">Zwischenablageverlauf bei jedem Start des Vicinae-Servers löschen</translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <location filename="../src/builtins/system/system-run-model.hpp" line="-21"/>
+        <location filename="../src/builtins/vicinae/emoji-preferences.hpp" line="+27"/>
+        <source>Default Action</source>
+        <translation type="unfinished">Standardaktion</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <location filename="../src/builtins/vicinae/emoji-preferences.hpp" line="+1"/>
+        <source>The default action to perform on pressing return. Paste is only available if your environment supports it.</source>
+        <translation type="unfinished">Die Standardaktion, die beim Drücken der Eingabetaste ausgeführt wird. Einfügen ist nur verfügbar, wenn Ihre Umgebung dies unterstützt.</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <location filename="../src/builtins/vicinae/emoji-preferences.hpp" line="+6"/>
+        <source>Paste</source>
+        <translation type="unfinished">Einfügen</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <location filename="../src/builtins/vicinae/emoji-preferences.hpp" line="+2"/>
+        <source>Copy</source>
+        <translation type="unfinished">Kopieren</translation>
+    </message>
+    <message>
+        <location filename="../src/builtins/power-management/power-management-extension.cpp" line="-201"/>
+        <source>Ask for confirmation</source>
+        <translation type="unfinished">Bestätigung anfordern</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Custom program</source>
+        <translation type="unfinished">Benutzerdefiniertes Programm</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Custom shell command to run instead of the default implementation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/builtins/system/browse-apps-preferences.hpp" line="+11"/>
+        <source>Sort alphabetically</source>
+        <translation type="unfinished">Alphabetisch sortieren</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Show hidden apps</source>
+        <translation type="unfinished">Versteckte Apps anzeigen</translation>
+    </message>
+    <message>
+        <location filename="../src/builtins/system/system-run-model.hpp" line="+1"/>
+        <source>The default action to run on pressing return</source>
+        <translation type="unfinished">Die Standardaktion, die beim Drücken der Eingabetaste ausgeführt wird</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Run in terminal</source>
+        <translation type="unfinished">Im Terminal ausführen</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Run in terminal (hold)</source>
+        <translation type="unfinished">Im Terminal ausführen (gedrückt halten)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Run directly</source>
+        <translation type="unfinished">Direkt ausführen</translation>
+    </message>
+    <message>
+        <location filename="../src/builtins/vicinae/emoji-preferences.hpp" line="+5"/>
+        <source>Skin tone</source>
+        <translation type="unfinished">Hautton</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Skin tone to use for relevant emojis.</source>
+        <translation type="unfinished">Hautton, der für relevante Emojis verwendet werden soll.</translation>
+    </message>
+    <message>
+        <location filename="../src/builtins/calculator/calculator-extension.hpp" line="+11"/>
+        <source>Calculator Backend</source>
+        <translation type="unfinished">Rechner-Backend</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Which backend to use to perform calculations</source>
+        <translation type="unfinished">Welches Backend zur Durchführung von Berechnungen verwendet werden soll</translation>
+    </message>
+    <message>
+        <location filename="../src/builtins/file/file-extension.hpp" line="-44"/>
+        <source>Enabled</source>
+        <translation type="unfinished">Aktiviert</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Whether to run the file indexer in the background. When turned off, the indexer process is stopped entirely and file search becomes unavailable until it is turned back on.</source>
+        <translation type="unfinished">Ob der Dateiindexer im Hintergrund ausgeführt werden soll. Bei Deaktivierung wird der Indexerprozess vollständig gestoppt und die Dateisuche ist erst wieder verfügbar, wenn sie wieder aktiviert wird.</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Search paths</source>
+        <translation type="unfinished">Suchpfade</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Directories that Vicinae will search</source>
+        <translation type="unfinished">Verzeichnisse, die Vicinae durchsucht</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Excluded search paths</source>
+        <translation type="unfinished">Ausgeschlossene Suchpfade</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Directories to exclude from file indexing</source>
+        <translation type="unfinished">Verzeichnisse, die von der Dateiindizierung ausgeschlossen werden sollen</translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Search backend</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Automatic uses Everything when it is running and falls back to Windows Search otherwise.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Automatic</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Windows Search</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Everything</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Everything instance</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Name of the Everything instance to connect to. Leave empty for the default instance, the Everything 1.5 alpha runs as &quot;1.5a&quot;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/builtins/snippet/snippet-extension.hpp" line="+23"/>
+        <source>Expansion</source>
+        <translation type="unfinished">Textersetzung</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Enable automatic snippet expansion when triggers are typed</source>
+        <translation type="unfinished">Automatische Snippet-Erweiterung bei Eingabe von Auslösern aktivieren</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Undo</source>
+        <translation type="unfinished">Rückgängig machen</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Press backspace immediately after expansion to undo and restore the trigger text</source>
+        <translation type="unfinished">Direkt nach der Erweiterung die Rücktaste drücken, um sie rückgängig zu machen und den Auslösertext wiederherzustellen</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Keyboard layout</source>
+        <translation type="unfinished">Tastaturlayout</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>XKB layout used for trigger detection (e.g. &quot;us&quot;, &quot;fr&quot;). Leave empty for system default.</source>
+        <translation type="unfinished">XKB-Layout, das zur Triggererkennung verwendet wird (z. B. „us“, „fr“). Für den Systemstandard leer lassen.</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Pre-paste delay (ms)</source>
+        <translation type="unfinished">Verzögerung vor dem Einfügen (ms)</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Delay between setting clipboard and injecting paste shortcut. Increase if expansions paste empty on slow compositors.</source>
+        <translation type="unfinished">Verzögerung zwischen dem Setzen der Zwischenablage und dem simulierten Einfügen. Erhöhen, falls Snippets bei langsamen Compositors leer eingefügt werden.</translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Key injection delay (ms)</source>
+        <translation type="unfinished">Verzögerung zwischen Tasteneingaben (ms)</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Delay between injected key events. Increase if expansions produce missing or garbled characters on slow compositors.</source>
+        <translation type="unfinished">Verzögerung zwischen simulierten Tastenereignissen. Erhöhen, falls Snippets bei langsamen Compositors fehlende oder fehlerhafte Zeichen erzeugen.</translation>
+    </message>
+    <message>
+        <location filename="../src/builtins/vicinae/store-intro-preferences.hpp" line="+10"/>
+        <source>Always show intro</source>
+        <translation type="unfinished">Immer Intro anzeigen</translation>
+    </message>
+    <message>
+        <location filename="../src/root-search/scripts/script-root-provider.hpp" line="+135"/>
+        <source>Custom directories</source>
+        <translation type="unfinished">Benutzerdefinierte Verzeichnisse</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Additional list of directories to source scripts from. These directories always take precedence over the default system ones</source>
+        <translation type="unfinished">Zusätzliche Liste von Verzeichnissen, aus denen Skripte stammen. Diese Verzeichnisse haben immer Vorrang vor den Standardverzeichnissen des Systems</translation>
+    </message>
+</context>
+<context>
     <name>PreviewFontAction</name>
     <message>
-        <location filename="../src/qml/font-grid-model.cpp" line="-105"/>
+        <location filename="../src/builtins/font/font-grid-model.cpp" line="-123"/>
         <source>Preview font</source>
         <translation>Schriftartvorschau</translation>
     </message>
 </context>
 <context>
+    <name>PreviousTrackCommand</name>
+    <message>
+        <location filename="../src/builtins/media/media-extension.hpp" line="+43"/>
+        <location line="+26"/>
+        <source>Previous Track</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-25"/>
+        <source>Skip to the previous track</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>player</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>%1 cannot skip to the previous track</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Failed to skip to the previous track</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>ProgramsSection</name>
     <message>
-        <location filename="../src/qml/system-run-model.hpp" line="+21"/>
+        <location filename="../src/builtins/system/system-run-model.hpp" line="+35"/>
         <source>Programs (%1)</source>
         <translation>Programme (%1)</translation>
     </message>
     <message>
-        <location filename="../src/qml/system-run-model.cpp" line="+52"/>
+        <location filename="../src/builtins/system/system-run-model.cpp" line="+52"/>
         <source>Open in %1 (hold)</source>
         <translation>In %1 öffnen (gedrückt halten)</translation>
     </message>
@@ -3595,7 +4264,7 @@ Sofort zurück zum Befehl ...</translation>
 <context>
     <name>ProviderSearchSection</name>
     <message>
-        <location filename="../src/qml/provider-search-model.hpp" line="+11"/>
+        <location filename="../src/builtins/root/provider-search-model.hpp" line="+11"/>
         <source>Results ({count})</source>
         <translation>Ergebnisse ({count})</translation>
     </message>
@@ -3603,33 +4272,15 @@ Sofort zurück zum Befehl ...</translation>
 <context>
     <name>ProviderSearchViewHost</name>
     <message>
-        <location filename="../src/qml/provider-search-view-host.cpp" line="+15"/>
+        <location filename="../src/builtins/root/provider-search-view-host.cpp" line="+15"/>
         <source>Search %1</source>
         <translation>%1 durchsuchen</translation>
     </message>
 </context>
 <context>
-    <name>PruneMemoryCommand</name>
-    <message>
-        <location filename="../src/extensions/vicinae/vicinae-extension.cpp" line="+56"/>
-        <source>Prune Vicinae Memory Usage</source>
-        <translation>Vicinae-Speichernutzung bereinigen</translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>Try pruning vicinae&apos;s memory usage by clearing pixmap cache and calling malloc_trim(). Mostly provided for internal testing.</source>
-        <translation>Versuchen Sie, die Speichernutzung von Vicinae zu reduzieren, indem Sie den Pixmap-Cache leeren und malloc_trim() aufrufen. Wird hauptsächlich für interne Tests bereitgestellt.</translation>
-    </message>
-    <message>
-        <location line="+12"/>
-        <source>Pruned 🥊</source>
-        <translation>Speicher bereinigt 🥊</translation>
-    </message>
-</context>
-<context>
     <name>PutCalculatorAnswerInSearchBar</name>
     <message>
-        <location filename="../src/actions/calculator/calculator-actions.hpp" line="-20"/>
+        <location filename="../src/actions/calculator-actions.hpp" line="-20"/>
         <source>Put answer in search bar</source>
         <translation>Ergebnis in die Suchleiste übernehmen</translation>
     </message>
@@ -3637,7 +4288,7 @@ Sofort zurück zum Befehl ...</translation>
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../src/utils/utils.cpp" line="+50"/>
+        <location filename="../src/utils/utils.cpp" line="+48"/>
         <source>in the future</source>
         <translation>in der Zukunft</translation>
     </message>
@@ -3690,7 +4341,7 @@ Sofort zurück zum Befehl ...</translation>
 <context>
     <name>QuitAppAction</name>
     <message>
-        <location filename="../src/actions/app/app-actions.cpp" line="-43"/>
+        <location filename="../src/actions/app-actions.cpp" line="-108"/>
         <source>Quit Application</source>
         <translation>Anwendung beenden</translation>
     </message>
@@ -3708,7 +4359,7 @@ Sofort zurück zum Befehl ...</translation>
 <context>
     <name>RaycastCompatExtension</name>
     <message>
-        <location filename="../src/extensions/raycast/raycast-compat-extension.hpp" line="+15"/>
+        <location filename="../src/builtins/raycast/raycast-compat-extension.hpp" line="+15"/>
         <source>Raycast compatibility features</source>
         <translation>Raycast-Kompatibilitätsfunktionen</translation>
     </message>
@@ -3716,17 +4367,12 @@ Sofort zurück zum Befehl ...</translation>
 <context>
     <name>RaycastStoreCommand</name>
     <message>
-        <location filename="../src/extensions/raycast/raycast-store-command.hpp" line="+13"/>
+        <location filename="../src/builtins/raycast/raycast-store-command.hpp" line="+15"/>
         <source>Install compatible extensions from the Raycast store</source>
         <translation>Kompatible Erweiterungen aus dem Raycast Store installieren</translation>
     </message>
     <message>
-        <location line="+9"/>
-        <source>Always show intro</source>
-        <translation>Immer Intro anzeigen</translation>
-    </message>
-    <message>
-        <location line="+11"/>
+        <location line="+14"/>
         <source>
 # Welcome to the Raycast Extension Store
 
@@ -3769,7 +4415,7 @@ Vicinae verfügt außerdem über einen eigenen [Erweiterungsspeicher](vicinae://
 <context>
     <name>RaycastStoreDetailHost</name>
     <message>
-        <location filename="../src/qml/raycast-store-detail-host.cpp" line="+43"/>
+        <location filename="../src/builtins/raycast/raycast-store-detail-host.cpp" line="+41"/>
         <source>Failed to load extension</source>
         <translation>Die Erweiterung konnte nicht geladen werden</translation>
     </message>
@@ -3809,32 +4455,12 @@ Vicinae verfügt außerdem über einen eigenen [Erweiterungsspeicher](vicinae://
         <translation>Es sind keine Kompatibilitätsdaten verfügbar. Diese Erweiterung funktioniert möglicherweise nicht.</translation>
     </message>
     <message>
-        <location line="+83"/>
-        <source>Install extension</source>
-        <translation>Erweiterung installieren</translation>
+        <location line="+75"/>
+        <source>Extension Store</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+7"/>
-        <source>Downloading extension...</source>
-        <translation>Erweiterung wird heruntergeladen...</translation>
-    </message>
-    <message>
-        <location line="+7"/>
-        <source>Failed to download extension</source>
-        <translation>Die Erweiterung konnte nicht heruntergeladen werden</translation>
-    </message>
-    <message>
-        <location line="+7"/>
-        <source>Failed to extract extension archive</source>
-        <translation>Das Extrahieren des Erweiterungsarchivs ist fehlgeschlagen</translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>Extension installed</source>
-        <translation>Erweiterung installiert</translation>
-    </message>
-    <message>
-        <location line="+14"/>
+        <location line="+17"/>
         <source>Report issue</source>
         <translation>Problem melden</translation>
     </message>
@@ -3842,7 +4468,7 @@ Vicinae verfügt außerdem über einen eigenen [Erweiterungsspeicher](vicinae://
 <context>
     <name>RaycastStoreSection</name>
     <message>
-        <location filename="../src/qml/raycast-store-model.cpp" line="+45"/>
+        <location filename="../src/builtins/raycast/raycast-store-model.cpp" line="+46"/>
         <source>Show details</source>
         <translation>Details anzeigen</translation>
     </message>
@@ -3850,7 +4476,7 @@ Vicinae verfügt außerdem über einen eigenen [Erweiterungsspeicher](vicinae://
 <context>
     <name>RaycastStoreViewHost</name>
     <message>
-        <location filename="../src/qml/raycast-store-view-host.cpp" line="+37"/>
+        <location filename="../src/builtins/raycast/raycast-store-view-host.cpp" line="+36"/>
         <source>Browse Raycast extensions</source>
         <translation>Raycast-Erweiterungen durchsuchen</translation>
     </message>
@@ -3878,7 +4504,7 @@ Vicinae verfügt außerdem über einen eigenen [Erweiterungsspeicher](vicinae://
 <context>
     <name>RebootCommand</name>
     <message>
-        <location filename="../src/extensions/power-management/power-management-extension.cpp" line="-72"/>
+        <location filename="../src/builtins/power-management/power-management-extension.cpp" line="+125"/>
         <source>Reboot System</source>
         <translation>System neu starten</translation>
     </message>
@@ -3901,7 +4527,7 @@ Vicinae verfügt außerdem über einen eigenen [Erweiterungsspeicher](vicinae://
 <context>
     <name>RebuildFileIndexCommand</name>
     <message>
-        <location filename="../src/extensions/file/file-extension.hpp" line="-72"/>
+        <location filename="../src/builtins/file/file-extension.hpp" line="-62"/>
         <source>Rebuild File Index</source>
         <translation>Dateiindex neu erstellen</translation>
     </message>
@@ -3911,7 +4537,7 @@ Vicinae verfügt außerdem über einen eigenen [Erweiterungsspeicher](vicinae://
         <translation>Erstellen Sie den Dateiindex vollständig neu. Dies manuell auszuführen kann hilfreich sein, wenn die Dateisuche besonders veraltet erscheint.</translation>
     </message>
     <message>
-        <location line="+13"/>
+        <location line="+11"/>
         <source>Are you sure?</source>
         <translation>Wirklich fortfahren?</translation>
     </message>
@@ -3934,7 +4560,7 @@ Vicinae verfügt außerdem über einen eigenen [Erweiterungsspeicher](vicinae://
 <context>
     <name>RefreshAppsCommand</name>
     <message>
-        <location filename="../src/extensions/vicinae/refresh-apps-command.hpp" line="+12"/>
+        <location filename="../src/builtins/vicinae/refresh-apps-command.hpp" line="+12"/>
         <source>Refresh Apps</source>
         <translation>Apps aktualisieren</translation>
     </message>
@@ -3944,7 +4570,7 @@ Vicinae verfügt außerdem über einen eigenen [Erweiterungsspeicher](vicinae://
         <translation>Erzwingen Sie eine Aktualisierung der Anwendungsdatenbank. Die Datenbank sollte sich normalerweise bei Änderungen automatisch aktualisieren, dies kann jedoch bei der Umgehung einiger Randfälle hilfreich sein.</translation>
     </message>
     <message>
-        <location filename="../src/extensions/vicinae/refresh-apps-command.cpp" line="+15"/>
+        <location filename="../src/builtins/vicinae/refresh-apps-command.cpp" line="+15"/>
         <source>Apps successfully refreshed</source>
         <translation>Apps erfolgreich aktualisiert</translation>
     </message>
@@ -3957,7 +4583,7 @@ Vicinae verfügt außerdem über einen eigenen [Erweiterungsspeicher](vicinae://
 <context>
     <name>ReloadScriptDirectoriesCommand</name>
     <message>
-        <location filename="../src/extensions/vicinae/vicinae-extension.cpp" line="+29"/>
+        <location filename="../src/builtins/vicinae/vicinae-extension.cpp" line="+76"/>
         <source>Reload Script Directories</source>
         <translation>Skriptverzeichnisse neu laden</translation>
     </message>
@@ -3975,7 +4601,7 @@ Vicinae verfügt außerdem über einen eigenen [Erweiterungsspeicher](vicinae://
 <context>
     <name>RemoveAllCalculatorHistoryRecordsAction</name>
     <message>
-        <location filename="../src/actions/calculator/calculator-actions.hpp" line="+97"/>
+        <location filename="../src/actions/calculator-actions.hpp" line="+76"/>
         <source>Delete all entries</source>
         <translation>Alle Einträge löschen</translation>
     </message>
@@ -3983,7 +4609,7 @@ Vicinae verfügt außerdem über einen eigenen [Erweiterungsspeicher](vicinae://
 <context>
     <name>RemoveAllSelectionsAction</name>
     <message>
-        <location filename="../src/extensions/clipboard/history/clipboard-history-actions.hpp" line="+27"/>
+        <location filename="../src/builtins/clipboard/history/clipboard-history-actions.hpp" line="+28"/>
         <source>Are you sure?</source>
         <translation>Wirklich fortfahren?</translation>
     </message>
@@ -4016,7 +4642,7 @@ Vicinae verfügt außerdem über einen eigenen [Erweiterungsspeicher](vicinae://
 <context>
     <name>RemoveCalculatorHistoryRecordAction</name>
     <message>
-        <location filename="../src/actions/calculator/calculator-actions.hpp" line="-43"/>
+        <location filename="../src/actions/calculator-actions.hpp" line="-22"/>
         <source>Entry removed</source>
         <translation>Eintrag entfernt</translation>
     </message>
@@ -4034,7 +4660,7 @@ Vicinae verfügt außerdem über einen eigenen [Erweiterungsspeicher](vicinae://
 <context>
     <name>RemoveSelectionAction</name>
     <message>
-        <location filename="../src/extensions/clipboard/history/clipboard-history-actions.hpp" line="-70"/>
+        <location filename="../src/builtins/clipboard/history/clipboard-history-actions.hpp" line="-71"/>
         <source>Entry removed</source>
         <translation>Eintrag entfernt</translation>
     </message>
@@ -4052,7 +4678,7 @@ Vicinae verfügt außerdem über einen eigenen [Erweiterungsspeicher](vicinae://
 <context>
     <name>RemoveShortcutAction</name>
     <message>
-        <location filename="../src/actions/shortcut/shortcut-actions.hpp" line="+33"/>
+        <location filename="../src/actions/shortcut-actions.hpp" line="+33"/>
         <source>Removed link</source>
         <translation>Link entfernt</translation>
     </message>
@@ -4070,7 +4696,7 @@ Vicinae verfügt außerdem über einen eigenen [Erweiterungsspeicher](vicinae://
 <context>
     <name>ReportVicinaeBugCommand</name>
     <message>
-        <location filename="../src/extensions/vicinae/report-bug-command.hpp" line="+10"/>
+        <location filename="../src/builtins/vicinae/report-bug-command.hpp" line="+10"/>
         <source>Report a Vicinae Bug</source>
         <translation>Vicinae-Fehler melden</translation>
     </message>
@@ -4088,7 +4714,7 @@ Vicinae verfügt außerdem über einen eigenen [Erweiterungsspeicher](vicinae://
 <context>
     <name>ResetEmojiRankingAction</name>
     <message>
-        <location filename="../src/qml/emoji-grid-model.cpp" line="+21"/>
+        <location filename="../src/builtins/vicinae/emoji-grid-model.cpp" line="+21"/>
         <source>Reset ranking</source>
         <translation>Ranking zurücksetzen</translation>
     </message>
@@ -4096,7 +4722,7 @@ Vicinae verfügt außerdem über einen eigenen [Erweiterungsspeicher](vicinae://
 <context>
     <name>ResetEmojiSkinToneAction</name>
     <message>
-        <location line="+32"/>
+        <location line="+34"/>
         <source>Reset to preference</source>
         <translation>Zurücksetzen auf Präferenz</translation>
     </message>
@@ -4104,7 +4730,7 @@ Vicinae verfügt außerdem über einen eigenen [Erweiterungsspeicher](vicinae://
 <context>
     <name>ResetItemRanking</name>
     <message>
-        <location filename="../src/actions/root-search/root-search-actions.cpp" line="-25"/>
+        <location filename="../src/actions/root-search-actions.cpp" line="-69"/>
         <source>Ranking was successfully reset</source>
         <translation>Das Ranking wurde erfolgreich zurückgesetzt</translation>
     </message>
@@ -4137,7 +4763,7 @@ Vicinae verfügt außerdem über einen eigenen [Erweiterungsspeicher](vicinae://
 <context>
     <name>RevealFileInFolderAction</name>
     <message>
-        <location filename="../src/utils/file-list-item.hpp" line="+26"/>
+        <location filename="../src/utils/file-list-item.hpp" line="+31"/>
         <source>Show in file browser</source>
         <translation>Im Dateibrowser anzeigen</translation>
     </message>
@@ -4150,15 +4776,20 @@ Vicinae verfügt außerdem über einen eigenen [Erweiterungsspeicher](vicinae://
 <context>
     <name>RootCalculatorSection</name>
     <message>
-        <location filename="../src/qml/root-search-sources.hpp" line="+79"/>
+        <location filename="../src/builtins/root/root-search-sources.hpp" line="+89"/>
         <source>Calculator</source>
         <translation>Rechner</translation>
+    </message>
+    <message>
+        <location filename="../src/builtins/root/root-search-sources.cpp" line="+175"/>
+        <source>Copy unformatted answer</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>RootFallbackSection</name>
     <message>
-        <location filename="../src/qml/root-search-sources.cpp" line="+407"/>
+        <location line="+259"/>
         <source>Use &quot;%1&quot; with...</source>
         <translation>„%1“ verwenden mit...</translation>
     </message>
@@ -4166,7 +4797,7 @@ Vicinae verfügt außerdem über einen eigenen [Erweiterungsspeicher](vicinae://
 <context>
     <name>RootFavoritesSection</name>
     <message>
-        <location filename="../src/qml/root-search-sources.hpp" line="+67"/>
+        <location filename="../src/builtins/root/root-search-sources.hpp" line="+67"/>
         <source>Favorites</source>
         <translation>Favoriten</translation>
     </message>
@@ -4174,7 +4805,7 @@ Vicinae verfügt außerdem über einen eigenen [Erweiterungsspeicher](vicinae://
 <context>
     <name>RootFilesSection</name>
     <message>
-        <location line="+50"/>
+        <location line="+52"/>
         <source>Files</source>
         <translation>Dateien</translation>
     </message>
@@ -4182,12 +4813,12 @@ Vicinae verfügt außerdem über einen eigenen [Erweiterungsspeicher](vicinae://
 <context>
     <name>RootLinkSection</name>
     <message>
-        <location line="-137"/>
+        <location line="-141"/>
         <source>Link</source>
         <translation>Link</translation>
     </message>
     <message>
-        <location filename="../src/qml/root-search-sources.cpp" line="-295"/>
+        <location filename="../src/builtins/root/root-search-sources.cpp" line="-311"/>
         <source>Open in %1</source>
         <translation>In %1 öffnen</translation>
     </message>
@@ -4195,7 +4826,7 @@ Vicinae verfügt außerdem über einen eigenen [Erweiterungsspeicher](vicinae://
 <context>
     <name>RootNewsSection</name>
     <message>
-        <location filename="../src/qml/root-search-sources.hpp" line="+64"/>
+        <location filename="../src/builtins/root/root-search-sources.hpp" line="+66"/>
         <source>What&apos;s New</source>
         <translation>Was ist neu</translation>
     </message>
@@ -4203,7 +4834,7 @@ Vicinae verfügt außerdem über einen eigenen [Erweiterungsspeicher](vicinae://
 <context>
     <name>RootResultsSection</name>
     <message>
-        <location filename="../src/qml/root-search-sources.cpp" line="+199"/>
+        <location filename="../src/builtins/root/root-search-sources.cpp" line="+204"/>
         <source>Suggestions</source>
         <translation>Vorschläge</translation>
     </message>
@@ -4216,7 +4847,7 @@ Vicinae verfügt außerdem über einen eigenen [Erweiterungsspeicher](vicinae://
 <context>
     <name>RootSearchActionGenerator</name>
     <message>
-        <location filename="../src/actions/root-search/root-search-actions.hpp" line="+55"/>
+        <location filename="../src/actions/root-search-actions.hpp" line="+71"/>
         <source>Copy ID</source>
         <translation>ID kopieren</translation>
     </message>
@@ -4224,7 +4855,7 @@ Vicinae verfügt außerdem über einen eigenen [Erweiterungsspeicher](vicinae://
 <context>
     <name>RootShortcutItem</name>
     <message>
-        <location filename="../src/root-search/shortcuts/shortcut-root-provider.cpp" line="+67"/>
+        <location filename="../src/root-search/shortcuts/shortcut-root-provider.cpp" line="+70"/>
         <location line="+11"/>
         <source>Shortcut</source>
         <translation>Verknüpfung</translation>
@@ -4233,13 +4864,13 @@ Vicinae verfügt außerdem über einen eigenen [Erweiterungsspeicher](vicinae://
 <context>
     <name>RootUpdateSection</name>
     <message>
-        <location filename="../src/qml/root-search-sources.hpp" line="-21"/>
-        <location filename="../src/qml/root-search-sources.cpp" line="-125"/>
+        <location filename="../src/builtins/root/root-search-sources.hpp" line="-21"/>
+        <location filename="../src/builtins/root/root-search-sources.cpp" line="-124"/>
         <source>Update</source>
         <translation>Aktualisieren</translation>
     </message>
     <message>
-        <location filename="../src/qml/root-search-sources.cpp" line="-14"/>
+        <location filename="../src/builtins/root/root-search-sources.cpp" line="-13"/>
         <source>Vicinae %1 is available</source>
         <translation>Vicinae %1 ist verfügbar</translation>
     </message>
@@ -4249,7 +4880,7 @@ Vicinae verfügt außerdem über einen eigenen [Erweiterungsspeicher](vicinae://
         <translation>Sie führen %1 aus</translation>
     </message>
     <message>
-        <location line="+27"/>
+        <location line="+26"/>
         <source>View Release Notes</source>
         <translation>Versionshinweise anzeigen</translation>
     </message>
@@ -4257,15 +4888,274 @@ Vicinae verfügt außerdem über einen eigenen [Erweiterungsspeicher](vicinae://
 <context>
     <name>RootViewHost</name>
     <message>
-        <location filename="../src/qml/root-view-host.hpp" line="+15"/>
+        <location filename="../src/builtins/root/root-view-host.hpp" line="+15"/>
         <source>Search for anything...</source>
         <translation>Nach irgendetwas suchen...</translation>
     </message>
 </context>
 <context>
+    <name>RunAppleShortcutAction</name>
+    <message>
+        <location filename="../src/root-search/apple-shortcuts/apple-shortcut-root-provider.cpp" line="-29"/>
+        <source>Run Shortcut</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Failed to start shortcut</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>RunExecutableAction</name>
+    <message>
+        <location filename="../src/utils/file-list-item.hpp" line="+50"/>
+        <source>Run executable</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+12"/>
+        <source>Failed to give executable permission</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Failed to start executable</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>ScreenshotActions</name>
+    <message>
+        <location filename="../src/builtins/screenshots/screenshot-actions.cpp" line="+15"/>
+        <source>Refresh</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>Cannot paste</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Allow Accessibility access to paste into other apps.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Could not read recording</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Could not read screenshot</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>The file may have been moved or deleted.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Could not paste recording</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Could not paste screenshot</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Recording copied</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Screenshot copied</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Could not copy recording</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Could not copy screenshot</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+12"/>
+        <source>No saved screenshots found</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Take a screenshot and save it to a file first.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+12"/>
+        <source>Refreshing...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Could not refresh all screenshots and recordings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Refreshed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>Paste Recording</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Paste Screenshot</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Copy Recording</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Copy Screenshot</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Open Recording</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Open Screenshot</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Could not open file</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Show in Finder</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Show in File Browser</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Could not show file in file browser</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Copy File Path</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Move to Trash</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>File moved to Trash</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Could not move file to Trash</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>ScreenshotGridModel</name>
+    <message>
+        <location filename="../src/builtins/screenshots/screenshot-grid-model.cpp" line="+80"/>
+        <source>Today</source>
+        <translation type="unfinished">Heute</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Yesterday</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Older</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>Search Results</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>ScreenshotGridSource</name>
+    <message>
+        <location line="-79"/>
+        <source>Screen Recording</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Recording · %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>ScreenshotsExtension</name>
+    <message>
+        <location filename="../src/builtins/screenshots/screenshots-extension.hpp" line="+17"/>
+        <source>Screenshots</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Search and share saved screenshots and screen recordings.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>ScreenshotsView</name>
+    <message>
+        <location filename="../src/ui/qml/views/ScreenshotsView.qml" line="+10"/>
+        <source>No screenshots or recordings found</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Save a screenshot or screen recording to a file, or try another search.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>ScreenshotsViewHost</name>
+    <message>
+        <location filename="../src/builtins/screenshots/screenshots-view-host.cpp" line="+13"/>
+        <source>Search screenshots and recordings...</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>ScriptExecutorViewHost</name>
     <message>
-        <location filename="../src/qml/script-executor-view-host.cpp" line="+76"/>
+        <location filename="../src/script/script-executor-view-host.cpp" line="+79"/>
         <source>Script execution failed: %1</source>
         <translation>Skriptausführung fehlgeschlagen: %1</translation>
     </message>
@@ -4304,13 +5194,13 @@ Vicinae verfügt außerdem über einen eigenen [Erweiterungsspeicher](vicinae://
 <context>
     <name>ScriptRootItem</name>
     <message>
-        <location filename="../src/root-search/scripts/script-root-provider.hpp" line="+27"/>
-        <location line="+86"/>
+        <location filename="../src/root-search/scripts/script-root-provider.hpp" line="-110"/>
+        <location line="+87"/>
         <source>Script</source>
         <translation>Skript</translation>
     </message>
     <message>
-        <location line="-43"/>
+        <location line="-44"/>
         <source>Mode</source>
         <translation>Modus</translation>
     </message>
@@ -4338,25 +5228,15 @@ Vicinae verfügt außerdem über einen eigenen [Erweiterungsspeicher](vicinae://
 <context>
     <name>ScriptRootProvider</name>
     <message>
-        <location line="+47"/>
+        <location line="+63"/>
         <source>Script Commands</source>
         <translation>Skriptbefehle</translation>
-    </message>
-    <message>
-        <location line="+7"/>
-        <source>Custom directories</source>
-        <translation>Benutzerdefinierte Verzeichnisse</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Additional list of directories to source scripts from. These directories always take precedence over the default system ones</source>
-        <translation>Zusätzliche Liste von Verzeichnissen, aus denen Skripte stammen. Diese Verzeichnisse haben immer Vorrang vor den Standardverzeichnissen des Systems</translation>
     </message>
 </context>
 <context>
     <name>SearchBrowserTabsCommand</name>
     <message>
-        <location filename="../src/extensions/browser/browser-extension.cpp" line="+15"/>
+        <location filename="../src/builtins/browser/browser-extension.cpp" line="+15"/>
         <source>Search Browser Tabs</source>
         <translation>Browser-Registerkarten durchsuchen</translation>
     </message>
@@ -4369,7 +5249,7 @@ Vicinae verfügt außerdem über einen eigenen [Erweiterungsspeicher](vicinae://
 <context>
     <name>SearchEmojiCommand</name>
     <message>
-        <location filename="../src/extensions/vicinae/search-emoji-command.hpp" line="+15"/>
+        <location filename="../src/builtins/vicinae/search-emoji-command.hpp" line="+16"/>
         <source>Search Emojis &amp; Symbols</source>
         <translation>Emojis und Symbole durchsuchen</translation>
     </message>
@@ -4378,41 +5258,11 @@ Vicinae verfügt außerdem über einen eigenen [Erweiterungsspeicher](vicinae://
         <source>Search for any emoji or symbol</source>
         <translation>Nach Emojis und Symbolen suchen</translation>
     </message>
-    <message>
-        <location line="+13"/>
-        <source>Paste</source>
-        <translation>Einfügen</translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>Copy</source>
-        <translation>Kopieren</translation>
-    </message>
-    <message>
-        <location line="+5"/>
-        <source>Default Action</source>
-        <translation>Standardaktion</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>The default action to perform on pressing return. Paste is only available if your environment supports it.</source>
-        <translation>Die Standardaktion, die beim Drücken der Eingabetaste ausgeführt wird. Einfügen ist nur verfügbar, wenn Ihre Umgebung dies unterstützt.</translation>
-    </message>
-    <message>
-        <location line="+21"/>
-        <source>Skin tone</source>
-        <translation>Hautton</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Skin tone to use for relevant emojis.</source>
-        <translation>Hautton, der für relevante Emojis verwendet werden soll.</translation>
-    </message>
 </context>
 <context>
     <name>SearchEmojiGridSource</name>
     <message>
-        <location filename="../src/qml/emoji-grid-model.hpp" line="-22"/>
+        <location filename="../src/builtins/vicinae/emoji-grid-model.hpp" line="-20"/>
         <source>Results (%1)</source>
         <translation>Ergebnisse (%1)</translation>
     </message>
@@ -4420,7 +5270,7 @@ Vicinae verfügt außerdem über einen eigenen [Erweiterungsspeicher](vicinae://
 <context>
     <name>SearchFilesCommand</name>
     <message>
-        <location filename="../src/extensions/file/file-extension.hpp" line="-38"/>
+        <location filename="../src/builtins/file/file-extension.hpp" line="-34"/>
         <source>Search Files</source>
         <translation>Dateien durchsuchen</translation>
     </message>
@@ -4433,7 +5283,7 @@ Vicinae verfügt außerdem über einen eigenen [Erweiterungsspeicher](vicinae://
 <context>
     <name>SearchFilesView</name>
     <message>
-        <location filename="../src/qml/qml/SearchFilesView.qml" line="+37"/>
+        <location filename="../src/ui/qml/views/SearchFilesView.qml" line="+37"/>
         <source>Name</source>
         <translation>Name</translation>
     </message>
@@ -4456,25 +5306,30 @@ Vicinae verfügt außerdem über einen eigenen [Erweiterungsspeicher](vicinae://
 <context>
     <name>SearchFilesViewHost</name>
     <message>
-        <location filename="../src/qml/search-files-view-host.cpp" line="+59"/>
+        <location filename="../src/builtins/file/search-files-view-host.cpp" line="+55"/>
         <source>Search for files...</source>
         <translation>Nach Dateien suchen...</translation>
     </message>
     <message>
-        <location line="+30"/>
+        <location line="+31"/>
         <location line="+4"/>
         <source>Direct file path</source>
         <translation>Direkter Dateipfad</translation>
     </message>
     <message>
-        <location line="+18"/>
+        <location line="+38"/>
         <source>Recently Accessed</source>
         <translation>Kürzlich aufgerufen</translation>
     </message>
     <message>
-        <location line="+30"/>
+        <location line="+43"/>
         <source>Results</source>
         <translation>Ergebnisse</translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Recently Modified</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+40"/>
@@ -4523,25 +5378,154 @@ Vicinae verfügt außerdem über einen eigenen [Erweiterungsspeicher](vicinae://
     </message>
 </context>
 <context>
+    <name>SearchMenuBarCommand</name>
+    <message>
+        <location filename="../src/builtins/vicinae/search-menu-bar-command.hpp" line="+11"/>
+        <source>Search Menu Bar Items</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Search and run menu bar items of the frontmost application</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>SearchScreenshotsCommand</name>
+    <message>
+        <location filename="../src/builtins/screenshots/screenshots-extension.hpp" line="-38"/>
+        <source>Search Screenshots</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Search and share saved screenshots and screen recordings.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>SearchTrayCommand</name>
+    <message>
+        <location filename="../src/builtins/vicinae/search-tray-command.hpp" line="+10"/>
+        <source>Search Tray</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Browse system tray items and trigger their menu actions</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>SearchTrayViewHost</name>
+    <message>
+        <location filename="../src/builtins/vicinae/search-tray-view-host.hpp" line="+122"/>
+        <source>Search tray items...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>Attention</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Browse Menu</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Activate</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+15"/>
+        <source>Secondary Activate</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>SetAppFont</name>
     <message>
-        <location filename="../src/qml/font-grid-model.cpp" line="-15"/>
+        <location filename="../src/builtins/font/font-grid-model.cpp" line="-15"/>
         <source>Set as vicinae font</source>
         <translation>Als Vicinae-Schriftart festlegen</translation>
     </message>
 </context>
 <context>
+    <name>SetDefaultBrowser</name>
+    <message>
+        <location filename="../src/builtins/system/system-extension.hpp" line="+117"/>
+        <source>Set Default Browser</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Change the default system web browser</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>SetDefaultBrowserViewHost</name>
+    <message>
+        <location filename="../src/builtins/system/set-default-browser-view-host.hpp" line="+22"/>
+        <source>Select a web browser...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Available web browsers</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+21"/>
+        <source>Set as default browser</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Default browser changed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Failed to set default browser</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>SetDefaultTerminal</name>
+    <message>
+        <location filename="../src/builtins/system/system-extension.hpp" line="-11"/>
+        <source>Set Default Terminal</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Change the default system terminal</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>SetRootItemAliasAction</name>
     <message>
-        <location filename="../src/actions/root-search/root-search-actions.hpp" line="-18"/>
+        <location filename="../src/actions/root-search-actions.hpp" line="-34"/>
         <source>Set alias</source>
         <translation>Alias festlegen</translation>
     </message>
 </context>
 <context>
+    <name>SetRootItemShortcutAction</name>
+    <message>
+        <location filename="../src/actions/root-search-actions.cpp" line="+103"/>
+        <source>Set Global Shortcut</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>SetThemeAction</name>
     <message>
-        <location filename="../src/actions/theme/theme-actions.cpp" line="+11"/>
+        <location filename="../src/actions/theme-actions.cpp" line="+11"/>
         <source>Theme successfully updated</source>
         <translation>Design erfolgreich aktualisiert</translation>
     </message>
@@ -4554,7 +5538,7 @@ Vicinae verfügt außerdem über einen eigenen [Erweiterungsspeicher](vicinae://
 <context>
     <name>SetThemeCommand</name>
     <message>
-        <location filename="../src/extensions/theme/set-theme-command.hpp" line="+9"/>
+        <location filename="../src/builtins/theme/set-theme-command.hpp" line="+9"/>
         <source>Set Theme</source>
         <translation>Design festlegen</translation>
     </message>
@@ -4562,7 +5546,7 @@ Vicinae verfügt außerdem über einen eigenen [Erweiterungsspeicher](vicinae://
 <context>
     <name>SetVolumeCommand</name>
     <message>
-        <location filename="../src/extensions/system/system-extension.hpp" line="+213"/>
+        <location filename="../src/builtins/media/media-extension.hpp" line="+113"/>
         <source>Set Volume to %1%</source>
         <translation>Lautstärke auf %1 % setzen</translation>
     </message>
@@ -4580,12 +5564,12 @@ Vicinae verfügt außerdem über einen eigenen [Erweiterungsspeicher](vicinae://
 <context>
     <name>SetWallpaperAction</name>
     <message>
-        <location filename="../src/utils/file-list-item.hpp" line="+17"/>
+        <location filename="../src/utils/file-list-item.hpp" line="-55"/>
         <source>Set as wallpaper</source>
         <translation>Als Hintergrundbild festlegen</translation>
     </message>
     <message>
-        <location line="+11"/>
+        <location line="+12"/>
         <source>Wallpaper set</source>
         <translation>Hintergrundbild festgelegt</translation>
     </message>
@@ -4596,9 +5580,22 @@ Vicinae verfügt außerdem über einen eigenen [Erweiterungsspeicher](vicinae://
     </message>
 </context>
 <context>
+    <name>SettingsPreferenceForm</name>
+    <message>
+        <location filename="../src/ui/qml/settings/SettingsPreferenceForm.qml" line="+161"/>
+        <source>Select an app…</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+45"/>
+        <source>Add app…</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>SettingsSidebar</name>
     <message>
-        <location filename="../src/qml/qml/SettingsSidebar.qml" line="+99"/>
+        <location filename="../src/ui/qml/settings/SettingsSidebar.qml" line="+126"/>
         <source>Search...</source>
         <translation>Suchen...</translation>
     </message>
@@ -4606,7 +5603,7 @@ Vicinae verfügt außerdem über einen eigenen [Erweiterungsspeicher](vicinae://
 <context>
     <name>SettingsSidebarModel</name>
     <message>
-        <location filename="../src/qml/settings-sidebar-model.cpp" line="+90"/>
+        <location filename="../src/ui/settings/settings-sidebar-model.cpp" line="+90"/>
         <source>General</source>
         <translation>Allgemein</translation>
     </message>
@@ -4634,37 +5631,37 @@ Vicinae verfügt außerdem über einen eigenen [Erweiterungsspeicher](vicinae://
 <context>
     <name>SettingsWindow</name>
     <message>
-        <location filename="../src/qml/qml/SettingsWindow.qml" line="+10"/>
+        <location filename="../src/ui/qml/settings/SettingsWindow.qml" line="+13"/>
         <source>General</source>
         <translation>Allgemein</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+4"/>
         <source>Appearance</source>
         <translation>Aussehen</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+4"/>
         <source>Keybindings</source>
         <translation>Tastenkombinationen</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+4"/>
         <source>Advanced</source>
         <translation>Erweitert</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+4"/>
         <source>About</source>
         <translation>Über</translation>
     </message>
     <message>
-        <location line="+19"/>
+        <location line="+27"/>
         <source>Vicinae Settings</source>
         <translation>Vicinae-Einstellungen</translation>
     </message>
     <message>
-        <location line="+88"/>
+        <location line="+199"/>
         <source>Imported from Raycast</source>
         <translation>Importiert von Raycast</translation>
     </message>
@@ -4682,7 +5679,7 @@ Vicinae verfügt außerdem über einen eigenen [Erweiterungsspeicher](vicinae://
 <context>
     <name>ShortcutExtension</name>
     <message>
-        <location filename="../src/extensions/shortcut/shortcut-extension.hpp" line="+11"/>
+        <location filename="../src/builtins/shortcut/shortcut-extension.hpp" line="+11"/>
         <source>Manage Shortcuts</source>
         <translation>Verknüpfungen verwalten</translation>
     </message>
@@ -4690,7 +5687,7 @@ Vicinae verfügt außerdem über einen eigenen [Erweiterungsspeicher](vicinae://
 <context>
     <name>ShortcutField</name>
     <message>
-        <location filename="../src/qml/qml/ShortcutField.qml" line="+14"/>
+        <location filename="../src/ui/qml/form/ShortcutField.qml" line="+16"/>
         <source>Record shortcut</source>
         <translation>Tastenkürzel aufzeichnen</translation>
     </message>
@@ -4698,7 +5695,7 @@ Vicinae verfügt außerdem über einen eigenen [Erweiterungsspeicher](vicinae://
 <context>
     <name>ShortcutFormView</name>
     <message>
-        <location filename="../src/qml/qml/ShortcutFormView.qml" line="+14"/>
+        <location filename="../src/ui/qml/views/ShortcutFormView.qml" line="+15"/>
         <source>Name</source>
         <translation>Name</translation>
     </message>
@@ -4713,7 +5710,7 @@ Vicinae verfügt außerdem über einen eigenen [Erweiterungsspeicher](vicinae://
         <translation>Die URL, die von der angegebenen App geöffnet wird. Mit Platzhaltern wie {argument} kann sie dynamisch gestaltet werden.</translation>
     </message>
     <message>
-        <location line="+22"/>
+        <location line="+23"/>
         <source>Open with</source>
         <translation>Öffnen mit</translation>
     </message>
@@ -4726,7 +5723,7 @@ Vicinae verfügt außerdem über einen eigenen [Erweiterungsspeicher](vicinae://
 <context>
     <name>ShortcutFormViewHost</name>
     <message>
-        <location filename="../src/qml/shortcut-form-view-host.cpp" line="+47"/>
+        <location filename="../src/builtins/shortcut/shortcut-form-view-host.cpp" line="+46"/>
         <source>Submit</source>
         <translation>Senden</translation>
     </message>
@@ -4736,7 +5733,7 @@ Vicinae verfügt außerdem über einen eigenen [Erweiterungsspeicher](vicinae://
         <translation>Kopie von %1</translation>
     </message>
     <message>
-        <location line="+67"/>
+        <location line="+45"/>
         <source>Edit &quot;%1&quot;</source>
         <translation>„%1“ bearbeiten</translation>
     </message>
@@ -4746,14 +5743,14 @@ Vicinae verfügt außerdem über einen eigenen [Erweiterungsspeicher](vicinae://
         <translation>„%1“ duplizieren</translation>
     </message>
     <message>
-        <location line="+11"/>
-        <location line="+131"/>
-        <location line="+50"/>
+        <location line="+9"/>
+        <location line="+109"/>
+        <location line="+43"/>
         <source>Default</source>
         <translation>Standard</translation>
     </message>
     <message>
-        <location line="-157"/>
+        <location line="-136"/>
         <source>Selected Text</source>
         <translation>Ausgewählter Text</translation>
     </message>
@@ -4768,7 +5765,7 @@ Vicinae verfügt außerdem über einen eigenen [Erweiterungsspeicher](vicinae://
         <translation>Argument</translation>
     </message>
     <message>
-        <location line="+35"/>
+        <location line="+25"/>
         <location line="+5"/>
         <location line="+5"/>
         <source>Required</source>
@@ -4780,7 +5777,7 @@ Vicinae verfügt außerdem über einen eigenen [Erweiterungsspeicher](vicinae://
         <translation>Die Validierung ist fehlgeschlagen</translation>
     </message>
     <message>
-        <location line="+19"/>
+        <location line="+12"/>
         <source>Failed to update shortcut</source>
         <translation>Verknüpfung konnte nicht aktualisiert werden</translation>
     </message>
@@ -4801,18 +5798,26 @@ Vicinae verfügt außerdem über einen eigenen [Erweiterungsspeicher](vicinae://
     </message>
 </context>
 <context>
-    <name>ShortcutRecorderField</name>
+    <name>ShortcutRecorderCapture</name>
     <message>
-        <location filename="../src/qml/qml/ShortcutRecorderField.qml" line="+24"/>
-        <location line="+22"/>
-        <location line="+62"/>
+        <location filename="../src/ui/qml/form/ShortcutRecorderCapture.qml" line="+28"/>
+        <location line="+14"/>
+        <location line="+81"/>
         <source>Recording...</source>
-        <translation>Aufzeichnung...</translation>
+        <translation type="unfinished">Aufzeichnung...</translation>
     </message>
     <message>
-        <location line="+14"/>
+        <location line="+30"/>
         <source>Keybind updated</source>
-        <translation>Tastenkombination aktualisiert</translation>
+        <translation type="unfinished">Tastenkombination aktualisiert</translation>
+    </message>
+</context>
+<context>
+    <name>ShortcutRecorderPanel</name>
+    <message>
+        <location filename="../src/ui/qml/actions/ShortcutRecorderPanel.qml" line="+108"/>
+        <source>Press Backspace to remove the current shortcut</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -4826,7 +5831,7 @@ Vicinae verfügt außerdem über einen eigenen [Erweiterungsspeicher](vicinae://
 <context>
     <name>ShortcutsSettingsPage</name>
     <message>
-        <location filename="../src/qml/qml/ShortcutsSettingsPage.qml" line="+55"/>
+        <location filename="../src/ui/qml/settings/ShortcutsSettingsPage.qml" line="+61"/>
         <source>Keybindings</source>
         <translation>Tastenkombinationen</translation>
     </message>
@@ -4852,7 +5857,7 @@ Vicinae verfügt außerdem über einen eigenen [Erweiterungsspeicher](vicinae://
 <context>
     <name>SleepCommand</name>
     <message>
-        <location filename="../src/extensions/power-management/power-management-extension.cpp" line="+94"/>
+        <location filename="../src/builtins/power-management/power-management-extension.cpp" line="+94"/>
         <source>Put System to Sleep</source>
         <translation>System in den Ruhezustand versetzen</translation>
     </message>
@@ -4904,57 +5909,7 @@ Vicinae verfügt außerdem über einen eigenen [Erweiterungsspeicher](vicinae://
 <context>
     <name>SnippetExtension</name>
     <message>
-        <location filename="../src/extensions/snippet/snippet-extension.cpp" line="+38"/>
-        <source>Expansion</source>
-        <translation>Textersetzung</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Enable automatic snippet expansion when triggers are typed</source>
-        <translation>Automatische Snippet-Erweiterung bei Eingabe von Auslösern aktivieren</translation>
-    </message>
-    <message>
-        <location line="+7"/>
-        <source>Undo</source>
-        <translation>Rückgängig machen</translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>Press backspace immediately after expansion to undo and restore the trigger text</source>
-        <translation>Direkt nach der Erweiterung die Rücktaste drücken, um sie rückgängig zu machen und den Auslösertext wiederherzustellen</translation>
-    </message>
-    <message>
-        <location line="+9"/>
-        <source>Keyboard layout</source>
-        <translation>Tastaturlayout</translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>XKB layout used for trigger detection (e.g. &quot;us&quot;, &quot;fr&quot;). Leave empty for system default.</source>
-        <translation>XKB-Layout, das zur Triggererkennung verwendet wird (z. B. „us“, „fr“). Für den Systemstandard leer lassen.</translation>
-    </message>
-    <message>
-        <location line="+8"/>
-        <source>Pre-paste delay (ms)</source>
-        <translation>Verzögerung vor dem Einfügen (ms)</translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>Delay between setting clipboard and injecting paste shortcut. Increase if expansions paste empty on slow compositors.</source>
-        <translation>Verzögerung zwischen dem Setzen der Zwischenablage und dem simulierten Einfügen. Erhöhen, falls Snippets bei langsamen Compositors leer eingefügt werden.</translation>
-    </message>
-    <message>
-        <location line="+9"/>
-        <source>Key injection delay (ms)</source>
-        <translation>Verzögerung zwischen Tasteneingaben (ms)</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Delay between injected key events. Increase if expansions produce missing or garbled characters on slow compositors.</source>
-        <translation>Verzögerung zwischen simulierten Tastenereignissen. Erhöhen, falls Snippets bei langsamen Compositors fehlende oder fehlerhafte Zeichen erzeugen.</translation>
-    </message>
-    <message>
-        <location filename="../src/extensions/snippet/snippet-extension.hpp" line="+11"/>
+        <location filename="../src/builtins/snippet/snippet-extension.hpp" line="+11"/>
         <source>Snippets</source>
         <translation>Snippets</translation>
     </message>
@@ -4967,7 +5922,7 @@ Vicinae verfügt außerdem über einen eigenen [Erweiterungsspeicher](vicinae://
 <context>
     <name>SnippetFormView</name>
     <message>
-        <location filename="../src/qml/qml/SnippetFormView.qml" line="+15"/>
+        <location filename="../src/ui/qml/views/SnippetFormView.qml" line="+16"/>
         <source>Title</source>
         <translation>Titel</translation>
     </message>
@@ -4987,7 +5942,7 @@ Vicinae verfügt außerdem über einen eigenen [Erweiterungsspeicher](vicinae://
         <translation>Mit {dynamic placeholders} können Sie den Inhalt dynamisch gestalten: &lt;a href=&quot;https://docs.vicinae.com/snippets&quot;&gt;mehr erfahren&lt;/a&gt;.</translation>
     </message>
     <message>
-        <location line="+16"/>
+        <location line="+17"/>
         <source>Keyword</source>
         <translation>Stichwort</translation>
     </message>
@@ -5025,7 +5980,7 @@ Vicinae verfügt außerdem über einen eigenen [Erweiterungsspeicher](vicinae://
 <context>
     <name>SnippetFormViewHost</name>
     <message>
-        <location filename="../src/qml/snippet-form-view-host.cpp" line="+49"/>
+        <location filename="../src/builtins/snippet/snippet-form-view-host.cpp" line="+33"/>
         <source>Submit</source>
         <translation>Senden</translation>
     </message>
@@ -5095,7 +6050,12 @@ Vicinae verfügt außerdem über einen eigenen [Erweiterungsspeicher](vicinae://
         <translation>Argument</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+8"/>
+        <source>PowerShell Command</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
         <source>Shell Command</source>
         <translation>Shell-Befehl</translation>
     </message>
@@ -5103,7 +6063,7 @@ Vicinae verfügt außerdem über einen eigenen [Erweiterungsspeicher](vicinae://
 <context>
     <name>SoftRebootCommand</name>
     <message>
-        <location filename="../src/extensions/power-management/power-management-extension.cpp" line="-99"/>
+        <location filename="../src/builtins/power-management/power-management-extension.cpp" line="-99"/>
         <source>Soft Reboot System</source>
         <translation>System sanft neu starten</translation>
     </message>
@@ -5126,7 +6086,7 @@ Vicinae verfügt außerdem über einen eigenen [Erweiterungsspeicher](vicinae://
 <context>
     <name>SponsorVicinaeCommand</name>
     <message>
-        <location filename="../src/extensions/vicinae/vicinae-extension.cpp" line="-121"/>
+        <location filename="../src/builtins/vicinae/vicinae-extension.cpp" line="-118"/>
         <source>Donate to Vicinae</source>
         <translation>An Vicinae spenden</translation>
     </message>
@@ -5139,12 +6099,12 @@ Vicinae verfügt außerdem über einen eigenen [Erweiterungsspeicher](vicinae://
 <context>
     <name>StoreDetailView</name>
     <message>
-        <location filename="../src/qml/qml/StoreDetailView.qml" line="+196"/>
+        <location filename="../src/ui/qml/views/StoreDetailView.qml" line="+208"/>
         <source>Installed</source>
         <translation>Installiert</translation>
     </message>
     <message>
-        <location line="+166"/>
+        <location line="+171"/>
         <source>Description</source>
         <translation>Beschreibung</translation>
     </message>
@@ -5154,7 +6114,7 @@ Vicinae verfügt außerdem über einen eigenen [Erweiterungsspeicher](vicinae://
         <translation>Befehle</translation>
     </message>
     <message>
-        <location line="+74"/>
+        <location line="+78"/>
         <source>Open README</source>
         <translation>README öffnen</translation>
     </message>
@@ -5169,12 +6129,12 @@ Vicinae verfügt außerdem über einen eigenen [Erweiterungsspeicher](vicinae://
         <translation>Mitwirkende</translation>
     </message>
     <message>
-        <location line="+29"/>
+        <location line="+31"/>
         <source>Categories</source>
         <translation>Kategorien</translation>
     </message>
     <message>
-        <location line="+19"/>
+        <location line="+20"/>
         <source>Source Code</source>
         <translation>Quellcode</translation>
     </message>
@@ -5187,7 +6147,7 @@ Vicinae verfügt außerdem über einen eigenen [Erweiterungsspeicher](vicinae://
 <context>
     <name>SuspendCommand</name>
     <message>
-        <location filename="../src/extensions/power-management/power-management-extension.cpp" line="+36"/>
+        <location filename="../src/builtins/power-management/power-management-extension.cpp" line="+36"/>
         <source>Suspend System</source>
         <translation>System in den Energiesparmodus versetzen</translation>
     </message>
@@ -5210,7 +6170,7 @@ Vicinae verfügt außerdem über einen eigenen [Erweiterungsspeicher](vicinae://
 <context>
     <name>SwitchWindowsCommand</name>
     <message>
-        <location filename="../src/extensions/wm/switch-windows-command.hpp" line="+10"/>
+        <location filename="../src/builtins/wm/wm-extension.cpp" line="+89"/>
         <source>Switch Windows</source>
         <translation>Zwischen Fenstern wechseln</translation>
     </message>
@@ -5218,12 +6178,12 @@ Vicinae verfügt außerdem über einen eigenen [Erweiterungsspeicher](vicinae://
 <context>
     <name>SwitchWindowsSection</name>
     <message>
-        <location filename="../src/qml/switch-windows-model.hpp" line="+28"/>
+        <location filename="../src/builtins/wm/switch-windows-model.hpp" line="+28"/>
         <source>Open Windows</source>
         <translation>Fenster öffnen</translation>
     </message>
     <message>
-        <location filename="../src/qml/switch-windows-model.cpp" line="+19"/>
+        <location filename="../src/builtins/wm/switch-windows-model.cpp" line="+19"/>
         <source>WS %1</source>
         <translation>WS %1</translation>
     </message>
@@ -5236,15 +6196,77 @@ Vicinae verfügt außerdem über einen eigenen [Erweiterungsspeicher](vicinae://
 <context>
     <name>SwitchWindowsViewHost</name>
     <message>
-        <location filename="../src/qml/switch-windows-view-host.cpp" line="+12"/>
+        <location filename="../src/builtins/wm/switch-windows-view-host.cpp" line="+12"/>
         <source>Search open window...</source>
         <translation>Offene Fenster suchen...</translation>
     </message>
 </context>
 <context>
+    <name>SwitchWorkspacesCommand</name>
+    <message>
+        <location filename="../src/builtins/wm/wm-extension.cpp" line="+11"/>
+        <source>Switch Desktops</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Switch Workspaces</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>SwitchWorkspacesSection</name>
+    <message>
+        <location filename="../src/builtins/wm/switch-workspaces-model.hpp" line="+47"/>
+        <source>%1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message numerus="yes">
+        <location line="+3"/>
+        <source>%n window(s)</source>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+        </translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>empty</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+22"/>
+        <source>Switch to desktop</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Switch to workspace</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>SwitchWorkspacesViewHost</name>
+    <message>
+        <location filename="../src/builtins/wm/switch-workspaces-view-host.hpp" line="+16"/>
+        <source>Open Workspaces</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/builtins/wm/switch-workspaces-view-host.cpp" line="+13"/>
+        <source>Search desktops...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Search workspaces...</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>SystemBrowseApps</name>
     <message>
-        <location filename="../src/extensions/system/system-extension.hpp" line="-123"/>
+        <location filename="../src/builtins/system/system-extension.hpp" line="-17"/>
         <source>Browse Apps</source>
         <translation>Apps durchsuchen</translation>
     </message>
@@ -5253,21 +6275,11 @@ Vicinae verfügt außerdem über einen eigenen [Erweiterungsspeicher](vicinae://
         <source>Browse all applications that are installed on the system</source>
         <translation>Alle auf dem System installierten Anwendungen durchsuchen</translation>
     </message>
-    <message>
-        <location line="+8"/>
-        <source>Show hidden apps</source>
-        <translation>Versteckte Apps anzeigen</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Sort alphabetically</source>
-        <translation>Alphabetisch sortieren</translation>
-    </message>
 </context>
 <context>
     <name>SystemExtension</name>
     <message>
-        <location line="+149"/>
+        <location line="+39"/>
         <source>System</source>
         <translation>System</translation>
     </message>
@@ -5280,7 +6292,7 @@ Vicinae verfügt außerdem über einen eigenen [Erweiterungsspeicher](vicinae://
 <context>
     <name>SystemRunCommand</name>
     <message>
-        <location line="-239"/>
+        <location line="-105"/>
         <source>Run Terminal Program</source>
         <translation>Terminalprogramm ausführen</translation>
     </message>
@@ -5295,32 +6307,7 @@ Vicinae verfügt außerdem über einen eigenen [Erweiterungsspeicher](vicinae://
         <translation>Befehl</translation>
     </message>
     <message>
-        <location line="+5"/>
-        <source>Run in terminal</source>
-        <translation>Im Terminal ausführen</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Run in terminal (hold)</source>
-        <translation>Im Terminal ausführen (gedrückt halten)</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Run directly</source>
-        <translation>Direkt ausführen</translation>
-    </message>
-    <message>
-        <location line="+4"/>
-        <source>Default Action</source>
-        <translation>Standardaktion</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>The default action to run on pressing return</source>
-        <translation>Die Standardaktion, die beim Drücken der Eingabetaste ausgeführt wird</translation>
-    </message>
-    <message>
-        <location line="+29"/>
+        <location line="+26"/>
         <source>Not a valid executable</source>
         <translation>Keine gültige ausführbare Datei</translation>
     </message>
@@ -5328,7 +6315,7 @@ Vicinae verfügt außerdem über einen eigenen [Erweiterungsspeicher](vicinae://
 <context>
     <name>SystemRunViewHost</name>
     <message>
-        <location filename="../src/qml/system-run-view-host.cpp" line="+20"/>
+        <location filename="../src/builtins/system/system-run-view-host.cpp" line="+19"/>
         <source>Search for a program to execute...</source>
         <translation>Nach einem auszuführenden Programm suchen...</translation>
     </message>
@@ -5336,7 +6323,7 @@ Vicinae verfügt außerdem über einen eigenen [Erweiterungsspeicher](vicinae://
 <context>
     <name>ThemeExtension</name>
     <message>
-        <location filename="../src/extensions/theme/theme-extension.hpp" line="+9"/>
+        <location filename="../src/builtins/theme/theme-extension.hpp" line="+9"/>
         <source>Theme</source>
         <translation>Design</translation>
     </message>
@@ -5344,7 +6331,7 @@ Vicinae verfügt außerdem über einen eigenen [Erweiterungsspeicher](vicinae://
 <context>
     <name>ThemeSection</name>
     <message>
-        <location filename="../src/qml/theme-list-model.cpp" line="+22"/>
+        <location filename="../src/builtins/theme/theme-list-model.cpp" line="+22"/>
         <source>Default theme description</source>
         <translation>Beschreibung des Standarddesigns</translation>
     </message>
@@ -5367,12 +6354,12 @@ Vicinae verfügt außerdem über einen eigenen [Erweiterungsspeicher](vicinae://
 <context>
     <name>ThemeViewHost</name>
     <message>
-        <location filename="../src/qml/theme-view-host.cpp" line="+22"/>
+        <location filename="../src/builtins/theme/theme-view-host.cpp" line="+22"/>
         <source>Search for a theme...</source>
         <translation>Nach einem Design suchen...</translation>
     </message>
     <message>
-        <location line="+51"/>
+        <location line="+53"/>
         <source>Current Theme</source>
         <translation>Aktuelles Design</translation>
     </message>
@@ -5383,9 +6370,45 @@ Vicinae verfügt außerdem über einen eigenen [Erweiterungsspeicher](vicinae://
     </message>
 </context>
 <context>
+    <name>ToggleFloatingWindowCommand</name>
+    <message>
+        <location filename="../src/builtins/wm/wm-extension.cpp" line="-54"/>
+        <source>Toggle Floating</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>Active window is not on the current workspace</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>No window to toggle</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>ToggleFullscreenWindowCommand</name>
+    <message>
+        <location line="-44"/>
+        <source>Toggle Fullscreen</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>Active window is not on the current workspace</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>No window to fullscreen</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>ToggleItemAsFavorite</name>
     <message>
-        <location filename="../src/actions/root-search/root-search-actions.cpp" line="+17"/>
+        <location filename="../src/actions/root-search-actions.cpp" line="-86"/>
         <source>Remove from favorites</source>
         <translation>Aus Favoriten entfernen</translation>
     </message>
@@ -5418,7 +6441,7 @@ Vicinae verfügt außerdem über einen eigenen [Erweiterungsspeicher](vicinae://
 <context>
     <name>ToggleMuteCommand</name>
     <message>
-        <location filename="../src/extensions/system/system-extension.hpp" line="+163"/>
+        <location filename="../src/builtins/media/media-extension.hpp" line="+11"/>
         <source>Toggle Mute</source>
         <translation>Stummschaltung umschalten</translation>
     </message>
@@ -5439,30 +6462,126 @@ Vicinae verfügt außerdem über einen eigenen [Erweiterungsspeicher](vicinae://
     </message>
 </context>
 <context>
-    <name>UIPlayground</name>
+    <name>ToggleOverviewCommand</name>
     <message>
-        <location filename="../src/extensions/internal/internal-extension.hpp" line="-15"/>
-        <source>UI Showcase</source>
-        <translation>UI-Showcase</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Showcase of vicinae UI elements</source>
-        <translation>Präsentation der UI-Elemente von Vicinae</translation>
+        <location filename="../src/builtins/wm/wm-extension.cpp" line="+34"/>
+        <source>Toggle Overview</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
-    <name>UIShowcase</name>
+    <name>TrayMenuViewHost</name>
     <message>
-        <location filename="../src/qml/qml/UIShowcase.qml" line="+26"/>
-        <source>Buttons</source>
-        <translation>Schaltflächen</translation>
+        <location filename="../src/builtins/vicinae/search-tray-view-host.hpp" line="-122"/>
+        <source>Search menu...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+36"/>
+        <source>Trigger</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>TrayService</name>
+    <message>
+        <location filename="../src/services/tray/tray-service.cpp" line="+10"/>
+        <source>Toggle Vicinae</source>
+        <translation>Vicinae ein-/ausblenden</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>About Vicinae</source>
+        <translation>Über Vicinae</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Check for Updates…</source>
+        <translation>Nach Updates suchen…</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Update Available: %1</source>
+        <translation>Update verfügbar: %1</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Settings…</source>
+        <translation>Einstellungen…</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Preferences…</source>
+        <translation>Einstellungen…</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Sponsor Vicinae</source>
+        <translation>Vicinae unterstützen</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Join the Discord</source>
+        <translation>Discord-Server beitreten</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Follow on X</source>
+        <translation>Auf X folgen</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Quit Vicinae</source>
+        <translation>Vicinae beenden</translation>
+    </message>
+</context>
+<context>
+    <name>UninstallAppAction</name>
+    <message>
+        <location filename="../src/actions/app-actions.cpp" line="+20"/>
+        <source>Uninstall Application</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Failed to uninstall %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Uninstalled %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Failed to quit %1</source>
+        <translation type="unfinished">%1 konnte nicht beendet werden</translation>
+    </message>
+    <message>
+        <location line="+15"/>
+        <source>%1 did not quit, uninstall cancelled</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+12"/>
+        <source>%1 is running. It will be quit and moved to the trash.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>The application will be moved to the trash.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Uninstall %1?</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>UninstallExtensionAction</name>
     <message>
-        <location filename="../src/actions/extension/extension-actions.cpp" line="+11"/>
+        <location filename="../src/actions/extension-actions.cpp" line="+10"/>
         <source>Are you sure?</source>
         <translation>Wirklich fortfahren?</translation>
     </message>
@@ -5487,7 +6606,7 @@ Vicinae verfügt außerdem über einen eigenen [Erweiterungsspeicher](vicinae://
         <translation>Die Deinstallation der Erweiterung ist fehlgeschlagen</translation>
     </message>
     <message>
-        <location filename="../src/actions/extension/extension-actions.hpp" line="+14"/>
+        <location filename="../src/actions/extension-actions.hpp" line="+10"/>
         <source>Uninstall Extension</source>
         <translation>Erweiterung deinstallieren</translation>
     </message>
@@ -5495,7 +6614,7 @@ Vicinae verfügt außerdem über einen eigenen [Erweiterungsspeicher](vicinae://
 <context>
     <name>UnpinCalculatorHistoryRecordAction</name>
     <message>
-        <location filename="../src/actions/calculator/calculator-actions.hpp" line="-23"/>
+        <location filename="../src/actions/calculator-actions.hpp" line="-23"/>
         <source>Entry unpinned</source>
         <translation>Eintrag gelöst</translation>
     </message>
@@ -5508,7 +6627,7 @@ Vicinae verfügt außerdem über einen eigenen [Erweiterungsspeicher](vicinae://
 <context>
     <name>UnpinEmojiAction</name>
     <message>
-        <location filename="../src/qml/emoji-grid-model.cpp" line="-43"/>
+        <location filename="../src/builtins/vicinae/emoji-grid-model.cpp" line="-45"/>
         <source>Unpin emoji</source>
         <translation>Emoji lösen</translation>
     </message>
@@ -5516,7 +6635,7 @@ Vicinae verfügt außerdem über einen eigenen [Erweiterungsspeicher](vicinae://
 <context>
     <name>UpdateService</name>
     <message>
-        <location filename="../src/services/update/update-service.cpp" line="-167"/>
+        <location filename="../src/services/update/update-service.cpp" line="-169"/>
         <source>Update installed</source>
         <translation>Update installiert</translation>
     </message>
@@ -5526,7 +6645,7 @@ Vicinae verfügt außerdem über einen eigenen [Erweiterungsspeicher](vicinae://
         <translation>Neustart…</translation>
     </message>
     <message>
-        <location line="+88"/>
+        <location line="+90"/>
         <source>Downloading Vicinae %1…</source>
         <translation>Vicinae %1 wird heruntergeladen…</translation>
     </message>
@@ -5549,7 +6668,7 @@ Vicinae verfügt außerdem über einen eigenen [Erweiterungsspeicher](vicinae://
 <context>
     <name>VicinaeExtension</name>
     <message>
-        <location filename="../src/extensions/vicinae/vicinae-extension.hpp" line="+11"/>
+        <location filename="../src/builtins/vicinae/vicinae-extension.hpp" line="+11"/>
         <source>General vicinae-related commands.</source>
         <translation>Allgemeine Vicinae-Befehle.</translation>
     </message>
@@ -5557,12 +6676,17 @@ Vicinae verfügt außerdem über einen eigenen [Erweiterungsspeicher](vicinae://
 <context>
     <name>VicinaeHotkeyGlobalShortcutBackend</name>
     <message>
-        <location filename="../src/services/global-shortcuts/vicinae-hotkey-global-shortcut-backend.cpp" line="+48"/>
+        <location filename="../src/services/global-shortcuts/vicinae-hotkey-global-shortcut-backend.cpp" line="+79"/>
+        <source>Compositor does not support global hotkeys</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
         <source>Unsupported trigger key</source>
         <translation>Nicht unterstützter Triggerschlüssel</translation>
     </message>
     <message>
-        <location line="+20"/>
+        <location line="+17"/>
         <source>Hotkey binding was lost</source>
         <translation>Tastenkürzelbelegung wurde aufgehoben</translation>
     </message>
@@ -5570,7 +6694,7 @@ Vicinae verfügt außerdem über einen eigenen [Erweiterungsspeicher](vicinae://
 <context>
     <name>VicinaeListInstalledExtensionsCommand</name>
     <message>
-        <location filename="../src/extensions/vicinae/list-installed-extensions-command.hpp" line="+11"/>
+        <location filename="../src/builtins/vicinae/list-installed-extensions-command.hpp" line="+11"/>
         <source>Show Installed Extensions</source>
         <translation>Installierte Erweiterungen anzeigen</translation>
     </message>
@@ -5583,17 +6707,12 @@ Vicinae verfügt außerdem über einen eigenen [Erweiterungsspeicher](vicinae://
 <context>
     <name>VicinaeStoreCommand</name>
     <message>
-        <location filename="../src/extensions/vicinae/vicinae-store-command.hpp" line="+13"/>
+        <location filename="../src/builtins/vicinae/vicinae-store-command.hpp" line="+15"/>
         <source>Install extensions from the Vicinae store</source>
         <translation>Erweiterungen aus dem Vicinae Store installieren</translation>
     </message>
     <message>
-        <location line="+9"/>
-        <source>Always show intro</source>
-        <translation>Immer Intro anzeigen</translation>
-    </message>
-    <message>
-        <location line="+10"/>
+        <location line="+13"/>
         <source>
 # Welcome to the vicinae extension store
 
@@ -5622,7 +6741,7 @@ Wenn Sie Ihre eigene Erweiterung erstellen möchten, werfen Sie einen Blick auf 
 <context>
     <name>VicinaeStoreDetailHost</name>
     <message>
-        <location filename="../src/qml/vicinae-store-detail-host.cpp" line="+38"/>
+        <location filename="../src/builtins/vicinae/vicinae-store-detail-host.cpp" line="+36"/>
         <source>Failed to load extension</source>
         <translation>Die Erweiterung konnte nicht geladen werden</translation>
     </message>
@@ -5647,32 +6766,12 @@ Wenn Sie Ihre eigene Erweiterung erstellen möchten, werfen Sie einen Blick auf 
         <translation>Extension Store – %1</translation>
     </message>
     <message>
-        <location line="+81"/>
-        <source>Install extension</source>
-        <translation>Erweiterung installieren</translation>
+        <location line="+73"/>
+        <source>Extension Store</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+7"/>
-        <source>Downloading extension...</source>
-        <translation>Erweiterung wird heruntergeladen...</translation>
-    </message>
-    <message>
-        <location line="+7"/>
-        <source>Failed to download extension</source>
-        <translation>Die Erweiterung konnte nicht heruntergeladen werden</translation>
-    </message>
-    <message>
-        <location line="+7"/>
-        <source>Failed to extract extension archive</source>
-        <translation>Das Extrahieren des Erweiterungsarchivs ist fehlgeschlagen</translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>Extension installed</source>
-        <translation>Erweiterung installiert</translation>
-    </message>
-    <message>
-        <location line="+14"/>
+        <location line="+17"/>
         <source>Report issue</source>
         <translation>Problem melden</translation>
     </message>
@@ -5680,7 +6779,7 @@ Wenn Sie Ihre eigene Erweiterung erstellen möchten, werfen Sie einen Blick auf 
 <context>
     <name>VicinaeStoreSection</name>
     <message>
-        <location filename="../src/qml/vicinae-store-model.cpp" line="+41"/>
+        <location filename="../src/builtins/vicinae/vicinae-store-model.cpp" line="+42"/>
         <source>Show details</source>
         <translation>Details anzeigen</translation>
     </message>
@@ -5688,7 +6787,7 @@ Wenn Sie Ihre eigene Erweiterung erstellen möchten, werfen Sie einen Blick auf 
 <context>
     <name>VicinaeStoreViewHost</name>
     <message>
-        <location filename="../src/qml/vicinae-store-view-host.cpp" line="+27"/>
+        <location filename="../src/builtins/vicinae/vicinae-store-view-host.cpp" line="+26"/>
         <source>Browse Vicinae extensions</source>
         <translation>Vicinae-Erweiterungen durchsuchen</translation>
     </message>
@@ -5702,11 +6801,16 @@ Wenn Sie Ihre eigene Erweiterung erstellen möchten, werfen Sie einen Blick auf 
         <source>Extensions</source>
         <translation>Erweiterungen</translation>
     </message>
+    <message>
+        <location line="+3"/>
+        <source>Extension Store</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>VolumeDownCommand</name>
     <message>
-        <location filename="../src/extensions/system/system-extension.hpp" line="-74"/>
+        <location filename="../src/builtins/media/media-extension.hpp" line="-74"/>
         <source>Turn Volume Down</source>
         <translation>Lautstärke verringern</translation>
     </message>
@@ -5794,7 +6898,7 @@ Wenn Sie Ihre eigene Erweiterung erstellen möchten, werfen Sie einen Blick auf 
 <context>
     <name>WinControlPanelRootProvider</name>
     <message>
-        <location line="+49"/>
+        <location line="+51"/>
         <source>Control Panel</source>
         <translation>Systemsteuerung</translation>
     </message>
@@ -5807,7 +6911,7 @@ Wenn Sie Ihre eigene Erweiterung erstellen möchten, werfen Sie einen Blick auf 
 <context>
     <name>WinControlPanelTaskRootItem</name>
     <message>
-        <location line="-40"/>
+        <location line="-41"/>
         <location line="+11"/>
         <source>Control Panel</source>
         <translation>Systemsteuerung</translation>
@@ -6426,7 +7530,7 @@ Wenn Sie Ihre eigene Erweiterung erstellen möchten, werfen Sie einen Blick auf 
 <context>
     <name>WinSettingsRootProvider</name>
     <message>
-        <location line="+12"/>
+        <location line="+13"/>
         <source>Windows Settings</source>
         <translation>Windows-Einstellungen</translation>
     </message>
@@ -6439,7 +7543,7 @@ Wenn Sie Ihre eigene Erweiterung erstellen möchten, werfen Sie einen Blick auf 
 <context>
     <name>WindowManagementExtension</name>
     <message>
-        <location filename="../src/extensions/wm/wm-extension.hpp" line="+12"/>
+        <location filename="../src/builtins/wm/wm-extension.cpp" line="+56"/>
         <source>Window Management</source>
         <translation>Fensterverwaltung</translation>
     </message>
@@ -6447,32 +7551,12 @@ Wenn Sie Ihre eigene Erweiterung erstellen möchten, werfen Sie einen Blick auf 
 <context>
     <name>WindowsAppDatabase</name>
     <message>
-        <location filename="../src/services/app-service/windows/win-app-database.cpp" line="+993"/>
-        <source>Focus window</source>
-        <translation>Fenster fokussieren</translation>
-    </message>
-    <message>
-        <location line="+0"/>
-        <source>Launch app</source>
-        <translation>App starten</translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>Default action</source>
-        <translation>Standardaktion</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Action to perform when the return key is pressed. Always default to &apos;launch&apos; if the app has no open window.</source>
-        <translation>Aktion, die ausgeführt werden soll, wenn die Eingabetaste gedrückt wird. Wenn die App kein geöffnetes Fenster hat, ist die Standardeinstellung immer „Starten“.</translation>
-    </message>
-    <message>
-        <location line="+15"/>
+        <location filename="../src/services/app-service/windows/win-app-database.cpp" line="+1107"/>
         <source>File Explorer</source>
         <translation>Datei-Explorer</translation>
     </message>
     <message>
-        <location line="+19"/>
+        <location line="+20"/>
         <source>Terminal</source>
         <translation>Terminal</translation>
     </message>
@@ -6485,7 +7569,7 @@ Wenn Sie Ihre eigene Erweiterung erstellen möchten, werfen Sie einen Blick auf 
 <context>
     <name>WindowsApplication</name>
     <message>
-        <location filename="../src/services/app-service/windows/win-app.hpp" line="+70"/>
+        <location filename="../src/services/app-service/windows/win-app.hpp" line="+71"/>
         <source>%1: Run as Administrator</source>
         <translation>%1: Als Administrator ausführen</translation>
     </message>
@@ -6498,25 +7582,73 @@ Wenn Sie Ihre eigene Erweiterung erstellen möchten, werfen Sie einen Blick auf 
 <context>
     <name>WindowsGlobalShortcutBackend</name>
     <message>
-        <location filename="../src/services/global-shortcuts/windows-global-shortcut-backend.cpp" line="+215"/>
+        <location filename="../src/services/global-shortcuts/windows-global-shortcut-backend.cpp" line="+302"/>
         <source>unsupported or invalid trigger</source>
         <translation>nicht unterstützter oder ungültiger Trigger</translation>
     </message>
+</context>
+<context>
+    <name>WindowsUpdateInstaller</name>
+    <message>
+        <location filename="../src/services/update/windows-update-installer.cpp" line="+184"/>
+        <source>This installation cannot update itself</source>
+        <translation type="unfinished">Diese Installation kann sich nicht selbst aktualisieren</translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>The update is not signed</source>
+        <translation type="unfinished"></translation>
+    </message>
     <message>
         <location line="+9"/>
-        <source>already registered by another application</source>
-        <translation>bereits durch eine andere Anwendung registriert</translation>
+        <source>Update signature verification failed (0x%1)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Update is signed by %1, expected %2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Verifying update…</source>
+        <translation type="unfinished">Aktualisierung wird überprüft…</translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>Update has no version information</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Update version mismatch: expected %1, found %2</source>
+        <translation type="unfinished">Falsche Update-Version: %1 erwartet, %2 gefunden</translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Starting installer…</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>Failed to start the installer</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>X11GlobalShortcutBackend</name>
     <message>
-        <location filename="../src/services/global-shortcuts/x11-global-shortcut-backend.cpp" line="+122"/>
+        <location filename="../src/services/global-shortcuts/x11-global-shortcut-backend.cpp" line="+147"/>
         <source>This shortcut is already in use by another application</source>
         <translation>Dieses Tastenkürzel wird bereits von einer anderen Anwendung verwendet</translation>
     </message>
     <message>
-        <location line="+17"/>
+        <location line="+15"/>
+        <source>Modifier-only shortcuts are not supported</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
         <source>Unsupported trigger key</source>
         <translation>Nicht unterstützter Triggerschlüssel</translation>
     </message>
@@ -6529,52 +7661,9 @@ Wenn Sie Ihre eigene Erweiterung erstellen möchten, werfen Sie einen Blick auf 
 <context>
     <name>X11Workspace</name>
     <message>
-        <location filename="../src/services/window-manager/x11/x11-window-manager.cpp" line="+426"/>
+        <location filename="../src/services/window-manager/x11/x11-window-manager.cpp" line="+424"/>
         <source>Desktop %1</source>
         <translation>Desktop %1</translation>
-    </message>
-</context>
-<context>
-    <name>XdgAppDatabase</name>
-    <message>
-        <location filename="../src/services/app-service/xdg/xdg-app-database.cpp" line="+564"/>
-        <source>Focus window</source>
-        <translation>Fenster fokussieren</translation>
-    </message>
-    <message>
-        <location line="+0"/>
-        <source>Launch app</source>
-        <translation>App starten</translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>Default action</source>
-        <translation>Standardaktion</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Action to perform when the return key is pressed. Always default to &apos;launch&apos; if the app has no open window.</source>
-        <translation>Aktion, die ausgeführt werden soll, wenn die Eingabetaste gedrückt wird. Wenn die App kein geöffnetes Fenster hat, ist die Standardeinstellung immer „Starten“.</translation>
-    </message>
-    <message>
-        <location line="+4"/>
-        <source>Launch Prefix</source>
-        <translation>Startpräfix</translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>Custom app launcher to use. Affects applications as well as their sub-actions.</source>
-        <translation>Zu verwendender benutzerdefinierter App-Launcher. Wirkt sich auf Anwendungen und deren Unteraktionen aus.</translation>
-    </message>
-    <message>
-        <location line="+8"/>
-        <source>Application directories</source>
-        <translation>Anwendungsverzeichnisse</translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>Directories applications are sourced from. The list cannot be modified directly. In order to do so, you need to append additonal paths to the &lt;b&gt;XDG_DATA_DIRS&lt;/b&gt; environment variables.</source>
-        <translation>Verzeichnisse, aus denen Anwendungen stammen. Die Liste kann nicht direkt geändert werden. Dazu müssen Sie zusätzliche Pfade an die Umgebungsvariablen &lt;b&gt;XDG_DATA_DIRS&lt;/b&gt; anhängen.</translation>
     </message>
 </context>
 <context>
@@ -6591,9 +7680,32 @@ Wenn Sie Ihre eigene Erweiterung erstellen möchten, werfen Sie einen Blick auf 
     </message>
 </context>
 <context>
+    <name>XxHotkeyGlobalShortcutBackend</name>
+    <message>
+        <location filename="../src/services/global-shortcuts/xx-hotkey-global-shortcut-backend.cpp" line="+108"/>
+        <source>Unsupported trigger key</source>
+        <translation type="unfinished">Nicht unterstützter Triggerschlüssel</translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Compositor does not support global hotkeys</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Hotkey binding was lost</source>
+        <translation type="unfinished">Tastenkürzelbelegung wurde aufgehoben</translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Compositor denied the bind. Try another key combination.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>browser-extension</name>
     <message>
-        <location filename="../src/extensions/browser/browser-extension.cpp" line="-58"/>
+        <location filename="../src/builtins/browser/browser-extension.cpp" line="-58"/>
         <source>No browser connected</source>
         <translation>Kein Browser verbunden</translation>
     </message>
@@ -6611,7 +7723,7 @@ Wenn Sie Ihre eigene Erweiterung erstellen möchten, werfen Sie einen Blick auf 
 <context>
     <name>clipboard-history-view-host</name>
     <message>
-        <location filename="../src/qml/clipboard-history-view-host.cpp" line="-207"/>
+        <location filename="../src/builtins/clipboard/history/clipboard-history-view-host.cpp" line="-216"/>
         <source>Text</source>
         <translation>Text</translation>
     </message>
@@ -6639,7 +7751,7 @@ Wenn Sie Ihre eigene Erweiterung erstellen möchten, werfen Sie einen Blick auf 
 <context>
     <name>emoji-categories</name>
     <message>
-        <location filename="../src/qml/emoji-grid-model.cpp" line="-52"/>
+        <location filename="../src/builtins/vicinae/emoji-grid-model.cpp" line="-52"/>
         <source>Smileys &amp; Emotion</source>
         <translation>Smileys &amp; Emotionen</translation>
     </message>
@@ -6732,7 +7844,7 @@ Wenn Sie Ihre eigene Erweiterung erstellen möchten, werfen Sie einen Blick auf 
 <context>
     <name>emoji-grid-model</name>
     <message>
-        <location line="+129"/>
+        <location line="+131"/>
         <source>Copy</source>
         <translation>Kopieren</translation>
     </message>
@@ -6760,7 +7872,7 @@ Wenn Sie Ihre eigene Erweiterung erstellen möchten, werfen Sie einen Blick auf 
 <context>
     <name>file-list-item</name>
     <message>
-        <location filename="../src/utils/file-list-item.hpp" line="+35"/>
+        <location filename="../src/utils/file-list-item.hpp" line="+100"/>
         <source>Copy file</source>
         <translation>Datei kopieren</translation>
     </message>
@@ -6783,7 +7895,7 @@ Wenn Sie Ihre eigene Erweiterung erstellen möchten, werfen Sie einen Blick auf 
 <context>
     <name>font-categories</name>
     <message>
-        <location filename="../src/font-service.cpp" line="+127"/>
+        <location filename="../src/services/font-service/font-service.cpp" line="+142"/>
         <source>Latin</source>
         <translation>Latein</translation>
     </message>
@@ -6951,7 +8063,7 @@ Wenn Sie Ihre eigene Erweiterung erstellen möchten, werfen Sie einen Blick auf 
 <context>
     <name>font-grid-model</name>
     <message>
-        <location filename="../src/qml/font-grid-model.cpp" line="+26"/>
+        <location filename="../src/builtins/font/font-grid-model.cpp" line="+26"/>
         <source>Copy font family</source>
         <translation>Schriftfamilie kopieren</translation>
     </message>
@@ -7142,7 +8254,7 @@ Wenn Sie Ihre eigene Erweiterung erstellen möchten, werfen Sie einen Blick auf 
 <context>
     <name>macos-update-installer</name>
     <message>
-        <location filename="../src/services/update/macos-update-installer.mm" line="-184"/>
+        <location filename="../src/services/update/macos-update-installer.mm" line="-183"/>
         <source>Update image contains more than one app</source>
         <translation>Das Update-Image enthält mehr als eine App</translation>
     </message>
@@ -7162,7 +8274,7 @@ Wenn Sie Ihre eigene Erweiterung erstellen möchten, werfen Sie einen Blick auf 
         <translation>Die Codesignatur des Updates konnte nicht gelesen werden</translation>
     </message>
     <message>
-        <location line="+12"/>
+        <location line="+11"/>
         <source>Failed to build the signature requirement</source>
         <translation>Die Signaturanforderung konnte nicht erstellt werden</translation>
     </message>
@@ -7183,9 +8295,32 @@ Wenn Sie Ihre eigene Erweiterung erstellen möchten, werfen Sie einen Blick auf 
     </message>
 </context>
 <context>
+    <name>media-extension</name>
+    <message>
+        <location filename="../src/builtins/media/media-extension.hpp" line="-200"/>
+        <source>%1 — %2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+35"/>
+        <source>No media player is running</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>No media player matches &quot;%1&quot;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+131"/>
+        <source>Volume %1%</source>
+        <translation type="unfinished">Lautstärke %1 %</translation>
+    </message>
+</context>
+<context>
     <name>shortcut-conflict</name>
     <message>
-        <location filename="../src/qml/shortcut-conflict.cpp" line="+10"/>
+        <location filename="../src/ui/settings/shortcut-conflict.cpp" line="+10"/>
         <source>Modifier required</source>
         <translation>Modifikator erforderlich</translation>
     </message>
@@ -7194,14 +8329,6 @@ Wenn Sie Ihre eigene Erweiterung erstellen möchten, werfen Sie einen Blick auf 
         <location line="+5"/>
         <source>Already bound to &quot;%1&quot;</source>
         <translation>Bereits an „%1“ gebunden</translation>
-    </message>
-</context>
-<context>
-    <name>system-extension</name>
-    <message>
-        <location filename="../src/extensions/system/system-extension.hpp" line="-34"/>
-        <source>Volume %1%</source>
-        <translation>Lautstärke %1 %</translation>
     </message>
 </context>
 <context>
@@ -7223,49 +8350,6 @@ Wenn Sie Ihre eigene Erweiterung erstellen möchten, werfen Sie einen Blick auf 
         <location filename="../src/services/window-manager/windows/virtual-desktops.cpp" line="+67"/>
         <source>Desktop %1</source>
         <translation>Desktop %1</translation>
-    </message>
-</context>
-<context>
-    <name>TrayService</name>
-    <message>
-        <source>Toggle Vicinae</source>
-        <translation>Vicinae ein-/ausblenden</translation>
-    </message>
-    <message>
-        <source>About Vicinae</source>
-        <translation>Über Vicinae</translation>
-    </message>
-    <message>
-        <source>Check for Updates…</source>
-        <translation>Nach Updates suchen…</translation>
-    </message>
-    <message>
-        <source>Update Available: %1</source>
-        <translation>Update verfügbar: %1</translation>
-    </message>
-    <message>
-        <source>Settings…</source>
-        <translation>Einstellungen…</translation>
-    </message>
-    <message>
-        <source>Preferences…</source>
-        <translation>Einstellungen…</translation>
-    </message>
-    <message>
-        <source>Sponsor Vicinae</source>
-        <translation>Vicinae unterstützen</translation>
-    </message>
-    <message>
-        <source>Join the Discord</source>
-        <translation>Discord-Server beitreten</translation>
-    </message>
-    <message>
-        <source>Follow on X</source>
-        <translation>Auf X folgen</translation>
-    </message>
-    <message>
-        <source>Quit Vicinae</source>
-        <translation>Vicinae beenden</translation>
     </message>
 </context>
 </TS>
