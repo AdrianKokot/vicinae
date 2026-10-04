@@ -49,7 +49,7 @@ template <> struct PreferenceSchema<SnippetPreferences> {
       .required = false,
   };
 #endif
-  Q_DECLARE_TR_FUNCTIONS(SnippetPreferences)
+  Q_DECLARE_TR_FUNCTIONS(PreferenceSchema)
 };
 
 class SnippetExtension : public TypedCommandRepository<SnippetPreferences> {

@@ -35,7 +35,7 @@ template <> struct PreferenceSchema<SystemRunPreferences> {
             };
           },
   };
-  Q_DECLARE_TR_FUNCTIONS(SystemRunPreferences)
+  Q_DECLARE_TR_FUNCTIONS(PreferenceSchema)
 };
 
 class CommandLineSection : public SectionSource {

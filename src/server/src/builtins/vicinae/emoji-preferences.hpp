@@ -55,5 +55,5 @@ template <> struct PreferenceSchema<EmojiPreferences> {
             return options;
           },
   };
-  Q_DECLARE_TR_FUNCTIONS(EmojiPreferences)
+  Q_DECLARE_TR_FUNCTIONS(PreferenceSchema)
 };

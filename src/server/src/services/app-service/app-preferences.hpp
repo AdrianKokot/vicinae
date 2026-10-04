@@ -72,5 +72,5 @@ template <> struct PreferenceSchema<AppPreferences> {
       .kind = PreferenceMeta::Kind::Directories,
   };
 #endif
-  Q_DECLARE_TR_FUNCTIONS(AppPreferences)
+  Q_DECLARE_TR_FUNCTIONS(PreferenceSchema)
 };

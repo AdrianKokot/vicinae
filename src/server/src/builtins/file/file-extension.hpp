@@ -95,7 +95,7 @@ template <> struct PreferenceSchema<FilePreferences> {
       .required = false,
   };
 #endif
-  Q_DECLARE_TR_FUNCTIONS(FilePreferences)
+  Q_DECLARE_TR_FUNCTIONS(PreferenceSchema)
 };
 
 class FileExtension : public TypedCommandRepository<FilePreferences> {

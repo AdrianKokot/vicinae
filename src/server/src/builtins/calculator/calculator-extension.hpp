@@ -83,7 +83,7 @@ template <> struct PreferenceSchema<CalculatorPreferences> {
             return options;
           },
   };
-  Q_DECLARE_TR_FUNCTIONS(CalculatorPreferences)
+  Q_DECLARE_TR_FUNCTIONS(PreferenceSchema)
 };
 
 class CalculatorExtension : public TypedCommandRepository<CalculatorPreferences> {
