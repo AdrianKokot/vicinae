@@ -56,6 +56,12 @@ public:
   virtual bool isAction() const { return false; }
 
   /**
+   * Whether this application is an elevated variant of another application
+   * (e.g. "run as administrator" on Windows).
+   */
+  virtual bool isElevated() const { return false; }
+
+  /**
    * List of additional actions or commands the app can execute.
    * Note that every action is considered as its own app, although they are not displayed in the root
    * search directly.

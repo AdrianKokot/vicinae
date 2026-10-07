@@ -61,6 +61,7 @@ public:
   bool isTerminalApp() const override { return false; }
   bool isAction() const override { return m_data.elevated; }
   bool isOpener() override { return !m_data.elevated; }
+  bool isElevated() const override { return m_data.elevated; }
   QString description() const override { return {}; }
   QString category() const override { return m_data.category; }
 
