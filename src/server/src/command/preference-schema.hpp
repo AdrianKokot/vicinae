@@ -36,6 +36,10 @@ struct PreferenceMeta {
 /**
  * One `PreferenceMeta` per struct member, same names, same order. `Q_DECLARE_TR_FUNCTIONS` goes last:
  * it ends with `private:`, which would otherwise break aggregate reflection.
+ *
+ * Every specialization must declare `Q_DECLARE_TR_FUNCTIONS(PreferenceSchema)`: lupdate cannot infer a
+ * per-specialization context for class template specializations and extracts every string under the
+ * shared `PreferenceSchema` context, so runtime lookups have to use that same context.
  */
 template <typename T> struct PreferenceSchema;
 

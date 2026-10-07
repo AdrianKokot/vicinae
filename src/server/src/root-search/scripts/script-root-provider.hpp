@@ -138,7 +138,7 @@ template <> struct PreferenceSchema<ScriptPreferences> {
              "precedence over the default system ones"),
       .kind = PreferenceMeta::Kind::Directories,
   };
-  Q_DECLARE_TR_FUNCTIONS(ScriptPreferences)
+  Q_DECLARE_TR_FUNCTIONS(PreferenceSchema)
 };
 
 class ScriptRootProvider : public TypedRootProvider<ScriptPreferences> {

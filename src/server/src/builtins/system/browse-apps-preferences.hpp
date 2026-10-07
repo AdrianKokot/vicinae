@@ -10,5 +10,5 @@ struct BrowseAppsPreferences {
 template <> struct PreferenceSchema<BrowseAppsPreferences> {
   PreferenceMeta sortAlphabetically{.label = tr("Sort alphabetically")};
   PreferenceMeta showHidden{.label = tr("Show hidden apps")};
-  Q_DECLARE_TR_FUNCTIONS(BrowseAppsPreferences)
+  Q_DECLARE_TR_FUNCTIONS(PreferenceSchema)
 };

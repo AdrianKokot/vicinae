@@ -3901,7 +3901,217 @@ Powrót do polecenia za chwilę...</translation>
         <translation>Katalogi, z których pochodzą aplikacje. Katalogi systemowe są zawsze skanowane i nie można ich usunąć.</translation>
     </message>
     <message>
-        <location filename="../src/builtins/clipboard/clipboard-preferences.hpp" line="+62"/>
+        <location filename="../src/root-search/scripts/script-root-provider.hpp" line="+135"/>
+        <source>Custom directories</source>
+        <translation>Niestandardowe katalogi</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Additional list of directories to source scripts from. These directories always take precedence over the default system ones</source>
+        <translation>Dodatkowa lista katalogów ze skryptami. Te katalogi zawsze mają pierwszeństwo przed domyślnymi systemowymi</translation>
+    </message>
+    <message>
+        <location filename="../src/builtins/vicinae/store-intro-preferences.hpp" line="+10"/>
+        <source>Always show intro</source>
+        <translation>Zawsze pokazuj wprowadzenie</translation>
+    </message>
+    <message>
+        <location filename="../src/builtins/vicinae/emoji-preferences.hpp" line="+27"/>
+        <location filename="../src/builtins/system/system-run-model.hpp" line="-21"/>
+        <location filename="../src/builtins/clipboard/clipboard-preferences.hpp" line="+112"/>
+        <source>Default Action</source>
+        <translation>Domyślna akcja</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <location filename="../src/builtins/clipboard/clipboard-preferences.hpp" line="+1"/>
+        <source>The default action to perform on pressing return. Paste is only available if your environment supports it.</source>
+        <translation>Domyślna akcja wykonywana po naciśnięciu Enter. Wklejanie jest dostępne tylko wtedy, gdy Twoje środowisko je obsługuje.</translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <location filename="../src/builtins/clipboard/clipboard-preferences.hpp" line="+7"/>
+        <source>Paste</source>
+        <translation>Wklej</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <location filename="../src/builtins/clipboard/clipboard-preferences.hpp" line="+2"/>
+        <source>Copy</source>
+        <translation>Kopiuj</translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Skin tone</source>
+        <translation>Odcień skóry</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Skin tone to use for relevant emojis.</source>
+        <translation>Odcień skóry używany dla odpowiednich emoji.</translation>
+    </message>
+    <message>
+        <location filename="../src/builtins/system/system-run-model.hpp" line="+1"/>
+        <source>The default action to run on pressing return</source>
+        <translation>Domyślna akcja uruchamiana po naciśnięciu Enter</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Run in terminal</source>
+        <translation>Uruchom w terminalu</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Run in terminal (hold)</source>
+        <translation>Uruchom w terminalu (przytrzymaj)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Run directly</source>
+        <translation>Uruchom bezpośrednio</translation>
+    </message>
+    <message>
+        <location filename="../src/builtins/system/browse-apps-preferences.hpp" line="+11"/>
+        <source>Sort alphabetically</source>
+        <translation>Sortuj alfabetycznie</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Show hidden apps</source>
+        <translation>Pokaż ukryte aplikacje</translation>
+    </message>
+    <message>
+        <location filename="../src/builtins/snippet/snippet-extension.hpp" line="+23"/>
+        <source>Expansion</source>
+        <translation>Rozwijanie</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Enable automatic snippet expansion when triggers are typed</source>
+        <translation>Włącz automatyczne rozwijanie snippetów po wpisaniu wyzwalaczy</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Undo</source>
+        <translation>Cofnij</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Press backspace immediately after expansion to undo and restore the trigger text</source>
+        <translation>Naciśnij Backspace natychmiast po rozwinięciu, aby cofnąć i przywrócić tekst wyzwalacza</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Keyboard layout</source>
+        <translation>Układ klawiatury</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>XKB layout used for trigger detection (e.g. &quot;us&quot;, &quot;fr&quot;). Leave empty for system default.</source>
+        <translation>Układ XKB używany do wykrywania wyzwalaczy (np. „us”, „fr”). Pozostaw puste dla ustawień systemowych.</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Pre-paste delay (ms)</source>
+        <translation>Opóźnienie przed wklejeniem (ms)</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Delay between setting clipboard and injecting paste shortcut. Increase if expansions paste empty on slow compositors.</source>
+        <translation>Opóźnienie między ustawieniem schowka a wstrzyknięciem skrótu wklejania. Zwiększ, jeśli rozwinięcia wklejają puste treści na wolnych kompozytorach.</translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Key injection delay (ms)</source>
+        <translation>Opóźnienie wstrzykiwania klawiszy (ms)</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Delay between injected key events. Increase if expansions produce missing or garbled characters on slow compositors.</source>
+        <translation>Opóźnienie między wstrzykiwanymi zdarzeniami klawiszy. Zwiększ, jeśli rozwinięcia generują brakujące lub zniekształcone znaki na wolnych kompozytorach.</translation>
+    </message>
+    <message>
+        <location filename="../src/builtins/file/file-extension.hpp" line="-44"/>
+        <source>Enabled</source>
+        <translation>Włączone</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Whether to run the file indexer in the background. When turned off, the indexer process is stopped entirely and file search becomes unavailable until it is turned back on.</source>
+        <translation>Czy uruchamiać indeksator plików w tle. Po wyłączeniu proces indeksatora jest całkowicie zatrzymywany, a wyszukiwanie plików pozostaje niedostępne, dopóki nie zostanie ponownie włączone.</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Search paths</source>
+        <translation>Ścieżki wyszukiwania</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Directories that Vicinae will search</source>
+        <translation>Katalogi, które będzie przeszukiwać Vicinae</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Excluded search paths</source>
+        <translation>Wykluczone ścieżki wyszukiwania</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Directories to exclude from file indexing</source>
+        <translation>Katalogi do wykluczenia z indeksowania plików</translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Search backend</source>
+        <translation>Zaplecze wyszukiwania</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Automatic uses Everything when it is running and falls back to Windows Search otherwise.</source>
+        <translation>Tryb automatyczny używa Everything, gdy ta aplikacja działa, a w przeciwnym razie przechodzi na Windows Search.</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Automatic</source>
+        <translation>Automatycznie</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Windows Search</source>
+        <translation>Windows Search</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Everything</source>
+        <translation>Everything</translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Everything instance</source>
+        <translation>Instancja Everything</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Name of the Everything instance to connect to. Leave empty for the default instance, the Everything 1.5 alpha runs as &quot;1.5a&quot;.</source>
+        <translation>Nazwa instancji Everything, z którą się połączyć. Pozostaw puste dla domyślnej instancji; wersja alfa Everything 1.5 działa jako „1.5a”.</translation>
+    </message>
+    <message>
+        <location filename="../src/builtins/power-management/power-management-extension.cpp" line="-201"/>
+        <source>Ask for confirmation</source>
+        <translation>Proś o potwierdzenie</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Custom program</source>
+        <translation>Niestandardowy program</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Custom shell command to run instead of the default implementation</source>
+        <translation>Niestandardowe polecenie powłoki do uruchomienia zamiast domyślnej implementacji</translation>
+    </message>
+    <message>
+        <location filename="../src/builtins/clipboard/clipboard-preferences.hpp" line="-60"/>
         <source>Clipboard monitoring</source>
         <translation>Monitorowanie schowka</translation>
     </message>
@@ -3996,86 +4206,6 @@ Powrót do polecenia za chwilę...</translation>
         <translation>Usuwaj historię schowka przy każdym uruchomieniu serwera Vicinae</translation>
     </message>
     <message>
-        <location line="+11"/>
-        <location filename="../src/builtins/system/system-run-model.hpp" line="-21"/>
-        <location filename="../src/builtins/vicinae/emoji-preferences.hpp" line="+27"/>
-        <source>Default Action</source>
-        <translation>Domyślna akcja</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <location filename="../src/builtins/vicinae/emoji-preferences.hpp" line="+1"/>
-        <source>The default action to perform on pressing return. Paste is only available if your environment supports it.</source>
-        <translation>Domyślna akcja wykonywana po naciśnięciu Enter. Wklejanie jest dostępne tylko wtedy, gdy Twoje środowisko je obsługuje.</translation>
-    </message>
-    <message>
-        <location line="+7"/>
-        <location filename="../src/builtins/vicinae/emoji-preferences.hpp" line="+6"/>
-        <source>Paste</source>
-        <translation>Wklej</translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <location filename="../src/builtins/vicinae/emoji-preferences.hpp" line="+2"/>
-        <source>Copy</source>
-        <translation>Kopiuj</translation>
-    </message>
-    <message>
-        <location filename="../src/builtins/power-management/power-management-extension.cpp" line="-201"/>
-        <source>Ask for confirmation</source>
-        <translation>Proś o potwierdzenie</translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>Custom program</source>
-        <translation>Niestandardowy program</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Custom shell command to run instead of the default implementation</source>
-        <translation>Niestandardowe polecenie powłoki do uruchomienia zamiast domyślnej implementacji</translation>
-    </message>
-    <message>
-        <location filename="../src/builtins/system/browse-apps-preferences.hpp" line="+11"/>
-        <source>Sort alphabetically</source>
-        <translation>Sortuj alfabetycznie</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Show hidden apps</source>
-        <translation>Pokaż ukryte aplikacje</translation>
-    </message>
-    <message>
-        <location filename="../src/builtins/system/system-run-model.hpp" line="+1"/>
-        <source>The default action to run on pressing return</source>
-        <translation>Domyślna akcja uruchamiana po naciśnięciu Enter</translation>
-    </message>
-    <message>
-        <location line="+4"/>
-        <source>Run in terminal</source>
-        <translation>Uruchom w terminalu</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Run in terminal (hold)</source>
-        <translation>Uruchom w terminalu (przytrzymaj)</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Run directly</source>
-        <translation>Uruchom bezpośrednio</translation>
-    </message>
-    <message>
-        <location filename="../src/builtins/vicinae/emoji-preferences.hpp" line="+5"/>
-        <source>Skin tone</source>
-        <translation>Odcień skóry</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Skin tone to use for relevant emojis.</source>
-        <translation>Odcień skóry używany dla odpowiednich emoji.</translation>
-    </message>
-    <message>
         <location filename="../src/builtins/calculator/calculator-extension.hpp" line="+11"/>
         <source>Calculator Backend</source>
         <translation>Zaplecze kalkulatora</translation>
@@ -4084,136 +4214,6 @@ Powrót do polecenia za chwilę...</translation>
         <location line="+1"/>
         <source>Which backend to use to perform calculations</source>
         <translation>Które zaplecze ma wykonywać obliczenia</translation>
-    </message>
-    <message>
-        <location filename="../src/builtins/file/file-extension.hpp" line="-44"/>
-        <source>Enabled</source>
-        <translation>Włączone</translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>Whether to run the file indexer in the background. When turned off, the indexer process is stopped entirely and file search becomes unavailable until it is turned back on.</source>
-        <translation>Czy uruchamiać indeksator plików w tle. Po wyłączeniu proces indeksatora jest całkowicie zatrzymywany, a wyszukiwanie plików pozostaje niedostępne, dopóki nie zostanie ponownie włączone.</translation>
-    </message>
-    <message>
-        <location line="+4"/>
-        <source>Search paths</source>
-        <translation>Ścieżki wyszukiwania</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Directories that Vicinae will search</source>
-        <translation>Katalogi, które będzie przeszukiwać Vicinae</translation>
-    </message>
-    <message>
-        <location line="+4"/>
-        <source>Excluded search paths</source>
-        <translation>Wykluczone ścieżki wyszukiwania</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Directories to exclude from file indexing</source>
-        <translation>Katalogi do wykluczenia z indeksowania plików</translation>
-    </message>
-    <message>
-        <location line="+5"/>
-        <source>Search backend</source>
-        <translation>Zaplecze wyszukiwania</translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>Automatic uses Everything when it is running and falls back to Windows Search otherwise.</source>
-        <translation>Tryb automatyczny używa Everything, gdy ta aplikacja działa, a w przeciwnym razie przechodzi na Windows Search.</translation>
-    </message>
-    <message>
-        <location line="+4"/>
-        <source>Automatic</source>
-        <translation>Automatycznie</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Windows Search</source>
-        <translation>Windows Search</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Everything</source>
-        <translation>Everything</translation>
-    </message>
-    <message>
-        <location line="+5"/>
-        <source>Everything instance</source>
-        <translation>Instancja Everything</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Name of the Everything instance to connect to. Leave empty for the default instance, the Everything 1.5 alpha runs as &quot;1.5a&quot;.</source>
-        <translation>Nazwa instancji Everything, z którą się połączyć. Pozostaw puste dla domyślnej instancji; wersja alfa Everything 1.5 działa jako „1.5a”.</translation>
-    </message>
-    <message>
-        <location filename="../src/builtins/snippet/snippet-extension.hpp" line="+23"/>
-        <source>Expansion</source>
-        <translation>Rozwijanie</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Enable automatic snippet expansion when triggers are typed</source>
-        <translation>Włącz automatyczne rozwijanie snippetów po wpisaniu wyzwalaczy</translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>Undo</source>
-        <translation>Cofnij</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Press backspace immediately after expansion to undo and restore the trigger text</source>
-        <translation>Naciśnij Backspace natychmiast po rozwinięciu, aby cofnąć i przywrócić tekst wyzwalacza</translation>
-    </message>
-    <message>
-        <location line="+4"/>
-        <source>Keyboard layout</source>
-        <translation>Układ klawiatury</translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>XKB layout used for trigger detection (e.g. &quot;us&quot;, &quot;fr&quot;). Leave empty for system default.</source>
-        <translation>Układ XKB używany do wykrywania wyzwalaczy (np. „us”, „fr”). Pozostaw puste dla ustawień systemowych.</translation>
-    </message>
-    <message>
-        <location line="+4"/>
-        <source>Pre-paste delay (ms)</source>
-        <translation>Opóźnienie przed wklejeniem (ms)</translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>Delay between setting clipboard and injecting paste shortcut. Increase if expansions paste empty on slow compositors.</source>
-        <translation>Opóźnienie między ustawieniem schowka a wstrzyknięciem skrótu wklejania. Zwiększ, jeśli rozwinięcia wklejają puste treści na wolnych kompozytorach.</translation>
-    </message>
-    <message>
-        <location line="+5"/>
-        <source>Key injection delay (ms)</source>
-        <translation>Opóźnienie wstrzykiwania klawiszy (ms)</translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>Delay between injected key events. Increase if expansions produce missing or garbled characters on slow compositors.</source>
-        <translation>Opóźnienie między wstrzykiwanymi zdarzeniami klawiszy. Zwiększ, jeśli rozwinięcia generują brakujące lub zniekształcone znaki na wolnych kompozytorach.</translation>
-    </message>
-    <message>
-        <location filename="../src/builtins/vicinae/store-intro-preferences.hpp" line="+10"/>
-        <source>Always show intro</source>
-        <translation>Zawsze pokazuj wprowadzenie</translation>
-    </message>
-    <message>
-        <location filename="../src/root-search/scripts/script-root-provider.hpp" line="+135"/>
-        <source>Custom directories</source>
-        <translation>Niestandardowe katalogi</translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>Additional list of directories to source scripts from. These directories always take precedence over the default system ones</source>
-        <translation>Dodatkowa lista katalogów ze skryptami. Te katalogi zawsze mają pierwszeństwo przed domyślnymi systemowymi</translation>
     </message>
 </context>
 <context>

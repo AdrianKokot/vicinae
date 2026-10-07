@@ -100,7 +100,7 @@ template <> struct PreferenceSchema<ClipboardPreferences> {
       .title = tr("Erase on startup"),
       .description = tr("Erase clipboard history every time the vicinae server is started"),
   };
-  Q_DECLARE_TR_FUNCTIONS(ClipboardPreferences)
+  Q_DECLARE_TR_FUNCTIONS(PreferenceSchema)
 };
 
 struct ClipboardHistoryPreferences {
@@ -123,5 +123,5 @@ template <> struct PreferenceSchema<ClipboardHistoryPreferences> {
             return options;
           },
   };
-  Q_DECLARE_TR_FUNCTIONS(ClipboardHistoryPreferences)
+  Q_DECLARE_TR_FUNCTIONS(PreferenceSchema)
 };

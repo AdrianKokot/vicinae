@@ -30,7 +30,7 @@ template <> struct PreferenceSchema<PowerCommandPreferences> {
       .required = false,
   };
 #endif
-  Q_DECLARE_TR_FUNCTIONS(PowerCommandPreferences)
+  Q_DECLARE_TR_FUNCTIONS(PreferenceSchema)
 };
 
 class PowerManagementCommand : public TypedCallbackCommand<PowerCommandPreferences> {

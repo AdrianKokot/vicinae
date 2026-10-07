@@ -670,16 +670,6 @@
         <translation>Fai calcoli, converti unità di misura o cerca calcoli precedenti...</translation>
     </message>
     <message>
-        <location line="+21"/>
-        <source>Calculator Backend</source>
-        <translation>Backend della Calcolatrice</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Which backend to use to perform calculations</source>
-        <translation>Il backend utilizzato per fare calcoli</translation>
-    </message>
-    <message>
         <location line="+5"/>
         <source>Refresh rates on startup</source>
         <translation>Aggiorna i tassi all’avvio</translation>
@@ -862,29 +852,9 @@
         <translation>Integrazione con gli appunti di sistema</translation>
     </message>
     <message>
-        <location filename="../src/extensions/clipboard/clipboard-extension.cpp" line="+55"/>
-        <source>Erase on startup</source>
-        <translation>Cancella ad ogni avvio</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Erase clipboard history every time the vicinae server is started</source>
-        <translation>Elimina la cronologia degli appunti ad ogni avvio del server di Vicinae</translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>Clipboard monitoring</source>
-        <translation>Monitoring Appunti</translation>
-    </message>
-    <message>
         <location line="+1"/>
         <source>Whether clipboard activity is recorded in the history. Every clipboard action performed while this is turned off will not be recorded.</source>
         <translation>Indica se l’attività degli appunti viene registrata nella cronologia. Ogni azione effettuata mentre quest’opzione è disattivata non sarà registrata.</translation>
-    </message>
-    <message>
-        <location line="+9"/>
-        <source>Ignore Passwords</source>
-        <translation>Ignora Password</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -922,26 +892,6 @@
 </context>
 <context>
     <name>ClipboardHistoryCommand</name>
-    <message>
-        <location filename="../src/extensions/clipboard/clipboard-history-command.cpp" line="+16"/>
-        <source>Paste</source>
-        <translation>Incolla</translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>Copy</source>
-        <translation>Copia</translation>
-    </message>
-    <message>
-        <location line="+5"/>
-        <source>Default Action</source>
-        <translation>Azione Predefinita</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>The default action to perform on pressing return. Paste is only available if your environment supports it.</source>
-        <translation>L’azione predefinita per quando premi invio. Incolla è supportato solo se supportato dal tuo ambiente.</translation>
-    </message>
     <message>
         <location filename="../src/extensions/clipboard/clipboard-history-command.hpp" line="+11"/>
         <source>Clipboard History</source>
@@ -1817,36 +1767,6 @@ Qui sotto trovi tutto lo stacktrace. Puoi anche copiarlo direttamente dal menu a
         <location line="+1"/>
         <source>Integrate with system files</source>
         <translation>Integrazione coi file di sistema</translation>
-    </message>
-    <message>
-        <location line="+24"/>
-        <source>Enabled</source>
-        <translation>Attiva</translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>Whether to run the file indexer in the background. When turned off, the indexer process is stopped entirely and file search becomes unavailable until it is turned back on.</source>
-        <translation>Indica se indicizzare i file in background. Se disattivato, il processo indicizzatore è sospeso del tutto e la ricerca di file non è disponibile finché non viene riattivata.</translation>
-    </message>
-    <message>
-        <location line="+5"/>
-        <source>Search paths</source>
-        <translation>Percorsi dove cercare</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Directories that Vicinae will search</source>
-        <translation>Le cartelle in cui Vicinae cercherà</translation>
-    </message>
-    <message>
-        <location line="+4"/>
-        <source>Excluded search paths</source>
-        <translation>Percorsi esclusi</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Directories to exclude from file indexing</source>
-        <translation>Le cartelle in cui Vicinae NON cercherà</translation>
     </message>
 </context>
 <context>
@@ -3490,16 +3410,6 @@ Torniamo al comando tra un attimo...</translation>
 <context>
     <name>PowerManagementCommand</name>
     <message>
-        <location filename="../src/extensions/power-management/power-management-extension.cpp" line="-283"/>
-        <source>Ask for confirmation</source>
-        <translation>Chiedi conferma</translation>
-    </message>
-    <message>
-        <location line="+7"/>
-        <source>Custom program</source>
-        <translation>Programma personalizzato</translation>
-    </message>
-    <message>
         <location line="+1"/>
         <source>Custom POSIX shell command to run instead of the default implementation</source>
         <translation>Comando shell POSIX da esedguire invece dell’implementazione predefinita</translation>
@@ -3554,6 +3464,376 @@ Torniamo al comando tra un attimo...</translation>
         <location line="+4"/>
         <source>Failed to power off</source>
         <translation>Impossibile spegnere</translation>
+    </message>
+</context>
+<context>
+    <name>PreferenceSchema</name>
+    <message>
+        <location filename="../src/services/app-service/app-preferences.hpp" line="+34"/>
+        <source>Default action</source>
+        <translation>Azione predefinita</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Action to perform when the return key is pressed. Always default to &apos;launch&apos; if the app has no open window.</source>
+        <translation>L’azione da eseguire quando premi invio. Di Default è sempre ’Avvia’ se l’app non ha finestre aperte.</translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Focus window</source>
+        <translation>Attiva la finestra</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Launch app</source>
+        <translation>Apri Applicazione</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Launch Prefix</source>
+        <translation>Prefisso d’Avvio</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Custom app launcher to use. Affects applications as well as their sub-actions.</source>
+        <translation>Launcher personalizzato da usare. Tocca sia le applicazioni che le loro sotto-azioni.</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <location line="+9"/>
+        <location line="+6"/>
+        <source>Application directories</source>
+        <translation>Cartelle delle applicazioni</translation>
+    </message>
+    <message>
+        <location line="-14"/>
+        <source>Directories applications are sourced from. The list cannot be modified directly. In order to do so, you need to append additonal paths to the &lt;b&gt;XDG_DATA_DIRS&lt;/b&gt; environment variables.</source>
+        <translation>Cartelle dove cercare le applicazioni. La lista non può essere direttamente modificata. Per farlo, devi aggiugnere percorsi aggiuntivi alla variabile d’ambiente &lt;b&gt;XDG_DATA_DIRS&lt;/b&gt;.</translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Directories applications are sourced from.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Directories applications are sourced from. System directories are always scanned and cannot be removed.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/root-search/scripts/script-root-provider.hpp" line="+135"/>
+        <source>Custom directories</source>
+        <translation>Cartelle personalizzate</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Additional list of directories to source scripts from. These directories always take precedence over the default system ones</source>
+        <translation>Una lista aggiuntiva di cartelle in cui cercare script. Queste cartelle hanno la precedenza su quelle predefinite</translation>
+    </message>
+    <message>
+        <location filename="../src/builtins/vicinae/store-intro-preferences.hpp" line="+10"/>
+        <source>Always show intro</source>
+        <translation>Mostra sempre introduzione</translation>
+    </message>
+    <message>
+        <location filename="../src/builtins/vicinae/emoji-preferences.hpp" line="+27"/>
+        <location filename="../src/builtins/system/system-run-model.hpp" line="-21"/>
+        <location filename="../src/builtins/clipboard/clipboard-preferences.hpp" line="+112"/>
+        <source>Default Action</source>
+        <translation>Azione Predefinita</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <location filename="../src/builtins/clipboard/clipboard-preferences.hpp" line="+1"/>
+        <source>The default action to perform on pressing return. Paste is only available if your environment supports it.</source>
+        <translation>L’azione predefinita per quando premi invio. Incolla è supportato solo se supportato dal tuo ambiente.</translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <location filename="../src/builtins/clipboard/clipboard-preferences.hpp" line="+7"/>
+        <source>Paste</source>
+        <translation>Incolla</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <location filename="../src/builtins/clipboard/clipboard-preferences.hpp" line="+2"/>
+        <source>Copy</source>
+        <translation>Copia</translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Skin tone</source>
+        <translation>Colore della pelle</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Skin tone to use for relevant emojis.</source>
+        <translation>Il colore della pelle utilizzato per le emoji rilevanti.</translation>
+    </message>
+    <message>
+        <location filename="../src/builtins/system/system-run-model.hpp" line="+1"/>
+        <source>The default action to run on pressing return</source>
+        <translation>L’azione predefinita da eseguire quando premi invio</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Run in terminal</source>
+        <translation>Esegui nel terminale</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Run in terminal (hold)</source>
+        <translation>Esegui in un terminale (tieni aperto)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Run directly</source>
+        <translation>Esegui direttamente</translation>
+    </message>
+    <message>
+        <location filename="../src/builtins/system/browse-apps-preferences.hpp" line="+11"/>
+        <source>Sort alphabetically</source>
+        <translation>Ordina alfabeticamente</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Show hidden apps</source>
+        <translation>Mostra app nascoste</translation>
+    </message>
+    <message>
+        <location filename="../src/builtins/snippet/snippet-extension.hpp" line="+23"/>
+        <source>Expansion</source>
+        <translation>Espansione</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Enable automatic snippet expansion when triggers are typed</source>
+        <translation>Attiva l’espansione automatica degli snippet quando sono rilevati</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Undo</source>
+        <translation>Annulla</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Press backspace immediately after expansion to undo and restore the trigger text</source>
+        <translation>Premi indietro immediatamente dopo l’espansione per annullarla e ripristinare il testo</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Keyboard layout</source>
+        <translation>Layout tastiera</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>XKB layout used for trigger detection (e.g. &quot;us&quot;, &quot;fr&quot;). Leave empty for system default.</source>
+        <translation>Layout XKB usato per la rilevazione (es. &quot;us&quot;, &quot;it&quot;). Lascia vuoto per usare il layout di sistema.</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Pre-paste delay (ms)</source>
+        <translation>Delay prima di incollare (ms)</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Delay between setting clipboard and injecting paste shortcut. Increase if expansions paste empty on slow compositors.</source>
+        <translation>Delay tra quando vengono aggiornati gli appunti e quando viene incollato. Aumentalo se l’espansione non incolla nulla su compositor lenti.</translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Key injection delay (ms)</source>
+        <translation>Delay prima di inserire tasti (ms)</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Delay between injected key events. Increase if expansions produce missing or garbled characters on slow compositors.</source>
+        <translation>Delay tra l’inseriemnto di eventi di tastiera. Aumenta se l’espansione produce caratteri misti o alterati su compositor lenti.</translation>
+    </message>
+    <message>
+        <location filename="../src/builtins/file/file-extension.hpp" line="-44"/>
+        <source>Enabled</source>
+        <translation>Attivati</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Whether to run the file indexer in the background. When turned off, the indexer process is stopped entirely and file search becomes unavailable until it is turned back on.</source>
+        <translation>Indica se indicizzare i file in background. Se disattivato, il processo indicizzatore è sospeso del tutto e la ricerca di file non è disponibile finché non viene riattivata.</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Search paths</source>
+        <translation>Percorsi dove cercare</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Directories that Vicinae will search</source>
+        <translation>Le cartelle in cui Vicinae cercherà</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Excluded search paths</source>
+        <translation>Percorsi esclusi</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Directories to exclude from file indexing</source>
+        <translation>Le cartelle in cui Vicinae NON cercherà</translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Search backend</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Automatic uses Everything when it is running and falls back to Windows Search otherwise.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Automatic</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Windows Search</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Everything</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Everything instance</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Name of the Everything instance to connect to. Leave empty for the default instance, the Everything 1.5 alpha runs as &quot;1.5a&quot;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/builtins/power-management/power-management-extension.cpp" line="-201"/>
+        <source>Ask for confirmation</source>
+        <translation>Chiedi conferma</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Custom program</source>
+        <translation>Programma personalizzato</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Custom shell command to run instead of the default implementation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/builtins/clipboard/clipboard-preferences.hpp" line="-60"/>
+        <source>Clipboard monitoring</source>
+        <translation>Monitoring Appunti</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Whether new clipboard selections are appended to the history</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Ignore Passwords</source>
+        <translation>Ignora Password</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Ignore selections that can be identified as a password. May not work with all apps.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Preserve tagged</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Never evict or mass delete selections that have been explicitly tagged (pinned, custom keyword)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Excluded apps</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Never add selections copied from these apps to the history</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Eviction threshold</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Automatically delete selections older than this threshold</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Never</source>
+        <translation>mai</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>15 minutes</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>1 hour</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>1 day</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>1 week</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>1 month</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>1 year</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Erase on startup</source>
+        <translation>Cancella ad ogni avvio</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Erase clipboard history every time the vicinae server is started</source>
+        <translation>Elimina la cronologia degli appunti ad ogni avvio del server di Vicinae</translation>
+    </message>
+    <message>
+        <location filename="../src/builtins/calculator/calculator-extension.hpp" line="+11"/>
+        <source>Calculator Backend</source>
+        <translation>Backend della Calcolatrice</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Which backend to use to perform calculations</source>
+        <translation>Il backend utilizzato per fare calcoli</translation>
     </message>
 </context>
 <context>
@@ -3714,11 +3994,6 @@ Torniamo al comando tra un attimo...</translation>
         <location filename="../src/extensions/raycast/raycast-store-command.hpp" line="+13"/>
         <source>Install compatible extensions from the Raycast store</source>
         <translation>Installa estensioni compatibili dal negozio Raycast</translation>
-    </message>
-    <message>
-        <location line="+9"/>
-        <source>Always show intro</source>
-        <translation>Mostra sempre introduzione</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -4337,16 +4612,6 @@ Vicinae ha anche il proprio [negozio d’estensioni](vicinae://launch/core/store
         <source>Script Commands</source>
         <translation>Comandi Script</translation>
     </message>
-    <message>
-        <location line="+7"/>
-        <source>Custom directories</source>
-        <translation>Cartelle personalizzate</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Additional list of directories to source scripts from. These directories always take precedence over the default system ones</source>
-        <translation>Una lista aggiuntiva di cartelle in cui cercare script. Queste cartelle hanno la precedenza su quelle predefinite</translation>
-    </message>
 </context>
 <context>
     <name>SearchBrowserTabsCommand</name>
@@ -4372,36 +4637,6 @@ Vicinae ha anche il proprio [negozio d’estensioni](vicinae://launch/core/store
         <location line="+1"/>
         <source>Search for any emoji or symbol</source>
         <translation>Cerca una qualsiasi emoji o simbolo</translation>
-    </message>
-    <message>
-        <location line="+13"/>
-        <source>Paste</source>
-        <translation>Incolla</translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>Copy</source>
-        <translation>Copia</translation>
-    </message>
-    <message>
-        <location line="+5"/>
-        <source>Default Action</source>
-        <translation>Azione Predefinita</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>The default action to perform on pressing return. Paste is only available if your environment supports it.</source>
-        <translation>L’azione predefinita per quando premi invio. Incolla è disponibile solo se supportata dal tuo ambiente.</translation>
-    </message>
-    <message>
-        <location line="+21"/>
-        <source>Skin tone</source>
-        <translation>Colore della pelle</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Skin tone to use for relevant emojis.</source>
-        <translation>Il colore della pelle utilizzato per le emoji rilevanti.</translation>
     </message>
 </context>
 <context>
@@ -4899,56 +5134,6 @@ Vicinae ha anche il proprio [negozio d’estensioni](vicinae://launch/core/store
 <context>
     <name>SnippetExtension</name>
     <message>
-        <location filename="../src/extensions/snippet/snippet-extension.cpp" line="+38"/>
-        <source>Expansion</source>
-        <translation>Espansione</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Enable automatic snippet expansion when triggers are typed</source>
-        <translation>Attiva l’espansione automatica degli snippet quando sono rilevati</translation>
-    </message>
-    <message>
-        <location line="+7"/>
-        <source>Undo</source>
-        <translation>Annulla</translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>Press backspace immediately after expansion to undo and restore the trigger text</source>
-        <translation>Premi indietro immediatamente dopo l’espansione per annullarla e ripristinare il testo</translation>
-    </message>
-    <message>
-        <location line="+9"/>
-        <source>Keyboard layout</source>
-        <translation>Layout tastiera</translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>XKB layout used for trigger detection (e.g. &quot;us&quot;, &quot;fr&quot;). Leave empty for system default.</source>
-        <translation>Layout XKB usato per la rilevazione (es. &quot;us&quot;, &quot;it&quot;). Lascia vuoto per usare il layout di sistema.</translation>
-    </message>
-    <message>
-        <location line="+8"/>
-        <source>Pre-paste delay (ms)</source>
-        <translation>Delay prima di incollare (ms)</translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>Delay between setting clipboard and injecting paste shortcut. Increase if expansions paste empty on slow compositors.</source>
-        <translation>Delay tra quando vengono aggiornati gli appunti e quando viene incollato. Aumentalo se l’espansione non incolla nulla su compositor lenti.</translation>
-    </message>
-    <message>
-        <location line="+9"/>
-        <source>Key injection delay (ms)</source>
-        <translation>Delay prima di inserire tasti (ms)</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Delay between injected key events. Increase if expansions produce missing or garbled characters on slow compositors.</source>
-        <translation>Delay tra l’inseriemnto di eventi di tastiera. Aumenta se l’espansione produce caratteri misti o alterati su compositor lenti.</translation>
-    </message>
-    <message>
         <location filename="../src/extensions/snippet/snippet-extension.hpp" line="+11"/>
         <source>Snippets</source>
         <translation>Snippet</translation>
@@ -5248,16 +5433,6 @@ Vicinae ha anche il proprio [negozio d’estensioni](vicinae://launch/core/store
         <source>Browse all applications that are installed on the system</source>
         <translation>Esplora tutte le app installate sul sistema</translation>
     </message>
-    <message>
-        <location line="+8"/>
-        <source>Show hidden apps</source>
-        <translation>Mostra app nascoste</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Sort alphabetically</source>
-        <translation>Ordina alfabeticamente</translation>
-    </message>
 </context>
 <context>
     <name>SystemExtension</name>
@@ -5288,31 +5463,6 @@ Vicinae ha anche il proprio [negozio d’estensioni](vicinae://launch/core/store
         <location line="+7"/>
         <source>command</source>
         <translation>comando</translation>
-    </message>
-    <message>
-        <location line="+5"/>
-        <source>Run in terminal</source>
-        <translation>Esegui nel terminale</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Run in terminal (hold)</source>
-        <translation>Esegui in un terminale (tieni aperto)</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Run directly</source>
-        <translation>Esegui direttamente</translation>
-    </message>
-    <message>
-        <location line="+4"/>
-        <source>Default Action</source>
-        <translation>Azione Predefinita</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>The default action to run on pressing return</source>
-        <translation>L’azione predefinita da eseguire quando premi invio</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -5581,11 +5731,6 @@ Vicinae ha anche il proprio [negozio d’estensioni](vicinae://launch/core/store
         <location filename="../src/extensions/vicinae/vicinae-store-command.hpp" line="+13"/>
         <source>Install extensions from the Vicinae store</source>
         <translation>Installa estensioni dal negozio di Vicinae</translation>
-    </message>
-    <message>
-        <location line="+9"/>
-        <source>Always show intro</source>
-        <translation>Mostra sempre introduzione</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -6442,26 +6587,6 @@ Se stai cercando di creare la tua estensione, dai un’occhiata alla [documentaz
 <context>
     <name>WindowsAppDatabase</name>
     <message>
-        <location filename="../src/services/app-service/windows/win-app-database.cpp" line="+993"/>
-        <source>Focus window</source>
-        <translation>Attiva Finestra</translation>
-    </message>
-    <message>
-        <location line="+0"/>
-        <source>Launch app</source>
-        <translation>Apri Applicazione</translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>Default action</source>
-        <translation>Azione predefinita</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Action to perform when the return key is pressed. Always default to &apos;launch&apos; if the app has no open window.</source>
-        <translation>L’azione da eseguire quando premi invio. Di Default è sempre ’Avvia’ se l’app non ha finestre aperte.</translation>
-    </message>
-    <message>
         <location line="+15"/>
         <source>File Explorer</source>
         <translation>Esplora Risorse</translation>
@@ -6527,49 +6652,6 @@ Se stai cercando di creare la tua estensione, dai un’occhiata alla [documentaz
         <location filename="../src/services/window-manager/x11/x11-window-manager.cpp" line="+426"/>
         <source>Desktop %1</source>
         <translation>Scrivania %1</translation>
-    </message>
-</context>
-<context>
-    <name>XdgAppDatabase</name>
-    <message>
-        <location filename="../src/services/app-service/xdg/xdg-app-database.cpp" line="+564"/>
-        <source>Focus window</source>
-        <translation>Attiva Finestra</translation>
-    </message>
-    <message>
-        <location line="+0"/>
-        <source>Launch app</source>
-        <translation>Avvia app</translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>Default action</source>
-        <translation>Azione predefinita</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Action to perform when the return key is pressed. Always default to &apos;launch&apos; if the app has no open window.</source>
-        <translation>Azione da eseguire quando premi invio. Di default è sempre ’Avvia’ se l’app non ha finestre aperte.</translation>
-    </message>
-    <message>
-        <location line="+4"/>
-        <source>Launch Prefix</source>
-        <translation>Prefisso d’Avvio</translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>Custom app launcher to use. Affects applications as well as their sub-actions.</source>
-        <translation>Launcher personalizzato da usare. Tocca sia le applicazioni che le loro sotto-azioni.</translation>
-    </message>
-    <message>
-        <location line="+8"/>
-        <source>Application directories</source>
-        <translation>Cartelle delle applicazioni</translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>Directories applications are sourced from. The list cannot be modified directly. In order to do so, you need to append additonal paths to the &lt;b&gt;XDG_DATA_DIRS&lt;/b&gt; environment variables.</source>
-        <translation>Cartelle dove cercare le applicazioni. La lista non può essere direttamente modificata. Per farlo, devi aggiugnere percorsi aggiuntivi alla variabile d’ambiente &lt;b&gt;XDG_DATA_DIRS&lt;/b&gt;.</translation>
     </message>
 </context>
 <context>

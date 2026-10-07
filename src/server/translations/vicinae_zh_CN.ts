@@ -675,16 +675,6 @@
         <translation>进行计算、单位换算或搜索历史计算…</translation>
     </message>
     <message>
-        <location line="+21"/>
-        <source>Calculator Backend</source>
-        <translation>计算器后端</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Which backend to use to perform calculations</source>
-        <translation>用于执行计算的后端</translation>
-    </message>
-    <message>
         <location line="+5"/>
         <source>Refresh rates on startup</source>
         <translation>启动时刷新汇率</translation>
@@ -867,29 +857,9 @@
         <translation>系统剪贴板集成</translation>
     </message>
     <message>
-        <location filename="../src/extensions/clipboard/clipboard-extension.cpp" line="+55"/>
-        <source>Erase on startup</source>
-        <translation>启动时清除</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Erase clipboard history every time the vicinae server is started</source>
-        <translation>每次启动 Vicinae 服务器时清除剪贴板历史</translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>Clipboard monitoring</source>
-        <translation>剪贴板监控</translation>
-    </message>
-    <message>
         <location line="+1"/>
         <source>Whether clipboard activity is recorded in the history. Every clipboard action performed while this is turned off will not be recorded.</source>
         <translation>是否将剪贴板活动记录到历史中。关闭期间的所有剪贴板操作都不会被记录。</translation>
-    </message>
-    <message>
-        <location line="+9"/>
-        <source>Ignore Passwords</source>
-        <translation>忽略密码</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -927,26 +897,6 @@
 </context>
 <context>
     <name>ClipboardHistoryCommand</name>
-    <message>
-        <location filename="../src/extensions/clipboard/clipboard-history-command.cpp" line="+16"/>
-        <source>Paste</source>
-        <translation>粘贴</translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>Copy</source>
-        <translation>复制</translation>
-    </message>
-    <message>
-        <location line="+5"/>
-        <source>Default Action</source>
-        <translation>默认操作</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>The default action to perform on pressing return. Paste is only available if your environment supports it.</source>
-        <translation>按回车键时执行的默认操作。仅当当前环境支持时才能粘贴。</translation>
-    </message>
     <message>
         <location filename="../src/extensions/clipboard/clipboard-history-command.hpp" line="+11"/>
         <source>Clipboard History</source>
@@ -1821,36 +1771,6 @@ Find the full stacktrace below. You can also directly copy it from the action me
         <location line="+1"/>
         <source>Integrate with system files</source>
         <translation>与系统文件集成</translation>
-    </message>
-    <message>
-        <location line="+24"/>
-        <source>Enabled</source>
-        <translation>已启用</translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>Whether to run the file indexer in the background. When turned off, the indexer process is stopped entirely and file search becomes unavailable until it is turned back on.</source>
-        <translation>是否在后台运行文件索引器。关闭后索引器进程将完全停止，重新启用前无法搜索文件。</translation>
-    </message>
-    <message>
-        <location line="+5"/>
-        <source>Search paths</source>
-        <translation>搜索路径</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Directories that Vicinae will search</source>
-        <translation>Vicinae 要搜索的目录</translation>
-    </message>
-    <message>
-        <location line="+4"/>
-        <source>Excluded search paths</source>
-        <translation>排除的搜索路径</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Directories to exclude from file indexing</source>
-        <translation>不纳入文件索引的目录</translation>
     </message>
 </context>
 <context>
@@ -3494,16 +3414,6 @@ Back to command in an instant...</source>
 <context>
     <name>PowerManagementCommand</name>
     <message>
-        <location filename="../src/extensions/power-management/power-management-extension.cpp" line="-283"/>
-        <source>Ask for confirmation</source>
-        <translation>要求确认</translation>
-    </message>
-    <message>
-        <location line="+7"/>
-        <source>Custom program</source>
-        <translation>自定义程序</translation>
-    </message>
-    <message>
         <location line="+1"/>
         <source>Custom POSIX shell command to run instead of the default implementation</source>
         <translation>代替默认实现运行的自定义 POSIX shell 命令</translation>
@@ -3558,6 +3468,376 @@ Back to command in an instant...</source>
         <location line="+4"/>
         <source>Failed to power off</source>
         <translation>关机失败</translation>
+    </message>
+</context>
+<context>
+    <name>PreferenceSchema</name>
+    <message>
+        <location filename="../src/services/app-service/app-preferences.hpp" line="+34"/>
+        <source>Default action</source>
+        <translation>默认操作</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Action to perform when the return key is pressed. Always default to &apos;launch&apos; if the app has no open window.</source>
+        <translation>按回车时执行的操作。如果应用没有打开的窗口，则始终默认为“启动”。</translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Focus window</source>
+        <translation>聚焦窗口</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Launch app</source>
+        <translation>启动应用</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Launch Prefix</source>
+        <translation>启动前缀</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Custom app launcher to use. Affects applications as well as their sub-actions.</source>
+        <translation>要使用的自定义应用启动器，会影响应用及其子操作。</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <location line="+9"/>
+        <location line="+6"/>
+        <source>Application directories</source>
+        <translation>应用目录</translation>
+    </message>
+    <message>
+        <location line="-14"/>
+        <source>Directories applications are sourced from. The list cannot be modified directly. In order to do so, you need to append additonal paths to the &lt;b&gt;XDG_DATA_DIRS&lt;/b&gt; environment variables.</source>
+        <translation>用于查找应用的目录。此列表无法直接修改；如需添加目录，请将其他路径追加到 &lt;b&gt;XDG_DATA_DIRS&lt;/b&gt; 环境变量。</translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Directories applications are sourced from.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Directories applications are sourced from. System directories are always scanned and cannot be removed.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/root-search/scripts/script-root-provider.hpp" line="+135"/>
+        <source>Custom directories</source>
+        <translation>自定义目录</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Additional list of directories to source scripts from. These directories always take precedence over the default system ones</source>
+        <translation>用于加载脚本的其他目录。这些目录始终优先于系统默认目录</translation>
+    </message>
+    <message>
+        <location filename="../src/builtins/vicinae/store-intro-preferences.hpp" line="+10"/>
+        <source>Always show intro</source>
+        <translation>始终显示介绍</translation>
+    </message>
+    <message>
+        <location filename="../src/builtins/vicinae/emoji-preferences.hpp" line="+27"/>
+        <location filename="../src/builtins/system/system-run-model.hpp" line="-21"/>
+        <location filename="../src/builtins/clipboard/clipboard-preferences.hpp" line="+112"/>
+        <source>Default Action</source>
+        <translation>默认操作</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <location filename="../src/builtins/clipboard/clipboard-preferences.hpp" line="+1"/>
+        <source>The default action to perform on pressing return. Paste is only available if your environment supports it.</source>
+        <translation>按回车键时执行的默认操作。仅当当前环境支持时才能粘贴。</translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <location filename="../src/builtins/clipboard/clipboard-preferences.hpp" line="+7"/>
+        <source>Paste</source>
+        <translation>粘贴</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <location filename="../src/builtins/clipboard/clipboard-preferences.hpp" line="+2"/>
+        <source>Copy</source>
+        <translation>复制</translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Skin tone</source>
+        <translation>肤色</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Skin tone to use for relevant emojis.</source>
+        <translation>为适用的表情选择肤色。</translation>
+    </message>
+    <message>
+        <location filename="../src/builtins/system/system-run-model.hpp" line="+1"/>
+        <source>The default action to run on pressing return</source>
+        <translation>按回车时运行的默认操作</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Run in terminal</source>
+        <translation>在终端中运行</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Run in terminal (hold)</source>
+        <translation>在终端中运行（保持窗口）</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Run directly</source>
+        <translation>直接运行</translation>
+    </message>
+    <message>
+        <location filename="../src/builtins/system/browse-apps-preferences.hpp" line="+11"/>
+        <source>Sort alphabetically</source>
+        <translation>按字母排序</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Show hidden apps</source>
+        <translation>显示隐藏应用</translation>
+    </message>
+    <message>
+        <location filename="../src/builtins/snippet/snippet-extension.hpp" line="+23"/>
+        <source>Expansion</source>
+        <translation>展开</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Enable automatic snippet expansion when triggers are typed</source>
+        <translation>输入触发词时自动展开片段</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Undo</source>
+        <translation>撤销</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Press backspace immediately after expansion to undo and restore the trigger text</source>
+        <translation>展开后立即按退格键可撤销并恢复触发文本</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Keyboard layout</source>
+        <translation>键盘布局</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>XKB layout used for trigger detection (e.g. &quot;us&quot;, &quot;fr&quot;). Leave empty for system default.</source>
+        <translation>用于检测触发词的 XKB 布局（如“us”“fr”）。留空则使用系统默认值。</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Pre-paste delay (ms)</source>
+        <translation>粘贴前延迟（ms）</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Delay between setting clipboard and injecting paste shortcut. Increase if expansions paste empty on slow compositors.</source>
+        <translation>设置剪贴板与注入粘贴快捷键之间的延迟。如果在较慢的合成器上展开后粘贴为空，请增大此值。</translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Key injection delay (ms)</source>
+        <translation>按键注入延迟（ms）</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Delay between injected key events. Increase if expansions produce missing or garbled characters on slow compositors.</source>
+        <translation>注入按键事件之间的延迟。如果在较慢的合成器上展开时缺字或乱码，请增大此值。</translation>
+    </message>
+    <message>
+        <location filename="../src/builtins/file/file-extension.hpp" line="-44"/>
+        <source>Enabled</source>
+        <translation>已启用</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Whether to run the file indexer in the background. When turned off, the indexer process is stopped entirely and file search becomes unavailable until it is turned back on.</source>
+        <translation>是否在后台运行文件索引器。关闭后索引器进程将完全停止，重新启用前无法搜索文件。</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Search paths</source>
+        <translation>搜索路径</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Directories that Vicinae will search</source>
+        <translation>Vicinae 要搜索的目录</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Excluded search paths</source>
+        <translation>排除的搜索路径</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Directories to exclude from file indexing</source>
+        <translation>不纳入文件索引的目录</translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Search backend</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Automatic uses Everything when it is running and falls back to Windows Search otherwise.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Automatic</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Windows Search</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Everything</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Everything instance</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Name of the Everything instance to connect to. Leave empty for the default instance, the Everything 1.5 alpha runs as &quot;1.5a&quot;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/builtins/power-management/power-management-extension.cpp" line="-201"/>
+        <source>Ask for confirmation</source>
+        <translation>要求确认</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Custom program</source>
+        <translation>自定义程序</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Custom shell command to run instead of the default implementation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/builtins/clipboard/clipboard-preferences.hpp" line="-60"/>
+        <source>Clipboard monitoring</source>
+        <translation>剪贴板监控</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Whether new clipboard selections are appended to the history</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Ignore Passwords</source>
+        <translation>忽略密码</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Ignore selections that can be identified as a password. May not work with all apps.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Preserve tagged</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Never evict or mass delete selections that have been explicitly tagged (pinned, custom keyword)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Excluded apps</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Never add selections copied from these apps to the history</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Eviction threshold</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Automatically delete selections older than this threshold</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Never</source>
+        <translation>从未</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>15 minutes</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>1 hour</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>1 day</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>1 week</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>1 month</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>1 year</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Erase on startup</source>
+        <translation>启动时清除</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Erase clipboard history every time the vicinae server is started</source>
+        <translation>每次启动 Vicinae 服务器时清除剪贴板历史</translation>
+    </message>
+    <message>
+        <location filename="../src/builtins/calculator/calculator-extension.hpp" line="+11"/>
+        <source>Calculator Backend</source>
+        <translation>计算器后端</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Which backend to use to perform calculations</source>
+        <translation>用于执行计算的后端</translation>
     </message>
 </context>
 <context>
@@ -3713,11 +3993,6 @@ Back to command in an instant...</source>
         <location filename="../src/extensions/raycast/raycast-store-command.hpp" line="+13"/>
         <source>Install compatible extensions from the Raycast store</source>
         <translation>从 Raycast Store 安装兼容扩展</translation>
-    </message>
-    <message>
-        <location line="+9"/>
-        <source>Always show intro</source>
-        <translation>始终显示介绍</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -4336,16 +4611,6 @@ Vicinae 也有自己的 [Extension Store](vicinae://launch/core/store)。
         <source>Script Commands</source>
         <translation>脚本命令</translation>
     </message>
-    <message>
-        <location line="+7"/>
-        <source>Custom directories</source>
-        <translation>自定义目录</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Additional list of directories to source scripts from. These directories always take precedence over the default system ones</source>
-        <translation>用于加载脚本的其他目录。这些目录始终优先于系统默认目录</translation>
-    </message>
 </context>
 <context>
     <name>SearchBrowserTabsCommand</name>
@@ -4371,36 +4636,6 @@ Vicinae 也有自己的 [Extension Store](vicinae://launch/core/store)。
         <location line="+1"/>
         <source>Search for any emoji or symbol</source>
         <translation>搜索任意表情或符号</translation>
-    </message>
-    <message>
-        <location line="+13"/>
-        <source>Paste</source>
-        <translation>粘贴</translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>Copy</source>
-        <translation>复制</translation>
-    </message>
-    <message>
-        <location line="+5"/>
-        <source>Default Action</source>
-        <translation>默认操作</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>The default action to perform on pressing return. Paste is only available if your environment supports it.</source>
-        <translation>按回车键时执行的默认操作。仅当当前环境支持时才能粘贴。</translation>
-    </message>
-    <message>
-        <location line="+21"/>
-        <source>Skin tone</source>
-        <translation>肤色</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Skin tone to use for relevant emojis.</source>
-        <translation>为适用的表情选择肤色。</translation>
     </message>
 </context>
 <context>
@@ -4898,56 +5133,6 @@ Vicinae 也有自己的 [Extension Store](vicinae://launch/core/store)。
 <context>
     <name>SnippetExtension</name>
     <message>
-        <location filename="../src/extensions/snippet/snippet-extension.cpp" line="+38"/>
-        <source>Expansion</source>
-        <translation>展开</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Enable automatic snippet expansion when triggers are typed</source>
-        <translation>输入触发词时自动展开片段</translation>
-    </message>
-    <message>
-        <location line="+7"/>
-        <source>Undo</source>
-        <translation>撤销</translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>Press backspace immediately after expansion to undo and restore the trigger text</source>
-        <translation>展开后立即按退格键可撤销并恢复触发文本</translation>
-    </message>
-    <message>
-        <location line="+9"/>
-        <source>Keyboard layout</source>
-        <translation>键盘布局</translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>XKB layout used for trigger detection (e.g. &quot;us&quot;, &quot;fr&quot;). Leave empty for system default.</source>
-        <translation>用于检测触发词的 XKB 布局（如“us”“fr”）。留空则使用系统默认值。</translation>
-    </message>
-    <message>
-        <location line="+8"/>
-        <source>Pre-paste delay (ms)</source>
-        <translation>粘贴前延迟（ms）</translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>Delay between setting clipboard and injecting paste shortcut. Increase if expansions paste empty on slow compositors.</source>
-        <translation>设置剪贴板与注入粘贴快捷键之间的延迟。如果在较慢的合成器上展开后粘贴为空，请增大此值。</translation>
-    </message>
-    <message>
-        <location line="+9"/>
-        <source>Key injection delay (ms)</source>
-        <translation>按键注入延迟（ms）</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Delay between injected key events. Increase if expansions produce missing or garbled characters on slow compositors.</source>
-        <translation>注入按键事件之间的延迟。如果在较慢的合成器上展开时缺字或乱码，请增大此值。</translation>
-    </message>
-    <message>
         <location filename="../src/extensions/snippet/snippet-extension.hpp" line="+11"/>
         <source>Snippets</source>
         <translation>片段</translation>
@@ -5247,16 +5432,6 @@ Vicinae 也有自己的 [Extension Store](vicinae://launch/core/store)。
         <source>Browse all applications that are installed on the system</source>
         <translation>浏览系统中已安装的所有应用</translation>
     </message>
-    <message>
-        <location line="+8"/>
-        <source>Show hidden apps</source>
-        <translation>显示隐藏应用</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Sort alphabetically</source>
-        <translation>按字母排序</translation>
-    </message>
 </context>
 <context>
     <name>SystemExtension</name>
@@ -5287,31 +5462,6 @@ Vicinae 也有自己的 [Extension Store](vicinae://launch/core/store)。
         <location line="+7"/>
         <source>command</source>
         <translation>命令</translation>
-    </message>
-    <message>
-        <location line="+5"/>
-        <source>Run in terminal</source>
-        <translation>在终端中运行</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Run in terminal (hold)</source>
-        <translation>在终端中运行（保持窗口）</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Run directly</source>
-        <translation>直接运行</translation>
-    </message>
-    <message>
-        <location line="+4"/>
-        <source>Default Action</source>
-        <translation>默认操作</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>The default action to run on pressing return</source>
-        <translation>按回车时运行的默认操作</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -5580,11 +5730,6 @@ Vicinae 也有自己的 [Extension Store](vicinae://launch/core/store)。
         <location filename="../src/extensions/vicinae/vicinae-store-command.hpp" line="+13"/>
         <source>Install extensions from the Vicinae store</source>
         <translation>从 Vicinae Store 安装扩展</translation>
-    </message>
-    <message>
-        <location line="+9"/>
-        <source>Always show intro</source>
-        <translation>始终显示介绍</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -6441,26 +6586,6 @@ Vicinae Store 收录了由社区开发并经核心贡献者批准的扩展。
 <context>
     <name>WindowsAppDatabase</name>
     <message>
-        <location filename="../src/services/app-service/windows/win-app-database.cpp" line="+993"/>
-        <source>Focus window</source>
-        <translation>聚焦窗口</translation>
-    </message>
-    <message>
-        <location line="+0"/>
-        <source>Launch app</source>
-        <translation>启动应用</translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>Default action</source>
-        <translation>默认操作</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Action to perform when the return key is pressed. Always default to &apos;launch&apos; if the app has no open window.</source>
-        <translation>按回车时执行的操作。如果应用没有打开的窗口，则始终默认为“启动”。</translation>
-    </message>
-    <message>
         <location line="+15"/>
         <source>File Explorer</source>
         <translation>文件资源管理器</translation>
@@ -6526,49 +6651,6 @@ Vicinae Store 收录了由社区开发并经核心贡献者批准的扩展。
         <location filename="../src/services/window-manager/x11/x11-window-manager.cpp" line="+426"/>
         <source>Desktop %1</source>
         <translation>桌面 %1</translation>
-    </message>
-</context>
-<context>
-    <name>XdgAppDatabase</name>
-    <message>
-        <location filename="../src/services/app-service/xdg/xdg-app-database.cpp" line="+564"/>
-        <source>Focus window</source>
-        <translation>聚焦窗口</translation>
-    </message>
-    <message>
-        <location line="+0"/>
-        <source>Launch app</source>
-        <translation>启动应用</translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>Default action</source>
-        <translation>默认操作</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Action to perform when the return key is pressed. Always default to &apos;launch&apos; if the app has no open window.</source>
-        <translation>按回车时执行的操作。如果应用没有打开的窗口，则始终默认为“启动”。</translation>
-    </message>
-    <message>
-        <location line="+4"/>
-        <source>Launch Prefix</source>
-        <translation>启动前缀</translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>Custom app launcher to use. Affects applications as well as their sub-actions.</source>
-        <translation>要使用的自定义应用启动器，会影响应用及其子操作。</translation>
-    </message>
-    <message>
-        <location line="+8"/>
-        <source>Application directories</source>
-        <translation>应用目录</translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>Directories applications are sourced from. The list cannot be modified directly. In order to do so, you need to append additonal paths to the &lt;b&gt;XDG_DATA_DIRS&lt;/b&gt; environment variables.</source>
-        <translation>用于查找应用的目录。此列表无法直接修改；如需添加目录，请将其他路径追加到 &lt;b&gt;XDG_DATA_DIRS&lt;/b&gt; 环境变量。</translation>
     </message>
 </context>
 <context>
