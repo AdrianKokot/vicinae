@@ -20,36 +20,41 @@ struct SnippetPreferences {
 
 template <> struct PreferenceSchema<SnippetPreferences> {
   PreferenceMeta enabled{
-      .title = tr("Expansion"),
-      .description = tr("Enable automatic snippet expansion when triggers are typed"),
+      .title = QCoreApplication::translate("SnippetPreferences", "Expansion"),
+      .description = QCoreApplication::translate(
+          "SnippetPreferences", "Enable automatic snippet expansion when triggers are typed"),
   };
   PreferenceMeta undo{
-      .title = tr("Undo"),
-      .description = tr("Press backspace immediately after expansion to undo and restore the trigger text"),
+      .title = QCoreApplication::translate("SnippetPreferences", "Undo"),
+      .description = QCoreApplication::translate(
+          "SnippetPreferences",
+          "Press backspace immediately after expansion to undo and restore the trigger text"),
   };
 #ifdef Q_OS_LINUX
   PreferenceMeta layout{
-      .title = tr("Keyboard layout"),
-      .description =
-          tr(R"(XKB layout used for trigger detection (e.g. "us", "fr"). Leave empty for system default.)"),
+      .title = QCoreApplication::translate("SnippetPreferences", "Keyboard layout"),
+      .description = QCoreApplication::translate(
+          "SnippetPreferences",
+          R"(XKB layout used for trigger detection (e.g. "us", "fr"). Leave empty for system default.)"),
       .required = false,
   };
   PreferenceMeta prePasteDelay{
-      .title = tr("Pre-paste delay (ms)"),
-      .description =
-          tr("Delay between setting clipboard and injecting paste shortcut. Increase if expansions "
-             "paste empty on slow compositors."),
+      .title = QCoreApplication::translate("SnippetPreferences", "Pre-paste delay (ms)"),
+      .description = QCoreApplication::translate(
+          "SnippetPreferences",
+          "Delay between setting clipboard and injecting paste shortcut. Increase if expansions "
+          "paste empty on slow compositors."),
       .required = false,
   };
   PreferenceMeta keyDelay{
-      .title = tr("Key injection delay (ms)"),
-      .description =
-          tr("Delay between injected key events. Increase if expansions produce missing or garbled "
-             "characters on slow compositors."),
+      .title = QCoreApplication::translate("SnippetPreferences", "Key injection delay (ms)"),
+      .description = QCoreApplication::translate(
+          "SnippetPreferences",
+          "Delay between injected key events. Increase if expansions produce missing or garbled "
+          "characters on slow compositors."),
       .required = false,
   };
 #endif
-  Q_DECLARE_TR_FUNCTIONS(SnippetPreferences)
 };
 
 class SnippetExtension : public TypedCommandRepository<SnippetPreferences> {

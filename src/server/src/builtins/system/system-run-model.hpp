@@ -24,18 +24,21 @@ struct SystemRunPreferences {
 template <> struct PreferenceSchema<SystemRunPreferences> {
   PreferenceMeta defaultAction{
       .key = "default-action",
-      .title = tr("Default Action"),
-      .description = tr("The default action to run on pressing return"),
+      .title = QCoreApplication::translate("SystemRunPreferences", "Default Action"),
+      .description =
+          QCoreApplication::translate("SystemRunPreferences", "The default action to run on pressing return"),
       .options =
           [] {
             return std::vector<Preference::DropdownData::Option>{
-                option(SystemRunDefaultAction::RunInTerminal, tr("Run in terminal")),
-                option(SystemRunDefaultAction::RunInTerminalHold, tr("Run in terminal (hold)")),
-                option(SystemRunDefaultAction::Run, tr("Run directly")),
+                option(SystemRunDefaultAction::RunInTerminal,
+                       QCoreApplication::translate("SystemRunPreferences", "Run in terminal")),
+                option(SystemRunDefaultAction::RunInTerminalHold,
+                       QCoreApplication::translate("SystemRunPreferences", "Run in terminal (hold)")),
+                option(SystemRunDefaultAction::Run,
+                       QCoreApplication::translate("SystemRunPreferences", "Run directly")),
             };
           },
   };
-  Q_DECLARE_TR_FUNCTIONS(SystemRunPreferences)
 };
 
 class CommandLineSection : public SectionSource {

@@ -22,15 +22,16 @@ struct PowerCommandPreferences {
 };
 
 template <> struct PreferenceSchema<PowerCommandPreferences> {
-  PreferenceMeta confirm{.label = tr("Ask for confirmation")};
+  PreferenceMeta confirm{.label =
+                             QCoreApplication::translate("PowerCommandPreferences", "Ask for confirmation")};
 #if !defined(Q_OS_MACOS) && !defined(Q_OS_WIN)
   PreferenceMeta customProgram{
-      .title = tr("Custom program"),
-      .description = tr("Custom shell command to run instead of the default implementation"),
+      .title = QCoreApplication::translate("PowerCommandPreferences", "Custom program"),
+      .description = QCoreApplication::translate(
+          "PowerCommandPreferences", "Custom shell command to run instead of the default implementation"),
       .required = false,
   };
 #endif
-  Q_DECLARE_TR_FUNCTIONS(PowerCommandPreferences)
 };
 
 class PowerManagementCommand : public TypedCallbackCommand<PowerCommandPreferences> {

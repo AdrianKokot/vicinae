@@ -34,8 +34,12 @@ struct PreferenceMeta {
 };
 
 /**
- * One `PreferenceMeta` per struct member, same names, same order. `Q_DECLARE_TR_FUNCTIONS` goes last:
- * it ends with `private:`, which would otherwise break aggregate reflection.
+ * One `PreferenceMeta` per struct member, same names, same order.
+ *
+ * lupdate cannot infer a context from class template specializations, so every user-facing string in a
+ * specialization must go through `QCoreApplication::translate("<PreferenceStruct>", ...)` with the
+ * preference struct name as the explicit context, e.g. `PreferenceSchema<AppPreferences>` uses
+ * `QCoreApplication::translate("AppPreferences", ...)`.
  */
 template <typename T> struct PreferenceSchema;
 

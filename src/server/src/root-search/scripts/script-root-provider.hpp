@@ -132,13 +132,13 @@ struct ScriptPreferences {
 
 template <> struct PreferenceSchema<ScriptPreferences> {
   PreferenceMeta customDirs{
-      .title = tr("Custom directories"),
-      .description =
-          tr("Additional list of directories to source scripts from. These directories always take "
-             "precedence over the default system ones"),
+      .title = QCoreApplication::translate("ScriptPreferences", "Custom directories"),
+      .description = QCoreApplication::translate(
+          "ScriptPreferences",
+          "Additional list of directories to source scripts from. These directories always take "
+          "precedence over the default system ones"),
       .kind = PreferenceMeta::Kind::Directories,
   };
-  Q_DECLARE_TR_FUNCTIONS(ScriptPreferences)
 };
 
 class ScriptRootProvider : public TypedRootProvider<ScriptPreferences> {

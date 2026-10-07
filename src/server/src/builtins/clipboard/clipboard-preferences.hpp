@@ -59,48 +59,61 @@ struct ClipboardPreferences {
 
 template <> struct PreferenceSchema<ClipboardPreferences> {
   PreferenceMeta monitoring{
-      .title = tr("Clipboard monitoring"),
-      .description = tr("Whether new clipboard selections are appended to the history"),
+      .title = QCoreApplication::translate("ClipboardPreferences", "Clipboard monitoring"),
+      .description = QCoreApplication::translate(
+          "ClipboardPreferences", "Whether new clipboard selections are appended to the history"),
   };
 #ifndef Q_OS_MACOS
   PreferenceMeta ignorePasswords{
-      .title = tr("Ignore Passwords"),
-      .description =
-          tr("Ignore selections that can be identified as a password. May not work with all apps."),
+      .title = QCoreApplication::translate("ClipboardPreferences", "Ignore Passwords"),
+      .description = QCoreApplication::translate(
+          "ClipboardPreferences",
+          "Ignore selections that can be identified as a password. May not work with all apps."),
   };
 #endif
   PreferenceMeta preserveTagged{
-      .title = tr("Preserve tagged"),
-      .description = tr("Never evict or mass delete selections that have been explicitly tagged (pinned, "
-                        "custom keyword)"),
+      .title = QCoreApplication::translate("ClipboardPreferences", "Preserve tagged"),
+      .description = QCoreApplication::translate(
+          "ClipboardPreferences",
+          "Never evict or mass delete selections that have been explicitly tagged (pinned, "
+          "custom keyword)"),
   };
   PreferenceMeta ignoredApps{
-      .title = tr("Excluded apps"),
-      .description = tr("Never add selections copied from these apps to the history"),
+      .title = QCoreApplication::translate("ClipboardPreferences", "Excluded apps"),
+      .description = QCoreApplication::translate(
+          "ClipboardPreferences", "Never add selections copied from these apps to the history"),
       .kind = PreferenceMeta::Kind::Apps,
       .required = false,
   };
   PreferenceMeta evictionThreshold{
-      .title = tr("Eviction threshold"),
-      .description = tr("Automatically delete selections older than this threshold"),
+      .title = QCoreApplication::translate("ClipboardPreferences", "Eviction threshold"),
+      .description = QCoreApplication::translate("ClipboardPreferences",
+                                                 "Automatically delete selections older than this threshold"),
       .options =
           [] {
             return std::vector<Preference::DropdownData::Option>{
-                option(ClipboardEviction::Never, tr("Never")),
-                option(ClipboardEviction::FifteenMinutes, tr("15 minutes")),
-                option(ClipboardEviction::OneHour, tr("1 hour")),
-                option(ClipboardEviction::OneDay, tr("1 day")),
-                option(ClipboardEviction::OneWeek, tr("1 week")),
-                option(ClipboardEviction::OneMonth, tr("1 month")),
-                option(ClipboardEviction::OneYear, tr("1 year")),
+                option(ClipboardEviction::Never,
+                       QCoreApplication::translate("ClipboardPreferences", "Never")),
+                option(ClipboardEviction::FifteenMinutes,
+                       QCoreApplication::translate("ClipboardPreferences", "15 minutes")),
+                option(ClipboardEviction::OneHour,
+                       QCoreApplication::translate("ClipboardPreferences", "1 hour")),
+                option(ClipboardEviction::OneDay,
+                       QCoreApplication::translate("ClipboardPreferences", "1 day")),
+                option(ClipboardEviction::OneWeek,
+                       QCoreApplication::translate("ClipboardPreferences", "1 week")),
+                option(ClipboardEviction::OneMonth,
+                       QCoreApplication::translate("ClipboardPreferences", "1 month")),
+                option(ClipboardEviction::OneYear,
+                       QCoreApplication::translate("ClipboardPreferences", "1 year")),
             };
           },
   };
   PreferenceMeta eraseOnStartup{
-      .title = tr("Erase on startup"),
-      .description = tr("Erase clipboard history every time the vicinae server is started"),
+      .title = QCoreApplication::translate("ClipboardPreferences", "Erase on startup"),
+      .description = QCoreApplication::translate(
+          "ClipboardPreferences", "Erase clipboard history every time the vicinae server is started"),
   };
-  Q_DECLARE_TR_FUNCTIONS(ClipboardPreferences)
 };
 
 struct ClipboardHistoryPreferences {
@@ -109,19 +122,22 @@ struct ClipboardHistoryPreferences {
 
 template <> struct PreferenceSchema<ClipboardHistoryPreferences> {
   PreferenceMeta defaultAction{
-      .title = tr("Default Action"),
-      .description = tr("The default action to perform on pressing return. Paste is only available if your "
-                        "environment supports it."),
+      .title = QCoreApplication::translate("ClipboardHistoryPreferences", "Default Action"),
+      .description = QCoreApplication::translate(
+          "ClipboardHistoryPreferences",
+          "The default action to perform on pressing return. Paste is only available if your "
+          "environment supports it."),
       .options =
           [] {
             using Action = ClipboardHistorySection::DefaultAction;
             std::vector<Preference::DropdownData::Option> options;
             if (ServiceRegistry::instance()->pasteService()->supportsPaste()) {
-              options.emplace_back(option(Action::Paste, tr("Paste")));
+              options.emplace_back(
+                  option(Action::Paste, QCoreApplication::translate("ClipboardHistoryPreferences", "Paste")));
             }
-            options.emplace_back(option(Action::Copy, tr("Copy")));
+            options.emplace_back(
+                option(Action::Copy, QCoreApplication::translate("ClipboardHistoryPreferences", "Copy")));
             return options;
           },
   };
-  Q_DECLARE_TR_FUNCTIONS(ClipboardHistoryPreferences)
 };

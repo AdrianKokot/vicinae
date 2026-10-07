@@ -24,22 +24,26 @@ struct EmojiPreferences {
 
 template <> struct PreferenceSchema<EmojiPreferences> {
   PreferenceMeta defaultAction{
-      .title = tr("Default Action"),
-      .description = tr("The default action to perform on pressing return. Paste is only available if your "
-                        "environment supports it."),
+      .title = QCoreApplication::translate("EmojiPreferences", "Default Action"),
+      .description = QCoreApplication::translate(
+          "EmojiPreferences",
+          "The default action to perform on pressing return. Paste is only available if your "
+          "environment supports it."),
       .options =
           [] {
             std::vector<Preference::DropdownData::Option> options;
             if (ServiceRegistry::instance()->pasteService()->supportsPaste()) {
-              options.emplace_back(option(EmojiDefaultAction::Paste, tr("Paste")));
+              options.emplace_back(option(EmojiDefaultAction::Paste,
+                                          QCoreApplication::translate("EmojiPreferences", "Paste")));
             }
-            options.emplace_back(option(EmojiDefaultAction::Copy, tr("Copy")));
+            options.emplace_back(
+                option(EmojiDefaultAction::Copy, QCoreApplication::translate("EmojiPreferences", "Copy")));
             return options;
           },
   };
   PreferenceMeta skinTone{
-      .title = tr("Skin tone"),
-      .description = tr("Skin tone to use for relevant emojis."),
+      .title = QCoreApplication::translate("EmojiPreferences", "Skin tone"),
+      .description = QCoreApplication::translate("EmojiPreferences", "Skin tone to use for relevant emojis."),
       .options =
           [] {
             std::vector<Preference::DropdownData::Option> options;
@@ -55,5 +59,4 @@ template <> struct PreferenceSchema<EmojiPreferences> {
             return options;
           },
   };
-  Q_DECLARE_TR_FUNCTIONS(EmojiPreferences)
 };

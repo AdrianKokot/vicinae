@@ -211,6 +211,61 @@
     </message>
 </context>
 <context>
+    <name>AppPreferences</name>
+    <message>
+        <location filename="../src/services/app-service/app-preferences.hpp" line="+34"/>
+        <source>Default action</source>
+        <translation>Дії за замовчуванням</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Action to perform when the return key is pressed. Always default to &apos;launch&apos; if the app has no open window.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>Focus window</source>
+        <translation>Сфокусувати вікно</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Launch app</source>
+        <translation>Запустити програму</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Launch Prefix</source>
+        <translation>Префікс запуску</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Custom app launcher to use. Affects applications as well as their sub-actions.</source>
+        <translation>Ваш власний лаунчер додатків для використання. Впливає на додатки та їх взаємодії.</translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <location line="+10"/>
+        <location line="+7"/>
+        <source>Application directories</source>
+        <translation>Каталоги додатків</translation>
+    </message>
+    <message>
+        <location line="-16"/>
+        <source>Directories applications are sourced from. The list cannot be modified directly. In order to do so, you need to append additonal paths to the &lt;b&gt;XDG_DATA_DIRS&lt;/b&gt; environment variables.</source>
+        <translation>Каталоги, з яких беруться додатки. Список не можна змінити безпосередньо. Для цього потрібно додати додаткові шляхи до змінної середовища `&lt;b&gt;XDG_DATA_DIRS&lt;/b&gt;`.</translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>Directories applications are sourced from.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Directories applications are sourced from. System directories are always scanned and cannot be removed.</source>
+        <translation>Каталоги, з яких беруться додатки. Системні каталоги скануються завжди і не можуть бути видалені.</translation>
+    </message>
+</context>
+<context>
     <name>AppRootItem</name>
     <message>
         <location filename="../src/root-search/apps/app-root-provider.cpp" line="+18" />
@@ -447,6 +502,19 @@
     </message>
 </context>
 <context>
+    <name>BrowseAppsPreferences</name>
+    <message>
+        <location filename="../src/builtins/system/browse-apps-preferences.hpp" line="+12"/>
+        <source>Sort alphabetically</source>
+        <translation>Сортування за алфавітом</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Show hidden apps</source>
+        <translation>Показувати приховані додатки</translation>
+    </message>
+</context>
+<context>
     <name>BrowseAppsSection</name>
     <message>
         <location filename="../src/qml/browse-apps-model.hpp" line="+32" />
@@ -679,16 +747,6 @@
         <translation>Виконуйте обчислення, переводите одиниці вимірювання або шукайте попередні розрахунки...</translation>
     </message>
     <message>
-        <location line="+22" />
-        <source>Calculator Backend</source>
-        <translation>Бекенд калькулятора</translation>
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Which backend to use to perform calculations</source>
-        <translation>Який бекенд використовувати для обчислень</translation>
-    </message>
-    <message>
         <location line="+5" />
         <source>Refresh rates on startup</source>
         <translation>Оновлювати курси при запуску</translation>
@@ -710,6 +768,19 @@
         <location line="+2" />
         <source>Browse past calculations. You need to copy the result of a calculation for it to be saved in history.</source>
         <translation>Перегляд попередніх обчислень. Щоб результат потрапив в історію, його потрібно скопіювати.</translation>
+    </message>
+</context>
+<context>
+    <name>CalculatorPreferences</name>
+    <message>
+        <location line="+54"/>
+        <source>Calculator Backend</source>
+        <translation>Бекенд калькулятора</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Which backend to use to perform calculations</source>
+        <translation>Який бекенд використовувати для обчислень</translation>
     </message>
 </context>
 <context>
@@ -863,29 +934,9 @@
         <translation>Інтеграція з буфером обміну</translation>
     </message>
     <message>
-        <location filename="../src/extensions/clipboard/clipboard-extension.cpp" line="+55" />
-        <source>Erase on startup</source>
-        <translation>Очищає при запуску</translation>
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Erase clipboard history every time the vicinae server is started</source>
-        <translation>Очищає історію буфера обміну при кожному запуску сервера Vicinae</translation>
-    </message>
-    <message>
-        <location line="+3" />
-        <source>Clipboard monitoring</source>
-        <translation>Відстеження буфера обміну</translation>
-    </message>
-    <message>
         <location line="+1" />
         <source>Whether clipboard activity is recorded in the history. Every clipboard action performed while this is turned off will not be recorded.</source>
         <translation>Чи потрібно записувати дії з буфером обміну в історію? Кожна дія, виконана при вимкненій опції, не буде записана.</translation>
-    </message>
-    <message>
-        <location line="+9" />
-        <source>Ignore Passwords</source>
-        <translation>Ігнорувати паролі</translation>
     </message>
     <message>
         <location line="+2" />
@@ -896,26 +947,6 @@
 <context>
     <name>ClipboardHistoryCommand</name>
     <message>
-        <location filename="../src/extensions/clipboard/clipboard-history-command.cpp" line="+16" />
-        <source>Paste</source>
-        <translation>Вставити</translation>
-    </message>
-    <message>
-        <location line="+3" />
-        <source>Copy</source>
-        <translation>Копіювати</translation>
-    </message>
-    <message>
-        <location line="+5" />
-        <source>Default Action</source>
-        <translation>Дії за замовчуванням</translation>
-    </message>
-    <message>
-        <location line="+1" />
-        <source>The default action to perform on pressing return. Paste is only available if your environment supports it.</source>
-        <translation>Дія, що виконується при натисканні Enter. Вставка доступна лише за підтримки вашого середовища.</translation>
-    </message>
-    <message>
         <location filename="../src/extensions/clipboard/clipboard-history-command.hpp" line="+11" />
         <source>Clipboard History</source>
         <translation>Історія буфера обміну</translation>
@@ -924,6 +955,29 @@
         <location line="+2" />
         <source>Browse your clipboard's history, pin, edit and remove entries.</source>
         <translation>Переглядайте історію буфера обміну: закріплюйте, редагуйте та видаляйте записи.</translation>
+    </message>
+</context>
+<context>
+    <name>ClipboardHistoryPreferences</name>
+    <message>
+        <location filename="../src/builtins/clipboard/clipboard-preferences.hpp" line="+125"/>
+        <source>Default Action</source>
+        <translation>Дії за замовчуванням</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>The default action to perform on pressing return. Paste is only available if your environment supports it.</source>
+        <translation>Дія, що виконується при натисканні Enter. Вставка доступна лише за підтримки вашого середовища.</translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Paste</source>
+        <translation>Вставити</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Copy</source>
+        <translation>Копіювати</translation>
     </message>
 </context>
 <context>
@@ -1044,6 +1098,104 @@
         <location line="+2" />
         <source>Data for this selection was previously encrypted but the clipboard is not currently configured to use encryption. You should be able to fix this by enabling it in the settings.</source>
         <translation>Ці дані були раніше зашифровані, але зараз буфер обміну не налаштований на шифрування. Зазвичай це виправляється шляхом увімкнення шифрування в налаштуваннях.</translation>
+    </message>
+</context>
+<context>
+    <name>ClipboardPreferences</name>
+    <message>
+        <location line="-77"/>
+        <source>Clipboard monitoring</source>
+        <translation>Відстеження буфера обміну</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Whether new clipboard selections are appended to the history</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Ignore Passwords</source>
+        <translation>Ігнорувати паролі</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Ignore selections that can be identified as a password. May not work with all apps.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Preserve tagged</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Never evict or mass delete selections that have been explicitly tagged (pinned, custom keyword)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Excluded apps</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Never add selections copied from these apps to the history</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Eviction threshold</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Automatically delete selections older than this threshold</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Never</source>
+        <translation>Ніколи</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>15 minutes</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>1 hour</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>1 day</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>1 week</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>1 month</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>1 year</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Erase on startup</source>
+        <translation>Очищає при запуску</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Erase clipboard history every time the vicinae server is started</source>
+        <translation>Очищає історію буфера обміну при кожному запуску сервера Vicinae</translation>
     </message>
 </context>
 <context>
@@ -1629,6 +1781,39 @@ npm run dev
     </message>
 </context>
 <context>
+    <name>EmojiPreferences</name>
+    <message>
+        <location filename="../src/builtins/vicinae/emoji-preferences.hpp" line="+27"/>
+        <source>Default Action</source>
+        <translation>Дії за замовчуванням</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>The default action to perform on pressing return. Paste is only available if your environment supports it.</source>
+        <translation>Дія, що виконується при натисканні Enter. Вставка доступна лише за підтримки вашого середовища.</translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Paste</source>
+        <translation>Вставити</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Copy</source>
+        <translation>Копіювати</translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Skin tone</source>
+        <translation>Тон шкіри</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Skin tone to use for relevant emojis.</source>
+        <translation>Відтінок шкіри для відповідних емодзі.</translation>
+    </message>
+</context>
+<context>
     <name>EmptyView</name>
     <message>
         <location filename="../src/qml/qml/EmptyView.qml" line="+7" />
@@ -1819,35 +2004,73 @@ Find the full stacktrace below. You can also directly copy it from the action me
         <source>Integrate with system files</source>
         <translation>Інтеграція з системними файлами</translation>
     </message>
+</context>
+<context>
+    <name>FilePreferences</name>
     <message>
-        <location line="+24" />
+        <location line="-49"/>
         <source>Enabled</source>
         <translation>Увімкнено</translation>
     </message>
     <message>
-        <location line="+2" />
+        <location line="+1"/>
         <source>Whether to run the file indexer in the background. When turned off, the indexer process is stopped entirely and file search becomes unavailable until it is turned back on.</source>
         <translation>Запускати індексатор файлів у фоновому режимі. При вимкненні процес індексації повністю зупиняється, і пошук файлів стає недоступним, поки його не ввімкнуть знову.</translation>
     </message>
     <message>
-        <location line="+5" />
+        <location line="+6"/>
         <source>Search paths</source>
         <translation>Шлях пошуку</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+1"/>
         <source>Directories that Vicinae will search</source>
         <translation>Каталоги, які шукатиме Vicinae</translation>
     </message>
     <message>
-        <location line="+4" />
+        <location line="+4"/>
         <source>Excluded search paths</source>
         <translation>Виключені шляхи пошуку</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+2"/>
         <source>Directories to exclude from file indexing</source>
         <translation>Каталоги, які слід виключити з індексування файлів</translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Search backend</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Automatic uses Everything when it is running and falls back to Windows Search otherwise.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Automatic</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Windows Search</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Everything</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Everything instance</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Name of the Everything instance to connect to. Leave empty for the default instance, the Everything 1.5 alpha runs as &quot;1.5a&quot;.</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -2447,19 +2670,6 @@ Find the full stacktrace below. You can also directly copy it from the action me
         <location line="+4" />
         <source>Failed to log out</source>
         <translation>Не вдалося вийти</translation>
-    </message>
-</context>
-<context>
-    <name>MacAppDatabase</name>
-    <message>
-        <location filename="../src/services/app-service/macos/mac-app-database.mm" line="+159" />
-        <source>Application directories</source>
-        <translation>Каталоги додатків</translation>
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Directories applications are sourced from. System directories are always scanned and cannot be removed.</source>
-        <translation>Каталоги, з яких беруться додатки. Системні каталоги скануються завжди і не можуть бути видалені.</translation>
     </message>
 </context>
 <context>
@@ -3494,17 +3704,25 @@ Back to command in an instant...</source>
     </message>
 </context>
 <context>
-    <name>PowerManagementCommand</name>
+    <name>PowerCommandPreferences</name>
     <message>
-        <location filename="../src/extensions/power-management/power-management-extension.cpp" line="-283" />
+        <location line="-286"/>
         <source>Ask for confirmation</source>
         <translation>Запитувати підтвердження</translation>
     </message>
     <message>
-        <location line="+7" />
+        <location line="+3"/>
         <source>Custom program</source>
         <translation>Ваш власний додаток</translation>
     </message>
+    <message>
+        <location line="+1"/>
+        <source>Custom shell command to run instead of the default implementation</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>PowerManagementCommand</name>
     <message>
         <location line="+1" />
         <source>Custom POSIX shell command to run instead of the default implementation</source>
@@ -3692,11 +3910,6 @@ Back to command in an instant...</source>
         <location filename="../src/extensions/raycast/raycast-store-command.hpp" line="+13" />
         <source>Install compatible extensions from the Raycast store</source>
         <translation>Встановлювати сумісні розширення з магазину Raycast</translation>
-    </message>
-    <message>
-        <location line="+9" />
-        <source>Always show intro</source>
-        <translation>Завжди показувати вступ</translation>
     </message>
     <message>
         <location line="+11" />
@@ -4279,6 +4492,19 @@ Vicinae also has its own [extension store](vicinae://launch/core/store).
     </message>
 </context>
 <context>
+    <name>ScriptPreferences</name>
+    <message>
+        <location filename="../src/root-search/scripts/script-root-provider.hpp" line="+135"/>
+        <source>Custom directories</source>
+        <translation>Свої каталоги</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Additional list of directories to source scripts from. These directories always take precedence over the default system ones</source>
+        <translation>Додатковий список каталогів для завантаження скриптів. Ці каталоги завжди мають пріоритет над системними за замовчуванням.</translation>
+    </message>
+</context>
+<context>
     <name>ScriptRootItem</name>
     <message>
         <location filename="../src/root-search/scripts/script-root-provider.hpp" line="+27" />
@@ -4319,16 +4545,6 @@ Vicinae also has its own [extension store](vicinae://launch/core/store).
         <source>Script Commands</source>
         <translation>Скриптові команди</translation>
     </message>
-    <message>
-        <location line="+7" />
-        <source>Custom directories</source>
-        <translation>Свої каталоги</translation>
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Additional list of directories to source scripts from. These directories always take precedence over the default system ones</source>
-        <translation>Додатковий список каталогів для завантаження скриптів. Ці каталоги завжди мають пріоритет над системними за замовчуванням.</translation>
-    </message>
 </context>
 <context>
     <name>SearchBrowserTabsCommand</name>
@@ -4354,36 +4570,6 @@ Vicinae also has its own [extension store](vicinae://launch/core/store).
         <location line="+1" />
         <source>Search for any emoji or symbol</source>
         <translation>Пошук будь-якої емодзі або символу</translation>
-    </message>
-    <message>
-        <location line="+13" />
-        <source>Paste</source>
-        <translation>Вставити</translation>
-    </message>
-    <message>
-        <location line="+3" />
-        <source>Copy</source>
-        <translation>Копіювати</translation>
-    </message>
-    <message>
-        <location line="+5" />
-        <source>Default Action</source>
-        <translation>Дії за замовчуванням</translation>
-    </message>
-    <message>
-        <location line="+1" />
-        <source>The default action to perform on pressing return. Paste is only available if your environment supports it.</source>
-        <translation>Дія, що виконується при натисканні Enter. Вставка доступна лише за підтримки вашого середовища.</translation>
-    </message>
-    <message>
-        <location line="+21" />
-        <source>Skin tone</source>
-        <translation>Тон шкіри</translation>
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Skin tone to use for relevant emojis.</source>
-        <translation>Відтінок шкіри для відповідних емодзі.</translation>
     </message>
 </context>
 <context>
@@ -4910,54 +5096,9 @@ Vicinae also has its own [extension store](vicinae://launch/core/store).
 <context>
     <name>SnippetExtension</name>
     <message>
-        <location filename="../src/extensions/snippet/snippet-extension.cpp" line="+38" />
-        <source>Expansion</source>
-        <translation>Розкриття</translation>
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Enable automatic snippet expansion when triggers are typed</source>
-        <translation>Автоматично розкривати фрагменти при введенні тригерів</translation>
-    </message>
-    <message>
-        <location line="+7" />
-        <source>Undo</source>
-        <translation>Скасувати</translation>
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Press backspace immediately after expansion to undo and restore the trigger text</source>
-        <translation>Натисніть клавішу Backspace відразу після відкриття, щоб скасувати його та відновити текст тригера</translation>
-    </message>
-    <message>
-        <location line="+9" />
-        <source>Keyboard layout</source>
-        <translation>Розташування клавіш</translation>
-    </message>
-    <message>
         <location line="+2" />
         <source>XKB layout used for trigger detection (e.g. "us", "fr"). Leave empty for system default.</source>
         <translation>Розташування клавіш XKB для визначення тригерів (наприклад, «us», «fr»). Залиште порожнім для системного значення за замовчуванням.</translation>
-    </message>
-    <message>
-        <location line="+8" />
-        <source>Pre-paste delay (ms)</source>
-        <translation>Затримка перед вставкою (мс)</translation>
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Delay between setting clipboard and injecting paste shortcut. Increase if expansions paste empty on slow compositors.</source>
-        <translation>Затримка між встановленням буфера обміну та натисканням комбінації вставки. Збільште, якщо на повільних композиторах вставка після відкриття порожня.</translation>
-    </message>
-    <message>
-        <location line="+9" />
-        <source>Key injection delay (ms)</source>
-        <translation>Затримка введення клавіш (мс)</translation>
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Delay between injected key events. Increase if expansions produce missing or garbled characters on slow compositors.</source>
-        <translation>Затримка між натисканнями клавіш. Збільште, якщо в розширенні символи зникають або спотворюються на повільних композиторах.</translation>
     </message>
     <message>
         <location filename="../src/extensions/snippet/snippet-extension.hpp" line="+11" />
@@ -5107,6 +5248,59 @@ Vicinae also has its own [extension store](vicinae://launch/core/store).
     </message>
 </context>
 <context>
+    <name>SnippetPreferences</name>
+    <message>
+        <location line="-41"/>
+        <source>Expansion</source>
+        <translation>Розкриття</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Enable automatic snippet expansion when triggers are typed</source>
+        <translation>Автоматично розкривати фрагменти при введенні тригерів</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Undo</source>
+        <translation>Скасувати</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Press backspace immediately after expansion to undo and restore the trigger text</source>
+        <translation>Натисніть клавішу Backspace відразу після відкриття, щоб скасувати його та відновити текст тригера</translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Keyboard layout</source>
+        <translation>Розташування клавіш</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>XKB layout used for trigger detection (e.g. &quot;us&quot;, &quot;fr&quot;). Leave empty for system default.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Pre-paste delay (ms)</source>
+        <translation>Затримка перед вставкою (мс)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Delay between setting clipboard and injecting paste shortcut. Increase if expansions paste empty on slow compositors.</source>
+        <translation>Затримка між встановленням буфера обміну та натисканням комбінації вставки. Збільште, якщо на повільних композиторах вставка після відкриття порожня.</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Key injection delay (ms)</source>
+        <translation>Затримка введення клавіш (мс)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Delay between injected key events. Increase if expansions produce missing or garbled characters on slow compositors.</source>
+        <translation>Затримка між натисканнями клавіш. Збільште, якщо в розширенні символи зникають або спотворюються на повільних композиторах.</translation>
+    </message>
+</context>
+<context>
     <name>SoftRebootCommand</name>
     <message>
         <location filename="../src/extensions/power-management/power-management-extension.cpp" line="-99" />
@@ -5188,6 +5382,14 @@ Vicinae also has its own [extension store](vicinae://launch/core/store).
         <location line="+3" />
         <source>View Code</source>
         <translation>Переглянути код</translation>
+    </message>
+</context>
+<context>
+    <name>StoreIntroPreferences</name>
+    <message>
+        <location filename="../src/builtins/vicinae/store-intro-preferences.hpp" line="+11"/>
+        <source>Always show intro</source>
+        <translation>Завжди показувати вступ</translation>
     </message>
 </context>
 <context>
@@ -5304,16 +5506,6 @@ Vicinae also has its own [extension store](vicinae://launch/core/store).
         <source>Browse all applications that are installed on the system</source>
         <translation>Перегляд усіх встановлених додатків у системі</translation>
     </message>
-    <message>
-        <location line="+8" />
-        <source>Show hidden apps</source>
-        <translation>Показувати приховані додатки</translation>
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Sort alphabetically</source>
-        <translation>Сортування за алфавітом</translation>
-    </message>
 </context>
 <context>
     <name>SystemExtension</name>
@@ -5346,34 +5538,37 @@ Vicinae also has its own [extension store](vicinae://launch/core/store).
         <translation>команда</translation>
     </message>
     <message>
-        <location line="+5" />
-        <source>Run in terminal</source>
-        <translation>Запустити в терміналі</translation>
+        <location line="+29" />
+        <source>Not a valid executable</source>
+        <translation>Не є допустимим виконуваним файлом</translation>
     </message>
+</context>
+<context>
+    <name>SystemRunPreferences</name>
     <message>
-        <location line="+1" />
-        <source>Run in terminal (hold)</source>
-        <translation>Запустити в терміналі (утримувати)</translation>
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Run directly</source>
-        <translation>Запустити безпосередньо</translation>
-    </message>
-    <message>
-        <location line="+4" />
+        <location filename="../src/builtins/system/system-run-model.hpp" line="-45"/>
         <source>Default Action</source>
         <translation>Дії за замовчуванням</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="+2"/>
         <source>The default action to run on pressing return</source>
         <translation>Дія, що виконується при натисканні Enter</translation>
     </message>
     <message>
-        <location line="+29" />
-        <source>Not a valid executable</source>
-        <translation>Не є допустимим виконуваним файлом</translation>
+        <location line="+5"/>
+        <source>Run in terminal</source>
+        <translation>Запустити в терміналі</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Run in terminal (hold)</source>
+        <translation>Запустити в терміналі (утримувати)</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Run directly</source>
+        <translation>Запустити безпосередньо</translation>
     </message>
 </context>
 <context>
@@ -5665,11 +5860,6 @@ Vicinae also has its own [extension store](vicinae://launch/core/store).
         <location filename="../src/extensions/vicinae/vicinae-store-command.hpp" line="+13" />
         <source>Install extensions from the Vicinae store</source>
         <translation>Встановлювати розширення з магазину Vicinae</translation>
-    </message>
-    <message>
-        <location line="+9" />
-        <source>Always show intro</source>
-        <translation>Завжди показувати вступ</translation>
     </message>
     <message>
         <location line="+10" />
@@ -6538,21 +6728,6 @@ If you're looking to build your own extension, take a look at the [documentation
 <context>
     <name>WindowsAppDatabase</name>
     <message>
-        <location filename="../src/services/app-service/windows/win-app-database.cpp" line="+993" />
-        <source>Focus window</source>
-        <translation>Сфокусувати вікно</translation>
-    </message>
-    <message>
-        <location line="+0" />
-        <source>Launch app</source>
-        <translation>Запустити програму</translation>
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Default action</source>
-        <translation>Дії за замовчуванням</translation>
-    </message>
-    <message>
         <location line="+1" />
         <source>Action to perform when the return key is pressed. Always default to 'launch' if the app has no open window.</source>
         <translation>Дія, що виконується при натисканні Enter. Якщо у програми немає відкритого вікна, дія виконується завжди.</translation>
@@ -6628,44 +6803,9 @@ If you're looking to build your own extension, take a look at the [documentation
 <context>
     <name>XdgAppDatabase</name>
     <message>
-        <location filename="../src/services/app-service/xdg/xdg-app-database.cpp" line="+585" />
-        <source>Focus window</source>
-        <translation>Сфокусувати вікно</translation>
-    </message>
-    <message>
-        <location line="+0" />
-        <source>Launch app</source>
-        <translation>Запустити програму</translation>
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Default action</source>
-        <translation>Дії за замовчуванням</translation>
-    </message>
-    <message>
         <location line="+1" />
         <source>Action to perform when the return key is pressed. Always default to 'launch' if the app has no open window.</source>
         <translation>Дія, що виконується при натисканні Enter. Якщо у програми немає відкритого вікна, дія виконується завжди.</translation>
-    </message>
-    <message>
-        <location line="+4" />
-        <source>Launch Prefix</source>
-        <translation>Префікс запуску</translation>
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Custom app launcher to use. Affects applications as well as their sub-actions.</source>
-        <translation>Ваш власний лаунчер додатків для використання. Впливає на додатки та їх взаємодії.</translation>
-    </message>
-    <message>
-        <location line="+11" />
-        <source>Application directories</source>
-        <translation>Каталоги додатків</translation>
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Directories applications are sourced from. The list cannot be modified directly. In order to do so, you need to append additonal paths to the &lt;b&gt;XDG_DATA_DIRS&lt;/b&gt; environment variables.</source>
-        <translation>Каталоги, з яких беруться додатки. Список не можна змінити безпосередньо. Для цього потрібно додати додаткові шляхи до змінної середовища `&lt;b&gt;XDG_DATA_DIRS&lt;/b&gt;`.</translation>
     </message>
 </context>
 <context>

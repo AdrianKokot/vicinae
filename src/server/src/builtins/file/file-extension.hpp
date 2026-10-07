@@ -59,43 +59,48 @@ class RebuildFileIndexCommand : public BuiltinCallbackCommand {
 template <> struct PreferenceSchema<FilePreferences> {
 #if defined(Q_OS_LINUX)
   PreferenceMeta autoIndexing{
-      .title = tr("Enabled"),
-      .description =
-          tr("Whether to run the file indexer in the background. When turned off, the indexer process is "
-             "stopped entirely and file search becomes unavailable until it is turned back on."),
+      .title = QCoreApplication::translate("FilePreferences", "Enabled"),
+      .description = QCoreApplication::translate(
+          "FilePreferences",
+          "Whether to run the file indexer in the background. When turned off, the indexer process is "
+          "stopped entirely and file search becomes unavailable until it is turned back on."),
   };
   PreferenceMeta indexingPaths{
-      .title = tr("Search paths"),
-      .description = tr("Directories that Vicinae will search"),
+      .title = QCoreApplication::translate("FilePreferences", "Search paths"),
+      .description = QCoreApplication::translate("FilePreferences", "Directories that Vicinae will search"),
       .kind = PreferenceMeta::Kind::Directories,
   };
   PreferenceMeta excludedIndexingPaths{
-      .title = tr("Excluded search paths"),
-      .description = tr("Directories to exclude from file indexing"),
+      .title = QCoreApplication::translate("FilePreferences", "Excluded search paths"),
+      .description =
+          QCoreApplication::translate("FilePreferences", "Directories to exclude from file indexing"),
       .kind = PreferenceMeta::Kind::Directories,
   };
 #elif defined(Q_OS_WIN)
   PreferenceMeta searchBackend{
-      .title = tr("Search backend"),
-      .description =
-          tr("Automatic uses Everything when it is running and falls back to Windows Search otherwise."),
+      .title = QCoreApplication::translate("FilePreferences", "Search backend"),
+      .description = QCoreApplication::translate(
+          "FilePreferences",
+          "Automatic uses Everything when it is running and falls back to Windows Search otherwise."),
       .options =
           [] {
             return std::vector<Preference::DropdownData::Option>{
-                option(FileSearchBackend::Auto, tr("Automatic")),
-                option(FileSearchBackend::WindowsSearch, tr("Windows Search")),
-                option(FileSearchBackend::Everything, tr("Everything")),
+                option(FileSearchBackend::Auto, QCoreApplication::translate("FilePreferences", "Automatic")),
+                option(FileSearchBackend::WindowsSearch,
+                       QCoreApplication::translate("FilePreferences", "Windows Search")),
+                option(FileSearchBackend::Everything,
+                       QCoreApplication::translate("FilePreferences", "Everything")),
             };
           },
   };
   PreferenceMeta everythingInstance{
-      .title = tr("Everything instance"),
-      .description = tr("Name of the Everything instance to connect to. Leave empty for the default "
-                        "instance, the Everything 1.5 alpha runs as \"1.5a\"."),
+      .title = QCoreApplication::translate("FilePreferences", "Everything instance"),
+      .description = QCoreApplication::translate(
+          "FilePreferences", "Name of the Everything instance to connect to. Leave empty for the default "
+                             "instance, the Everything 1.5 alpha runs as \"1.5a\"."),
       .required = false,
   };
 #endif
-  Q_DECLARE_TR_FUNCTIONS(FilePreferences)
 };
 
 class FileExtension : public TypedCommandRepository<FilePreferences> {
